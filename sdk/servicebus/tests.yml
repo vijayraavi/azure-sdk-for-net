@@ -1,9 +1,0 @@
-trigger: none
-
-jobs:
-- template: ../../eng/pipelines/templates/jobs/archetype-sdk-tests.yml
-  parameters:
-    MaxParallel: 1
-    ServiceDirectory: servicebus
-    EnvVars:
-      SERVICE_BUS_CONNECTION_STRING: $(net-service-bus-test-connection-string)
