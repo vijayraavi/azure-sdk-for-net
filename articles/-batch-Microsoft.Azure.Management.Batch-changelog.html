@@ -1,0 +1,212 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Microsoft.Azure.Management.Batch release notes </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Microsoft.Azure.Management.Batch release notes ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h2 id="microsoftazuremanagementbatch-release-notes">Microsoft.Azure.Management.Batch release notes</h2>
+
+<h3 id="changes-in-800">Changes in 8.0.0</h3>
+<h4 id="rest-api-version">REST API version</h4>
+<ul>
+<li>This version targets REST API version 2019-04-01.</li>
+</ul>
+<h4 id="features">Features</h4>
+<ul>
+<li>Added BatchAccount properties <code>DedicatedCoreQuotaPerVMFamily</code> and <code>DedicatedCoreQuotaPerVMFamilyEnforced</code> to facilitate the transition to per VM family quota</li>
+<li><strong>[Breaking]</strong> Accounts created with <code>PoolAllocationMode</code> set to <code>UserSubscription</code> will not return core quota properties <code>DedicatedCoreQuota</code> or <code>LowPriorityCoreQuota</code></li>
+</ul>
+<h3 id="changes-in-700">Changes in 7.0.0</h3>
+<h4 id="rest-api-version-1">REST API version</h4>
+<ul>
+<li>This version targets REST API version 2018-12-01.</li>
+</ul>
+<h4 id="features-1">Features</h4>
+<ul>
+<li><strong>[Breaking]</strong> ResourceFile improvements
+<ul>
+<li>Added the ability specify an entire Azure Storage container in <code>ResourceFile</code>.</li>
+<li>A new property <code>HttpUrl</code> replaces <code>BlobSource</code>. This can be any HTTP URL. Previously, this had to be an Azure Blob Storage URL.</li>
+<li>When constructing a <code>ResourceFile</code> you can now choose from one of the following options:
+<ul>
+<li><code>HttpUrl</code>: Specify an HTTP URL pointing to a specific file to download.</li>
+<li><code>StorageContainerUrl</code>: Specify an Azure Storage container URL. All blobs matching the <code>BlobPrefix</code> in the Storage container will be downloaded.</li>
+<li><code>AutoStorageContainerName</code>: Specify the name of a container in the Batch registered auto-storage account. All blobs matching the <code>BlobPrefix</code> in the Storage container will be downloaded.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>[Breaking]</strong> Removed <code>OSDisk</code> property from <code>VirtualMachineConfiguration</code>. This property is no longer supported.</li>
+<li><strong>[Breaking]</strong> <code>Application</code> no longer has a <code>Packages</code> property, instead the packages can be retrieved via the new  <code>ApplicationPackage.List</code> API.</li>
+<li><strong>[Breaking]</strong> <code>TargetOsVersion</code> is now <code>OsVersion</code>, and <code>CurrentOsVersion</code> is no longer supported on <code>CloudServiceConfiguration</code>.</li>
+<li>Added support on Windows pools for creating users with a specific login mode (either <code>Batch</code> or <code>Interactive</code>) via <code>WindowsUserConfiguration.LoginMode</code>.</li>
+<li>Added support for <code>ContainerConfiguration</code> when creating a pool.</li>
+</ul>
+<h4 id="bug-fixes">Bug fixes</h4>
+<ul>
+<li>Deleting an account will no longer return <code>NotFound</code> at the end of the operation</li>
+</ul>
+<h3 id="changes-in-600">Changes in 6.0.0</h3>
+<h4 id="rest-api-version-2">REST API version</h4>
+<ul>
+<li>This version targets REST API version 2017-09-01.</li>
+<li>Adding support for Certificate and Pool operations.</li>
+</ul>
+<h3 id="changes-in-510">Changes in 5.1.0</h3>
+<h4 id="rest-api-version-3">REST API version</h4>
+<ul>
+<li>This version targets REST API version 2017-05-01.</li>
+</ul>
+<h4 id="features-2">Features</h4>
+<ul>
+<li>Added a new <code>CheckNameAvailability</code> API which allows you to check if an account name is available on a particular region.</li>
+</ul>
+<h3 id="changes-in-500">Changes in 5.0.0</h3>
+<h4 id="rest-api-version-4">REST API version</h4>
+<ul>
+<li>This version targets REST API version 2017-05-01.</li>
+</ul>
+<h4 id="features-3">Features</h4>
+<h5 id="breaking-changes">Breaking changes</h5>
+<ul>
+<li>BatchAccount <code>CoreQuota</code> renamed to <code>DedicatedCoreQuota</code>.</li>
+<li>The structure of <code>CloudError</code> has changed. It now has an <code>Error</code> property, and the error information (<code>code</code>, <code>message</code>, <code>target</code>, and <code>details</code>) is inside that property.</li>
+<li>The type <code>UpdateApplicationParameters</code> was renamed to <code>ApplicationUpdateParameters</code>.</li>
+<li>The type <code>AddApplicationParameters</code> was renamed to <code>ApplicationCreateParameters</code>.</li>
+</ul>
+<h5 id="non-breaking-changes">Non-breaking changes</h5>
+<ul>
+<li>BatchAccount now reports the low-priority core quota as well in the property <code>LowPriorityCoreQuota</code>.</li>
+<li>Added a new <code>Operations</code> API, which can be used to query the available operations.</li>
+</ul>
+<h4 id="packaging">Packaging</h4>
+<ul>
+<li>Now targets <code>netstandard1.4</code> instead of <code>netstandard1.5</code> and <code>netstandard1.1</code>.</li>
+</ul>
+<h3 id="changes-in-420">Changes in 4.2.0</h3>
+<ul>
+<li>Added option to create a Batch account which allocates pool nodes in the user's subscription. This is done with <code>PoolAllocationMode = UserSubscription</code>. When using this mode, a <code>KeyVaultReference</code> must also be supplied.</li>
+<li>Changed classes which appear only in responses to be immutable.</li>
+<li>This version targets REST API version 2017-01-01.</li>
+</ul>
+<h3 id="changes-in-410">Changes in 4.1.0</h3>
+<ul>
+<li>This package version had an issue and was unlisted on NuGet immediately after shipping. This version <strong>should not be used</strong>.</li>
+</ul>
+<h3 id="changes-in-300">Changes in 3.0.0</h3>
+<ul>
+<li>Renamed <code>AccountResource</code> to <code>BatchAccount</code>.</li>
+<li>Renamed <code>AccountOperations</code> to <code>BatchAccountOperations</code>. The <code>IBatchManagementClient.Account</code> property was also renamed to <code>IBatchManagementClient.BatchAccount</code>.</li>
+<li>Split <code>Application</code> and <code>ApplicationPackage</code> operations up into two separate operation groups.</li>
+<li>Updated <code>Application</code> and <code>ApplicationPackage</code> methods to use the standard <code>Create</code>, <code>Delete</code>, <code>Update</code> syntax. For example creating an <code>Application</code> is done via <code>ApplicationOperations.Create</code>.</li>
+<li>Renamed <code>SubscriptionOperations</code> to <code>LocationOperations</code> and changed <code>SubscriptionOperations.GetSubscriptionQuotas</code> to be <code>LocationOperations.GetQuotas</code>.</li>
+<li>This version targets REST API version 2015-12-01.</li>
+</ul>
+<h3 id="changes-in-210">Changes in 2.1.0</h3>
+<ul>
+<li>Added support for .NETStandard.</li>
+<li>Fixed the .NETFramework 4.5 dependencies.</li>
+<li>This version targets REST API version 2015-12-01.</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/docfx_project/articles/-batch-Microsoft.Azure.Management.Batch-changelog.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

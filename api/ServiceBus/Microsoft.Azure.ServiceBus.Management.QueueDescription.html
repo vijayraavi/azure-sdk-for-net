@@ -1,0 +1,993 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class QueueDescription
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class QueueDescription
+   ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Microsoft.Azure.ServiceBus.Management.QueueDescription">
+  
+  
+  <h1 id="Microsoft_Azure_ServiceBus_Management_QueueDescription" data-uid="Microsoft.Azure.ServiceBus.Management.QueueDescription" class="text-break">Class QueueDescription
+  </h1>
+  <div class="markdown level0 summary"><p>Represents the metadata description of the queue.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">QueueDescription</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.Azure.ServiceBus.Management.html">Microsoft.Azure.ServiceBus.Management</a></h6>
+  <h6><strong>Assembly</strong>: Microsoft.Azure.ServiceBus.dll</h6>
+  <h5 id="Microsoft_Azure_ServiceBus_Management_QueueDescription_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class QueueDescription : IEquatable&lt;QueueDescription&gt;</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_QueueDescription__ctor_System_String_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.QueueDescription.%23ctor(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/QueueDescription.cs/#L29">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_QueueDescription__ctor_" data-uid="Microsoft.Azure.ServiceBus.Management.QueueDescription.#ctor*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_QueueDescription__ctor_System_String_" data-uid="Microsoft.Azure.ServiceBus.Management.QueueDescription.#ctor(System.String)">QueueDescription(String)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of QueueDescription class with the specified relative path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public QueueDescription(string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>Path of the queue relative to the namespace base address.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_QueueDescription_AuthorizationRules.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.QueueDescription.AuthorizationRules%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/QueueDescription.cs/#L187">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_QueueDescription_AuthorizationRules_" data-uid="Microsoft.Azure.ServiceBus.Management.QueueDescription.AuthorizationRules*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_QueueDescription_AuthorizationRules" data-uid="Microsoft.Azure.ServiceBus.Management.QueueDescription.AuthorizationRules">AuthorizationRules</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Microsoft.Azure.ServiceBus.Management.QueueDescription.html#Microsoft_Azure_ServiceBus_Management_QueueDescription_AuthorizationRules">AuthorizationRules</a> on the queue to control user access at entity level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AuthorizationRules AuthorizationRules { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.Management.AuthorizationRules.html">AuthorizationRules</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_QueueDescription_AutoDeleteOnIdle.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.QueueDescription.AutoDeleteOnIdle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/QueueDescription.cs/#L115">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_QueueDescription_AutoDeleteOnIdle_" data-uid="Microsoft.Azure.ServiceBus.Management.QueueDescription.AutoDeleteOnIdle*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_QueueDescription_AutoDeleteOnIdle" data-uid="Microsoft.Azure.ServiceBus.Management.QueueDescription.AutoDeleteOnIdle">AutoDeleteOnIdle</h4>
+  <div class="markdown level1 summary"><p>The <see cref="!:TimeSpan"></see> idle interval after which the queue is automatically deleted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeSpan AutoDeleteOnIdle { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TimeSpan</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_Management_QueueDescription_AutoDeleteOnIdle_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The minimum duration is 5 minutes. Default value is <see cref="!:TimeSpan.MaxValue"></see>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_QueueDescription_DefaultMessageTimeToLive.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.QueueDescription.DefaultMessageTimeToLive%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/QueueDescription.cs/#L96">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_QueueDescription_DefaultMessageTimeToLive_" data-uid="Microsoft.Azure.ServiceBus.Management.QueueDescription.DefaultMessageTimeToLive*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_QueueDescription_DefaultMessageTimeToLive" data-uid="Microsoft.Azure.ServiceBus.Management.QueueDescription.DefaultMessageTimeToLive">DefaultMessageTimeToLive</h4>
+  <div class="markdown level1 summary"><p>The default time to live value for the messages. This is the duration after which the message expires, starting from when
+the message is sent to Service Bus.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeSpan DefaultMessageTimeToLive { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TimeSpan</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_Management_QueueDescription_DefaultMessageTimeToLive_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This is the default value used when <a class="xref" href="Microsoft.Azure.ServiceBus.Message.html#Microsoft_Azure_ServiceBus_Message_TimeToLive">TimeToLive</a> is not set on a
+message itself. Messages older than their TimeToLive value will expire and no longer be retained in the message store.
+Subscribers will be unable to receive expired messages.
+Default value is <see cref="!:TimeSpan.MaxValue"></see>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_QueueDescription_DuplicateDetectionHistoryTimeWindow.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.QueueDescription.DuplicateDetectionHistoryTimeWindow%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/QueueDescription.cs/#L142">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_QueueDescription_DuplicateDetectionHistoryTimeWindow_" data-uid="Microsoft.Azure.ServiceBus.Management.QueueDescription.DuplicateDetectionHistoryTimeWindow*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_QueueDescription_DuplicateDetectionHistoryTimeWindow" data-uid="Microsoft.Azure.ServiceBus.Management.QueueDescription.DuplicateDetectionHistoryTimeWindow">DuplicateDetectionHistoryTimeWindow</h4>
+  <div class="markdown level1 summary"><p>The <see cref="!:TimeSpan"></see> duration of duplicate detection history that is maintained by the service.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeSpan DuplicateDetectionHistoryTimeWindow { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TimeSpan</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_Management_QueueDescription_DuplicateDetectionHistoryTimeWindow_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The default value is 1 minute. Max value is 7 days and minimum is 20 seconds.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_QueueDescription_EnableBatchedOperations.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.QueueDescription.EnableBatchedOperations%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/QueueDescription.cs/#L182">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_QueueDescription_EnableBatchedOperations_" data-uid="Microsoft.Azure.ServiceBus.Management.QueueDescription.EnableBatchedOperations*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_QueueDescription_EnableBatchedOperations" data-uid="Microsoft.Azure.ServiceBus.Management.QueueDescription.EnableBatchedOperations">EnableBatchedOperations</h4>
+  <div class="markdown level1 summary"><p>Indicates whether server-side batched operations are enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EnableBatchedOperations { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_Management_QueueDescription_EnableBatchedOperations_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Defaults to true.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_QueueDescription_EnableDeadLetteringOnMessageExpiration.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.QueueDescription.EnableDeadLetteringOnMessageExpiration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/QueueDescription.cs/#L134">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_QueueDescription_EnableDeadLetteringOnMessageExpiration_" data-uid="Microsoft.Azure.ServiceBus.Management.QueueDescription.EnableDeadLetteringOnMessageExpiration*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_QueueDescription_EnableDeadLetteringOnMessageExpiration" data-uid="Microsoft.Azure.ServiceBus.Management.QueueDescription.EnableDeadLetteringOnMessageExpiration">EnableDeadLetteringOnMessageExpiration</h4>
+  <div class="markdown level1 summary"><p>Indicates whether this queue has dead letter support when a message expires.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EnableDeadLetteringOnMessageExpiration { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_Management_QueueDescription_EnableDeadLetteringOnMessageExpiration_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If true, the expired messages are moved to dead-letter sub-queue. Default value is false.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_QueueDescription_EnablePartitioning.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.QueueDescription.EnablePartitioning%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/QueueDescription.cs/#L251">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_QueueDescription_EnablePartitioning_" data-uid="Microsoft.Azure.ServiceBus.Management.QueueDescription.EnablePartitioning*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_QueueDescription_EnablePartitioning" data-uid="Microsoft.Azure.ServiceBus.Management.QueueDescription.EnablePartitioning">EnablePartitioning</h4>
+  <div class="markdown level1 summary"><p>Indicates whether the queue is to be partitioned across multiple message brokers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EnablePartitioning { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_Management_QueueDescription_EnablePartitioning_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Defaults to false.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_QueueDescription_ForwardDeadLetteredMessagesTo.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.QueueDescription.ForwardDeadLetteredMessagesTo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/QueueDescription.cs/#L226">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_QueueDescription_ForwardDeadLetteredMessagesTo_" data-uid="Microsoft.Azure.ServiceBus.Management.QueueDescription.ForwardDeadLetteredMessagesTo*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_QueueDescription_ForwardDeadLetteredMessagesTo" data-uid="Microsoft.Azure.ServiceBus.Management.QueueDescription.ForwardDeadLetteredMessagesTo">ForwardDeadLetteredMessagesTo</h4>
+  <div class="markdown level1 summary"><p>The path of the recipient entity to which all the dead-lettered messages of this queue are forwarded to.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ForwardDeadLetteredMessagesTo { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_Management_QueueDescription_ForwardDeadLetteredMessagesTo_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If set, user cannot manually receive dead-lettered messages from this queue. The destination
+entity must already exist.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_QueueDescription_ForwardTo.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.QueueDescription.ForwardTo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/QueueDescription.cs/#L200">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_QueueDescription_ForwardTo_" data-uid="Microsoft.Azure.ServiceBus.Management.QueueDescription.ForwardTo*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_QueueDescription_ForwardTo" data-uid="Microsoft.Azure.ServiceBus.Management.QueueDescription.ForwardTo">ForwardTo</h4>
+  <div class="markdown level1 summary"><p>The path of the recipient entity to which all the messages sent to the queue are forwarded to.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ForwardTo { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_Management_QueueDescription_ForwardTo_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If set, user cannot manually receive messages from this queue. The destination entity
+must be an already existing entity.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_QueueDescription_LockDuration.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.QueueDescription.LockDuration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/QueueDescription.cs/#L54">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_QueueDescription_LockDuration_" data-uid="Microsoft.Azure.ServiceBus.Management.QueueDescription.LockDuration*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_QueueDescription_LockDuration" data-uid="Microsoft.Azure.ServiceBus.Management.QueueDescription.LockDuration">LockDuration</h4>
+  <div class="markdown level1 summary"><p>Duration of a peek lock receive. i.e., the amount of time that the message is locked by a given receiver so that
+no other receiver receives the same message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeSpan LockDuration { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TimeSpan</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_Management_QueueDescription_LockDuration_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Max value is 5 minutes. Default value is 60 seconds.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_QueueDescription_MaxDeliveryCount.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.QueueDescription.MaxDeliveryCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/QueueDescription.cs/#L163">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_QueueDescription_MaxDeliveryCount_" data-uid="Microsoft.Azure.ServiceBus.Management.QueueDescription.MaxDeliveryCount*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_QueueDescription_MaxDeliveryCount" data-uid="Microsoft.Azure.ServiceBus.Management.QueueDescription.MaxDeliveryCount">MaxDeliveryCount</h4>
+  <div class="markdown level1 summary"><p>The maximum delivery count of a message before it is dead-lettered.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MaxDeliveryCount { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_Management_QueueDescription_MaxDeliveryCount_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The delivery count is increased when a message is received in <a class="xref" href="Microsoft.Azure.ServiceBus.ReceiveMode.html#Microsoft_Azure_ServiceBus_ReceiveMode_PeekLock">PeekLock</a> mode
+and didn't complete the message before the message lock expired.
+Default value is 10. Minimum value is 1.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_QueueDescription_MaxSizeInMB.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.QueueDescription.MaxSizeInMB%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/QueueDescription.cs/#L68">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_QueueDescription_MaxSizeInMB_" data-uid="Microsoft.Azure.ServiceBus.Management.QueueDescription.MaxSizeInMB*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_QueueDescription_MaxSizeInMB" data-uid="Microsoft.Azure.ServiceBus.Management.QueueDescription.MaxSizeInMB">MaxSizeInMB</h4>
+  <div class="markdown level1 summary"><p>The maximum size of the queue in megabytes, which is the size of memory allocated for the queue.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long MaxSizeInMB { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_Management_QueueDescription_MaxSizeInMB_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Default value is 1024.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_QueueDescription_Path.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.QueueDescription.Path%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/QueueDescription.cs/#L39">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_QueueDescription_Path_" data-uid="Microsoft.Azure.ServiceBus.Management.QueueDescription.Path*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_QueueDescription_Path" data-uid="Microsoft.Azure.ServiceBus.Management.QueueDescription.Path">Path</h4>
+  <div class="markdown level1 summary"><p>Path of the queue relative to the namespace base address.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Path { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_Management_QueueDescription_Path_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Max length is 260 chars. Cannot start or end with a slash.
+Cannot have restricted characters: '@','?','#','*'</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_QueueDescription_RequiresDuplicateDetection.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.QueueDescription.RequiresDuplicateDetection%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/QueueDescription.cs/#L76">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_QueueDescription_RequiresDuplicateDetection_" data-uid="Microsoft.Azure.ServiceBus.Management.QueueDescription.RequiresDuplicateDetection*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_QueueDescription_RequiresDuplicateDetection" data-uid="Microsoft.Azure.ServiceBus.Management.QueueDescription.RequiresDuplicateDetection">RequiresDuplicateDetection</h4>
+  <div class="markdown level1 summary"><p>This value indicates if the queue requires guard against duplicate messages. If true, duplicate messages having same
+<a class="xref" href="Microsoft.Azure.ServiceBus.Message.html#Microsoft_Azure_ServiceBus_Message_MessageId">MessageId</a> and sent to queue within duration of <a class="xref" href="Microsoft.Azure.ServiceBus.Management.QueueDescription.html#Microsoft_Azure_ServiceBus_Management_QueueDescription_DuplicateDetectionHistoryTimeWindow">DuplicateDetectionHistoryTimeWindow</a>
+will be discarded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RequiresDuplicateDetection { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_Management_QueueDescription_RequiresDuplicateDetection_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Defaults to false.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_QueueDescription_RequiresSession.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.QueueDescription.RequiresSession%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/QueueDescription.cs/#L85">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_QueueDescription_RequiresSession_" data-uid="Microsoft.Azure.ServiceBus.Management.QueueDescription.RequiresSession*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_QueueDescription_RequiresSession" data-uid="Microsoft.Azure.ServiceBus.Management.QueueDescription.RequiresSession">RequiresSession</h4>
+  <div class="markdown level1 summary"><p>This indicates whether the queue supports the concept of session. Sessionful-messages follow FIFO ordering.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RequiresSession { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_Management_QueueDescription_RequiresSession_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If true, the receiver can only recieve messages using <a class="xref" href="Microsoft.Azure.ServiceBus.SessionClient.html#Microsoft_Azure_ServiceBus_SessionClient_AcceptMessageSessionAsync">AcceptMessageSessionAsync()</a>.
+Defaults to false.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_QueueDescription_Status.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.QueueDescription.Status%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/QueueDescription.cs/#L193">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_QueueDescription_Status_" data-uid="Microsoft.Azure.ServiceBus.Management.QueueDescription.Status*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_QueueDescription_Status" data-uid="Microsoft.Azure.ServiceBus.Management.QueueDescription.Status">Status</h4>
+  <div class="markdown level1 summary"><p>The current status of the queue (Enabled / Disabled).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EntityStatus Status { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.Management.EntityStatus.html">EntityStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_Management_QueueDescription_Status_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>When an entity is disabled, that entity cannot send or receive messages.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_QueueDescription_UserMetadata.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.QueueDescription.UserMetadata%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/QueueDescription.cs/#L257">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_QueueDescription_UserMetadata_" data-uid="Microsoft.Azure.ServiceBus.Management.QueueDescription.UserMetadata*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_QueueDescription_UserMetadata" data-uid="Microsoft.Azure.ServiceBus.Management.QueueDescription.UserMetadata">UserMetadata</h4>
+  <div class="markdown level1 summary"><p>Custom metdata that user can associate with the description.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string UserMetadata { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_Management_QueueDescription_UserMetadata_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Cannot be null. Max length is 1024 chars.</p>
+</div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_QueueDescription_Equals_Microsoft_Azure_ServiceBus_Management_QueueDescription_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.QueueDescription.Equals(Microsoft.Azure.ServiceBus.Management.QueueDescription)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/QueueDescription.cs/#L293">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_QueueDescription_Equals_" data-uid="Microsoft.Azure.ServiceBus.Management.QueueDescription.Equals*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_QueueDescription_Equals_Microsoft_Azure_ServiceBus_Management_QueueDescription_" data-uid="Microsoft.Azure.ServiceBus.Management.QueueDescription.Equals(Microsoft.Azure.ServiceBus.Management.QueueDescription)">Equals(QueueDescription)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(QueueDescription otherDescription)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.Management.QueueDescription.html">QueueDescription</a></td>
+        <td><span class="parametername">otherDescription</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_QueueDescription_Equals_System_Object_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.QueueDescription.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/QueueDescription.cs/#L287">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_QueueDescription_Equals_" data-uid="Microsoft.Azure.ServiceBus.Management.QueueDescription.Equals*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_QueueDescription_Equals_System_Object_" data-uid="Microsoft.Azure.ServiceBus.Management.QueueDescription.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_QueueDescription_GetHashCode.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.QueueDescription.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/QueueDescription.cs/#L282">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_QueueDescription_GetHashCode_" data-uid="Microsoft.Azure.ServiceBus.Management.QueueDescription.GetHashCode*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_QueueDescription_GetHashCode" data-uid="Microsoft.Azure.ServiceBus.Management.QueueDescription.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_QueueDescription_op_Equality_Microsoft_Azure_ServiceBus_Management_QueueDescription_Microsoft_Azure_ServiceBus_Management_QueueDescription_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.QueueDescription.op_Equality(Microsoft.Azure.ServiceBus.Management.QueueDescription%2CMicrosoft.Azure.ServiceBus.Management.QueueDescription)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/QueueDescription.cs/#L322">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_QueueDescription_op_Equality_" data-uid="Microsoft.Azure.ServiceBus.Management.QueueDescription.op_Equality*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_QueueDescription_op_Equality_Microsoft_Azure_ServiceBus_Management_QueueDescription_Microsoft_Azure_ServiceBus_Management_QueueDescription_" data-uid="Microsoft.Azure.ServiceBus.Management.QueueDescription.op_Equality(Microsoft.Azure.ServiceBus.Management.QueueDescription,Microsoft.Azure.ServiceBus.Management.QueueDescription)">Equality(QueueDescription, QueueDescription)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(QueueDescription o1, QueueDescription o2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.Management.QueueDescription.html">QueueDescription</a></td>
+        <td><span class="parametername">o1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.Management.QueueDescription.html">QueueDescription</a></td>
+        <td><span class="parametername">o2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_QueueDescription_op_Inequality_Microsoft_Azure_ServiceBus_Management_QueueDescription_Microsoft_Azure_ServiceBus_Management_QueueDescription_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.QueueDescription.op_Inequality(Microsoft.Azure.ServiceBus.Management.QueueDescription%2CMicrosoft.Azure.ServiceBus.Management.QueueDescription)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/QueueDescription.cs/#L337">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_QueueDescription_op_Inequality_" data-uid="Microsoft.Azure.ServiceBus.Management.QueueDescription.op_Inequality*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_QueueDescription_op_Inequality_Microsoft_Azure_ServiceBus_Management_QueueDescription_Microsoft_Azure_ServiceBus_Management_QueueDescription_" data-uid="Microsoft.Azure.ServiceBus.Management.QueueDescription.op_Inequality(Microsoft.Azure.ServiceBus.Management.QueueDescription,Microsoft.Azure.ServiceBus.Management.QueueDescription)">Inequality(QueueDescription, QueueDescription)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(QueueDescription o1, QueueDescription o2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.Management.QueueDescription.html">QueueDescription</a></td>
+        <td><span class="parametername">o1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.Management.QueueDescription.html">QueueDescription</a></td>
+        <td><span class="parametername">o2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="../ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.AppConfigurationAzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AppConfigurationAzureClientBuilderExtensions_AddAppConfiguration__2___0_System_String___1_">AppConfigurationAzureClientBuilderExtensions.AddAppConfiguration&lt;TBuilder, TConfiguration&gt;(TBuilder, String, TConfiguration)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_QueueDescription.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.QueueDescription%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/QueueDescription.cs/#L13" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,790 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class NodeFile
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class NodeFile
+   ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Microsoft.Azure.Batch.NodeFile">
+  
+  
+  <h1 id="Microsoft_Azure_Batch_NodeFile" data-uid="Microsoft.Azure.Batch.NodeFile" class="text-break">Class NodeFile
+  </h1>
+  <div class="markdown level0 summary"><p>Exposes methods and properties to access files from Nodes or Tasks.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">NodeFile</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Microsoft.Azure.Batch.IInheritedBehaviors.html">IInheritedBehaviors</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.Azure.Batch.html">Microsoft.Azure.Batch</a></h6>
+  <h6><strong>Assembly</strong>: Microsoft.Azure.Batch.dll</h6>
+  <h5 id="Microsoft_Azure_Batch_NodeFile_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class NodeFile : object, IInheritedBehaviors</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Batch_NodeFile_CustomBehaviors.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.NodeFile.CustomBehaviors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/batch/Microsoft.Azure.Batch/src/NodeFile.cs/#L48">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Batch_NodeFile_CustomBehaviors_" data-uid="Microsoft.Azure.Batch.NodeFile.CustomBehaviors*"></a>
+  <h4 id="Microsoft_Azure_Batch_NodeFile_CustomBehaviors" data-uid="Microsoft.Azure.Batch.NodeFile.CustomBehaviors">CustomBehaviors</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a list of behaviors that modify or customize requests to the Batch service
+made via this <a class="xref" href="Microsoft.Azure.Batch.NodeFile.html">NodeFile</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IList&lt;BatchClientBehavior&gt; CustomBehaviors { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IList</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_NodeFile_CustomBehaviors_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>These behaviors are inherited by child objects.</p>
+<p>Modifications are applied in the order of the collection. The last write wins.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Batch_NodeFile_IsDirectory.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.NodeFile.IsDirectory%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/batch/Microsoft.Azure.Batch/src/NodeFile.cs/#L57">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Batch_NodeFile_IsDirectory_" data-uid="Microsoft.Azure.Batch.NodeFile.IsDirectory*"></a>
+  <h4 id="Microsoft_Azure_Batch_NodeFile_IsDirectory" data-uid="Microsoft.Azure.Batch.NodeFile.IsDirectory">IsDirectory</h4>
+  <div class="markdown level1 summary"><p>Gets the value that indicates whether the file is a directory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? IsDirectory { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Batch_NodeFile_Name.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.NodeFile.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/batch/Microsoft.Azure.Batch/src/NodeFile.cs/#L68">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Batch_NodeFile_Name_" data-uid="Microsoft.Azure.Batch.NodeFile.Name*"></a>
+  <h4 id="Microsoft_Azure_Batch_NodeFile_Name" data-uid="Microsoft.Azure.Batch.NodeFile.Name">Name</h4>
+  <div class="markdown level1 summary"><p>Gets the name of the file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Batch_NodeFile_Path.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.NodeFile.Path%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/batch/Microsoft.Azure.Batch/src/NodeFile.cs/#L80">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Batch_NodeFile_Path_" data-uid="Microsoft.Azure.Batch.NodeFile.Path*"></a>
+  <h4 id="Microsoft_Azure_Batch_NodeFile_Path" data-uid="Microsoft.Azure.Batch.NodeFile.Path">Path</h4>
+  <div class="markdown level1 summary"><p>Gets the path of the file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Path { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Batch_NodeFile_Properties.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.NodeFile.Properties%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/batch/Microsoft.Azure.Batch/src/NodeFile.cs/#L91">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Batch_NodeFile_Properties_" data-uid="Microsoft.Azure.Batch.NodeFile.Properties*"></a>
+  <h4 id="Microsoft_Azure_Batch_NodeFile_Properties" data-uid="Microsoft.Azure.Batch.NodeFile.Properties">Properties</h4>
+  <div class="markdown level1 summary"><p>Gets the FileProperties of the file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileProperties Properties { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.FileProperties.html">FileProperties</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Batch_NodeFile_Url.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.NodeFile.Url%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/batch/Microsoft.Azure.Batch/src/NodeFile.cs/#L103">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Batch_NodeFile_Url_" data-uid="Microsoft.Azure.Batch.NodeFile.Url*"></a>
+  <h4 id="Microsoft_Azure_Batch_NodeFile_Url" data-uid="Microsoft.Azure.Batch.NodeFile.Url">Url</h4>
+  <div class="markdown level1 summary"><p>Gets the URL of the file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Url { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Batch_NodeFile_CopyToStream_Stream_Microsoft_Azure_Batch_GetFileRequestByteRange_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.NodeFile.CopyToStream(Stream%2CMicrosoft.Azure.Batch.GetFileRequestByteRange%2CIEnumerable%7BMicrosoft.Azure.Batch.BatchClientBehavior%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/batch/Microsoft.Azure.Batch/src/NodeFile.cs/#L168">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Batch_NodeFile_CopyToStream_" data-uid="Microsoft.Azure.Batch.NodeFile.CopyToStream*"></a>
+  <h4 id="Microsoft_Azure_Batch_NodeFile_CopyToStream_Stream_Microsoft_Azure_Batch_GetFileRequestByteRange_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__" data-uid="Microsoft.Azure.Batch.NodeFile.CopyToStream(Stream,Microsoft.Azure.Batch.GetFileRequestByteRange,IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior})">CopyToStream(Stream, GetFileRequestByteRange, IEnumerable&lt;BatchClientBehavior&gt;)</h4>
+  <div class="markdown level1 summary"><p>Blocking call to copy the contents of the file into the given Stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void CopyToStream(Stream stream, GetFileRequestByteRange byteRange = null, IEnumerable&lt;BatchClientBehavior&gt; additionalBehaviors = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>The stream into which the contents of the file are copied.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.GetFileRequestByteRange.html">GetFileRequestByteRange</a></td>
+        <td><span class="parametername">byteRange</span></td>
+        <td><p>The file byte range to retrieve. If null, the entire file is retrieved.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
+        <td><span class="parametername">additionalBehaviors</span></td>
+        <td><p>A collection of BatchClientBehavior instances that are applied after the CustomBehaviors on the current object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Batch_NodeFile_CopyToStreamAsync_Stream_Microsoft_Azure_Batch_GetFileRequestByteRange_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.NodeFile.CopyToStreamAsync(Stream%2CMicrosoft.Azure.Batch.GetFileRequestByteRange%2CIEnumerable%7BMicrosoft.Azure.Batch.BatchClientBehavior%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/batch/Microsoft.Azure.Batch/src/NodeFile.cs/#L157">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Batch_NodeFile_CopyToStreamAsync_" data-uid="Microsoft.Azure.Batch.NodeFile.CopyToStreamAsync*"></a>
+  <h4 id="Microsoft_Azure_Batch_NodeFile_CopyToStreamAsync_Stream_Microsoft_Azure_Batch_GetFileRequestByteRange_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__CancellationToken_" data-uid="Microsoft.Azure.Batch.NodeFile.CopyToStreamAsync(Stream,Microsoft.Azure.Batch.GetFileRequestByteRange,IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior},CancellationToken)">CopyToStreamAsync(Stream, GetFileRequestByteRange, IEnumerable&lt;BatchClientBehavior&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Begins an asynchronous call to copy the contents of the file into the given Stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract Task CopyToStreamAsync(Stream stream, GetFileRequestByteRange byteRange = null, IEnumerable&lt;BatchClientBehavior&gt; additionalBehaviors = null, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>The stream into which the contents of the file are copied.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.GetFileRequestByteRange.html">GetFileRequestByteRange</a></td>
+        <td><span class="parametername">byteRange</span></td>
+        <td><p>The file byte range to retrieve. If null, the entire file is retrieved.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
+        <td><span class="parametername">additionalBehaviors</span></td>
+        <td><p>A collection of BatchClientBehavior instances that are applied after the CustomBehaviors on the current object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <see cref="!:CancellationToken"></see> for controlling the lifetime of the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>A <see cref="!:System.Threading.Tasks.Task"></see> object that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Batch_NodeFile_Delete_System_Nullable_System_Boolean__IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.NodeFile.Delete(System.Nullable%7BSystem.Boolean%7D%2CIEnumerable%7BMicrosoft.Azure.Batch.BatchClientBehavior%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/batch/Microsoft.Azure.Batch/src/NodeFile.cs/#L196">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Batch_NodeFile_Delete_" data-uid="Microsoft.Azure.Batch.NodeFile.Delete*"></a>
+  <h4 id="Microsoft_Azure_Batch_NodeFile_Delete_System_Nullable_System_Boolean__IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__" data-uid="Microsoft.Azure.Batch.NodeFile.Delete(System.Nullable{System.Boolean},IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior})">Delete(Nullable&lt;Boolean&gt;, IEnumerable&lt;BatchClientBehavior&gt;)</h4>
+  <div class="markdown level1 summary"><p>Blocking call to delete the file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Delete(bool? recursive = null, IEnumerable&lt;BatchClientBehavior&gt; additionalBehaviors = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">recursive</span></td>
+        <td><p>If the file-path parameter represents a directory instead of a file, you can set the optional
+recursive parameter to true to delete the directory and all of the files and subdirectories in it. If recursive is false
+then the directory must be empty or deletion will fail.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
+        <td><span class="parametername">additionalBehaviors</span></td>
+        <td><p>A collection of BatchClientBehavior instances that are applied after the CustomBehaviors on the current object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Batch_NodeFile_DeleteAsync_System_Nullable_System_Boolean__IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.NodeFile.DeleteAsync(System.Nullable%7BSystem.Boolean%7D%2CIEnumerable%7BMicrosoft.Azure.Batch.BatchClientBehavior%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/batch/Microsoft.Azure.Batch/src/NodeFile.cs/#L185">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Batch_NodeFile_DeleteAsync_" data-uid="Microsoft.Azure.Batch.NodeFile.DeleteAsync*"></a>
+  <h4 id="Microsoft_Azure_Batch_NodeFile_DeleteAsync_System_Nullable_System_Boolean__IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__CancellationToken_" data-uid="Microsoft.Azure.Batch.NodeFile.DeleteAsync(System.Nullable{System.Boolean},IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior},CancellationToken)">DeleteAsync(Nullable&lt;Boolean&gt;, IEnumerable&lt;BatchClientBehavior&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Begins an asynchronous call to delete the file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract Task DeleteAsync(bool? recursive = null, IEnumerable&lt;BatchClientBehavior&gt; additionalBehaviors = null, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">recursive</span></td>
+        <td><p>If the file-path parameter represents a directory instead of a file, you can set the optional
+recursive parameter to true to delete the directory and all of the files and subdirectories in it. If recursive is false
+then the directory must be empty or deletion will fail.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
+        <td><span class="parametername">additionalBehaviors</span></td>
+        <td><p>A collection of BatchClientBehavior instances that are applied after the CustomBehaviors on the current object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <see cref="!:CancellationToken"></see> for controlling the lifetime of the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>A <see cref="!:System.Threading.Tasks.Task"></see> object that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Batch_NodeFile_ReadAsString_Encoding_Microsoft_Azure_Batch_GetFileRequestByteRange_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.NodeFile.ReadAsString(Encoding%2CMicrosoft.Azure.Batch.GetFileRequestByteRange%2CIEnumerable%7BMicrosoft.Azure.Batch.BatchClientBehavior%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/batch/Microsoft.Azure.Batch/src/NodeFile.cs/#L140">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Batch_NodeFile_ReadAsString_" data-uid="Microsoft.Azure.Batch.NodeFile.ReadAsString*"></a>
+  <h4 id="Microsoft_Azure_Batch_NodeFile_ReadAsString_Encoding_Microsoft_Azure_Batch_GetFileRequestByteRange_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__" data-uid="Microsoft.Azure.Batch.NodeFile.ReadAsString(Encoding,Microsoft.Azure.Batch.GetFileRequestByteRange,IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior})">ReadAsString(Encoding, GetFileRequestByteRange, IEnumerable&lt;BatchClientBehavior&gt;)</h4>
+  <div class="markdown level1 summary"><p>Blocking call to return the contents of the file as a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ReadAsString(Encoding encoding = null, GetFileRequestByteRange byteRange = null, IEnumerable&lt;BatchClientBehavior&gt; additionalBehaviors = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Encoding</span></td>
+        <td><span class="parametername">encoding</span></td>
+        <td><p>The encoding used to interpret the file data. If no value or null is specified, UTF8 is used.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.GetFileRequestByteRange.html">GetFileRequestByteRange</a></td>
+        <td><span class="parametername">byteRange</span></td>
+        <td><p>The file byte range to retrieve. If null, the entire file is retrieved.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
+        <td><span class="parametername">additionalBehaviors</span></td>
+        <td><p>A collection of BatchClientBehavior instances that are applied after the CustomBehaviors on the current object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A string containing the contents of the file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Batch_NodeFile_ReadAsStringAsync_Encoding_Microsoft_Azure_Batch_GetFileRequestByteRange_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.NodeFile.ReadAsStringAsync(Encoding%2CMicrosoft.Azure.Batch.GetFileRequestByteRange%2CIEnumerable%7BMicrosoft.Azure.Batch.BatchClientBehavior%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/batch/Microsoft.Azure.Batch/src/NodeFile.cs/#L119">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Batch_NodeFile_ReadAsStringAsync_" data-uid="Microsoft.Azure.Batch.NodeFile.ReadAsStringAsync*"></a>
+  <h4 id="Microsoft_Azure_Batch_NodeFile_ReadAsStringAsync_Encoding_Microsoft_Azure_Batch_GetFileRequestByteRange_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__CancellationToken_" data-uid="Microsoft.Azure.Batch.NodeFile.ReadAsStringAsync(Encoding,Microsoft.Azure.Batch.GetFileRequestByteRange,IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior},CancellationToken)">ReadAsStringAsync(Encoding, GetFileRequestByteRange, IEnumerable&lt;BatchClientBehavior&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Begins asynchronous call to return the contents of the file as a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;string&gt; ReadAsStringAsync(Encoding encoding = null, GetFileRequestByteRange byteRange = null, IEnumerable&lt;BatchClientBehavior&gt; additionalBehaviors = null, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Encoding</span></td>
+        <td><span class="parametername">encoding</span></td>
+        <td><p>The encoding used to interpret the file data. If no value or null is specified, UTF8 is used.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.GetFileRequestByteRange.html">GetFileRequestByteRange</a></td>
+        <td><span class="parametername">byteRange</span></td>
+        <td><p>The file byte range to retrieve. If null, the entire file is retrieved.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
+        <td><span class="parametername">additionalBehaviors</span></td>
+        <td><p>A collection of BatchClientBehavior instances that are applied after the CustomBehaviors on the current object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <see cref="!:CancellationToken"></see> for controlling the lifetime of the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><p>A <see cref="!:System.Threading.Tasks.Task"></see> object that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Batch_NodeFile_Refresh_Microsoft_Azure_Batch_DetailLevel_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.NodeFile.Refresh(Microsoft.Azure.Batch.DetailLevel%2CIEnumerable%7BMicrosoft.Azure.Batch.BatchClientBehavior%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/batch/Microsoft.Azure.Batch/src/NodeFile.cs/#L220">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Batch_NodeFile_Refresh_" data-uid="Microsoft.Azure.Batch.NodeFile.Refresh*"></a>
+  <h4 id="Microsoft_Azure_Batch_NodeFile_Refresh_Microsoft_Azure_Batch_DetailLevel_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__" data-uid="Microsoft.Azure.Batch.NodeFile.Refresh(Microsoft.Azure.Batch.DetailLevel,IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior})">Refresh(DetailLevel, IEnumerable&lt;BatchClientBehavior&gt;)</h4>
+  <div class="markdown level1 summary"><p>Refreshes the current <a class="xref" href="Microsoft.Azure.Batch.NodeFile.html">NodeFile</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Refresh(DetailLevel detailLevel = null, IEnumerable&lt;BatchClientBehavior&gt; additionalBehaviors = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.DetailLevel.html">DetailLevel</a></td>
+        <td><span class="parametername">detailLevel</span></td>
+        <td><p>The detail level for the refresh.  If a detail level which omits the <a class="xref" href="Microsoft.Azure.Batch.NodeFile.html#Microsoft_Azure_Batch_NodeFile_Name">Name</a> property is specified, refresh will fail.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
+        <td><span class="parametername">additionalBehaviors</span></td>
+        <td><p>A collection of <a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a> instances that are applied to the Batch service request after the <a class="xref" href="Microsoft.Azure.Batch.NodeFile.html#Microsoft_Azure_Batch_NodeFile_CustomBehaviors">CustomBehaviors</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Batch_NodeFile_RefreshAsync_Microsoft_Azure_Batch_DetailLevel_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.NodeFile.RefreshAsync(Microsoft.Azure.Batch.DetailLevel%2CIEnumerable%7BMicrosoft.Azure.Batch.BatchClientBehavior%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/batch/Microsoft.Azure.Batch/src/NodeFile.cs/#L213">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Batch_NodeFile_RefreshAsync_" data-uid="Microsoft.Azure.Batch.NodeFile.RefreshAsync*"></a>
+  <h4 id="Microsoft_Azure_Batch_NodeFile_RefreshAsync_Microsoft_Azure_Batch_DetailLevel_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__CancellationToken_" data-uid="Microsoft.Azure.Batch.NodeFile.RefreshAsync(Microsoft.Azure.Batch.DetailLevel,IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior},CancellationToken)">RefreshAsync(DetailLevel, IEnumerable&lt;BatchClientBehavior&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Refreshes the current <a class="xref" href="Microsoft.Azure.Batch.NodeFile.html">NodeFile</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract Task RefreshAsync(DetailLevel detailLevel = null, IEnumerable&lt;BatchClientBehavior&gt; additionalBehaviors = null, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.DetailLevel.html">DetailLevel</a></td>
+        <td><span class="parametername">detailLevel</span></td>
+        <td><p>The detail level for the refresh.  If a detail level which omits the <a class="xref" href="Microsoft.Azure.Batch.NodeFile.html#Microsoft_Azure_Batch_NodeFile_Name">Name</a> property is specified, refresh will fail.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
+        <td><span class="parametername">additionalBehaviors</span></td>
+        <td><p>A collection of <a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a> instances that are applied to the Batch service request after the <a class="xref" href="Microsoft.Azure.Batch.NodeFile.html#Microsoft_Azure_Batch_NodeFile_CustomBehaviors">CustomBehaviors</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <see cref="!:CancellationToken"></see> for controlling the lifetime of the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>A <see cref="!:Task"></see> representing the asynchronous refresh operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.IInheritedBehaviors.html">IInheritedBehaviors</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="../ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.AppConfigurationAzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AppConfigurationAzureClientBuilderExtensions_AddAppConfiguration__2___0_System_String___1_">AppConfigurationAzureClientBuilderExtensions.AddAppConfiguration&lt;TBuilder, TConfiguration&gt;(TBuilder, String, TConfiguration)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Batch_NodeFile.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.NodeFile%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/batch/Microsoft.Azure.Batch/src/NodeFile.cs/#L18" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

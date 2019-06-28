@@ -1,0 +1,2272 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class JobOperationsExtensions
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class JobOperationsExtensions
+   ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions">
+  
+  
+  <h1 id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions" class="text-break">Class JobOperationsExtensions
+  </h1>
+  <div class="markdown level0 summary"><p>Operations for managing jobs against HDInsight clusters.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">JobOperationsExtensions</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.Azure.HDInsight.Job.html">Microsoft.Azure.HDInsight.Job</a></h6>
+  <h6><strong>Assembly</strong>: Microsoft.Azure.HDInsight.Job.dll</h6>
+  <h5 id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class JobOperationsExtensions : object</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_Get_Microsoft_Azure_HDInsight_Job_IJobOperations_System_String_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.Get(Microsoft.Azure.HDInsight.Job.IJobOperations%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/hdinsight/Microsoft.Azure.HDInsight.Job/src/Generated/JobOperationsExtensions.cs/#L36">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_Get_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.Get*"></a>
+  <h4 id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_Get_Microsoft_Azure_HDInsight_Job_IJobOperations_System_String_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.Get(Microsoft.Azure.HDInsight.Job.IJobOperations,System.String)">Get(IJobOperations, String)</h4>
+  <div class="markdown level1 summary"><p>Gets job details from the specified HDInsight cluster.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static JobDetailRootJsonObject Get(this IJobOperations operations, string jobId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.IJobOperations.html">IJobOperations</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">jobId</span></td>
+        <td><p>The id of the job.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.Models.JobDetailRootJsonObject.html">JobDetailRootJsonObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_GetAppState_Microsoft_Azure_HDInsight_Job_IJobOperations_System_String_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.GetAppState(Microsoft.Azure.HDInsight.Job.IJobOperations%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/hdinsight/Microsoft.Azure.HDInsight.Job/src/Generated/JobOperationsExtensions.cs/#L342">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_GetAppState_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.GetAppState*"></a>
+  <h4 id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_GetAppState_Microsoft_Azure_HDInsight_Job_IJobOperations_System_String_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.GetAppState(Microsoft.Azure.HDInsight.Job.IJobOperations,System.String)">GetAppState(IJobOperations, String)</h4>
+  <div class="markdown level1 summary"><p>Gets application state from the specified HDInsight cluster.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AppState GetAppState(this IJobOperations operations, string appId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.IJobOperations.html">IJobOperations</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">appId</span></td>
+        <td><p>The id of the job.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.Models.AppState.html">AppState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_GetAppStateAsync_Microsoft_Azure_HDInsight_Job_IJobOperations_System_String_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.GetAppStateAsync(Microsoft.Azure.HDInsight.Job.IJobOperations%2CSystem.String%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/hdinsight/Microsoft.Azure.HDInsight.Job/src/Generated/JobOperationsExtensions.cs/#L359">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_GetAppStateAsync_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.GetAppStateAsync*"></a>
+  <h4 id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_GetAppStateAsync_Microsoft_Azure_HDInsight_Job_IJobOperations_System_String_CancellationToken_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.GetAppStateAsync(Microsoft.Azure.HDInsight.Job.IJobOperations,System.String,CancellationToken)">GetAppStateAsync(IJobOperations, String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets application state from the specified HDInsight cluster.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;AppState&gt; GetAppStateAsync(this IJobOperations operations, string appId, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.IJobOperations.html">IJobOperations</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">appId</span></td>
+        <td><p>The id of the job.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Microsoft.Azure.HDInsight.Job.Models.AppState.html">AppState</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_GetAsync_Microsoft_Azure_HDInsight_Job_IJobOperations_System_String_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.GetAsync(Microsoft.Azure.HDInsight.Job.IJobOperations%2CSystem.String%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/hdinsight/Microsoft.Azure.HDInsight.Job/src/Generated/JobOperationsExtensions.cs/#L53">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_GetAsync_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.GetAsync*"></a>
+  <h4 id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_GetAsync_Microsoft_Azure_HDInsight_Job_IJobOperations_System_String_CancellationToken_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.GetAsync(Microsoft.Azure.HDInsight.Job.IJobOperations,System.String,CancellationToken)">GetAsync(IJobOperations, String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets job details from the specified HDInsight cluster.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;JobDetailRootJsonObject&gt; GetAsync(this IJobOperations operations, string jobId, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.IJobOperations.html">IJobOperations</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">jobId</span></td>
+        <td><p>The id of the job.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Microsoft.Azure.HDInsight.Job.Models.JobDetailRootJsonObject.html">JobDetailRootJsonObject</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_GetJobErrorLogs_Microsoft_Azure_HDInsight_Job_IJobOperations_System_String_Microsoft_Azure_HDInsight_Job_Models_IStorageAccess_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.GetJobErrorLogs(Microsoft.Azure.HDInsight.Job.IJobOperations%2CSystem.String%2CMicrosoft.Azure.HDInsight.Job.Models.IStorageAccess)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/hdinsight/Microsoft.Azure.HDInsight.Job/src/Customizations/JobOperationsExtensions.Customizations.cs/#L279">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_GetJobErrorLogs_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.GetJobErrorLogs*"></a>
+  <h4 id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_GetJobErrorLogs_Microsoft_Azure_HDInsight_Job_IJobOperations_System_String_Microsoft_Azure_HDInsight_Job_Models_IStorageAccess_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.GetJobErrorLogs(Microsoft.Azure.HDInsight.Job.IJobOperations,System.String,Microsoft.Azure.HDInsight.Job.Models.IStorageAccess)">GetJobErrorLogs(IJobOperations, String, IStorageAccess)</h4>
+  <div class="markdown level1 summary"><p>Gets the error logs from the execution of an individual jobDetails.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Stream GetJobErrorLogs(this IJobOperations operations, string jobId, IStorageAccess storageAccess)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.IJobOperations.html">IJobOperations</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>Reference to the
+Microsoft.Azure.HDInsight.Job.IJobOperations.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">jobId</span></td>
+        <td><p>Required. The id of the job.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.Models.IStorageAccess.html">IStorageAccess</a></td>
+        <td><span class="parametername">storageAccess</span></td>
+        <td><p>Required. The storage account object of type IStorageAccess.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><p>The error logs of an individual jobDetails by jobId.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_GetJobErrorLogsAsync_Microsoft_Azure_HDInsight_Job_IJobOperations_System_String_Microsoft_Azure_HDInsight_Job_Models_IStorageAccess_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.GetJobErrorLogsAsync(Microsoft.Azure.HDInsight.Job.IJobOperations%2CSystem.String%2CMicrosoft.Azure.HDInsight.Job.Models.IStorageAccess)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/hdinsight/Microsoft.Azure.HDInsight.Job/src/Customizations/JobOperationsExtensions.Customizations.cs/#L308">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_GetJobErrorLogsAsync_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.GetJobErrorLogsAsync*"></a>
+  <h4 id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_GetJobErrorLogsAsync_Microsoft_Azure_HDInsight_Job_IJobOperations_System_String_Microsoft_Azure_HDInsight_Job_Models_IStorageAccess_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.GetJobErrorLogsAsync(Microsoft.Azure.HDInsight.Job.IJobOperations,System.String,Microsoft.Azure.HDInsight.Job.Models.IStorageAccess)">GetJobErrorLogsAsync(IJobOperations, String, IStorageAccess)</h4>
+  <div class="markdown level1 summary"><p>Gets the error logs from the execution of an individual jobDetails.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;Stream&gt; GetJobErrorLogsAsync(this IJobOperations operations, string jobId, IStorageAccess storageAccess)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.IJobOperations.html">IJobOperations</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>Reference to the
+Microsoft.Azure.HDInsight.Job.IJobOperations.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">jobId</span></td>
+        <td><p>Required. The id of the job.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.Models.IStorageAccess.html">IStorageAccess</a></td>
+        <td><span class="parametername">storageAccess</span></td>
+        <td><p>Required. The storage account object of type IStorageAccess.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">Stream</span>&gt;</td>
+        <td><p>The error logs of an individual jobDetails by jobId.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_GetJobOutput_Microsoft_Azure_HDInsight_Job_IJobOperations_System_String_Microsoft_Azure_HDInsight_Job_Models_IStorageAccess_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.GetJobOutput(Microsoft.Azure.HDInsight.Job.IJobOperations%2CSystem.String%2CMicrosoft.Azure.HDInsight.Job.Models.IStorageAccess)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/hdinsight/Microsoft.Azure.HDInsight.Job/src/Customizations/JobOperationsExtensions.Customizations.cs/#L229">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_GetJobOutput_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.GetJobOutput*"></a>
+  <h4 id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_GetJobOutput_Microsoft_Azure_HDInsight_Job_IJobOperations_System_String_Microsoft_Azure_HDInsight_Job_Models_IStorageAccess_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.GetJobOutput(Microsoft.Azure.HDInsight.Job.IJobOperations,System.String,Microsoft.Azure.HDInsight.Job.Models.IStorageAccess)">GetJobOutput(IJobOperations, String, IStorageAccess)</h4>
+  <div class="markdown level1 summary"><p>Gets the output from the execution of an individual jobDetails.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Stream GetJobOutput(this IJobOperations operations, string jobId, IStorageAccess storageAccess)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.IJobOperations.html">IJobOperations</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>Reference to the
+Microsoft.Azure.HDInsight.Job.IJobOperations.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">jobId</span></td>
+        <td><p>Required. The id of the job.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.Models.IStorageAccess.html">IStorageAccess</a></td>
+        <td><span class="parametername">storageAccess</span></td>
+        <td><p>Required. The storage account object of type IStorageAccess.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><p>The output of an individual jobDetails by jobId.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_GetJobOutputAsync_Microsoft_Azure_HDInsight_Job_IJobOperations_System_String_Microsoft_Azure_HDInsight_Job_Models_IStorageAccess_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.GetJobOutputAsync(Microsoft.Azure.HDInsight.Job.IJobOperations%2CSystem.String%2CMicrosoft.Azure.HDInsight.Job.Models.IStorageAccess)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/hdinsight/Microsoft.Azure.HDInsight.Job/src/Customizations/JobOperationsExtensions.Customizations.cs/#L257">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_GetJobOutputAsync_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.GetJobOutputAsync*"></a>
+  <h4 id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_GetJobOutputAsync_Microsoft_Azure_HDInsight_Job_IJobOperations_System_String_Microsoft_Azure_HDInsight_Job_Models_IStorageAccess_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.GetJobOutputAsync(Microsoft.Azure.HDInsight.Job.IJobOperations,System.String,Microsoft.Azure.HDInsight.Job.Models.IStorageAccess)">GetJobOutputAsync(IJobOperations, String, IStorageAccess)</h4>
+  <div class="markdown level1 summary"><p>Gets the output from the execution of an individual jobDetails.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;Stream&gt; GetJobOutputAsync(this IJobOperations operations, string jobId, IStorageAccess storageAccess)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.IJobOperations.html">IJobOperations</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>Reference to the
+Microsoft.Azure.HDInsight.Job.IJobOperations.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">jobId</span></td>
+        <td><p>Required. The id of the job.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.Models.IStorageAccess.html">IStorageAccess</a></td>
+        <td><span class="parametername">storageAccess</span></td>
+        <td><p>Required. The storage account object of type IStorageAccess.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">Stream</span>&gt;</td>
+        <td><p>The output of an individual jobDetails by jobId.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_Kill_Microsoft_Azure_HDInsight_Job_IJobOperations_System_String_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.Kill(Microsoft.Azure.HDInsight.Job.IJobOperations%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/hdinsight/Microsoft.Azure.HDInsight.Job/src/Generated/JobOperationsExtensions.cs/#L70">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_Kill_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.Kill*"></a>
+  <h4 id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_Kill_Microsoft_Azure_HDInsight_Job_IJobOperations_System_String_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.Kill(Microsoft.Azure.HDInsight.Job.IJobOperations,System.String)">Kill(IJobOperations, String)</h4>
+  <div class="markdown level1 summary"><p>Initiates cancel on given running job in the specified HDInsight.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static JobDetailRootJsonObject Kill(this IJobOperations operations, string jobId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.IJobOperations.html">IJobOperations</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">jobId</span></td>
+        <td><p>The id of the job.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.Models.JobDetailRootJsonObject.html">JobDetailRootJsonObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_KillAsync_Microsoft_Azure_HDInsight_Job_IJobOperations_System_String_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.KillAsync(Microsoft.Azure.HDInsight.Job.IJobOperations%2CSystem.String%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/hdinsight/Microsoft.Azure.HDInsight.Job/src/Generated/JobOperationsExtensions.cs/#L87">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_KillAsync_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.KillAsync*"></a>
+  <h4 id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_KillAsync_Microsoft_Azure_HDInsight_Job_IJobOperations_System_String_CancellationToken_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.KillAsync(Microsoft.Azure.HDInsight.Job.IJobOperations,System.String,CancellationToken)">KillAsync(IJobOperations, String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Initiates cancel on given running job in the specified HDInsight.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;JobDetailRootJsonObject&gt; KillAsync(this IJobOperations operations, string jobId, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.IJobOperations.html">IJobOperations</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">jobId</span></td>
+        <td><p>The id of the job.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Microsoft.Azure.HDInsight.Job.Models.JobDetailRootJsonObject.html">JobDetailRootJsonObject</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_List_Microsoft_Azure_HDInsight_Job_IJobOperations_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.List(Microsoft.Azure.HDInsight.Job.IJobOperations)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/hdinsight/Microsoft.Azure.HDInsight.Job/src/Generated/JobOperationsExtensions.cs/#L101">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_List_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.List*"></a>
+  <h4 id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_List_Microsoft_Azure_HDInsight_Job_IJobOperations_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.List(Microsoft.Azure.HDInsight.Job.IJobOperations)">List(IJobOperations)</h4>
+  <div class="markdown level1 summary"><p>Gets the list of jobs from the specified HDInsight cluster.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IList&lt;JobListJsonObject&gt; List(this IJobOperations operations)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.IJobOperations.html">IJobOperations</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IList</span>&lt;<a class="xref" href="Microsoft.Azure.HDInsight.Job.Models.JobListJsonObject.html">JobListJsonObject</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_ListAfterJobId_Microsoft_Azure_HDInsight_Job_IJobOperations_System_String_System_Nullable_System_Int32__.md&amp;value=---%0Auid%3A%20Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.ListAfterJobId(Microsoft.Azure.HDInsight.Job.IJobOperations%2CSystem.String%2CSystem.Nullable%7BSystem.Int32%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/hdinsight/Microsoft.Azure.HDInsight.Job/src/Generated/JobOperationsExtensions.cs/#L135">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_ListAfterJobId_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.ListAfterJobId*"></a>
+  <h4 id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_ListAfterJobId_Microsoft_Azure_HDInsight_Job_IJobOperations_System_String_System_Nullable_System_Int32__" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.ListAfterJobId(Microsoft.Azure.HDInsight.Job.IJobOperations,System.String,System.Nullable{System.Int32})">ListAfterJobId(IJobOperations, String, Nullable&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p>Gets numrecords Of Jobs after jobid from the specified HDInsight cluster.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IList&lt;JobListJsonObject&gt; ListAfterJobId(this IJobOperations operations, string jobid = null, int? numrecords = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.IJobOperations.html">IJobOperations</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">jobid</span></td>
+        <td><p>JobId from where to list jobs.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">numrecords</span></td>
+        <td><p>Number of jobs to fetch.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IList</span>&lt;<a class="xref" href="Microsoft.Azure.HDInsight.Job.Models.JobListJsonObject.html">JobListJsonObject</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_ListAfterJobIdAsync_Microsoft_Azure_HDInsight_Job_IJobOperations_System_String_System_Nullable_System_Int32__CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.ListAfterJobIdAsync(Microsoft.Azure.HDInsight.Job.IJobOperations%2CSystem.String%2CSystem.Nullable%7BSystem.Int32%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/hdinsight/Microsoft.Azure.HDInsight.Job/src/Generated/JobOperationsExtensions.cs/#L155">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_ListAfterJobIdAsync_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.ListAfterJobIdAsync*"></a>
+  <h4 id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_ListAfterJobIdAsync_Microsoft_Azure_HDInsight_Job_IJobOperations_System_String_System_Nullable_System_Int32__CancellationToken_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.ListAfterJobIdAsync(Microsoft.Azure.HDInsight.Job.IJobOperations,System.String,System.Nullable{System.Int32},CancellationToken)">ListAfterJobIdAsync(IJobOperations, String, Nullable&lt;Int32&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets numrecords Of Jobs after jobid from the specified HDInsight cluster.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;IList&lt;JobListJsonObject&gt;&gt; ListAfterJobIdAsync(this IJobOperations operations, string jobid = null, int? numrecords = null, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.IJobOperations.html">IJobOperations</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">jobid</span></td>
+        <td><p>JobId from where to list jobs.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">numrecords</span></td>
+        <td><p>Number of jobs to fetch.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IList</span>&lt;<a class="xref" href="Microsoft.Azure.HDInsight.Job.Models.JobListJsonObject.html">JobListJsonObject</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_ListAsync_Microsoft_Azure_HDInsight_Job_IJobOperations_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.ListAsync(Microsoft.Azure.HDInsight.Job.IJobOperations%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/hdinsight/Microsoft.Azure.HDInsight.Job/src/Generated/JobOperationsExtensions.cs/#L115">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_ListAsync_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.ListAsync*"></a>
+  <h4 id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_ListAsync_Microsoft_Azure_HDInsight_Job_IJobOperations_CancellationToken_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.ListAsync(Microsoft.Azure.HDInsight.Job.IJobOperations,CancellationToken)">ListAsync(IJobOperations, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets the list of jobs from the specified HDInsight cluster.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;IList&lt;JobListJsonObject&gt;&gt; ListAsync(this IJobOperations operations, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.IJobOperations.html">IJobOperations</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IList</span>&lt;<a class="xref" href="Microsoft.Azure.HDInsight.Job.Models.JobListJsonObject.html">JobListJsonObject</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitHiveJob_Microsoft_Azure_HDInsight_Job_IJobOperations_Microsoft_Azure_HDInsight_Job_Models_HiveJobSubmissionParameters_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitHiveJob(Microsoft.Azure.HDInsight.Job.IJobOperations%2CMicrosoft.Azure.HDInsight.Job.Models.HiveJobSubmissionParameters)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/hdinsight/Microsoft.Azure.HDInsight.Job/src/Customizations/JobOperationsExtensions.Customizations.cs/#L31">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitHiveJob_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitHiveJob*"></a>
+  <h4 id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitHiveJob_Microsoft_Azure_HDInsight_Job_IJobOperations_Microsoft_Azure_HDInsight_Job_Models_HiveJobSubmissionParameters_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitHiveJob(Microsoft.Azure.HDInsight.Job.IJobOperations,Microsoft.Azure.HDInsight.Job.Models.HiveJobSubmissionParameters)">SubmitHiveJob(IJobOperations, HiveJobSubmissionParameters)</h4>
+  <div class="markdown level1 summary"><p>Submits a Hive job to an HDInsight cluster.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static JobSubmissionJsonResponse SubmitHiveJob(this IJobOperations operations, HiveJobSubmissionParameters parameters)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.IJobOperations.html">IJobOperations</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>Reference to the
+Microsoft.Azure.HDInsight.Job.IJobOperations.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.Models.HiveJobSubmissionParameters.html">HiveJobSubmissionParameters</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>Required. Hive job parameters.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.Models.JobSubmissionJsonResponse.html">JobSubmissionJsonResponse</a></td>
+        <td><p>The Create Job operation response.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitHiveJob_Microsoft_Azure_HDInsight_Job_IJobOperations_Stream_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitHiveJob(Microsoft.Azure.HDInsight.Job.IJobOperations%2CStream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/hdinsight/Microsoft.Azure.HDInsight.Job/src/Generated/JobOperationsExtensions.cs/#L172">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitHiveJob_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitHiveJob*"></a>
+  <h4 id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitHiveJob_Microsoft_Azure_HDInsight_Job_IJobOperations_Stream_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitHiveJob(Microsoft.Azure.HDInsight.Job.IJobOperations,Stream)">SubmitHiveJob(IJobOperations, Stream)</h4>
+  <div class="markdown level1 summary"><p>Submits a Hive job to an HDInsight cluster.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static JobSubmissionJsonResponse SubmitHiveJob(this IJobOperations operations, Stream content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.IJobOperations.html">IJobOperations</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">content</span></td>
+        <td><p>The content of the Hive job request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.Models.JobSubmissionJsonResponse.html">JobSubmissionJsonResponse</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitHiveJobAsync_Microsoft_Azure_HDInsight_Job_IJobOperations_Microsoft_Azure_HDInsight_Job_Models_HiveJobSubmissionParameters_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitHiveJobAsync(Microsoft.Azure.HDInsight.Job.IJobOperations%2CMicrosoft.Azure.HDInsight.Job.Models.HiveJobSubmissionParameters%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/hdinsight/Microsoft.Azure.HDInsight.Job/src/Customizations/JobOperationsExtensions.Customizations.cs/#L49">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitHiveJobAsync_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitHiveJobAsync*"></a>
+  <h4 id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitHiveJobAsync_Microsoft_Azure_HDInsight_Job_IJobOperations_Microsoft_Azure_HDInsight_Job_Models_HiveJobSubmissionParameters_CancellationToken_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitHiveJobAsync(Microsoft.Azure.HDInsight.Job.IJobOperations,Microsoft.Azure.HDInsight.Job.Models.HiveJobSubmissionParameters,CancellationToken)">SubmitHiveJobAsync(IJobOperations, HiveJobSubmissionParameters, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Submits a Hive job to an HDInsight cluster.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;JobSubmissionJsonResponse&gt; SubmitHiveJobAsync(this IJobOperations operations, HiveJobSubmissionParameters parameters, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.IJobOperations.html">IJobOperations</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>Reference to the
+Microsoft.Azure.HDInsight.Job.IJobOperations.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.Models.HiveJobSubmissionParameters.html">HiveJobSubmissionParameters</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>Required. Hive job parameters.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Microsoft.Azure.HDInsight.Job.Models.JobSubmissionJsonResponse.html">JobSubmissionJsonResponse</a>&gt;</td>
+        <td><p>The Create Job operation response.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitHiveJobAsync_Microsoft_Azure_HDInsight_Job_IJobOperations_Stream_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitHiveJobAsync(Microsoft.Azure.HDInsight.Job.IJobOperations%2CStream%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/hdinsight/Microsoft.Azure.HDInsight.Job/src/Generated/JobOperationsExtensions.cs/#L189">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitHiveJobAsync_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitHiveJobAsync*"></a>
+  <h4 id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitHiveJobAsync_Microsoft_Azure_HDInsight_Job_IJobOperations_Stream_CancellationToken_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitHiveJobAsync(Microsoft.Azure.HDInsight.Job.IJobOperations,Stream,CancellationToken)">SubmitHiveJobAsync(IJobOperations, Stream, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Submits a Hive job to an HDInsight cluster.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;JobSubmissionJsonResponse&gt; SubmitHiveJobAsync(this IJobOperations operations, Stream content, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.IJobOperations.html">IJobOperations</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">content</span></td>
+        <td><p>The content of the Hive job request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Microsoft.Azure.HDInsight.Job.Models.JobSubmissionJsonResponse.html">JobSubmissionJsonResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitMapReduceJob_Microsoft_Azure_HDInsight_Job_IJobOperations_Microsoft_Azure_HDInsight_Job_Models_MapReduceJobSubmissionParameters_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitMapReduceJob(Microsoft.Azure.HDInsight.Job.IJobOperations%2CMicrosoft.Azure.HDInsight.Job.Models.MapReduceJobSubmissionParameters)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/hdinsight/Microsoft.Azure.HDInsight.Job/src/Customizations/JobOperationsExtensions.Customizations.cs/#L70">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitMapReduceJob_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitMapReduceJob*"></a>
+  <h4 id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitMapReduceJob_Microsoft_Azure_HDInsight_Job_IJobOperations_Microsoft_Azure_HDInsight_Job_Models_MapReduceJobSubmissionParameters_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitMapReduceJob(Microsoft.Azure.HDInsight.Job.IJobOperations,Microsoft.Azure.HDInsight.Job.Models.MapReduceJobSubmissionParameters)">SubmitMapReduceJob(IJobOperations, MapReduceJobSubmissionParameters)</h4>
+  <div class="markdown level1 summary"><p>Submits a MapReduce job to an HDInsight cluster.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static JobSubmissionJsonResponse SubmitMapReduceJob(this IJobOperations operations, MapReduceJobSubmissionParameters parameters)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.IJobOperations.html">IJobOperations</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>Reference to the
+Microsoft.Azure.HDInsight.Job.IJobOperations.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.Models.MapReduceJobSubmissionParameters.html">MapReduceJobSubmissionParameters</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>Required. MapReduce job parameters.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.Models.JobSubmissionJsonResponse.html">JobSubmissionJsonResponse</a></td>
+        <td><p>The Create Job operation response.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitMapReduceJob_Microsoft_Azure_HDInsight_Job_IJobOperations_Stream_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitMapReduceJob(Microsoft.Azure.HDInsight.Job.IJobOperations%2CStream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/hdinsight/Microsoft.Azure.HDInsight.Job/src/Generated/JobOperationsExtensions.cs/#L206">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitMapReduceJob_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitMapReduceJob*"></a>
+  <h4 id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitMapReduceJob_Microsoft_Azure_HDInsight_Job_IJobOperations_Stream_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitMapReduceJob(Microsoft.Azure.HDInsight.Job.IJobOperations,Stream)">SubmitMapReduceJob(IJobOperations, Stream)</h4>
+  <div class="markdown level1 summary"><p>Submits a MapReduce job to an HDInsight cluster.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static JobSubmissionJsonResponse SubmitMapReduceJob(this IJobOperations operations, Stream content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.IJobOperations.html">IJobOperations</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">content</span></td>
+        <td><p>The content of the MapReduce job request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.Models.JobSubmissionJsonResponse.html">JobSubmissionJsonResponse</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitMapReduceJobAsync_Microsoft_Azure_HDInsight_Job_IJobOperations_Microsoft_Azure_HDInsight_Job_Models_MapReduceJobSubmissionParameters_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitMapReduceJobAsync(Microsoft.Azure.HDInsight.Job.IJobOperations%2CMicrosoft.Azure.HDInsight.Job.Models.MapReduceJobSubmissionParameters%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/hdinsight/Microsoft.Azure.HDInsight.Job/src/Customizations/JobOperationsExtensions.Customizations.cs/#L88">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitMapReduceJobAsync_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitMapReduceJobAsync*"></a>
+  <h4 id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitMapReduceJobAsync_Microsoft_Azure_HDInsight_Job_IJobOperations_Microsoft_Azure_HDInsight_Job_Models_MapReduceJobSubmissionParameters_CancellationToken_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitMapReduceJobAsync(Microsoft.Azure.HDInsight.Job.IJobOperations,Microsoft.Azure.HDInsight.Job.Models.MapReduceJobSubmissionParameters,CancellationToken)">SubmitMapReduceJobAsync(IJobOperations, MapReduceJobSubmissionParameters, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Submits a MapReduce job to an HDInsight cluster.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;JobSubmissionJsonResponse&gt; SubmitMapReduceJobAsync(this IJobOperations operations, MapReduceJobSubmissionParameters parameters, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.IJobOperations.html">IJobOperations</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>Reference to the
+Microsoft.Azure.HDInsight.Job.IJobOperations.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.Models.MapReduceJobSubmissionParameters.html">MapReduceJobSubmissionParameters</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>Required. MapReduce job parameters.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Microsoft.Azure.HDInsight.Job.Models.JobSubmissionJsonResponse.html">JobSubmissionJsonResponse</a>&gt;</td>
+        <td><p>The Create Job operation response.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitMapReduceJobAsync_Microsoft_Azure_HDInsight_Job_IJobOperations_Stream_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitMapReduceJobAsync(Microsoft.Azure.HDInsight.Job.IJobOperations%2CStream%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/hdinsight/Microsoft.Azure.HDInsight.Job/src/Generated/JobOperationsExtensions.cs/#L223">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitMapReduceJobAsync_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitMapReduceJobAsync*"></a>
+  <h4 id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitMapReduceJobAsync_Microsoft_Azure_HDInsight_Job_IJobOperations_Stream_CancellationToken_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitMapReduceJobAsync(Microsoft.Azure.HDInsight.Job.IJobOperations,Stream,CancellationToken)">SubmitMapReduceJobAsync(IJobOperations, Stream, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Submits a MapReduce job to an HDInsight cluster.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;JobSubmissionJsonResponse&gt; SubmitMapReduceJobAsync(this IJobOperations operations, Stream content, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.IJobOperations.html">IJobOperations</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">content</span></td>
+        <td><p>The content of the MapReduce job request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Microsoft.Azure.HDInsight.Job.Models.JobSubmissionJsonResponse.html">JobSubmissionJsonResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitMapReduceStreamingJob_Microsoft_Azure_HDInsight_Job_IJobOperations_Microsoft_Azure_HDInsight_Job_Models_MapReduceStreamingJobSubmissionParameters_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitMapReduceStreamingJob(Microsoft.Azure.HDInsight.Job.IJobOperations%2CMicrosoft.Azure.HDInsight.Job.Models.MapReduceStreamingJobSubmissionParameters)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/hdinsight/Microsoft.Azure.HDInsight.Job/src/Customizations/JobOperationsExtensions.Customizations.cs/#L109">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitMapReduceStreamingJob_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitMapReduceStreamingJob*"></a>
+  <h4 id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitMapReduceStreamingJob_Microsoft_Azure_HDInsight_Job_IJobOperations_Microsoft_Azure_HDInsight_Job_Models_MapReduceStreamingJobSubmissionParameters_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitMapReduceStreamingJob(Microsoft.Azure.HDInsight.Job.IJobOperations,Microsoft.Azure.HDInsight.Job.Models.MapReduceStreamingJobSubmissionParameters)">SubmitMapReduceStreamingJob(IJobOperations, MapReduceStreamingJobSubmissionParameters)</h4>
+  <div class="markdown level1 summary"><p>Submits a MapReduce streaming job to an HDInsight cluster.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static JobSubmissionJsonResponse SubmitMapReduceStreamingJob(this IJobOperations operations, MapReduceStreamingJobSubmissionParameters parameters)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.IJobOperations.html">IJobOperations</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>Reference to the
+Microsoft.Azure.HDInsight.Job.IJobOperations.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.Models.MapReduceStreamingJobSubmissionParameters.html">MapReduceStreamingJobSubmissionParameters</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>Required. MapReduce job parameters.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.Models.JobSubmissionJsonResponse.html">JobSubmissionJsonResponse</a></td>
+        <td><p>The Create Job operation response.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitMapReduceStreamingJob_Microsoft_Azure_HDInsight_Job_IJobOperations_Stream_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitMapReduceStreamingJob(Microsoft.Azure.HDInsight.Job.IJobOperations%2CStream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/hdinsight/Microsoft.Azure.HDInsight.Job/src/Generated/JobOperationsExtensions.cs/#L240">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitMapReduceStreamingJob_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitMapReduceStreamingJob*"></a>
+  <h4 id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitMapReduceStreamingJob_Microsoft_Azure_HDInsight_Job_IJobOperations_Stream_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitMapReduceStreamingJob(Microsoft.Azure.HDInsight.Job.IJobOperations,Stream)">SubmitMapReduceStreamingJob(IJobOperations, Stream)</h4>
+  <div class="markdown level1 summary"><p>Submits a MapReduce streaming job to an HDInsight cluster.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static JobSubmissionJsonResponse SubmitMapReduceStreamingJob(this IJobOperations operations, Stream content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.IJobOperations.html">IJobOperations</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">content</span></td>
+        <td><p>The content of the MapReduce job request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.Models.JobSubmissionJsonResponse.html">JobSubmissionJsonResponse</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitMapReduceStreamingJobAsync_Microsoft_Azure_HDInsight_Job_IJobOperations_Microsoft_Azure_HDInsight_Job_Models_MapReduceStreamingJobSubmissionParameters_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitMapReduceStreamingJobAsync(Microsoft.Azure.HDInsight.Job.IJobOperations%2CMicrosoft.Azure.HDInsight.Job.Models.MapReduceStreamingJobSubmissionParameters%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/hdinsight/Microsoft.Azure.HDInsight.Job/src/Customizations/JobOperationsExtensions.Customizations.cs/#L127">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitMapReduceStreamingJobAsync_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitMapReduceStreamingJobAsync*"></a>
+  <h4 id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitMapReduceStreamingJobAsync_Microsoft_Azure_HDInsight_Job_IJobOperations_Microsoft_Azure_HDInsight_Job_Models_MapReduceStreamingJobSubmissionParameters_CancellationToken_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitMapReduceStreamingJobAsync(Microsoft.Azure.HDInsight.Job.IJobOperations,Microsoft.Azure.HDInsight.Job.Models.MapReduceStreamingJobSubmissionParameters,CancellationToken)">SubmitMapReduceStreamingJobAsync(IJobOperations, MapReduceStreamingJobSubmissionParameters, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Submits a MapReduce streaming job to an HDInsight cluster.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;JobSubmissionJsonResponse&gt; SubmitMapReduceStreamingJobAsync(this IJobOperations operations, MapReduceStreamingJobSubmissionParameters parameters, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.IJobOperations.html">IJobOperations</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>Reference to the
+Microsoft.Azure.HDInsight.Job.IJobOperations.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.Models.MapReduceStreamingJobSubmissionParameters.html">MapReduceStreamingJobSubmissionParameters</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>Required. MapReduce job parameters.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Microsoft.Azure.HDInsight.Job.Models.JobSubmissionJsonResponse.html">JobSubmissionJsonResponse</a>&gt;</td>
+        <td><p>The Create Job operation response.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitMapReduceStreamingJobAsync_Microsoft_Azure_HDInsight_Job_IJobOperations_Stream_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitMapReduceStreamingJobAsync(Microsoft.Azure.HDInsight.Job.IJobOperations%2CStream%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/hdinsight/Microsoft.Azure.HDInsight.Job/src/Generated/JobOperationsExtensions.cs/#L257">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitMapReduceStreamingJobAsync_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitMapReduceStreamingJobAsync*"></a>
+  <h4 id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitMapReduceStreamingJobAsync_Microsoft_Azure_HDInsight_Job_IJobOperations_Stream_CancellationToken_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitMapReduceStreamingJobAsync(Microsoft.Azure.HDInsight.Job.IJobOperations,Stream,CancellationToken)">SubmitMapReduceStreamingJobAsync(IJobOperations, Stream, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Submits a MapReduce streaming job to an HDInsight cluster.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;JobSubmissionJsonResponse&gt; SubmitMapReduceStreamingJobAsync(this IJobOperations operations, Stream content, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.IJobOperations.html">IJobOperations</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">content</span></td>
+        <td><p>The content of the MapReduce job request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Microsoft.Azure.HDInsight.Job.Models.JobSubmissionJsonResponse.html">JobSubmissionJsonResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitPigJob_Microsoft_Azure_HDInsight_Job_IJobOperations_Microsoft_Azure_HDInsight_Job_Models_PigJobSubmissionParameters_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitPigJob(Microsoft.Azure.HDInsight.Job.IJobOperations%2CMicrosoft.Azure.HDInsight.Job.Models.PigJobSubmissionParameters)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/hdinsight/Microsoft.Azure.HDInsight.Job/src/Customizations/JobOperationsExtensions.Customizations.cs/#L148">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitPigJob_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitPigJob*"></a>
+  <h4 id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitPigJob_Microsoft_Azure_HDInsight_Job_IJobOperations_Microsoft_Azure_HDInsight_Job_Models_PigJobSubmissionParameters_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitPigJob(Microsoft.Azure.HDInsight.Job.IJobOperations,Microsoft.Azure.HDInsight.Job.Models.PigJobSubmissionParameters)">SubmitPigJob(IJobOperations, PigJobSubmissionParameters)</h4>
+  <div class="markdown level1 summary"><p>Submits a Pig job to an HDInsight cluster.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static JobSubmissionJsonResponse SubmitPigJob(this IJobOperations operations, PigJobSubmissionParameters parameters)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.IJobOperations.html">IJobOperations</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>Reference to the
+Microsoft.Azure.HDInsight.Job.IJobOperations.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.Models.PigJobSubmissionParameters.html">PigJobSubmissionParameters</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>Required. Pig job parameters.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.Models.JobSubmissionJsonResponse.html">JobSubmissionJsonResponse</a></td>
+        <td><p>The Create Job operation response.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitPigJob_Microsoft_Azure_HDInsight_Job_IJobOperations_Stream_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitPigJob(Microsoft.Azure.HDInsight.Job.IJobOperations%2CStream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/hdinsight/Microsoft.Azure.HDInsight.Job/src/Generated/JobOperationsExtensions.cs/#L274">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitPigJob_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitPigJob*"></a>
+  <h4 id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitPigJob_Microsoft_Azure_HDInsight_Job_IJobOperations_Stream_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitPigJob(Microsoft.Azure.HDInsight.Job.IJobOperations,Stream)">SubmitPigJob(IJobOperations, Stream)</h4>
+  <div class="markdown level1 summary"><p>Submits a Pig job to an HDInsight cluster.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static JobSubmissionJsonResponse SubmitPigJob(this IJobOperations operations, Stream content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.IJobOperations.html">IJobOperations</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">content</span></td>
+        <td><p>The content of the Pig job request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.Models.JobSubmissionJsonResponse.html">JobSubmissionJsonResponse</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitPigJobAsync_Microsoft_Azure_HDInsight_Job_IJobOperations_Microsoft_Azure_HDInsight_Job_Models_PigJobSubmissionParameters_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitPigJobAsync(Microsoft.Azure.HDInsight.Job.IJobOperations%2CMicrosoft.Azure.HDInsight.Job.Models.PigJobSubmissionParameters%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/hdinsight/Microsoft.Azure.HDInsight.Job/src/Customizations/JobOperationsExtensions.Customizations.cs/#L166">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitPigJobAsync_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitPigJobAsync*"></a>
+  <h4 id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitPigJobAsync_Microsoft_Azure_HDInsight_Job_IJobOperations_Microsoft_Azure_HDInsight_Job_Models_PigJobSubmissionParameters_CancellationToken_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitPigJobAsync(Microsoft.Azure.HDInsight.Job.IJobOperations,Microsoft.Azure.HDInsight.Job.Models.PigJobSubmissionParameters,CancellationToken)">SubmitPigJobAsync(IJobOperations, PigJobSubmissionParameters, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Submits a Pig job to an HDInsight cluster.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;JobSubmissionJsonResponse&gt; SubmitPigJobAsync(this IJobOperations operations, PigJobSubmissionParameters parameters, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.IJobOperations.html">IJobOperations</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>Reference to the
+Microsoft.Azure.HDInsight.Job.IJobOperations.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.Models.PigJobSubmissionParameters.html">PigJobSubmissionParameters</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>Required. Pig job parameters.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Microsoft.Azure.HDInsight.Job.Models.JobSubmissionJsonResponse.html">JobSubmissionJsonResponse</a>&gt;</td>
+        <td><p>The Create Job operation response.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitPigJobAsync_Microsoft_Azure_HDInsight_Job_IJobOperations_Stream_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitPigJobAsync(Microsoft.Azure.HDInsight.Job.IJobOperations%2CStream%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/hdinsight/Microsoft.Azure.HDInsight.Job/src/Generated/JobOperationsExtensions.cs/#L291">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitPigJobAsync_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitPigJobAsync*"></a>
+  <h4 id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitPigJobAsync_Microsoft_Azure_HDInsight_Job_IJobOperations_Stream_CancellationToken_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitPigJobAsync(Microsoft.Azure.HDInsight.Job.IJobOperations,Stream,CancellationToken)">SubmitPigJobAsync(IJobOperations, Stream, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Submits a Pig job to an HDInsight cluster.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;JobSubmissionJsonResponse&gt; SubmitPigJobAsync(this IJobOperations operations, Stream content, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.IJobOperations.html">IJobOperations</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">content</span></td>
+        <td><p>The content of the Pig job request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Microsoft.Azure.HDInsight.Job.Models.JobSubmissionJsonResponse.html">JobSubmissionJsonResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitSqoopJob_Microsoft_Azure_HDInsight_Job_IJobOperations_Microsoft_Azure_HDInsight_Job_Models_SqoopJobSubmissionParameters_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitSqoopJob(Microsoft.Azure.HDInsight.Job.IJobOperations%2CMicrosoft.Azure.HDInsight.Job.Models.SqoopJobSubmissionParameters)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/hdinsight/Microsoft.Azure.HDInsight.Job/src/Customizations/JobOperationsExtensions.Customizations.cs/#L187">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitSqoopJob_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitSqoopJob*"></a>
+  <h4 id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitSqoopJob_Microsoft_Azure_HDInsight_Job_IJobOperations_Microsoft_Azure_HDInsight_Job_Models_SqoopJobSubmissionParameters_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitSqoopJob(Microsoft.Azure.HDInsight.Job.IJobOperations,Microsoft.Azure.HDInsight.Job.Models.SqoopJobSubmissionParameters)">SubmitSqoopJob(IJobOperations, SqoopJobSubmissionParameters)</h4>
+  <div class="markdown level1 summary"><p>Submits a Sqoop job to an HDInsight cluster.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static JobSubmissionJsonResponse SubmitSqoopJob(this IJobOperations operations, SqoopJobSubmissionParameters parameters)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.IJobOperations.html">IJobOperations</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>Reference to the
+Microsoft.Azure.HDInsight.Job.IJobOperations.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.Models.SqoopJobSubmissionParameters.html">SqoopJobSubmissionParameters</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>Required. Sqoop job parameters.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.Models.JobSubmissionJsonResponse.html">JobSubmissionJsonResponse</a></td>
+        <td><p>The Create Job operation response.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitSqoopJob_Microsoft_Azure_HDInsight_Job_IJobOperations_Stream_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitSqoopJob(Microsoft.Azure.HDInsight.Job.IJobOperations%2CStream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/hdinsight/Microsoft.Azure.HDInsight.Job/src/Generated/JobOperationsExtensions.cs/#L308">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitSqoopJob_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitSqoopJob*"></a>
+  <h4 id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitSqoopJob_Microsoft_Azure_HDInsight_Job_IJobOperations_Stream_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitSqoopJob(Microsoft.Azure.HDInsight.Job.IJobOperations,Stream)">SubmitSqoopJob(IJobOperations, Stream)</h4>
+  <div class="markdown level1 summary"><p>Submits a Sqoop job to an HDInsight cluster.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static JobSubmissionJsonResponse SubmitSqoopJob(this IJobOperations operations, Stream content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.IJobOperations.html">IJobOperations</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">content</span></td>
+        <td><p>The content of the Sqoop job request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.Models.JobSubmissionJsonResponse.html">JobSubmissionJsonResponse</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitSqoopJobAsync_Microsoft_Azure_HDInsight_Job_IJobOperations_Microsoft_Azure_HDInsight_Job_Models_SqoopJobSubmissionParameters_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitSqoopJobAsync(Microsoft.Azure.HDInsight.Job.IJobOperations%2CMicrosoft.Azure.HDInsight.Job.Models.SqoopJobSubmissionParameters%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/hdinsight/Microsoft.Azure.HDInsight.Job/src/Customizations/JobOperationsExtensions.Customizations.cs/#L205">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitSqoopJobAsync_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitSqoopJobAsync*"></a>
+  <h4 id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitSqoopJobAsync_Microsoft_Azure_HDInsight_Job_IJobOperations_Microsoft_Azure_HDInsight_Job_Models_SqoopJobSubmissionParameters_CancellationToken_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitSqoopJobAsync(Microsoft.Azure.HDInsight.Job.IJobOperations,Microsoft.Azure.HDInsight.Job.Models.SqoopJobSubmissionParameters,CancellationToken)">SubmitSqoopJobAsync(IJobOperations, SqoopJobSubmissionParameters, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Submits a Sqoop job to an HDInsight cluster.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;JobSubmissionJsonResponse&gt; SubmitSqoopJobAsync(this IJobOperations operations, SqoopJobSubmissionParameters parameters, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.IJobOperations.html">IJobOperations</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>Reference to the
+Microsoft.Azure.HDInsight.Job.IJobOperations.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.Models.SqoopJobSubmissionParameters.html">SqoopJobSubmissionParameters</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>Required. Sqoop job parameters.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Microsoft.Azure.HDInsight.Job.Models.JobSubmissionJsonResponse.html">JobSubmissionJsonResponse</a>&gt;</td>
+        <td><p>The Create Job operation response.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitSqoopJobAsync_Microsoft_Azure_HDInsight_Job_IJobOperations_Stream_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitSqoopJobAsync(Microsoft.Azure.HDInsight.Job.IJobOperations%2CStream%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/hdinsight/Microsoft.Azure.HDInsight.Job/src/Generated/JobOperationsExtensions.cs/#L325">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitSqoopJobAsync_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitSqoopJobAsync*"></a>
+  <h4 id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_SubmitSqoopJobAsync_Microsoft_Azure_HDInsight_Job_IJobOperations_Stream_CancellationToken_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.SubmitSqoopJobAsync(Microsoft.Azure.HDInsight.Job.IJobOperations,Stream,CancellationToken)">SubmitSqoopJobAsync(IJobOperations, Stream, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Submits a Sqoop job to an HDInsight cluster.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;JobSubmissionJsonResponse&gt; SubmitSqoopJobAsync(this IJobOperations operations, Stream content, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.IJobOperations.html">IJobOperations</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">content</span></td>
+        <td><p>The content of the Sqoop job request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Microsoft.Azure.HDInsight.Job.Models.JobSubmissionJsonResponse.html">JobSubmissionJsonResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_WaitForJobCompletion_Microsoft_Azure_HDInsight_Job_IJobOperations_System_String_System_Nullable_TimeSpan__System_Nullable_TimeSpan__.md&amp;value=---%0Auid%3A%20Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.WaitForJobCompletion(Microsoft.Azure.HDInsight.Job.IJobOperations%2CSystem.String%2CSystem.Nullable%7BTimeSpan%7D%2CSystem.Nullable%7BTimeSpan%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/hdinsight/Microsoft.Azure.HDInsight.Job/src/Customizations/JobOperationsExtensions.Customizations.cs/#L329">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_WaitForJobCompletion_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.WaitForJobCompletion*"></a>
+  <h4 id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_WaitForJobCompletion_Microsoft_Azure_HDInsight_Job_IJobOperations_System_String_System_Nullable_TimeSpan__System_Nullable_TimeSpan__" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.WaitForJobCompletion(Microsoft.Azure.HDInsight.Job.IJobOperations,System.String,System.Nullable{TimeSpan},System.Nullable{TimeSpan})">WaitForJobCompletion(IJobOperations, String, Nullable&lt;TimeSpan&gt;, Nullable&lt;TimeSpan&gt;)</h4>
+  <div class="markdown level1 summary"><p>Wait for completion of a Job.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static JobDetailRootJsonObject WaitForJobCompletion(this IJobOperations operations, string jobId, TimeSpan? duration = null, TimeSpan? waitInterval = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.IJobOperations.html">IJobOperations</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">jobId</span></td>
+        <td><p>Required. The id of the job.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">TimeSpan</span>&gt;</td>
+        <td><span class="parametername">duration</span></td>
+        <td><p>Optional. The maximum duration to wait for completion of job before returning to client. If not passed then wait till job is completed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">TimeSpan</span>&gt;</td>
+        <td><span class="parametername">waitInterval</span></td>
+        <td><p>Optional. The interval to poll for job status. The default value is set from DefaultPollInterval property of HDInsight job management client.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.Models.JobDetailRootJsonObject.html">JobDetailRootJsonObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_WaitForJobCompletionAsync_Microsoft_Azure_HDInsight_Job_IJobOperations_System_String_System_Nullable_TimeSpan__System_Nullable_TimeSpan__.md&amp;value=---%0Auid%3A%20Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.WaitForJobCompletionAsync(Microsoft.Azure.HDInsight.Job.IJobOperations%2CSystem.String%2CSystem.Nullable%7BTimeSpan%7D%2CSystem.Nullable%7BTimeSpan%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/hdinsight/Microsoft.Azure.HDInsight.Job/src/Customizations/JobOperationsExtensions.Customizations.cs/#L353">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_WaitForJobCompletionAsync_" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.WaitForJobCompletionAsync*"></a>
+  <h4 id="Microsoft_Azure_HDInsight_Job_JobOperationsExtensions_WaitForJobCompletionAsync_Microsoft_Azure_HDInsight_Job_IJobOperations_System_String_System_Nullable_TimeSpan__System_Nullable_TimeSpan__" data-uid="Microsoft.Azure.HDInsight.Job.JobOperationsExtensions.WaitForJobCompletionAsync(Microsoft.Azure.HDInsight.Job.IJobOperations,System.String,System.Nullable{TimeSpan},System.Nullable{TimeSpan})">WaitForJobCompletionAsync(IJobOperations, String, Nullable&lt;TimeSpan&gt;, Nullable&lt;TimeSpan&gt;)</h4>
+  <div class="markdown level1 summary"><p>Wait for completion of a Job.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;JobDetailRootJsonObject&gt; WaitForJobCompletionAsync(this IJobOperations operations, string jobId, TimeSpan? duration = null, TimeSpan? waitInterval = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.HDInsight.Job.IJobOperations.html">IJobOperations</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">jobId</span></td>
+        <td><p>Required. The id of the job.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">TimeSpan</span>&gt;</td>
+        <td><span class="parametername">duration</span></td>
+        <td><p>Optional. The maximum duration to wait for completion of job before returning to client. If not passed then wait till job is completed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">TimeSpan</span>&gt;</td>
+        <td><span class="parametername">waitInterval</span></td>
+        <td><p>Optional. The interval to poll for job status. The default value is set from DefaultPollInterval property of HDInsight job management client.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Microsoft.Azure.HDInsight.Job.Models.JobDetailRootJsonObject.html">JobDetailRootJsonObject</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_HDInsight_Job_JobOperationsExtensions.md&amp;value=---%0Auid%3A%20Microsoft.Azure.HDInsight.Job.JobOperationsExtensions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/hdinsight/Microsoft.Azure.HDInsight.Job/src/Generated/JobOperationsExtensions.cs/#L25" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

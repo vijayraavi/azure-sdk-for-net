@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Microsoft Azure Keyvault SDK for .NET </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Microsoft Azure Keyvault SDK for .NET ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="microsoft-azure-keyvault-sdk-for-net">Microsoft Azure Keyvault SDK for .NET</h1>
+
+<p>The Microsoft Azure Key Vault SDK for .NET allows you to build secure Azure applications that can access secrets, keys, and certificates that a encrypted at rest with hardware security modules.</p>
+<p>This directory contains the open source subset of the .NET SDK. For documentation of the
+complete Azure SDK, please see the <a href="http://azure.microsoft.com/en-us/develop/net/">Microsoft Azure .NET Developer Center</a>.</p>
+<h2 id="features">Features</h2>
+<ul>
+<li>Secrets
+<ul>
+<li>Create, Read, Update, Delete, and Recover Secrets</li>
+<li>Backup and Restore Secrets</li>
+</ul>
+</li>
+<li>Keys
+<ul>
+<li>Create, Read, Update, Delete, and Recover Keys</li>
+<li>Import, Backup and Restore Keys</li>
+<li>Encrypt, Decrypt, Wrap, Unwrap, Sign and Verify cryptographic Key operations</li>
+</ul>
+</li>
+<li>Certificates
+<ul>
+<li>Create, Read, Update, Delete, and Recover Certificates</li>
+<li>Create, Read, Update, and Delete certificate renewal properties</li>
+<li>Create, Read, Update, and Delete certificate issuers</li>
+</ul>
+</li>
+<li>Storage Accounts
+<ul>
+<li>Add, Read, Update, and Remove Storage Accounts managed by the Key Vault</li>
+<li>Create, Read, Update, and Delete SAS definitions</li>
+</ul>
+</li>
+</ul>
+<h2 id="getting-started">Getting Started</h2>
+<p>The complete Microsoft Azure SDK can be downloaded from the <a href="http://azure.microsoft.com/en-us/downloads/?sdk=net">Microsoft Azure Downloads Page</a> and ships with support for building deployment packages, integrating with tooling, rich command line tooling, and more.</p>
+<p>Please review <a href="https://docs.microsoft.com/en-us/azure/key-vault/key-vault-get-started">Get started with Azure Key Vault</a> if you are not familiar with Azure Key Vault.</p>
+<p>For the best development experience, developers should use the official Microsoft NuGet packages for libraries. NuGet packages are regularly updated with new functionality and hotfixes.</p>
+<h2 id="requirements">Requirements</h2>
+<ul>
+<li>Microsoft Azure Subscription: To call Microsoft Azure services, you need to first <a href="https://account.windowsazure.com/Home/Index">create an account</a>. Sign up for a free trial or use your MSDN subscriber benefits.</li>
+<li>Hosting: To host your .NET code in Microsoft Azure, you additionally need to download the full Microsoft Azure SDK for .NET - which includes packaging,
+emulation, and deployment tools, or use Microsoft Azure Web Sites to deploy ASP.NET web applications.</li>
+</ul>
+<h2 id="download-packages">Download Packages</h2>
+<ul>
+<li><a href="https://www.nuget.org/packages/Microsoft.Azure.KeyVault">Microsoft.Azure.KeyVault</a></li>
+<li><a href="https://www.nuget.org/packages/Microsoft.Azure.KeyVault.Core">Microsoft.Azure.KeyVault.Core</a></li>
+<li><a href="https://www.nuget.org/packages/Microsoft.Azure.KeyVault.WebKey">Microsoft.Azure.KeyVault.WebKey</a></li>
+<li><a href="https://www.nuget.org/packages/Microsoft.Azure.KeyVault.Cryptography">Microsoft.Azure.KeyVault.Cryptography</a></li>
+<li><a href="https://www.nuget.org/packages/Microsoft.Azure.KeyVault.Extensions">Microsoft.Azure.KeyVault.Extensions</a></li>
+</ul>
+<h2 id="versioning-information">Versioning Information</h2>
+<ul>
+<li>The Key Vault SDK uses <a href="http://semver.org/">the semantic versioning scheme.</a></li>
+</ul>
+<h2 id="target-frameworks">Target Frameworks</h2>
+<p>For information about the target frameworks of the Key Vault SDK, please refer to the <a href="https://github.com/azure/azure-sdk-for-net#target-frameworks">Target Frameworks</a> of the Microsoft Azure SDK for .NET.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>The Key Vault Client Library shares the same <a href="https://github.com/azure/azure-sdk-for-net#prerequisites">Prerequisites</a> as the Microsoft Azure SDK for .NET.</p>
+<h2 id="to-build">To Build</h2>
+<p>For information on building the Azure Key Vault SDK, please see <a href="https://github.com/azure/azure-sdk-for-net#to-build">Building the Microsoft Azure SDK for .NET</a>.</p>
+<h2 id="running-tests">Running Tests</h2>
+<p>Tests for the Azure Key Vault SDK are run in the same manner as the rest of the tests for the Azure SDK for .NET.  For information please see how to <a href="https://github.com/azure/azure-sdk-for-net#to-run-the-tests">run tests</a>.</p>
+<h2 id="samples">Samples</h2>
+<p>Code samples for the Azure Key Vault SDK are available on <a href="https://azure.microsoft.com/en-us/resources/samples/?sort=0&amp;service=key-vault&amp;platform=dotnet">Azure Code Samples</a>.</p>
+<h2 id="additional-documentation">Additional Documentation</h2>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/key-vault/">Azure Key Vault General Documentation</a></li>
+<li><a href="https://docs.microsoft.com/en-us/rest/api/keyvault/">Azure Key Vault REST API Reference</a></li>
+<li><a href="https://docs.microsoft.com/en-us/dotnet/api/overview/azure/key-vault?view=azure-dotnet">Azure Key Vault SDK for .NET Documentation</a></li>
+</ul>
+<h2 id="contributing">Contributing</h2>
+<p>This project has adopted the <a href="https://opensource.microsoft.com/codeofconduct/">Microsoft Open Source Code of Conduct</a>. For more information
+see the <a href="https://opensource.microsoft.com/codeofconduct/faq/">Code of Conduct FAQ</a> or contact <a href="mailto:opencode@microsoft.com">opencode@microsoft.com</a>
+with any additional questions or comments.</p>
+<p><img src="https://azure-sdk-impressions.azurewebsites.net/api/impressions/azure-sdk-for-net%2Fsrc%2FSDKs%2FKeyVault%2Fdata-plane%2FREADME.png" alt="Impressions"></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/docfx_project/articles/-keyvault-Microsoft.Azure.KeyVault-README.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

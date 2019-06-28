@@ -1,0 +1,717 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AppendBlobClient
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AppendBlobClient
+   ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Azure.Storage.Blobs.Specialized.AppendBlobClient">
+  
+  
+  <h1 id="Azure_Storage_Blobs_Specialized_AppendBlobClient" data-uid="Azure.Storage.Blobs.Specialized.AppendBlobClient" class="text-break">Class AppendBlobClient
+  </h1>
+  <div class="markdown level0 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.AppendBlobClient.html">AppendBlobClient</a> allows you to manipulate Azure
+Storage append blobs.</p>
+<p>An append blob is comprised of blocks and is optimized for append
+operations.  When you modify an append blob, blocks are added to the
+end of the blob only, via the <a class="xref" href="Azure.Storage.Blobs.Specialized.AppendBlobClient.html#Azure_Storage_Blobs_Specialized_AppendBlobClient_AppendBlockAsync_Stream_System_Byte___System_Nullable_Azure_Storage_Blobs_AppendBlobAccessConditions__IProgress_Azure_Storage_Common_StorageProgress__CancellationToken_">AppendBlockAsync(Stream, Byte[], Nullable&lt;AppendBlobAccessConditions&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</a>
+operation.  Updating or deleting of existing blocks is not supported.
+Unlike a block blob, an append blob does not expose its block IDs.</p>
+<p>Each block in an append blob can be a different size, up to a maximum
+of 4 MB, and an append blob can include up to 50,000 blocks.  The
+maximum size of an append blob is therefore slightly more than 195 GB
+(4 MB X 50,000 blocks).</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Azure.Storage.Blobs.Specialized.BlobClient.html">BlobClient</a></div>
+    <div class="level2"><span class="xref">AppendBlobClient</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobClient.html#Azure_Storage_Blobs_Specialized_BlobClient_Uri">BlobClient.Uri</a>
+    </div>
+    <div>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobClient.html#Azure_Storage_Blobs_Specialized_BlobClient_Pipeline">BlobClient.Pipeline</a>
+    </div>
+    <div>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobClient.html#Azure_Storage_Blobs_Specialized_BlobClient_WithSnapshotImpl_System_String_">BlobClient.WithSnapshotImpl(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobClient.html#Azure_Storage_Blobs_Specialized_BlobClient_DownloadAsync_Azure_Storage_Blobs_HttpRange_System_Nullable_Azure_Storage_Blobs_BlobAccessConditions__System_Boolean_CancellationToken_">BlobClient.DownloadAsync(HttpRange, Nullable&lt;BlobAccessConditions&gt;, Boolean, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobClient.html#Azure_Storage_Blobs_Specialized_BlobClient_StartCopyFromUriAsync_Uri_System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_BlobAccessConditions__CancellationToken_">BlobClient.StartCopyFromUriAsync(Uri, System.Collections.Generic.IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;BlobAccessConditions&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobClient.html#Azure_Storage_Blobs_Specialized_BlobClient_AbortCopyFromUriAsync_System_String_System_Nullable_Azure_Storage_Blobs_LeaseAccessConditions__CancellationToken_">BlobClient.AbortCopyFromUriAsync(String, Nullable&lt;LeaseAccessConditions&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobClient.html#Azure_Storage_Blobs_Specialized_BlobClient_DeleteAsync_System_Nullable_Azure_Storage_Blobs_Models_DeleteSnapshotsOption__System_Nullable_Azure_Storage_Blobs_BlobAccessConditions__CancellationToken_">BlobClient.DeleteAsync(Nullable&lt;DeleteSnapshotsOption&gt;, Nullable&lt;BlobAccessConditions&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobClient.html#Azure_Storage_Blobs_Specialized_BlobClient_UndeleteAsync_CancellationToken_">BlobClient.UndeleteAsync(CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobClient.html#Azure_Storage_Blobs_Specialized_BlobClient_GetAccountInfoAsync_CancellationToken_">BlobClient.GetAccountInfoAsync(CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobClient.html#Azure_Storage_Blobs_Specialized_BlobClient_GetPropertiesAsync_System_Nullable_Azure_Storage_Blobs_BlobAccessConditions__CancellationToken_">BlobClient.GetPropertiesAsync(Nullable&lt;BlobAccessConditions&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobClient.html#Azure_Storage_Blobs_Specialized_BlobClient_SetHttpHeadersAsync_System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Nullable_Azure_Storage_Blobs_BlobAccessConditions__CancellationToken_">BlobClient.SetHttpHeadersAsync(Nullable&lt;BlobHttpHeaders&gt;, Nullable&lt;BlobAccessConditions&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobClient.html#Azure_Storage_Blobs_Specialized_BlobClient_SetMetadataAsync_System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_BlobAccessConditions__CancellationToken_">BlobClient.SetMetadataAsync(System.Collections.Generic.IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobClient.html#Azure_Storage_Blobs_Specialized_BlobClient_CreateSnapshotAsync_System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_BlobAccessConditions__CancellationToken_">BlobClient.CreateSnapshotAsync(System.Collections.Generic.IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobClient.html#Azure_Storage_Blobs_Specialized_BlobClient_AcquireLeaseAsync_System_Int32_System_String_System_Nullable_Azure_Storage_Blobs_HttpAccessConditions__CancellationToken_">BlobClient.AcquireLeaseAsync(Int32, String, Nullable&lt;HttpAccessConditions&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobClient.html#Azure_Storage_Blobs_Specialized_BlobClient_RenewLeaseAsync_System_String_System_Nullable_Azure_Storage_Blobs_HttpAccessConditions__CancellationToken_">BlobClient.RenewLeaseAsync(String, Nullable&lt;HttpAccessConditions&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobClient.html#Azure_Storage_Blobs_Specialized_BlobClient_ReleaseLeaseAsync_System_String_System_Nullable_Azure_Storage_Blobs_HttpAccessConditions__CancellationToken_">BlobClient.ReleaseLeaseAsync(String, Nullable&lt;HttpAccessConditions&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobClient.html#Azure_Storage_Blobs_Specialized_BlobClient_BreakLeaseAsync_System_Nullable_System_Int32__System_Nullable_Azure_Storage_Blobs_HttpAccessConditions__CancellationToken_">BlobClient.BreakLeaseAsync(Nullable&lt;Int32&gt;, Nullable&lt;HttpAccessConditions&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobClient.html#Azure_Storage_Blobs_Specialized_BlobClient_ChangeLeaseAsync_System_String_System_String_System_Nullable_Azure_Storage_Blobs_HttpAccessConditions__CancellationToken_">BlobClient.ChangeLeaseAsync(String, String, Nullable&lt;HttpAccessConditions&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobClient.html#Azure_Storage_Blobs_Specialized_BlobClient_SetTierAsync_Azure_Storage_Blobs_Models_AccessTier_System_Nullable_Azure_Storage_Blobs_LeaseAccessConditions__CancellationToken_">BlobClient.SetTierAsync(AccessTier, Nullable&lt;LeaseAccessConditions&gt;, CancellationToken)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Azure.Storage.Blobs.Specialized.html">Azure.Storage.Blobs.Specialized</a></h6>
+  <h6><strong>Assembly</strong>: Azure.Storage.Blobs.dll</h6>
+  <h5 id="Azure_Storage_Blobs_Specialized_AppendBlobClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AppendBlobClient : BlobClient</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_AppendBlobClient__ctor_System_String_System_String_System_String_Azure_Storage_Blobs_BlobConnectionOptions_.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.AppendBlobClient.%23ctor(System.String%2CSystem.String%2CSystem.String%2CAzure.Storage.Blobs.BlobConnectionOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/storage/Azure.Storage.Blobs/src/AppendBlobClient.cs/#L70">View Source</a>
+  </span>
+  <a id="Azure_Storage_Blobs_Specialized_AppendBlobClient__ctor_" data-uid="Azure.Storage.Blobs.Specialized.AppendBlobClient.#ctor*"></a>
+  <h4 id="Azure_Storage_Blobs_Specialized_AppendBlobClient__ctor_System_String_System_String_System_String_Azure_Storage_Blobs_BlobConnectionOptions_" data-uid="Azure.Storage.Blobs.Specialized.AppendBlobClient.#ctor(System.String,System.String,System.String,Azure.Storage.Blobs.BlobConnectionOptions)">AppendBlobClient(String, String, String, BlobConnectionOptions)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Storage.Blobs.Specialized.AppendBlobClient.html">AppendBlobClient</a>
+class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AppendBlobClient(string connectionString, string containerName, string blobName, BlobConnectionOptions connectionOptions = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">connectionString</span></td>
+        <td><p>A connection string includes the authentication information
+required for your application to access data in an Azure Storage
+account at runtime.</p>
+<p>For more information, <a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string">https://docs.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">containerName</span></td>
+        <td><p>The name of the container containing this append blob.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">blobName</span></td>
+        <td><p>The name of this append blob.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Blobs.BlobConnectionOptions.html">BlobConnectionOptions</a></td>
+        <td><span class="parametername">connectionOptions</span></td>
+        <td><p>Optional connection options that define the transport pipeline
+policies for authentication, retries, etc., that are applied to
+every request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Blobs_Specialized_AppendBlobClient__ctor_System_String_System_String_System_String_Azure_Storage_Blobs_BlobConnectionOptions__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The credentials on <code data-dev-comment-type="paramref" class="paramref">connectionString</code> will override those on <code data-dev-comment-type="paramref" class="paramref">connectionOptions</code>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_AppendBlobClient__ctor_Uri_Azure_Storage_Blobs_BlobConnectionOptions_.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.AppendBlobClient.%23ctor(Uri%2CAzure.Storage.Blobs.BlobConnectionOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/storage/Azure.Storage.Blobs/src/AppendBlobClient.cs/#L89">View Source</a>
+  </span>
+  <a id="Azure_Storage_Blobs_Specialized_AppendBlobClient__ctor_" data-uid="Azure.Storage.Blobs.Specialized.AppendBlobClient.#ctor*"></a>
+  <h4 id="Azure_Storage_Blobs_Specialized_AppendBlobClient__ctor_Uri_Azure_Storage_Blobs_BlobConnectionOptions_" data-uid="Azure.Storage.Blobs.Specialized.AppendBlobClient.#ctor(Uri,Azure.Storage.Blobs.BlobConnectionOptions)">AppendBlobClient(Uri, BlobConnectionOptions)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Storage.Blobs.Specialized.AppendBlobClient.html">AppendBlobClient</a>
+class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AppendBlobClient(Uri primaryUri, BlobConnectionOptions connectionOptions = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Uri</span></td>
+        <td><span class="parametername">primaryUri</span></td>
+        <td><p>A <see cref="!:Uri"></see> referencing the append blob that includes the
+name of the account, the name of the container, and the name of
+the blob.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Blobs.BlobConnectionOptions.html">BlobConnectionOptions</a></td>
+        <td><span class="parametername">connectionOptions</span></td>
+        <td><p>Optional connection options that define the transport pipeline
+policies for authentication, retries, etc., that are applied to
+every request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_AppendBlobClient_AppendBlobMaxAppendBlockBytes.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.AppendBlobClient.AppendBlobMaxAppendBlockBytes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/storage/Azure.Storage.Blobs/src/AppendBlobClient.cs/#L37">View Source</a>
+  </span>
+  <h4 id="Azure_Storage_Blobs_Specialized_AppendBlobClient_AppendBlobMaxAppendBlockBytes" data-uid="Azure.Storage.Blobs.Specialized.AppendBlobClient.AppendBlobMaxAppendBlockBytes">AppendBlobMaxAppendBlockBytes</h4>
+  <div class="markdown level1 summary"><p><a class="xref" href="Azure.Storage.Blobs.Specialized.AppendBlobClient.html#Azure_Storage_Blobs_Specialized_AppendBlobClient_AppendBlobMaxAppendBlockBytes">AppendBlobMaxAppendBlockBytes</a> indicates the maximum
+number of bytes that can be sent in a call to AppendBlock.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int AppendBlobMaxAppendBlockBytes = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_AppendBlobClient_AppendBlobMaxBlocks.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.AppendBlobClient.AppendBlobMaxBlocks%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/storage/Azure.Storage.Blobs/src/AppendBlobClient.cs/#L43">View Source</a>
+  </span>
+  <h4 id="Azure_Storage_Blobs_Specialized_AppendBlobClient_AppendBlobMaxBlocks" data-uid="Azure.Storage.Blobs.Specialized.AppendBlobClient.AppendBlobMaxBlocks">AppendBlobMaxBlocks</h4>
+  <div class="markdown level1 summary"><p><a class="xref" href="Azure.Storage.Blobs.Specialized.AppendBlobClient.html#Azure_Storage_Blobs_Specialized_AppendBlobClient_AppendBlobMaxBlocks">AppendBlobMaxBlocks</a> indicates the maximum number of
+blocks allowed in an append blob.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int AppendBlobMaxBlocks = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_AppendBlobClient_AppendBlockAsync_Stream_System_Byte___System_Nullable_Azure_Storage_Blobs_AppendBlobAccessConditions__IProgress_Azure_Storage_Common_StorageProgress__CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.AppendBlobClient.AppendBlockAsync(Stream%2CSystem.Byte%5B%5D%2CSystem.Nullable%7BAzure.Storage.Blobs.AppendBlobAccessConditions%7D%2CIProgress%7BAzure.Storage.Common.StorageProgress%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/storage/Azure.Storage.Blobs/src/AppendBlobClient.cs/#L249">View Source</a>
+  </span>
+  <a id="Azure_Storage_Blobs_Specialized_AppendBlobClient_AppendBlockAsync_" data-uid="Azure.Storage.Blobs.Specialized.AppendBlobClient.AppendBlockAsync*"></a>
+  <h4 id="Azure_Storage_Blobs_Specialized_AppendBlobClient_AppendBlockAsync_Stream_System_Byte___System_Nullable_Azure_Storage_Blobs_AppendBlobAccessConditions__IProgress_Azure_Storage_Common_StorageProgress__CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.AppendBlobClient.AppendBlockAsync(Stream,System.Byte[],System.Nullable{Azure.Storage.Blobs.AppendBlobAccessConditions},IProgress{Azure.Storage.Common.StorageProgress},CancellationToken)">AppendBlockAsync(Stream, Byte[], Nullable&lt;AppendBlobAccessConditions&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.AppendBlobClient.html#Azure_Storage_Blobs_Specialized_AppendBlobClient_AppendBlockAsync_Stream_System_Byte___System_Nullable_Azure_Storage_Blobs_AppendBlobAccessConditions__IProgress_Azure_Storage_Common_StorageProgress__CancellationToken_">AppendBlockAsync(Stream, Byte[], Nullable&lt;AppendBlobAccessConditions&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</a> operation commits a new block
+of data, represented by the <code data-dev-comment-type="paramref" class="paramref">content</code> <see cref="!:Stream"></see>,
+to the end of the existing append blob.  The <a class="xref" href="Azure.Storage.Blobs.Specialized.AppendBlobClient.html#Azure_Storage_Blobs_Specialized_AppendBlobClient_AppendBlockAsync_Stream_System_Byte___System_Nullable_Azure_Storage_Blobs_AppendBlobAccessConditions__IProgress_Azure_Storage_Common_StorageProgress__CancellationToken_">AppendBlockAsync(Stream, Byte[], Nullable&lt;AppendBlobAccessConditions&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</a>
+operation is only permitted if the blob was created as an append
+blob.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/append-block">https://docs.microsoft.com/rest/api/storageservices/append-block</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Response&lt;BlobAppendInfo&gt;&gt; AppendBlockAsync(Stream content, byte[] transactionalContentHash = null, AppendBlobAccessConditions? accessConditions = null, IProgress&lt;StorageProgress&gt; progressHandler = null, CancellationToken cancellation = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">content</span></td>
+        <td><p>A <see cref="!:Stream"></see> containing the content of the block to
+append.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">transactionalContentHash</span></td>
+        <td><p>Optional MD5 hash of the block content.  This hash is used to
+verify the integrity of the block during transport. When this hash
+is specified, the storage service compares the hash of the content
+that has arrived with this value.  Note that this MD5 hash is not
+stored with the blob.  If the two hashes do not match, the
+operation will fail with a <a class="xref" href="Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Azure.Storage.Blobs.AppendBlobAccessConditions.html">AppendBlobAccessConditions</a>&gt;</td>
+        <td><span class="parametername">accessConditions</span></td>
+        <td><p>Optional <a class="xref" href="Azure.Storage.Blobs.AppendBlobAccessConditions.html">AppendBlobAccessConditions</a> to add
+conditions on appending content to this append blob.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IProgress</span>&lt;<a class="xref" href="Azure.Storage.Common.StorageProgress.html">StorageProgress</a>&gt;</td>
+        <td><span class="parametername">progressHandler</span></td>
+        <td><p>Optional <see cref="!:IProgress&lt;StorageProgress>"></see> to provide
+progress updates about data transfers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td><p>Optional <see cref="!:CancellationToken"></see> to propagate
+notifications that the operation should be cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Blobs.Models.BlobAppendInfo.html">BlobAppendInfo</a>&gt;&gt;</td>
+        <td><p>A <see cref="!:Task&lt;Response&lt;BlobAppendInfo>>"></see> describing the
+state of the updated append blob.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Blobs_Specialized_AppendBlobClient_AppendBlockAsync_Stream_System_Byte___System_Nullable_Azure_Storage_Blobs_AppendBlobAccessConditions__IProgress_Azure_Storage_Common_StorageProgress__CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
+a failure occurs.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_AppendBlobClient_AppendBlockFromUriAsync_Uri_Azure_Storage_Blobs_HttpRange_System_Byte___System_Nullable_Azure_Storage_Blobs_AppendBlobAccessConditions__System_Nullable_Azure_Storage_Blobs_AppendBlobAccessConditions__CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.AppendBlobClient.AppendBlockFromUriAsync(Uri%2CAzure.Storage.Blobs.HttpRange%2CSystem.Byte%5B%5D%2CSystem.Nullable%7BAzure.Storage.Blobs.AppendBlobAccessConditions%7D%2CSystem.Nullable%7BAzure.Storage.Blobs.AppendBlobAccessConditions%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/storage/Azure.Storage.Blobs/src/AppendBlobClient.cs/#L358">View Source</a>
+  </span>
+  <a id="Azure_Storage_Blobs_Specialized_AppendBlobClient_AppendBlockFromUriAsync_" data-uid="Azure.Storage.Blobs.Specialized.AppendBlobClient.AppendBlockFromUriAsync*"></a>
+  <h4 id="Azure_Storage_Blobs_Specialized_AppendBlobClient_AppendBlockFromUriAsync_Uri_Azure_Storage_Blobs_HttpRange_System_Byte___System_Nullable_Azure_Storage_Blobs_AppendBlobAccessConditions__System_Nullable_Azure_Storage_Blobs_AppendBlobAccessConditions__CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.AppendBlobClient.AppendBlockFromUriAsync(Uri,Azure.Storage.Blobs.HttpRange,System.Byte[],System.Nullable{Azure.Storage.Blobs.AppendBlobAccessConditions},System.Nullable{Azure.Storage.Blobs.AppendBlobAccessConditions},CancellationToken)">AppendBlockFromUriAsync(Uri, HttpRange, Byte[], Nullable&lt;AppendBlobAccessConditions&gt;, Nullable&lt;AppendBlobAccessConditions&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.AppendBlobClient.html#Azure_Storage_Blobs_Specialized_AppendBlobClient_AppendBlockFromUriAsync_Uri_Azure_Storage_Blobs_HttpRange_System_Byte___System_Nullable_Azure_Storage_Blobs_AppendBlobAccessConditions__System_Nullable_Azure_Storage_Blobs_AppendBlobAccessConditions__CancellationToken_">AppendBlockFromUriAsync(Uri, HttpRange, Byte[], Nullable&lt;AppendBlobAccessConditions&gt;, Nullable&lt;AppendBlobAccessConditions&gt;, CancellationToken)</a> operation commits a new
+block of data, represented by the <code data-dev-comment-type="paramref" class="paramref">sourceUri</code>,
+to the end of the existing append blob.  The
+<a class="xref" href="Azure.Storage.Blobs.Specialized.AppendBlobClient.html#Azure_Storage_Blobs_Specialized_AppendBlobClient_AppendBlockFromUriAsync_Uri_Azure_Storage_Blobs_HttpRange_System_Byte___System_Nullable_Azure_Storage_Blobs_AppendBlobAccessConditions__System_Nullable_Azure_Storage_Blobs_AppendBlobAccessConditions__CancellationToken_">AppendBlockFromUriAsync(Uri, HttpRange, Byte[], Nullable&lt;AppendBlobAccessConditions&gt;, Nullable&lt;AppendBlobAccessConditions&gt;, CancellationToken)</a> operation is only permitted
+if the blob was created as an append blob.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/append-block-from-url">https://docs.microsoft.com/en-us/rest/api/storageservices/append-block-from-url</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Response&lt;BlobAppendInfo&gt;&gt; AppendBlockFromUriAsync(Uri sourceUri, HttpRange sourceRange = default(HttpRange), byte[] sourceContentHash = null, AppendBlobAccessConditions? accessConditions = null, AppendBlobAccessConditions? sourceAccessConditions = null, CancellationToken cancellation = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Uri</span></td>
+        <td><span class="parametername">sourceUri</span></td>
+        <td><p>Specifies the <see cref="!:Uri"></see> of the source blob.  The value may
+be a <see cref="!:Uri"></see> of up to 2 KB in length that specifies a
+blob.  The source blob must either be public or must be
+authenticated via a shared access signature.  If the source blob
+is public, no authentication is required to perform the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Blobs.HttpRange.html">HttpRange</a></td>
+        <td><span class="parametername">sourceRange</span></td>
+        <td><p>Optionally only upload the bytes of the blob in the
+<code data-dev-comment-type="paramref" class="paramref">sourceUri</code> in the specified range.  If this is
+not specified, the entire source blob contents are uploaded as a
+single append block.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">sourceContentHash</span></td>
+        <td><p>Optional MD5 hash of the append block content from the
+<code data-dev-comment-type="paramref" class="paramref">sourceUri</code>.  This hash is used to verify the
+integrity of the block during transport of the data from the Uri.
+When this hash is specified, the storage service compares the hash
+of the content that has arrived from the <code data-dev-comment-type="paramref" class="paramref">sourceUri</code>
+with this value.  Note that this md5 hash is not stored with the
+blob.  If the two hashes do not match, the operation will fail
+with a <a class="xref" href="Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Azure.Storage.Blobs.AppendBlobAccessConditions.html">AppendBlobAccessConditions</a>&gt;</td>
+        <td><span class="parametername">accessConditions</span></td>
+        <td><p>Optional <a class="xref" href="Azure.Storage.Blobs.AppendBlobAccessConditions.html">AppendBlobAccessConditions</a> to add
+conditions on the copying of data to this append blob.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Azure.Storage.Blobs.AppendBlobAccessConditions.html">AppendBlobAccessConditions</a>&gt;</td>
+        <td><span class="parametername">sourceAccessConditions</span></td>
+        <td><p>Optional <a class="xref" href="Azure.Storage.Blobs.AppendBlobAccessConditions.html">AppendBlobAccessConditions</a> to add
+conditions on the copying of data from this source blob.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td><p>Optional <see cref="!:CancellationToken"></see> to propagate
+notifications that the operation should be cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Blobs.Models.BlobAppendInfo.html">BlobAppendInfo</a>&gt;&gt;</td>
+        <td><p>A <see cref="!:Task&lt;Response&lt;BlobAppendInfo>>"></see> describing the
+state of the updated append blob.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Blobs_Specialized_AppendBlobClient_AppendBlockFromUriAsync_Uri_Azure_Storage_Blobs_HttpRange_System_Byte___System_Nullable_Azure_Storage_Blobs_AppendBlobAccessConditions__System_Nullable_Azure_Storage_Blobs_AppendBlobAccessConditions__CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
+a failure occurs.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_AppendBlobClient_CreateAsync_System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_AppendBlobAccessConditions__CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.AppendBlobClient.CreateAsync(System.Nullable%7BAzure.Storage.Blobs.Models.BlobHttpHeaders%7D%2CSystem.Collections.Generic.IDictionary%7BSystem.String%2CSystem.String%7D%2CSystem.Nullable%7BAzure.Storage.Blobs.AppendBlobAccessConditions%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/storage/Azure.Storage.Blobs/src/AppendBlobClient.cs/#L161">View Source</a>
+  </span>
+  <a id="Azure_Storage_Blobs_Specialized_AppendBlobClient_CreateAsync_" data-uid="Azure.Storage.Blobs.Specialized.AppendBlobClient.CreateAsync*"></a>
+  <h4 id="Azure_Storage_Blobs_Specialized_AppendBlobClient_CreateAsync_System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_AppendBlobAccessConditions__CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.AppendBlobClient.CreateAsync(System.Nullable{Azure.Storage.Blobs.Models.BlobHttpHeaders},System.Collections.Generic.IDictionary{System.String,System.String},System.Nullable{Azure.Storage.Blobs.AppendBlobAccessConditions},CancellationToken)">CreateAsync(Nullable&lt;BlobHttpHeaders&gt;, System.Collections.Generic.IDictionary&lt;String, String&gt;, Nullable&lt;AppendBlobAccessConditions&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.AppendBlobClient.html#Azure_Storage_Blobs_Specialized_AppendBlobClient_CreateAsync_System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_AppendBlobAccessConditions__CancellationToken_">CreateAsync(Nullable&lt;BlobHttpHeaders&gt;, System.Collections.Generic.IDictionary&lt;String, String&gt;, Nullable&lt;AppendBlobAccessConditions&gt;, CancellationToken)</a> operation creates a new 0-length
+append blob.  The content of any existing blob is overwritten with
+the newly initialized append blob.  To add content to the append
+blob, call the <a class="xref" href="Azure.Storage.Blobs.Specialized.AppendBlobClient.html#Azure_Storage_Blobs_Specialized_AppendBlobClient_AppendBlockAsync_Stream_System_Byte___System_Nullable_Azure_Storage_Blobs_AppendBlobAccessConditions__IProgress_Azure_Storage_Common_StorageProgress__CancellationToken_">AppendBlockAsync(Stream, Byte[], Nullable&lt;AppendBlobAccessConditions&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</a> operation.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/put-blob">https://docs.microsoft.com/rest/api/storageservices/put-blob</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Response&lt;BlobContentInfo&gt;&gt; CreateAsync(BlobHttpHeaders? httpHeaders = null, System.Collections.Generic.IDictionary&lt;string, string&gt; metadata = null, AppendBlobAccessConditions? accessConditions = null, CancellationToken cancellation = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Azure.Storage.Blobs.Models.BlobHttpHeaders.html">BlobHttpHeaders</a>&gt;</td>
+        <td><span class="parametername">httpHeaders</span></td>
+        <td><p>Optional standard HTTP header properties that can be set for the
+new append blob.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">metadata</span></td>
+        <td><p>Optional custom metadata to set for this append blob.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Azure.Storage.Blobs.AppendBlobAccessConditions.html">AppendBlobAccessConditions</a>&gt;</td>
+        <td><span class="parametername">accessConditions</span></td>
+        <td><p>Optional <a class="xref" href="Azure.Storage.Blobs.AppendBlobAccessConditions.html">AppendBlobAccessConditions</a> to add
+conditions on the creation of this new append blob.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td><p>Optional <see cref="!:CancellationToken"></see> to propagate
+notifications that the operation should be cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Blobs.Models.BlobContentInfo.html">BlobContentInfo</a>&gt;&gt;</td>
+        <td><p>A <see cref="!:Task&lt;Response&lt;BlobContentInfo>>"></see> describing the
+newly created append blob.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Blobs_Specialized_AppendBlobClient_CreateAsync_System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_AppendBlobAccessConditions__CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
+a failure occurs.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_AppendBlobClient_WithSnapshot_System_String_.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.AppendBlobClient.WithSnapshot(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/storage/Azure.Storage.Blobs/src/AppendBlobClient.cs/#L124">View Source</a>
+  </span>
+  <a id="Azure_Storage_Blobs_Specialized_AppendBlobClient_WithSnapshot_" data-uid="Azure.Storage.Blobs.Specialized.AppendBlobClient.WithSnapshot*"></a>
+  <h4 id="Azure_Storage_Blobs_Specialized_AppendBlobClient_WithSnapshot_System_String_" data-uid="Azure.Storage.Blobs.Specialized.AppendBlobClient.WithSnapshot(System.String)">WithSnapshot(String)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Storage.Blobs.Specialized.AppendBlobClient.html">AppendBlobClient</a>
+class with an identical <see cref="!:Uri"></see> source but the specified
+<code data-dev-comment-type="paramref" class="paramref">snapshot</code> timestamp.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/creating-a-snapshot-of-a-blob">https://docs.microsoft.com/en-us/rest/api/storageservices/creating-a-snapshot-of-a-blob</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AppendBlobClient WithSnapshot(string snapshot)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">snapshot</span></td>
+        <td><p>The snapshot identifier.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Blobs.Specialized.AppendBlobClient.html">AppendBlobClient</a></td>
+        <td><p>A new <a class="xref" href="Azure.Storage.Blobs.Specialized.AppendBlobClient.html">AppendBlobClient</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Blobs_Specialized_AppendBlobClient_WithSnapshot_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Pass null or empty string to remove the snapshot returning a URL
+to the base blob.</p>
+</div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="../ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.AppConfigurationAzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AppConfigurationAzureClientBuilderExtensions_AddAppConfiguration__2___0_System_String___1_">AppConfigurationAzureClientBuilderExtensions.AddAppConfiguration&lt;TBuilder, TConfiguration&gt;(TBuilder, String, TConfiguration)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_AppendBlobClient.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.AppendBlobClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/storage/Azure.Storage.Blobs/src/AppendBlobClient.cs/#L31" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

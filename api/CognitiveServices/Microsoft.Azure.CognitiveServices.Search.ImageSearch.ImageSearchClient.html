@@ -1,0 +1,559 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ImageSearchClient
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ImageSearchClient
+   ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.ImageSearchClient">
+  
+  
+  <h1 id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_ImageSearchClient" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.ImageSearchClient" class="text-break">Class ImageSearchClient
+  </h1>
+  <div class="markdown level0 summary"><p>The Image Search API lets you send a search query to Bing and get back
+a list of relevant images. This section provides technical details
+about the query parameters and headers that you use to request images
+and the JSON response objects that contain them. For examples that show
+how to make requests, see <a href="https://docs.microsoft.com/azure/cognitive-services/bing-image-search/search-the-web">Searching the Web for
+Images</a>.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ImageSearchClient</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Microsoft.Azure.CognitiveServices.Search.ImageSearch.IImageSearchClient.html">IImageSearchClient</a></div>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.Azure.CognitiveServices.Search.ImageSearch.html">Microsoft.Azure.CognitiveServices.Search.ImageSearch</a></h6>
+  <h6><strong>Assembly</strong>: Microsoft.Azure.CognitiveServices.Search.BingImageSearch.dll</h6>
+  <h5 id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_ImageSearchClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ImageSearchClient : ServiceClient&lt;ImageSearchClient&gt;, IImageSearchClient, System.IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_ImageSearch_ImageSearchClient__ctor_DelegatingHandler___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.ImageSearch.ImageSearchClient.%23ctor(DelegatingHandler%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Search.BingImageSearch/src/Generated/ImageSearch/ImageSearchClient.cs/#L79">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_ImageSearchClient__ctor_" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.ImageSearchClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_ImageSearchClient__ctor_DelegatingHandler___" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.ImageSearchClient.#ctor(DelegatingHandler[])">ImageSearchClient(DelegatingHandler[])</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the ImageSearchClient class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ImageSearchClient(params DelegatingHandler[] handlers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DelegatingHandler</span>[]</td>
+        <td><span class="parametername">handlers</span></td>
+        <td><p>Optional. The delegating handlers to add to the http client pipeline.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_ImageSearch_ImageSearchClient__ctor_HttpClient_System_Boolean_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.ImageSearch.ImageSearchClient.%23ctor(HttpClient%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Search.BingImageSearch/src/Generated/ImageSearch/ImageSearchClient.cs/#L68">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_ImageSearchClient__ctor_" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.ImageSearchClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_ImageSearchClient__ctor_HttpClient_System_Boolean_" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.ImageSearchClient.#ctor(HttpClient,System.Boolean)">ImageSearchClient(HttpClient, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the ImageSearchClient class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ImageSearchClient(HttpClient httpClient, bool disposeHttpClient)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">HttpClient</span></td>
+        <td><span class="parametername">httpClient</span></td>
+        <td><p>HttpClient to be used</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">disposeHttpClient</span></td>
+        <td><p>True: will dispose the provided httpClient on calling ImageSearchClient.Dispose(). False: will not dispose provided httpClient</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_ImageSearch_ImageSearchClient__ctor_HttpClientHandler_DelegatingHandler___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.ImageSearch.ImageSearchClient.%23ctor(HttpClientHandler%2CDelegatingHandler%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Search.BingImageSearch/src/Generated/ImageSearch/ImageSearchClient.cs/#L93">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_ImageSearchClient__ctor_" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.ImageSearchClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_ImageSearchClient__ctor_HttpClientHandler_DelegatingHandler___" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.ImageSearchClient.#ctor(HttpClientHandler,DelegatingHandler[])">ImageSearchClient(HttpClientHandler, DelegatingHandler[])</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the ImageSearchClient class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ImageSearchClient(HttpClientHandler rootHandler, params DelegatingHandler[] handlers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">HttpClientHandler</span></td>
+        <td><span class="parametername">rootHandler</span></td>
+        <td><p>Optional. The http client handler used to handle http transport.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DelegatingHandler</span>[]</td>
+        <td><span class="parametername">handlers</span></td>
+        <td><p>Optional. The delegating handlers to add to the http client pipeline.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_ImageSearch_ImageSearchClient__ctor_ServiceClientCredentials_DelegatingHandler___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.ImageSearch.ImageSearchClient.%23ctor(ServiceClientCredentials%2CDelegatingHandler%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Search.BingImageSearch/src/Generated/ImageSearch/ImageSearchClient.cs/#L110">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_ImageSearchClient__ctor_" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.ImageSearchClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_ImageSearchClient__ctor_ServiceClientCredentials_DelegatingHandler___" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.ImageSearchClient.#ctor(ServiceClientCredentials,DelegatingHandler[])">ImageSearchClient(ServiceClientCredentials, DelegatingHandler[])</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the ImageSearchClient class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImageSearchClient(ServiceClientCredentials credentials, params DelegatingHandler[] handlers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ServiceClientCredentials</span></td>
+        <td><span class="parametername">credentials</span></td>
+        <td><p>Required. Subscription credentials which uniquely identify client subscription.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DelegatingHandler</span>[]</td>
+        <td><span class="parametername">handlers</span></td>
+        <td><p>Optional. The delegating handlers to add to the http client pipeline.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_ImageSearch_ImageSearchClient__ctor_ServiceClientCredentials_HttpClient_System_Boolean_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.ImageSearch.ImageSearchClient.%23ctor(ServiceClientCredentials%2CHttpClient%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Search.BingImageSearch/src/Generated/ImageSearch/ImageSearchClient.cs/#L137">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_ImageSearchClient__ctor_" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.ImageSearchClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_ImageSearchClient__ctor_ServiceClientCredentials_HttpClient_System_Boolean_" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.ImageSearchClient.#ctor(ServiceClientCredentials,HttpClient,System.Boolean)">ImageSearchClient(ServiceClientCredentials, HttpClient, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the ImageSearchClient class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImageSearchClient(ServiceClientCredentials credentials, HttpClient httpClient, bool disposeHttpClient)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ServiceClientCredentials</span></td>
+        <td><span class="parametername">credentials</span></td>
+        <td><p>Required. Subscription credentials which uniquely identify client subscription.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">HttpClient</span></td>
+        <td><span class="parametername">httpClient</span></td>
+        <td><p>HttpClient to be used</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">disposeHttpClient</span></td>
+        <td><p>True: will dispose the provided httpClient on calling ImageSearchClient.Dispose(). False: will not dispose provided httpClient</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_ImageSearch_ImageSearchClient__ctor_ServiceClientCredentials_HttpClientHandler_DelegatingHandler___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.ImageSearch.ImageSearchClient.%23ctor(ServiceClientCredentials%2CHttpClientHandler%2CDelegatingHandler%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Search.BingImageSearch/src/Generated/ImageSearch/ImageSearchClient.cs/#L165">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_ImageSearchClient__ctor_" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.ImageSearchClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_ImageSearchClient__ctor_ServiceClientCredentials_HttpClientHandler_DelegatingHandler___" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.ImageSearchClient.#ctor(ServiceClientCredentials,HttpClientHandler,DelegatingHandler[])">ImageSearchClient(ServiceClientCredentials, HttpClientHandler, DelegatingHandler[])</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the ImageSearchClient class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImageSearchClient(ServiceClientCredentials credentials, HttpClientHandler rootHandler, params DelegatingHandler[] handlers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ServiceClientCredentials</span></td>
+        <td><span class="parametername">credentials</span></td>
+        <td><p>Required. Subscription credentials which uniquely identify client subscription.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">HttpClientHandler</span></td>
+        <td><span class="parametername">rootHandler</span></td>
+        <td><p>Optional. The http client handler used to handle http transport.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DelegatingHandler</span>[]</td>
+        <td><span class="parametername">handlers</span></td>
+        <td><p>Optional. The delegating handlers to add to the http client pipeline.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_ImageSearch_ImageSearchClient_Credentials.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.ImageSearch.ImageSearchClient.Credentials%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Search.BingImageSearch/src/Generated/ImageSearch/ImageSearchClient.cs/#L53">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_ImageSearchClient_Credentials_" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.ImageSearchClient.Credentials*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_ImageSearchClient_Credentials" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.ImageSearchClient.Credentials">Credentials</h4>
+  <div class="markdown level1 summary"><p>Subscription credentials which uniquely identify client subscription.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ServiceClientCredentials Credentials { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ServiceClientCredentials</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_ImageSearch_ImageSearchClient_DeserializationSettings.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.ImageSearch.ImageSearchClient.DeserializationSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Search.BingImageSearch/src/Generated/ImageSearch/ImageSearchClient.cs/#L41">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_ImageSearchClient_DeserializationSettings_" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.ImageSearchClient.DeserializationSettings*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_ImageSearchClient_DeserializationSettings" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.ImageSearchClient.DeserializationSettings">DeserializationSettings</h4>
+  <div class="markdown level1 summary"><p>Gets or sets json deserialization settings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonSerializerSettings DeserializationSettings { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">JsonSerializerSettings</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_ImageSearch_ImageSearchClient_Endpoint.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.ImageSearch.ImageSearchClient.Endpoint%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Search.BingImageSearch/src/Generated/ImageSearch/ImageSearchClient.cs/#L48">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_ImageSearchClient_Endpoint_" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.ImageSearchClient.Endpoint*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_ImageSearchClient_Endpoint" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.ImageSearchClient.Endpoint">Endpoint</h4>
+  <div class="markdown level1 summary"><p>Supported Cognitive Services endpoints (protocol and hostname, for example:
+&quot;https://westus.api.cognitive.microsoft.com&quot;,
+&quot;https://api.cognitive.microsoft.com&quot;).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Endpoint { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_ImageSearch_ImageSearchClient_Images.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.ImageSearch.ImageSearchClient.Images%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Search.BingImageSearch/src/Generated/ImageSearch/ImageSearchClient.cs/#L58">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_ImageSearchClient_Images_" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.ImageSearchClient.Images*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_ImageSearchClient_Images" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.ImageSearchClient.Images">Images</h4>
+  <div class="markdown level1 summary"><p>Gets the IImagesOperations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IImagesOperations Images { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Search.ImageSearch.IImagesOperations.html">IImagesOperations</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_ImageSearch_ImageSearchClient_SerializationSettings.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.ImageSearch.ImageSearchClient.SerializationSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Search.BingImageSearch/src/Generated/ImageSearch/ImageSearchClient.cs/#L36">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_ImageSearchClient_SerializationSettings_" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.ImageSearchClient.SerializationSettings*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_ImageSearchClient_SerializationSettings" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.ImageSearchClient.SerializationSettings">SerializationSettings</h4>
+  <div class="markdown level1 summary"><p>Gets or sets json serialization settings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonSerializerSettings SerializationSettings { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">JsonSerializerSettings</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Search.ImageSearch.IImageSearchClient.html">IImageSearchClient</a>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="../ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.AppConfigurationAzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AppConfigurationAzureClientBuilderExtensions_AddAppConfiguration__2___0_System_String___1_">AppConfigurationAzureClientBuilderExtensions.AddAppConfiguration&lt;TBuilder, TConfiguration&gt;(TBuilder, String, TConfiguration)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_ImageSearch_ImageSearchClient.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.ImageSearch.ImageSearchClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Search.BingImageSearch/src/Generated/ImageSearch/ImageSearchClient.cs/#L26" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

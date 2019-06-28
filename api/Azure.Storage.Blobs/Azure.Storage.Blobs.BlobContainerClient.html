@@ -1,0 +1,1060 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BlobContainerClient
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BlobContainerClient
+   ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Azure.Storage.Blobs.BlobContainerClient">
+  
+  
+  <h1 id="Azure_Storage_Blobs_BlobContainerClient" data-uid="Azure.Storage.Blobs.BlobContainerClient" class="text-break">Class BlobContainerClient
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">BlobContainerClient</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="../Azure.Storage.Blobs.html">Azure.Storage.Blobs</a></h6>
+  <h6><strong>Assembly</strong>: Azure.Storage.Blobs.dll</h6>
+  <h5 id="Azure_Storage_Blobs_BlobContainerClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BlobContainerClient</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Azure_Storage_Blobs_BlobContainerClient__ctor_" data-uid="Azure.Storage.Blobs.BlobContainerClient.#ctor*"></a>
+  <h4 id="Azure_Storage_Blobs_BlobContainerClient__ctor_System_Uri_Azure_Storage_Blobs_BlobConnectionOptions_" data-uid="Azure.Storage.Blobs.BlobContainerClient.#ctor(System.Uri,Azure.Storage.Blobs.BlobConnectionOptions)">BlobContainerClient(Uri, BlobConnectionOptions)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BlobContainerClient (Uri primaryUri, Azure.Storage.Blobs.BlobConnectionOptions connectionOptions = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">primaryUri</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Blobs.BlobConnectionOptions.html">BlobConnectionOptions</a></td>
+        <td><span class="parametername">connectionOptions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Blobs_BlobContainerClient__ctor_" data-uid="Azure.Storage.Blobs.BlobContainerClient.#ctor*"></a>
+  <h4 id="Azure_Storage_Blobs_BlobContainerClient__ctor_System_String_System_String_Azure_Storage_Blobs_BlobConnectionOptions_" data-uid="Azure.Storage.Blobs.BlobContainerClient.#ctor(System.String,System.String,Azure.Storage.Blobs.BlobConnectionOptions)">BlobContainerClient(String, String, BlobConnectionOptions)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BlobContainerClient (string connectionString, string containerName, Azure.Storage.Blobs.BlobConnectionOptions connectionOptions = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">connectionString</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">containerName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Blobs.BlobConnectionOptions.html">BlobConnectionOptions</a></td>
+        <td><span class="parametername">connectionOptions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Azure_Storage_Blobs_BlobContainerClient_LogsContainerName" data-uid="Azure.Storage.Blobs.BlobContainerClient.LogsContainerName">LogsContainerName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string LogsContainerName;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Azure_Storage_Blobs_BlobContainerClient_RootContainerName" data-uid="Azure.Storage.Blobs.BlobContainerClient.RootContainerName">RootContainerName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string RootContainerName;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Azure_Storage_Blobs_BlobContainerClient_Uri_" data-uid="Azure.Storage.Blobs.BlobContainerClient.Uri*"></a>
+  <h4 id="Azure_Storage_Blobs_BlobContainerClient_Uri" data-uid="Azure.Storage.Blobs.BlobContainerClient.Uri">Uri</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Uri Uri { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Azure_Storage_Blobs_BlobContainerClient_AcquireLeaseAsync_" data-uid="Azure.Storage.Blobs.BlobContainerClient.AcquireLeaseAsync*"></a>
+  <h4 id="Azure_Storage_Blobs_BlobContainerClient_AcquireLeaseAsync_System_Int32_System_String_System_Nullable_Azure_Storage_Blobs_ContainerAccessConditions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.BlobContainerClient.AcquireLeaseAsync(System.Int32,System.String,System.Nullable{Azure.Storage.Blobs.ContainerAccessConditions},System.Threading.CancellationToken)">AcquireLeaseAsync(Int32, String, Nullable&lt;ContainerAccessConditions&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.Lease&gt;&gt; AcquireLeaseAsync (int duration, string proposedId = null, Nullable&lt;Azure.Storage.Blobs.ContainerAccessConditions&gt; accessConditions = null, System.Threading.CancellationToken cancellation = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">duration</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">proposedId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Azure.Storage.Blobs.ContainerAccessConditions.html">ContainerAccessConditions</a>&gt;</td>
+        <td><span class="parametername">accessConditions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.Lease.html">Lease</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Blobs_BlobContainerClient_BreakLeaseAsync_" data-uid="Azure.Storage.Blobs.BlobContainerClient.BreakLeaseAsync*"></a>
+  <h4 id="Azure_Storage_Blobs_BlobContainerClient_BreakLeaseAsync_System_Nullable_System_Int32__System_Nullable_Azure_Storage_Blobs_ContainerAccessConditions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.BlobContainerClient.BreakLeaseAsync(System.Nullable{System.Int32},System.Nullable{Azure.Storage.Blobs.ContainerAccessConditions},System.Threading.CancellationToken)">BreakLeaseAsync(Nullable&lt;Int32&gt;, Nullable&lt;ContainerAccessConditions&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.Lease&gt;&gt; BreakLeaseAsync (Nullable&lt;int&gt; period = null, Nullable&lt;Azure.Storage.Blobs.ContainerAccessConditions&gt; accessConditions = null, System.Threading.CancellationToken cancellation = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">period</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Azure.Storage.Blobs.ContainerAccessConditions.html">ContainerAccessConditions</a>&gt;</td>
+        <td><span class="parametername">accessConditions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.Lease.html">Lease</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Blobs_BlobContainerClient_ChangeLeaseAsync_" data-uid="Azure.Storage.Blobs.BlobContainerClient.ChangeLeaseAsync*"></a>
+  <h4 id="Azure_Storage_Blobs_BlobContainerClient_ChangeLeaseAsync_System_String_System_String_System_Nullable_Azure_Storage_Blobs_ContainerAccessConditions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.BlobContainerClient.ChangeLeaseAsync(System.String,System.String,System.Nullable{Azure.Storage.Blobs.ContainerAccessConditions},System.Threading.CancellationToken)">ChangeLeaseAsync(String, String, Nullable&lt;ContainerAccessConditions&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.Lease&gt;&gt; ChangeLeaseAsync (string leaseId, string proposedId, Nullable&lt;Azure.Storage.Blobs.ContainerAccessConditions&gt; accessConditions = null, System.Threading.CancellationToken cancellation = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">leaseId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">proposedId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Azure.Storage.Blobs.ContainerAccessConditions.html">ContainerAccessConditions</a>&gt;</td>
+        <td><span class="parametername">accessConditions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.Lease.html">Lease</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Blobs_BlobContainerClient_CreateAsync_" data-uid="Azure.Storage.Blobs.BlobContainerClient.CreateAsync*"></a>
+  <h4 id="Azure_Storage_Blobs_BlobContainerClient_CreateAsync_System_Nullable_Azure_Storage_Blobs_Models_PublicAccessType__System_Collections_Generic_IDictionary_System_String_System_String__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.BlobContainerClient.CreateAsync(System.Nullable{Azure.Storage.Blobs.Models.PublicAccessType},System.Collections.Generic.IDictionary{System.String,System.String},System.Threading.CancellationToken)">CreateAsync(Nullable&lt;PublicAccessType&gt;, IDictionary&lt;String,String&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.ContainerInfo&gt;&gt; CreateAsync (Nullable&lt;Azure.Storage.Blobs.Models.PublicAccessType&gt; publicAccessType = null, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = null, System.Threading.CancellationToken cancellation = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PublicAccessType.html">PublicAccessType</a>&gt;</td>
+        <td><span class="parametername">publicAccessType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;<span class="xref">System.String</span>,<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">metadata</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.ContainerInfo.html">ContainerInfo</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Blobs_BlobContainerClient_DeleteAsync_" data-uid="Azure.Storage.Blobs.BlobContainerClient.DeleteAsync*"></a>
+  <h4 id="Azure_Storage_Blobs_BlobContainerClient_DeleteAsync_System_Nullable_Azure_Storage_Blobs_ContainerAccessConditions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.BlobContainerClient.DeleteAsync(System.Nullable{Azure.Storage.Blobs.ContainerAccessConditions},System.Threading.CancellationToken)">DeleteAsync(Nullable&lt;ContainerAccessConditions&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;Azure.Response&gt; DeleteAsync (Nullable&lt;Azure.Storage.Blobs.ContainerAccessConditions&gt; accessConditions = null, System.Threading.CancellationToken cancellation = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Azure.Storage.Blobs.ContainerAccessConditions.html">ContainerAccessConditions</a>&gt;</td>
+        <td><span class="parametername">accessConditions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="../Azure/Azure.Response.html">Response</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Blobs_BlobContainerClient_GetAccessPolicyAsync_" data-uid="Azure.Storage.Blobs.BlobContainerClient.GetAccessPolicyAsync*"></a>
+  <h4 id="Azure_Storage_Blobs_BlobContainerClient_GetAccessPolicyAsync_System_Nullable_Azure_Storage_Blobs_LeaseAccessConditions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.BlobContainerClient.GetAccessPolicyAsync(System.Nullable{Azure.Storage.Blobs.LeaseAccessConditions},System.Threading.CancellationToken)">GetAccessPolicyAsync(Nullable&lt;LeaseAccessConditions&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.ContainerAccessPolicy&gt;&gt; GetAccessPolicyAsync (Nullable&lt;Azure.Storage.Blobs.LeaseAccessConditions&gt; leaseAccessConditions = null, System.Threading.CancellationToken cancellation = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Azure.Storage.Blobs.LeaseAccessConditions.html">LeaseAccessConditions</a>&gt;</td>
+        <td><span class="parametername">leaseAccessConditions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.ContainerAccessPolicy.html">ContainerAccessPolicy</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Blobs_BlobContainerClient_GetAccountInfoAsync_" data-uid="Azure.Storage.Blobs.BlobContainerClient.GetAccountInfoAsync*"></a>
+  <h4 id="Azure_Storage_Blobs_BlobContainerClient_GetAccountInfoAsync_System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.BlobContainerClient.GetAccountInfoAsync(System.Threading.CancellationToken)">GetAccountInfoAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.AccountInfo&gt;&gt; GetAccountInfoAsync (System.Threading.CancellationToken cancellation = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.AccountInfo.html">AccountInfo</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Blobs_BlobContainerClient_GetBlockBlobClient_" data-uid="Azure.Storage.Blobs.BlobContainerClient.GetBlockBlobClient*"></a>
+  <h4 id="Azure_Storage_Blobs_BlobContainerClient_GetBlockBlobClient_System_String_" data-uid="Azure.Storage.Blobs.BlobContainerClient.GetBlockBlobClient(System.String)">GetBlockBlobClient(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Azure.Storage.Blobs.BlockBlobClient GetBlockBlobClient (string blobName);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">blobName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Blobs.BlockBlobClient.html">BlockBlobClient</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Blobs_BlobContainerClient_GetPropertiesAsync_" data-uid="Azure.Storage.Blobs.BlobContainerClient.GetPropertiesAsync*"></a>
+  <h4 id="Azure_Storage_Blobs_BlobContainerClient_GetPropertiesAsync_System_Nullable_Azure_Storage_Blobs_LeaseAccessConditions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.BlobContainerClient.GetPropertiesAsync(System.Nullable{Azure.Storage.Blobs.LeaseAccessConditions},System.Threading.CancellationToken)">GetPropertiesAsync(Nullable&lt;LeaseAccessConditions&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.ContainerItem&gt;&gt; GetPropertiesAsync (Nullable&lt;Azure.Storage.Blobs.LeaseAccessConditions&gt; leaseAccessConditions = null, System.Threading.CancellationToken cancellation = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Azure.Storage.Blobs.LeaseAccessConditions.html">LeaseAccessConditions</a>&gt;</td>
+        <td><span class="parametername">leaseAccessConditions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.ContainerItem.html">ContainerItem</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Blobs_BlobContainerClient_ListBlobsFlatSegmentAsync_" data-uid="Azure.Storage.Blobs.BlobContainerClient.ListBlobsFlatSegmentAsync*"></a>
+  <h4 id="Azure_Storage_Blobs_BlobContainerClient_ListBlobsFlatSegmentAsync_System_String_System_Nullable_Azure_Storage_Blobs_Models_BlobsSegmentOptions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.BlobContainerClient.ListBlobsFlatSegmentAsync(System.String,System.Nullable{Azure.Storage.Blobs.Models.BlobsSegmentOptions},System.Threading.CancellationToken)">ListBlobsFlatSegmentAsync(String, Nullable&lt;BlobsSegmentOptions&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobsFlatSegment&gt;&gt; ListBlobsFlatSegmentAsync (string marker = null, Nullable&lt;Azure.Storage.Blobs.Models.BlobsSegmentOptions&gt; options = null, System.Threading.CancellationToken cancellation = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">marker</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.BlobsSegmentOptions.html">BlobsSegmentOptions</a>&gt;</td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.BlobsFlatSegment.html">BlobsFlatSegment</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Blobs_BlobContainerClient_ListBlobsHierarchySegmentAsync_" data-uid="Azure.Storage.Blobs.BlobContainerClient.ListBlobsHierarchySegmentAsync*"></a>
+  <h4 id="Azure_Storage_Blobs_BlobContainerClient_ListBlobsHierarchySegmentAsync_System_String_System_String_System_Nullable_Azure_Storage_Blobs_Models_BlobsSegmentOptions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.BlobContainerClient.ListBlobsHierarchySegmentAsync(System.String,System.String,System.Nullable{Azure.Storage.Blobs.Models.BlobsSegmentOptions},System.Threading.CancellationToken)">ListBlobsHierarchySegmentAsync(String, String, Nullable&lt;BlobsSegmentOptions&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobsHierarchySegment&gt;&gt; ListBlobsHierarchySegmentAsync (string marker = null, string delimiter = null, Nullable&lt;Azure.Storage.Blobs.Models.BlobsSegmentOptions&gt; options = null, System.Threading.CancellationToken cancellation = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">marker</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">delimiter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.BlobsSegmentOptions.html">BlobsSegmentOptions</a>&gt;</td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.BlobsHierarchySegment.html">BlobsHierarchySegment</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Blobs_BlobContainerClient_ReleaseLeaseAsync_" data-uid="Azure.Storage.Blobs.BlobContainerClient.ReleaseLeaseAsync*"></a>
+  <h4 id="Azure_Storage_Blobs_BlobContainerClient_ReleaseLeaseAsync_System_String_System_Nullable_Azure_Storage_Blobs_ContainerAccessConditions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.BlobContainerClient.ReleaseLeaseAsync(System.String,System.Nullable{Azure.Storage.Blobs.ContainerAccessConditions},System.Threading.CancellationToken)">ReleaseLeaseAsync(String, Nullable&lt;ContainerAccessConditions&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.ContainerInfo&gt;&gt; ReleaseLeaseAsync (string leaseId, Nullable&lt;Azure.Storage.Blobs.ContainerAccessConditions&gt; accessConditions = null, System.Threading.CancellationToken cancellation = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">leaseId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Azure.Storage.Blobs.ContainerAccessConditions.html">ContainerAccessConditions</a>&gt;</td>
+        <td><span class="parametername">accessConditions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.ContainerInfo.html">ContainerInfo</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Blobs_BlobContainerClient_RenewLeaseAsync_" data-uid="Azure.Storage.Blobs.BlobContainerClient.RenewLeaseAsync*"></a>
+  <h4 id="Azure_Storage_Blobs_BlobContainerClient_RenewLeaseAsync_System_String_System_Nullable_Azure_Storage_Blobs_ContainerAccessConditions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.BlobContainerClient.RenewLeaseAsync(System.String,System.Nullable{Azure.Storage.Blobs.ContainerAccessConditions},System.Threading.CancellationToken)">RenewLeaseAsync(String, Nullable&lt;ContainerAccessConditions&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.Lease&gt;&gt; RenewLeaseAsync (string leaseId, Nullable&lt;Azure.Storage.Blobs.ContainerAccessConditions&gt; accessConditions = null, System.Threading.CancellationToken cancellation = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">leaseId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Azure.Storage.Blobs.ContainerAccessConditions.html">ContainerAccessConditions</a>&gt;</td>
+        <td><span class="parametername">accessConditions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.Lease.html">Lease</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Blobs_BlobContainerClient_SetAccessPolicyAsync_" data-uid="Azure.Storage.Blobs.BlobContainerClient.SetAccessPolicyAsync*"></a>
+  <h4 id="Azure_Storage_Blobs_BlobContainerClient_SetAccessPolicyAsync_System_Nullable_Azure_Storage_Blobs_Models_PublicAccessType__System_Collections_Generic_IEnumerable_Azure_Storage_Blobs_Models_SignedIdentifier__System_Nullable_Azure_Storage_Blobs_ContainerAccessConditions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.BlobContainerClient.SetAccessPolicyAsync(System.Nullable{Azure.Storage.Blobs.Models.PublicAccessType},System.Collections.Generic.IEnumerable{Azure.Storage.Blobs.Models.SignedIdentifier},System.Nullable{Azure.Storage.Blobs.ContainerAccessConditions},System.Threading.CancellationToken)">SetAccessPolicyAsync(Nullable&lt;PublicAccessType&gt;, IEnumerable&lt;SignedIdentifier&gt;, Nullable&lt;ContainerAccessConditions&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.ContainerInfo&gt;&gt; SetAccessPolicyAsync (Nullable&lt;Azure.Storage.Blobs.Models.PublicAccessType&gt; accessType = null, System.Collections.Generic.IEnumerable&lt;Azure.Storage.Blobs.Models.SignedIdentifier&gt; permissions = null, Nullable&lt;Azure.Storage.Blobs.ContainerAccessConditions&gt; accessConditions = null, System.Threading.CancellationToken cancellation = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PublicAccessType.html">PublicAccessType</a>&gt;</td>
+        <td><span class="parametername">accessType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.SignedIdentifier.html">SignedIdentifier</a>&gt;</td>
+        <td><span class="parametername">permissions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Azure.Storage.Blobs.ContainerAccessConditions.html">ContainerAccessConditions</a>&gt;</td>
+        <td><span class="parametername">accessConditions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.ContainerInfo.html">ContainerInfo</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Blobs_BlobContainerClient_SetMetadataAsync_" data-uid="Azure.Storage.Blobs.BlobContainerClient.SetMetadataAsync*"></a>
+  <h4 id="Azure_Storage_Blobs_BlobContainerClient_SetMetadataAsync_System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_ContainerAccessConditions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.BlobContainerClient.SetMetadataAsync(System.Collections.Generic.IDictionary{System.String,System.String},System.Nullable{Azure.Storage.Blobs.ContainerAccessConditions},System.Threading.CancellationToken)">SetMetadataAsync(IDictionary&lt;String,String&gt;, Nullable&lt;ContainerAccessConditions&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.ContainerInfo&gt;&gt; SetMetadataAsync (System.Collections.Generic.IDictionary&lt;string,string&gt; metadata, Nullable&lt;Azure.Storage.Blobs.ContainerAccessConditions&gt; accessConditions = null, System.Threading.CancellationToken cancellation = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;<span class="xref">System.String</span>,<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">metadata</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Azure.Storage.Blobs.ContainerAccessConditions.html">ContainerAccessConditions</a>&gt;</td>
+        <td><span class="parametername">accessConditions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.ContainerInfo.html">ContainerInfo</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="../Azure.Storage.Blobs.Specialized/Azure.Storage.Blobs.Specialized.SpecializedBlobExtensions.html#Azure_Storage_Blobs_Specialized_SpecializedBlobExtensions_GetAppendBlobClient_Azure_Storage_Blobs_BlobContainerClient_System_String_">SpecializedBlobExtensions.GetAppendBlobClient(BlobContainerClient, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="../Azure.Storage.Blobs.Specialized/Azure.Storage.Blobs.Specialized.SpecializedBlobExtensions.html#Azure_Storage_Blobs_Specialized_SpecializedBlobExtensions_GetPageBlobClient_Azure_Storage_Blobs_BlobContainerClient_System_String_">SpecializedBlobExtensions.GetPageBlobClient(BlobContainerClient, String)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

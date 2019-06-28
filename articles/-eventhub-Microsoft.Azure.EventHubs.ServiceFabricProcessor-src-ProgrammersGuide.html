@@ -1,0 +1,333 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Programmer's Guide to Service Fabric Processor </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Programmer's Guide to Service Fabric Processor ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="programmers-guide-to-service-fabric-processor">Programmer's Guide to Service Fabric Processor</h1>
+
+<h2 id="introduction">Introduction</h2>
+<p>Service Fabric Processor (SFP) allows a user to easily create a Service
+Fabric-based stateful service that processes events from an Event Hub. The
+service is required to have exactly as many partitions as the target Event Hub
+does, because each Service Fabric partition is permanently associated with a
+corresponding Event Hub partition. The user's processing logic for events is
+contained in their implementation of the IEventProcessor interface. Each
+partition of the service has an instance of that implementation, which is called
+by SFP to handle events consumed from the corresponding Event Hub partition.
+Only the primary Service Fabric replica for each partition consumes and processes
+events. The secondary replicas exist to maintain the reliable dictionary that
+Service Fabric Processor uses for checkpointing.</p>
+<h2 id="ieventprocessor">IEventProcessor</h2>
+<p>There are four methods that the user is required to implement, and one more
+which the user may override if desired.</p>
+<p>Most of the methods provide a
+CancellationToken as an argument, and it is important for long-running
+operations in the user's code to honor that token. Service Fabric cancels it
+when a primary replica's state is changing, and that is the code's chance to
+clean up and shut down gracefully instead of being forcefully terminated!</p>
+<p>All methods provide a PartitionContext as an argument, which contains
+various information about the Event Hub and the partition that may be useful
+to the user's code. The PartitionContext also has a reference to the
+CancellationToken.</p>
+<h3 id="openasync">OpenAsync</h3>
+<pre><code class="lang-csharp">Task OpenAsync(CancellationToken cancellationToken, PartitionContext context)
+</code></pre>
+<p>SFP calls this method when a partition replica becomes primary. This is the
+opportunity to initialize resources that the event processing logic will
+use, such as a database connection, or perform any other startup needed.</p>
+<h3 id="processeventsasync">ProcessEventsAsync</h3>
+<pre><code class="lang-csharp">Task ProcessEventsAsync(CancellationToken cancellationToken, PartitionContext context, IEnumerable&lt;EventData&gt; events)
+</code></pre>
+<p>After the Task returned by OpenAsync completes, SFP calls this method repeatedly
+as events become available. SFP makes only one call to ProcessEventsAsync at a
+time: it waits for the Task returned by the current call to complete before
+attempting to consume more events from the Event Hub. By default, this method
+is called only when events are available, so if traffic on the associated
+Event Hub partition is sparse, it may be some time between calls to this method.</p>
+<h3 id="closeasync">CloseAsync</h3>
+<pre><code class="lang-csharp">Task CloseAsync(PartitionContext context, CloseReason reason)
+</code></pre>
+<p>SFP calls this method when a primary replica is being shut down, whether due to
+an Event Hub failure or because Service Fabric is changing the replica's state.
+No cancellation token is provided because the user's code is expected to already
+be shutting down as quickly as possible, and in many cases the token will already
+be cancelled. The CloseReason indicates whether the shutdown is due to an Event
+Hub failure or Service Fabric cancellation.</p>
+<p>This method will will not be called until the Task returned by the most recent
+ProcessEventsAsync call has completed.</p>
+<h3 id="processerrorasync">ProcessErrorAsync</h3>
+<pre><code class="lang-csharp">Task ProcessErrorAsync(PartitionContext context, Exception error)
+</code></pre>
+<p>SFP calls this method when an Event Hubs error has occurred. It is purely
+informational. Recovering from the error, if possible, is up to SFP.</p>
+<h3 id="getloadmetric">GetLoadMetric</h3>
+<pre><code class="lang-csharp">Dictionary&lt;string, int&gt; GetLoadMetric(CancellationToken cancellationToken, PartitionContext context)
+</code></pre>
+<p>Service Fabric offers sophisticated load balancing of
+partition replicas between nodes based on user-provided metrics, and this
+method allows SFP users to take advantage of that feature. SFP polls this
+method periodically and passes the metrics returned to Service Fabric. The
+metrics are represented as a dictionary of string-int pairs, where the string
+is the metric name and the int is the metric value. SFP provides a default
+implementation of this method, which returns a metric named &quot;CountOfPartitions&quot;
+that has a constant value of 1.</p>
+<p>It is up to the user to configure Service Fabric to use metrics returned by
+this method. Service Fabric ignores any metrics not mentioned in the
+configuration, so it is safe to return any metrics that might be interesting
+and then decide later which particular ones to use.</p>
+<h2 id="integrating-with-service-fabric">Integrating With Service Fabric</h2>
+<p>SFP requires a stateful Service Fabric service that is configured to have the
+same number of partitions as the Event Hub.</p>
+<p>The user's service will have a class derived from the Service Fabric class
+StatefulService, which in turn has a RunAsync method that is called on primary
+partition replicas. SFP setup and activation occur within that RunAsync method.</p>
+<h3 id="sfp-options">SFP Options</h3>
+<p>SFP provides a class EventProcessorOptions, which allows setting a wide variety
+of options that adjust how SFP operates. To use it, create a new instance, which
+is initialized with the default settings, then change the options of interest,
+and finally pass the instance to the ServiceFabricProcessor constructor.</p>
+<pre><code class="lang-csharp">EventProcessorOptions options = new EventProcessorOptions();
+options.MaxBatchSize = 50;
+ServiceFabricProcessor processor = new ServiceFabricProcessor(..., options);
+</code></pre>
+<p>Available options are:</p>
+<ul>
+<li><p>int MaxBatchSize: the <em>maximum</em> number of events that will be passed to
+ProcessEventsAsync at one time. Default is 10. The actual number of events for
+each call is variable and depends on how many events are available in the Event
+Hub partition, how fast they can be transferred, how long the previous call to
+ProcessEventsAsync took, and other factors. If your system as a whole is
+processing events faster than they are generated, then much of the time
+ProcessEventsAsync will be called with only one event. This option only
+governs the <em>maximum</em> number.</p>
+</li>
+<li><p>int PrefetchCount: passed to the underlying Event Hubs client, this option
+governs how many events can be prefetched. Default is 300. This generally
+comes into play only when there is a backlog of events due to slow processing.
+If your system as a whole is processing events faster than they are generated,
+then the prefetch buffer will be empty, because every event that becomes
+available can be immediately passed to ProcessEventsAsync.</p>
+</li>
+<li><p>TimeSpan ReceiveTimeout: passed to the underlying Event Hubs client, this
+option governs the timeout duration for the Event Hubs receiver. Default is
+60 seconds.</p>
+</li>
+<li><p>bool EnableReceiverRuntimeMetric: TODO -- needs client changes before it
+can be supported</p>
+</li>
+<li><p>bool InvokeProcessorAfterReceiveTimeout: if false, ProcessEventsAsync is
+called only when at least one event is available. If true, ProcessEventsAsync
+is called with an empty event list when a receive timeout occurs. Default is
+false.</p>
+</li>
+<li><p>ShutdownNotification OnShutdown: set a delegate which is called just before
+the Task returned by ServiceFabricProcessor.RunAsync completes. Depending on
+how the code in the service's RunAsync is structured, SFP might shut down due
+to an error long before RunAsync awaits the returned Task. This delegate
+provides notification of such a shutdown.</p>
+</li>
+<li><p>Func&lt;string, EventPosition&gt; InitialPositionProvider: see &quot;Starting Position
+and Checkpointing&quot; below</p>
+</li>
+</ul>
+<h3 id="instantiating-servicefabricprocessor">Instantiating ServiceFabricProcessor</h3>
+<pre><code class="lang-csharp">IEventProcessor myEventProcessor = new MyEventProcessorClass(...);
+ServiceFabricProcessor processor = new ServiceFabricProcessor(
+	this.Context.ServiceName,
+	this.Context.PartitionId,
+	this.StateManager,
+	this.Partition,
+	myEventProcessor,
+	eventHubConnectionString,
+	eventHubConsumerGroup,
+	options
+);
+</code></pre>
+<ul>
+<li><p>The first four arguments are Service Fabric artifacts that SFP needs to get
+information about Service Fabric partitions and to access Service Fabric reliable
+dictionaries. They are all available as members of the StatefulService-derived
+class.</p>
+</li>
+<li><p>The next argument is an instance of the user's implementation of IEventProcessor.</p>
+</li>
+<li><p>The next two arguments are the connection string of the Event Hub to consume
+from, and the consumer group. The consumer group is optional: if null or omitted,
+the default consumer group &quot;$Default&quot; is used.</p>
+</li>
+<li><p>The last argument is an optional instance of EventProcessorOptions. If null
+or omitted, all options have their default value.</p>
+</li>
+</ul>
+<h3 id="start-processing-events">Start processing events</h3>
+<pre><code class="lang-csharp">Task processing = processor.RunAsync(cancellationToken);
+// do other stuff here if desired
+await processing;
+</code></pre>
+<p>Note that ServiceFabricProcessor.RunAsync can be called only once. If the await
+throws, you can either allow the exception to propagate out to Service Fabric and
+let Service Fabric restart the replica, or you can create a new instance of
+ServiceFabricProcessor and call RunAsync on the new instance.</p>
+<h2 id="starting-position-and-checkpointing">Starting Position and Checkpointing</h2>
+<p>When ServiceFabricProcessor.RunAsync is called, one of the first things it does
+is to create a receiver on the Event Hub partition so it can consume events.
+Because Event Hubs do not have a service-side cursor, a receiver must specify
+a starting position when it is created.</p>
+<p>One of the features of SFP is checkpointing, which provides a client-side
+cursor by persisting the offset of the last event processed successfully.
+Checkpointing does not happen automatically, because there are scenarios
+which do not need it. To use checkpointing, the user's implementation of
+IEventProcessor.ProcessEventsAsync calls the CheckpointAsync methods on
+the supplied PartitionContext.</p>
+<h3 id="finding-the-starting-position">Finding the Starting Position</h3>
+<p>SFP follows these steps to determine the starting position when creating a
+receiver:</p>
+<ul>
+<li><p>If there is a checkpoint for the partition, start at the next event after
+that position.</p>
+</li>
+<li><p>Else, call EventProcessorOptions.InitialPositionProvider, if present: when
+setting up options, the user can provide a function which takes an Event Hub
+partition id and returns an EventPosition.</p>
+</li>
+<li><p>Else, start at the oldest available event.</p>
+</li>
+</ul>
+<h3 id="checkpointing">Checkpointing</h3>
+<p>PartitionContext provides two methods for setting a checkpoint:</p>
+<ul>
+<li><p>With no arguments, the checkpoint contains the position of the last event
+in the current batch. If once-per-batch is a reasonable checkpoint strategy
+for your application, calling PartitionContext.CheckpointAsync just before
+returning from IEventProcessor.ProcessEventsAsync is simple and convenient.</p>
+</li>
+<li><p>The other overload of CheckpointAsync takes an EventData as an argument
+and sets a checkpoint with the position of the given event. This way, your
+application can checkpoint at any interval.</p>
+</li>
+</ul>
+<p>It is important to await CheckpointAsync, to be sure that the checkpoint
+was actually persisted.</p>
+<h3 id="special-considerations">Special Considerations</h3>
+<p>A checkpoint is a representation of a position in the event stream of a
+particular Event Hub+consumer group+partition combination. All events up to and
+including the checkpointed position are assumed to be processed, and any events
+after the position are assumed to be unprocessed. The intention is that a
+newly-created receiver will pick up where the previous receiver left off, for
+example when Service Fabric moves the primary replica of a partition from one
+node to another for load balancing.</p>
+<p>For performance reasons, it is not always desirable to checkpoint after processing
+each event. Checkpointing at larger intervals (for example, every ten events, or
+every ten seconds, etc.) can improve performance, but also means that if the
+receiver is recreated, the new receiver may consume events that have already
+been processed. It is up to the application owner to evaluate the tradeoff between
+performance and reprocessing events.</p>
+<p>Even if the application checkpoints after every event, that still
+does not completely prevent the possibility of reprocessing an already-consumed
+event, because there is always a time window between when an event is processed
+and when the checkpoint is fully persisted, during which a node could fail. As a
+best practice, an application must be able to cope with event reprocessing in some
+way that is reasonable for the impact.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/docfx_project/articles/-eventhub-Microsoft.Azure.EventHubs.ServiceFabricProcessor-src-ProgrammersGuide.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

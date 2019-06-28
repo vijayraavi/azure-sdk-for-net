@@ -1,0 +1,1038 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SearchServiceClient
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SearchServiceClient
+   ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Microsoft.Azure.Search.SearchServiceClient">
+  
+  
+  <h1 id="Microsoft_Azure_Search_SearchServiceClient" data-uid="Microsoft.Azure.Search.SearchServiceClient" class="text-break">Class SearchServiceClient
+  </h1>
+  <div class="markdown level0 summary"><p>Client that can be used to manage and query indexes and documents, as
+well as manage other resources, on an Azure Search service.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">SearchServiceClient</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Microsoft.Azure.Search.ISearchServiceClient.html">ISearchServiceClient</a></div>
+    <div><span class="xref">System.IDisposable</span></div>
+    <div><span class="xref">IAzureClient</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.Azure.Search.html">Microsoft.Azure.Search</a></h6>
+  <h6><strong>Assembly</strong>: Microsoft.Azure.Search.Service.dll</h6>
+  <h5 id="Microsoft_Azure_Search_SearchServiceClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SearchServiceClient : ServiceClient&lt;SearchServiceClient&gt;, ISearchServiceClient, System.IDisposable, IAzureClient</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Search_SearchServiceClient__ctor_DelegatingHandler___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchServiceClient.%23ctor(DelegatingHandler%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/search/Microsoft.Azure.Search.Service/src/Generated/SearchServiceClient.cs/#L130">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Search_SearchServiceClient__ctor_" data-uid="Microsoft.Azure.Search.SearchServiceClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_Search_SearchServiceClient__ctor_DelegatingHandler___" data-uid="Microsoft.Azure.Search.SearchServiceClient.#ctor(DelegatingHandler[])">SearchServiceClient(DelegatingHandler[])</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the SearchServiceClient class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SearchServiceClient(params DelegatingHandler[] handlers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DelegatingHandler</span>[]</td>
+        <td><span class="parametername">handlers</span></td>
+        <td><p>Optional. The delegating handlers to add to the http client pipeline.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Search_SearchServiceClient__ctor_HttpClient_System_Boolean_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchServiceClient.%23ctor(HttpClient%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/search/Microsoft.Azure.Search.Service/src/Generated/SearchServiceClient.cs/#L119">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Search_SearchServiceClient__ctor_" data-uid="Microsoft.Azure.Search.SearchServiceClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_Search_SearchServiceClient__ctor_HttpClient_System_Boolean_" data-uid="Microsoft.Azure.Search.SearchServiceClient.#ctor(HttpClient,System.Boolean)">SearchServiceClient(HttpClient, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the SearchServiceClient class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SearchServiceClient(HttpClient httpClient, bool disposeHttpClient)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">HttpClient</span></td>
+        <td><span class="parametername">httpClient</span></td>
+        <td><p>HttpClient to be used</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">disposeHttpClient</span></td>
+        <td><p>True: will dispose the provided httpClient on calling SearchServiceClient.Dispose(). False: will not dispose provided httpClient</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Search_SearchServiceClient__ctor_HttpClientHandler_DelegatingHandler___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchServiceClient.%23ctor(HttpClientHandler%2CDelegatingHandler%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/search/Microsoft.Azure.Search.Service/src/Generated/SearchServiceClient.cs/#L144">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Search_SearchServiceClient__ctor_" data-uid="Microsoft.Azure.Search.SearchServiceClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_Search_SearchServiceClient__ctor_HttpClientHandler_DelegatingHandler___" data-uid="Microsoft.Azure.Search.SearchServiceClient.#ctor(HttpClientHandler,DelegatingHandler[])">SearchServiceClient(HttpClientHandler, DelegatingHandler[])</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the SearchServiceClient class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SearchServiceClient(HttpClientHandler rootHandler, params DelegatingHandler[] handlers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">HttpClientHandler</span></td>
+        <td><span class="parametername">rootHandler</span></td>
+        <td><p>Optional. The http client handler used to handle http transport.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DelegatingHandler</span>[]</td>
+        <td><span class="parametername">handlers</span></td>
+        <td><p>Optional. The delegating handlers to add to the http client pipeline.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Search_SearchServiceClient__ctor_ServiceClientCredentials_DelegatingHandler___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchServiceClient.%23ctor(ServiceClientCredentials%2CDelegatingHandler%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/search/Microsoft.Azure.Search.Service/src/Generated/SearchServiceClient.cs/#L161">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Search_SearchServiceClient__ctor_" data-uid="Microsoft.Azure.Search.SearchServiceClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_Search_SearchServiceClient__ctor_ServiceClientCredentials_DelegatingHandler___" data-uid="Microsoft.Azure.Search.SearchServiceClient.#ctor(ServiceClientCredentials,DelegatingHandler[])">SearchServiceClient(ServiceClientCredentials, DelegatingHandler[])</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the SearchServiceClient class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SearchServiceClient(ServiceClientCredentials credentials, params DelegatingHandler[] handlers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ServiceClientCredentials</span></td>
+        <td><span class="parametername">credentials</span></td>
+        <td><p>Required. Credentials needed for the client to connect to Azure.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DelegatingHandler</span>[]</td>
+        <td><span class="parametername">handlers</span></td>
+        <td><p>Optional. The delegating handlers to add to the http client pipeline.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Search_SearchServiceClient__ctor_ServiceClientCredentials_HttpClient_System_Boolean_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchServiceClient.%23ctor(ServiceClientCredentials%2CHttpClient%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/search/Microsoft.Azure.Search.Service/src/Generated/SearchServiceClient.cs/#L188">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Search_SearchServiceClient__ctor_" data-uid="Microsoft.Azure.Search.SearchServiceClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_Search_SearchServiceClient__ctor_ServiceClientCredentials_HttpClient_System_Boolean_" data-uid="Microsoft.Azure.Search.SearchServiceClient.#ctor(ServiceClientCredentials,HttpClient,System.Boolean)">SearchServiceClient(ServiceClientCredentials, HttpClient, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the SearchServiceClient class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SearchServiceClient(ServiceClientCredentials credentials, HttpClient httpClient, bool disposeHttpClient)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ServiceClientCredentials</span></td>
+        <td><span class="parametername">credentials</span></td>
+        <td><p>Required. Credentials needed for the client to connect to Azure.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">HttpClient</span></td>
+        <td><span class="parametername">httpClient</span></td>
+        <td><p>HttpClient to be used</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">disposeHttpClient</span></td>
+        <td><p>True: will dispose the provided httpClient on calling SearchServiceClient.Dispose(). False: will not dispose provided httpClient</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Search_SearchServiceClient__ctor_ServiceClientCredentials_HttpClientHandler_DelegatingHandler___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchServiceClient.%23ctor(ServiceClientCredentials%2CHttpClientHandler%2CDelegatingHandler%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/search/Microsoft.Azure.Search.Service/src/Generated/SearchServiceClient.cs/#L216">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Search_SearchServiceClient__ctor_" data-uid="Microsoft.Azure.Search.SearchServiceClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_Search_SearchServiceClient__ctor_ServiceClientCredentials_HttpClientHandler_DelegatingHandler___" data-uid="Microsoft.Azure.Search.SearchServiceClient.#ctor(ServiceClientCredentials,HttpClientHandler,DelegatingHandler[])">SearchServiceClient(ServiceClientCredentials, HttpClientHandler, DelegatingHandler[])</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the SearchServiceClient class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SearchServiceClient(ServiceClientCredentials credentials, HttpClientHandler rootHandler, params DelegatingHandler[] handlers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ServiceClientCredentials</span></td>
+        <td><span class="parametername">credentials</span></td>
+        <td><p>Required. Credentials needed for the client to connect to Azure.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">HttpClientHandler</span></td>
+        <td><span class="parametername">rootHandler</span></td>
+        <td><p>Optional. The http client handler used to handle http transport.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DelegatingHandler</span>[]</td>
+        <td><span class="parametername">handlers</span></td>
+        <td><p>Optional. The delegating handlers to add to the http client pipeline.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Search_SearchServiceClient__ctor_System_String_Microsoft_Azure_Search_SearchCredentials_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchServiceClient.%23ctor(System.String%2CMicrosoft.Azure.Search.SearchCredentials)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/search/Microsoft.Azure.Search.Service/src/Customizations/SearchServiceClient.Customization.cs/#L44">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Search_SearchServiceClient__ctor_" data-uid="Microsoft.Azure.Search.SearchServiceClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_Search_SearchServiceClient__ctor_System_String_Microsoft_Azure_Search_SearchCredentials_" data-uid="Microsoft.Azure.Search.SearchServiceClient.#ctor(System.String,Microsoft.Azure.Search.SearchCredentials)">SearchServiceClient(String, SearchCredentials)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the SearchServiceClient class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SearchServiceClient(string searchServiceName, SearchCredentials credentials)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">searchServiceName</span></td>
+        <td><p>Required. The name of the Azure Search service.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Search.SearchCredentials.html">SearchCredentials</a></td>
+        <td><span class="parametername">credentials</span></td>
+        <td><p>Required. The credentials used to authenticate to an Azure Search service.
+<a href="https://docs.microsoft.com/rest/api/searchservice/">https://docs.microsoft.com/rest/api/searchservice/</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Search_SearchServiceClient__ctor_System_String_Microsoft_Azure_Search_SearchCredentials_HttpClientHandler_DelegatingHandler___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchServiceClient.%23ctor(System.String%2CMicrosoft.Azure.Search.SearchCredentials%2CHttpClientHandler%2CDelegatingHandler%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/search/Microsoft.Azure.Search.Service/src/Customizations/SearchServiceClient.Customization.cs/#L28">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Search_SearchServiceClient__ctor_" data-uid="Microsoft.Azure.Search.SearchServiceClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_Search_SearchServiceClient__ctor_System_String_Microsoft_Azure_Search_SearchCredentials_HttpClientHandler_DelegatingHandler___" data-uid="Microsoft.Azure.Search.SearchServiceClient.#ctor(System.String,Microsoft.Azure.Search.SearchCredentials,HttpClientHandler,DelegatingHandler[])">SearchServiceClient(String, SearchCredentials, HttpClientHandler, DelegatingHandler[])</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the SearchServiceClient class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SearchServiceClient(string searchServiceName, SearchCredentials credentials, HttpClientHandler rootHandler, params DelegatingHandler[] handlers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">searchServiceName</span></td>
+        <td><p>Required. The name of the Azure Search service.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Search.SearchCredentials.html">SearchCredentials</a></td>
+        <td><span class="parametername">credentials</span></td>
+        <td><p>Required. The credentials used to authenticate to an Azure Search service.
+<a href="https://docs.microsoft.com/rest/api/searchservice/">https://docs.microsoft.com/rest/api/searchservice/</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">HttpClientHandler</span></td>
+        <td><span class="parametername">rootHandler</span></td>
+        <td><p>Optional. The http client handler used to handle http transport.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DelegatingHandler</span>[]</td>
+        <td><span class="parametername">handlers</span></td>
+        <td><p>Optional. The set of delegating handlers to insert in the http
+client pipeline.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Search_SearchServiceClient_AcceptLanguage.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchServiceClient.AcceptLanguage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/search/Microsoft.Azure.Search.Service/src/Generated/SearchServiceClient.cs/#L71">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Search_SearchServiceClient_AcceptLanguage_" data-uid="Microsoft.Azure.Search.SearchServiceClient.AcceptLanguage*"></a>
+  <h4 id="Microsoft_Azure_Search_SearchServiceClient_AcceptLanguage" data-uid="Microsoft.Azure.Search.SearchServiceClient.AcceptLanguage">AcceptLanguage</h4>
+  <div class="markdown level1 summary"><p>The preferred language for the response.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string AcceptLanguage { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Search_SearchServiceClient_ApiVersion.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchServiceClient.ApiVersion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/search/Microsoft.Azure.Search.Service/src/Generated/SearchServiceClient.cs/#L55">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Search_SearchServiceClient_ApiVersion_" data-uid="Microsoft.Azure.Search.SearchServiceClient.ApiVersion*"></a>
+  <h4 id="Microsoft_Azure_Search_SearchServiceClient_ApiVersion" data-uid="Microsoft.Azure.Search.SearchServiceClient.ApiVersion">ApiVersion</h4>
+  <div class="markdown level1 summary"><p>Client Api Version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ApiVersion { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Search_SearchServiceClient_Credentials.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchServiceClient.Credentials%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/search/Microsoft.Azure.Search.Service/src/Generated/SearchServiceClient.cs/#L50">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Search_SearchServiceClient_Credentials_" data-uid="Microsoft.Azure.Search.SearchServiceClient.Credentials*"></a>
+  <h4 id="Microsoft_Azure_Search_SearchServiceClient_Credentials" data-uid="Microsoft.Azure.Search.SearchServiceClient.Credentials">Credentials</h4>
+  <div class="markdown level1 summary"><p>Credentials needed for the client to connect to Azure.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ServiceClientCredentials Credentials { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ServiceClientCredentials</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Search_SearchServiceClient_DataSources.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchServiceClient.DataSources%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/search/Microsoft.Azure.Search.Service/src/Generated/SearchServiceClient.cs/#L89">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Search_SearchServiceClient_DataSources_" data-uid="Microsoft.Azure.Search.SearchServiceClient.DataSources*"></a>
+  <h4 id="Microsoft_Azure_Search_SearchServiceClient_DataSources" data-uid="Microsoft.Azure.Search.SearchServiceClient.DataSources">DataSources</h4>
+  <div class="markdown level1 summary"><p>Gets the IDataSourcesOperations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IDataSourcesOperations DataSources { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Search.IDataSourcesOperations.html">IDataSourcesOperations</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Search_SearchServiceClient_DeserializationSettings.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchServiceClient.DeserializationSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/search/Microsoft.Azure.Search.Service/src/Generated/SearchServiceClient.cs/#L45">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Search_SearchServiceClient_DeserializationSettings_" data-uid="Microsoft.Azure.Search.SearchServiceClient.DeserializationSettings*"></a>
+  <h4 id="Microsoft_Azure_Search_SearchServiceClient_DeserializationSettings" data-uid="Microsoft.Azure.Search.SearchServiceClient.DeserializationSettings">DeserializationSettings</h4>
+  <div class="markdown level1 summary"><p>Gets or sets json deserialization settings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonSerializerSettings DeserializationSettings { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">JsonSerializerSettings</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Search_SearchServiceClient_GenerateClientRequestId.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchServiceClient.GenerateClientRequestId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/search/Microsoft.Azure.Search.Service/src/Generated/SearchServiceClient.cs/#L84">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Search_SearchServiceClient_GenerateClientRequestId_" data-uid="Microsoft.Azure.Search.SearchServiceClient.GenerateClientRequestId*"></a>
+  <h4 id="Microsoft_Azure_Search_SearchServiceClient_GenerateClientRequestId" data-uid="Microsoft.Azure.Search.SearchServiceClient.GenerateClientRequestId">GenerateClientRequestId</h4>
+  <div class="markdown level1 summary"><p>Whether a unique x-ms-client-request-id should be generated. When set to
+true a unique x-ms-client-request-id value is generated and included in
+each request. Default is true.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? GenerateClientRequestId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Search_SearchServiceClient_Indexers.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchServiceClient.Indexers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/search/Microsoft.Azure.Search.Service/src/Generated/SearchServiceClient.cs/#L94">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Search_SearchServiceClient_Indexers_" data-uid="Microsoft.Azure.Search.SearchServiceClient.Indexers*"></a>
+  <h4 id="Microsoft_Azure_Search_SearchServiceClient_Indexers" data-uid="Microsoft.Azure.Search.SearchServiceClient.Indexers">Indexers</h4>
+  <div class="markdown level1 summary"><p>Gets the IIndexersOperations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IIndexersOperations Indexers { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Search.IIndexersOperations.html">IIndexersOperations</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Search_SearchServiceClient_Indexes.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchServiceClient.Indexes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/search/Microsoft.Azure.Search.Service/src/Generated/SearchServiceClient.cs/#L109">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Search_SearchServiceClient_Indexes_" data-uid="Microsoft.Azure.Search.SearchServiceClient.Indexes*"></a>
+  <h4 id="Microsoft_Azure_Search_SearchServiceClient_Indexes" data-uid="Microsoft.Azure.Search.SearchServiceClient.Indexes">Indexes</h4>
+  <div class="markdown level1 summary"><p>Gets the IIndexesOperations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IIndexesOperations Indexes { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Search.IIndexesOperations.html">IIndexesOperations</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Search_SearchServiceClient_LongRunningOperationRetryTimeout.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchServiceClient.LongRunningOperationRetryTimeout%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/search/Microsoft.Azure.Search.Service/src/Generated/SearchServiceClient.cs/#L77">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Search_SearchServiceClient_LongRunningOperationRetryTimeout_" data-uid="Microsoft.Azure.Search.SearchServiceClient.LongRunningOperationRetryTimeout*"></a>
+  <h4 id="Microsoft_Azure_Search_SearchServiceClient_LongRunningOperationRetryTimeout" data-uid="Microsoft.Azure.Search.SearchServiceClient.LongRunningOperationRetryTimeout">LongRunningOperationRetryTimeout</h4>
+  <div class="markdown level1 summary"><p>The retry timeout in seconds for Long Running Operations. Default value is
+30.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? LongRunningOperationRetryTimeout { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Search_SearchServiceClient_SearchCredentials.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchServiceClient.SearchCredentials%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/search/Microsoft.Azure.Search.Service/src/Customizations/SearchServiceClient.Customization.cs/#L56">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Search_SearchServiceClient_SearchCredentials_" data-uid="Microsoft.Azure.Search.SearchServiceClient.SearchCredentials*"></a>
+  <h4 id="Microsoft_Azure_Search_SearchServiceClient_SearchCredentials" data-uid="Microsoft.Azure.Search.SearchServiceClient.SearchCredentials">SearchCredentials</h4>
+  <div class="markdown level1 summary"><p>Gets the credentials used to authenticate to an Azure Search service. This can be either a query API key or an admin API key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SearchCredentials SearchCredentials { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Search.SearchCredentials.html">SearchCredentials</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Search_SearchServiceClient_SearchCredentials_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See <a href="https://docs.microsoft.com/azure/search/search-security-api-keys">https://docs.microsoft.com/azure/search/search-security-api-keys</a> for more information about API keys in Azure Search.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Search_SearchServiceClient_SearchDnsSuffix.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchServiceClient.SearchDnsSuffix%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/search/Microsoft.Azure.Search.Service/src/Generated/SearchServiceClient.cs/#L66">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Search_SearchServiceClient_SearchDnsSuffix_" data-uid="Microsoft.Azure.Search.SearchServiceClient.SearchDnsSuffix*"></a>
+  <h4 id="Microsoft_Azure_Search_SearchServiceClient_SearchDnsSuffix" data-uid="Microsoft.Azure.Search.SearchServiceClient.SearchDnsSuffix">SearchDnsSuffix</h4>
+  <div class="markdown level1 summary"><p>The DNS suffix of the Azure Search service. The default is
+search.windows.net.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SearchDnsSuffix { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Search_SearchServiceClient_SearchServiceName.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchServiceClient.SearchServiceName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/search/Microsoft.Azure.Search.Service/src/Generated/SearchServiceClient.cs/#L60">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Search_SearchServiceClient_SearchServiceName_" data-uid="Microsoft.Azure.Search.SearchServiceClient.SearchServiceName*"></a>
+  <h4 id="Microsoft_Azure_Search_SearchServiceClient_SearchServiceName" data-uid="Microsoft.Azure.Search.SearchServiceClient.SearchServiceName">SearchServiceName</h4>
+  <div class="markdown level1 summary"><p>The name of the Azure Search service.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SearchServiceName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Search_SearchServiceClient_SerializationSettings.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchServiceClient.SerializationSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/search/Microsoft.Azure.Search.Service/src/Generated/SearchServiceClient.cs/#L40">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Search_SearchServiceClient_SerializationSettings_" data-uid="Microsoft.Azure.Search.SearchServiceClient.SerializationSettings*"></a>
+  <h4 id="Microsoft_Azure_Search_SearchServiceClient_SerializationSettings" data-uid="Microsoft.Azure.Search.SearchServiceClient.SerializationSettings">SerializationSettings</h4>
+  <div class="markdown level1 summary"><p>Gets or sets json serialization settings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonSerializerSettings SerializationSettings { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">JsonSerializerSettings</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Search_SearchServiceClient_Skillsets.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchServiceClient.Skillsets%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/search/Microsoft.Azure.Search.Service/src/Generated/SearchServiceClient.cs/#L99">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Search_SearchServiceClient_Skillsets_" data-uid="Microsoft.Azure.Search.SearchServiceClient.Skillsets*"></a>
+  <h4 id="Microsoft_Azure_Search_SearchServiceClient_Skillsets" data-uid="Microsoft.Azure.Search.SearchServiceClient.Skillsets">Skillsets</h4>
+  <div class="markdown level1 summary"><p>Gets the ISkillsetsOperations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ISkillsetsOperations Skillsets { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Search.ISkillsetsOperations.html">ISkillsetsOperations</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Search_SearchServiceClient_SynonymMaps.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchServiceClient.SynonymMaps%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/search/Microsoft.Azure.Search.Service/src/Generated/SearchServiceClient.cs/#L104">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Search_SearchServiceClient_SynonymMaps_" data-uid="Microsoft.Azure.Search.SearchServiceClient.SynonymMaps*"></a>
+  <h4 id="Microsoft_Azure_Search_SearchServiceClient_SynonymMaps" data-uid="Microsoft.Azure.Search.SearchServiceClient.SynonymMaps">SynonymMaps</h4>
+  <div class="markdown level1 summary"><p>Gets the ISynonymMapsOperations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ISynonymMapsOperations SynonymMaps { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Search.ISynonymMapsOperations.html">ISynonymMapsOperations</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Search_SearchServiceClient_GetServiceStatisticsWithHttpMessagesAsync_Microsoft_Azure_Search_Models_SearchRequestOptions_Dictionary_System_String_List_System_String___CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchServiceClient.GetServiceStatisticsWithHttpMessagesAsync(Microsoft.Azure.Search.Models.SearchRequestOptions%2CDictionary%7BSystem.String%2CList%7BSystem.String%7D%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/search/Microsoft.Azure.Search.Service/src/Generated/SearchServiceClient.cs/#L322">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Search_SearchServiceClient_GetServiceStatisticsWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Search.SearchServiceClient.GetServiceStatisticsWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_Search_SearchServiceClient_GetServiceStatisticsWithHttpMessagesAsync_Microsoft_Azure_Search_Models_SearchRequestOptions_Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.Search.SearchServiceClient.GetServiceStatisticsWithHttpMessagesAsync(Microsoft.Azure.Search.Models.SearchRequestOptions,Dictionary{System.String,List{System.String}},CancellationToken)">GetServiceStatisticsWithHttpMessagesAsync(SearchRequestOptions, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets service level statistics for an Azure Search service.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;AzureOperationResponse&lt;ServiceStatistics&gt;&gt; GetServiceStatisticsWithHttpMessagesAsync(SearchRequestOptions searchRequestOptions = null, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Search.Models.SearchRequestOptions.html">SearchRequestOptions</a></td>
+        <td><span class="parametername">searchRequestOptions</span></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>Headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">AzureOperationResponse</span>&lt;<a class="xref" href="Microsoft.Azure.Search.Models.ServiceStatistics.html">ServiceStatistics</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Search.ISearchServiceClient.html">ISearchServiceClient</a>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <div>
+      <span class="xref">IAzureClient</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="../ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.AppConfigurationAzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AppConfigurationAzureClientBuilderExtensions_AddAppConfiguration__2___0_System_String___1_">AppConfigurationAzureClientBuilderExtensions.AddAppConfiguration&lt;TBuilder, TConfiguration&gt;(TBuilder, String, TConfiguration)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Search.SearchServiceClientExtensions.html#Microsoft_Azure_Search_SearchServiceClientExtensions_GetServiceStatistics_Microsoft_Azure_Search_ISearchServiceClient_Microsoft_Azure_Search_Models_SearchRequestOptions_">SearchServiceClientExtensions.GetServiceStatistics(ISearchServiceClient, SearchRequestOptions)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Search.SearchServiceClientExtensions.html#Microsoft_Azure_Search_SearchServiceClientExtensions_GetServiceStatisticsAsync_Microsoft_Azure_Search_ISearchServiceClient_Microsoft_Azure_Search_Models_SearchRequestOptions_CancellationToken_">SearchServiceClientExtensions.GetServiceStatisticsAsync(ISearchServiceClient, SearchRequestOptions, CancellationToken)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Search_SearchServiceClient.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchServiceClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/search/Microsoft.Azure.Search.Service/src/Generated/SearchServiceClient.cs/#L30" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

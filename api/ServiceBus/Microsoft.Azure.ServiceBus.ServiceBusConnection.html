@@ -1,0 +1,577 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ServiceBusConnection
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ServiceBusConnection
+   ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Microsoft.Azure.ServiceBus.ServiceBusConnection">
+  
+  
+  <h1 id="Microsoft_Azure_ServiceBus_ServiceBusConnection" data-uid="Microsoft.Azure.ServiceBus.ServiceBusConnection" class="text-break">Class ServiceBusConnection
+  </h1>
+  <div class="markdown level0 summary"><p>Connection object to service bus namespace</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ServiceBusConnection</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.Azure.ServiceBus.html">Microsoft.Azure.ServiceBus</a></h6>
+  <h6><strong>Assembly</strong>: Microsoft.Azure.ServiceBus.dll</h6>
+  <h5 id="Microsoft_Azure_ServiceBus_ServiceBusConnection_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ServiceBusConnection : object</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_ServiceBusConnection__ctor_Microsoft_Azure_ServiceBus_ServiceBusConnectionStringBuilder_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.ServiceBusConnection.%23ctor(Microsoft.Azure.ServiceBus.ServiceBusConnectionStringBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/ServiceBusConnection.cs/#L30">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_ServiceBusConnection__ctor_" data-uid="Microsoft.Azure.ServiceBus.ServiceBusConnection.#ctor*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_ServiceBusConnection__ctor_Microsoft_Azure_ServiceBus_ServiceBusConnectionStringBuilder_" data-uid="Microsoft.Azure.ServiceBus.ServiceBusConnection.#ctor(Microsoft.Azure.ServiceBus.ServiceBusConnectionStringBuilder)">ServiceBusConnection(ServiceBusConnectionStringBuilder)</h4>
+  <div class="markdown level1 summary"><p>Creates a new connection to service bus.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ServiceBusConnection(ServiceBusConnectionStringBuilder connectionStringBuilder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusConnectionStringBuilder.html">ServiceBusConnectionStringBuilder</a></td>
+        <td><span class="parametername">connectionStringBuilder</span></td>
+        <td><p><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusConnectionStringBuilder.html">ServiceBusConnectionStringBuilder</a> having namespace information.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_ServiceBusConnection__ctor_Microsoft_Azure_ServiceBus_ServiceBusConnectionStringBuilder__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>It is the responsibility of the user to close the connection after use through <a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusConnection.html#Microsoft_Azure_ServiceBus_ServiceBusConnection_CloseAsync">CloseAsync()</a></p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_ServiceBusConnection__ctor_System_String_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.ServiceBusConnection.%23ctor(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/ServiceBusConnection.cs/#L40">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_ServiceBusConnection__ctor_" data-uid="Microsoft.Azure.ServiceBus.ServiceBusConnection.#ctor*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_ServiceBusConnection__ctor_System_String_" data-uid="Microsoft.Azure.ServiceBus.ServiceBusConnection.#ctor(System.String)">ServiceBusConnection(String)</h4>
+  <div class="markdown level1 summary"><p>Creates a new connection to service bus.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ServiceBusConnection(string namespaceConnectionString)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">namespaceConnectionString</span></td>
+        <td><p>Namespace connection string</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_ServiceBusConnection__ctor_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>It is the responsibility of the user to close the connection after use through <a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusConnection.html#Microsoft_Azure_ServiceBus_ServiceBusConnection_CloseAsync">CloseAsync()</a></p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_ServiceBusConnection__ctor_System_String_Microsoft_Azure_ServiceBus_RetryPolicy_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.ServiceBusConnection.%23ctor(System.String%2CMicrosoft.Azure.ServiceBus.RetryPolicy)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/ServiceBusConnection.cs/#L51">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_ServiceBusConnection__ctor_" data-uid="Microsoft.Azure.ServiceBus.ServiceBusConnection.#ctor*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_ServiceBusConnection__ctor_System_String_Microsoft_Azure_ServiceBus_RetryPolicy_" data-uid="Microsoft.Azure.ServiceBus.ServiceBusConnection.#ctor(System.String,Microsoft.Azure.ServiceBus.RetryPolicy)">ServiceBusConnection(String, RetryPolicy)</h4>
+  <div class="markdown level1 summary"><p>Creates a new connection to service bus.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ServiceBusConnection(string namespaceConnectionString, RetryPolicy retryPolicy = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">namespaceConnectionString</span></td>
+        <td><p>Namespace connection string.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.RetryPolicy.html">RetryPolicy</a></td>
+        <td><span class="parametername">retryPolicy</span></td>
+        <td><p>Retry policy for operations. Defaults to <a class="xref" href="Microsoft.Azure.ServiceBus.RetryPolicy.html#Microsoft_Azure_ServiceBus_RetryPolicy_Default">Default</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_ServiceBusConnection__ctor_System_String_Microsoft_Azure_ServiceBus_RetryPolicy__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>It is the responsibility of the user to close the connection after use through <a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusConnection.html#Microsoft_Azure_ServiceBus_ServiceBusConnection_CloseAsync">CloseAsync()</a></p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_ServiceBusConnection__ctor_System_String_Microsoft_Azure_ServiceBus_TransportType_Microsoft_Azure_ServiceBus_RetryPolicy_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.ServiceBusConnection.%23ctor(System.String%2CMicrosoft.Azure.ServiceBus.TransportType%2CMicrosoft.Azure.ServiceBus.RetryPolicy)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/ServiceBusConnection.cs/#L101">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_ServiceBusConnection__ctor_" data-uid="Microsoft.Azure.ServiceBus.ServiceBusConnection.#ctor*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_ServiceBusConnection__ctor_System_String_Microsoft_Azure_ServiceBus_TransportType_Microsoft_Azure_ServiceBus_RetryPolicy_" data-uid="Microsoft.Azure.ServiceBus.ServiceBusConnection.#ctor(System.String,Microsoft.Azure.ServiceBus.TransportType,Microsoft.Azure.ServiceBus.RetryPolicy)">ServiceBusConnection(String, TransportType, RetryPolicy)</h4>
+  <div class="markdown level1 summary"><p>Creates a new connection to service bus.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ServiceBusConnection(string endpoint, TransportType transportType, RetryPolicy retryPolicy = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">endpoint</span></td>
+        <td><p>Fully qualified domain name for Service Bus. Most likely, {yournamespace}.servicebus.windows.net</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.TransportType.html">TransportType</a></td>
+        <td><span class="parametername">transportType</span></td>
+        <td><p>Transport type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.RetryPolicy.html">RetryPolicy</a></td>
+        <td><span class="parametername">retryPolicy</span></td>
+        <td><p>Retry policy for operations. Defaults to <a class="xref" href="Microsoft.Azure.ServiceBus.RetryPolicy.html#Microsoft_Azure_ServiceBus_RetryPolicy_Default">Default</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_ServiceBusConnection__ctor_System_String_TimeSpan_Microsoft_Azure_ServiceBus_RetryPolicy_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.ServiceBusConnection.%23ctor(System.String%2CTimeSpan%2CMicrosoft.Azure.ServiceBus.RetryPolicy)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/ServiceBusConnection.cs/#L75">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_ServiceBusConnection__ctor_" data-uid="Microsoft.Azure.ServiceBus.ServiceBusConnection.#ctor*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_ServiceBusConnection__ctor_System_String_TimeSpan_Microsoft_Azure_ServiceBus_RetryPolicy_" data-uid="Microsoft.Azure.ServiceBus.ServiceBusConnection.#ctor(System.String,TimeSpan,Microsoft.Azure.ServiceBus.RetryPolicy)">ServiceBusConnection(String, TimeSpan, RetryPolicy)</h4>
+  <div class="markdown level1 summary"><p>Creates a new connection to service bus.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ServiceBusConnection(string namespaceConnectionString, TimeSpan operationTimeout, RetryPolicy retryPolicy = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">namespaceConnectionString</span></td>
+        <td><p>Namespace connection string.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="parametername">operationTimeout</span></td>
+        <td><p>Duration after which individual operations will timeout.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.RetryPolicy.html">RetryPolicy</a></td>
+        <td><span class="parametername">retryPolicy</span></td>
+        <td><p>Retry policy for operations. Defaults to <a class="xref" href="Microsoft.Azure.ServiceBus.RetryPolicy.html#Microsoft_Azure_ServiceBus_RetryPolicy_Default">Default</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_ServiceBusConnection__ctor_System_String_TimeSpan_Microsoft_Azure_ServiceBus_RetryPolicy__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>It is the responsibility of the user to close the connection after use through <a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusConnection.html#Microsoft_Azure_ServiceBus_ServiceBusConnection_CloseAsync">CloseAsync()</a></p>
+</div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_ServiceBusConnection_Endpoint.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.ServiceBusConnection.Endpoint%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/ServiceBusConnection.cs/#L127">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_ServiceBusConnection_Endpoint_" data-uid="Microsoft.Azure.ServiceBus.ServiceBusConnection.Endpoint*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_ServiceBusConnection_Endpoint" data-uid="Microsoft.Azure.ServiceBus.ServiceBusConnection.Endpoint">Endpoint</h4>
+  <div class="markdown level1 summary"><p>Fully qualified domain name for Service Bus.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Uri Endpoint { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Uri</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_ServiceBusConnection_IsClosedOrClosing.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.ServiceBusConnection.IsClosedOrClosing%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/ServiceBusConnection.cs/#L155">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_ServiceBusConnection_IsClosedOrClosing_" data-uid="Microsoft.Azure.ServiceBus.ServiceBusConnection.IsClosedOrClosing*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_ServiceBusConnection_IsClosedOrClosing" data-uid="Microsoft.Azure.ServiceBus.ServiceBusConnection.IsClosedOrClosing">IsClosedOrClosing</h4>
+  <div class="markdown level1 summary"><p>Returns true if the Service Bus Connection is closed or closing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsClosedOrClosing { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_ServiceBusConnection_OperationTimeout.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.ServiceBusConnection.OperationTimeout%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/ServiceBusConnection.cs/#L133">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_ServiceBusConnection_OperationTimeout_" data-uid="Microsoft.Azure.ServiceBus.ServiceBusConnection.OperationTimeout*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_ServiceBusConnection_OperationTimeout" data-uid="Microsoft.Azure.ServiceBus.ServiceBusConnection.OperationTimeout">OperationTimeout</h4>
+  <div class="markdown level1 summary"><p>OperationTimeout is applied in erroneous situations to notify the caller about the relevant <a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusException.html">ServiceBusException</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeSpan OperationTimeout { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TimeSpan</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_ServiceBusConnection_OperationTimeout_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Defaults to 1 minute.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_ServiceBusConnection_RetryPolicy.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.ServiceBusConnection.RetryPolicy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/ServiceBusConnection.cs/#L139">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_ServiceBusConnection_RetryPolicy_" data-uid="Microsoft.Azure.ServiceBus.ServiceBusConnection.RetryPolicy*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_ServiceBusConnection_RetryPolicy" data-uid="Microsoft.Azure.ServiceBus.ServiceBusConnection.RetryPolicy">RetryPolicy</h4>
+  <div class="markdown level1 summary"><p>Retry policy for operations performed on the connection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RetryPolicy RetryPolicy { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.RetryPolicy.html">RetryPolicy</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_ServiceBusConnection_RetryPolicy_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Defaults to <a class="xref" href="Microsoft.Azure.ServiceBus.RetryPolicy.html#Microsoft_Azure_ServiceBus_RetryPolicy_Default">Default</a></p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_ServiceBusConnection_TokenProvider.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.ServiceBusConnection.TokenProvider%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/ServiceBusConnection.cs/#L150">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_ServiceBusConnection_TokenProvider_" data-uid="Microsoft.Azure.ServiceBus.ServiceBusConnection.TokenProvider*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_ServiceBusConnection_TokenProvider" data-uid="Microsoft.Azure.ServiceBus.ServiceBusConnection.TokenProvider">TokenProvider</h4>
+  <div class="markdown level1 summary"><p>Token provider for authentication. <a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusConnection.html#Microsoft_Azure_ServiceBus_ServiceBusConnection_TokenProvider">TokenProvider</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITokenProvider TokenProvider { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.Primitives.ITokenProvider.html">ITokenProvider</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_ServiceBusConnection_TransportType.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.ServiceBusConnection.TransportType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/ServiceBusConnection.cs/#L145">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_ServiceBusConnection_TransportType_" data-uid="Microsoft.Azure.ServiceBus.ServiceBusConnection.TransportType*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_ServiceBusConnection_TransportType" data-uid="Microsoft.Azure.ServiceBus.ServiceBusConnection.TransportType">TransportType</h4>
+  <div class="markdown level1 summary"><p>Get the transport type from the connection string.
+<remarks>Available options: Amqp and AmqpWebSockets.</remarks></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TransportType TransportType { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.TransportType.html">TransportType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_ServiceBusConnection_CloseAsync.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.ServiceBusConnection.CloseAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/ServiceBusConnection.cs/#L191">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_ServiceBusConnection_CloseAsync_" data-uid="Microsoft.Azure.ServiceBus.ServiceBusConnection.CloseAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_ServiceBusConnection_CloseAsync" data-uid="Microsoft.Azure.ServiceBus.ServiceBusConnection.CloseAsync">CloseAsync()</h4>
+  <div class="markdown level1 summary"><p>Closes the connection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task CloseAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="../ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.AppConfigurationAzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AppConfigurationAzureClientBuilderExtensions_AddAppConfiguration__2___0_System_String___1_">AppConfigurationAzureClientBuilderExtensions.AddAppConfiguration&lt;TBuilder, TConfiguration&gt;(TBuilder, String, TConfiguration)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_ServiceBusConnection.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.ServiceBusConnection%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/ServiceBusConnection.cs/#L19" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

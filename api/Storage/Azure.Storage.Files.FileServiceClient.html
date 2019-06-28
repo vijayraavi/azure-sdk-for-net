@@ -1,0 +1,527 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class FileServiceClient
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class FileServiceClient
+   ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Azure.Storage.Files.FileServiceClient">
+  
+  
+  <h1 id="Azure_Storage_Files_FileServiceClient" data-uid="Azure.Storage.Files.FileServiceClient" class="text-break">Class FileServiceClient
+  </h1>
+  <div class="markdown level0 summary"><p>The <a class="xref" href="Azure.Storage.Files.FileServiceClient.html">FileServiceClient</a> allows you to manipulate Azure
+Storage service resources and shares. The storage account provides
+the top-level namespace for the File service.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">FileServiceClient</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Azure.Storage.Files.html">Azure.Storage.Files</a></h6>
+  <h6><strong>Assembly</strong>: Azure.Storage.Files.dll</h6>
+  <h5 id="Azure_Storage_Files_FileServiceClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class FileServiceClient : object</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Azure_Storage_Files_FileServiceClient__ctor_System_String_Azure_Storage_Files_FileConnectionOptions_.md&amp;value=---%0Auid%3A%20Azure.Storage.Files.FileServiceClient.%23ctor(System.String%2CAzure.Storage.Files.FileConnectionOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/storage/Azure.Storage.Files/src/FileServiceClient.cs/#L53">View Source</a>
+  </span>
+  <a id="Azure_Storage_Files_FileServiceClient__ctor_" data-uid="Azure.Storage.Files.FileServiceClient.#ctor*"></a>
+  <h4 id="Azure_Storage_Files_FileServiceClient__ctor_System_String_Azure_Storage_Files_FileConnectionOptions_" data-uid="Azure.Storage.Files.FileServiceClient.#ctor(System.String,Azure.Storage.Files.FileConnectionOptions)">FileServiceClient(String, FileConnectionOptions)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Storage.Files.FileServiceClient.html">FileServiceClient</a>
+class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileServiceClient(string connectionString, FileConnectionOptions connectionOptions = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">connectionString</span></td>
+        <td><p>A connection string includes the authentication information
+required for your application to access data in an Azure Storage
+account at runtime.</p>
+<p>For more information, <a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string">https://docs.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Files.FileConnectionOptions.html">FileConnectionOptions</a></td>
+        <td><span class="parametername">connectionOptions</span></td>
+        <td><p>Optional connection options that define the transport pipeline
+policies for authentication, retries, etc., that are applied to
+every request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Files_FileServiceClient__ctor_System_String_Azure_Storage_Files_FileConnectionOptions__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The credentials on <code data-dev-comment-type="paramref" class="paramref">connectionString</code> will override those on <code data-dev-comment-type="paramref" class="paramref">connectionOptions</code>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Azure_Storage_Files_FileServiceClient__ctor_Uri_Azure_Storage_Files_FileConnectionOptions_.md&amp;value=---%0Auid%3A%20Azure.Storage.Files.FileServiceClient.%23ctor(Uri%2CAzure.Storage.Files.FileConnectionOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/storage/Azure.Storage.Files/src/FileServiceClient.cs/#L77">View Source</a>
+  </span>
+  <a id="Azure_Storage_Files_FileServiceClient__ctor_" data-uid="Azure.Storage.Files.FileServiceClient.#ctor*"></a>
+  <h4 id="Azure_Storage_Files_FileServiceClient__ctor_Uri_Azure_Storage_Files_FileConnectionOptions_" data-uid="Azure.Storage.Files.FileServiceClient.#ctor(Uri,Azure.Storage.Files.FileConnectionOptions)">FileServiceClient(Uri, FileConnectionOptions)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Storage.Files.FileServiceClient.html">FileServiceClient</a>
+class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileServiceClient(Uri primaryUri, FileConnectionOptions connectionOptions = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Uri</span></td>
+        <td><span class="parametername">primaryUri</span></td>
+        <td><p>A <a class="xref" href="Azure.Storage.Files.FileServiceClient.html#Azure_Storage_Files_FileServiceClient_Uri">Uri</a> referencing the file service.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Files.FileConnectionOptions.html">FileConnectionOptions</a></td>
+        <td><span class="parametername">connectionOptions</span></td>
+        <td><p>Optional connection options that define the transport pipeline
+policies for authentication, retries, etc., that are applied to
+every request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Azure_Storage_Files_FileServiceClient_Uri.md&amp;value=---%0Auid%3A%20Azure.Storage.Files.FileServiceClient.Uri%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/storage/Azure.Storage.Files/src/FileServiceClient.cs/#L26">View Source</a>
+  </span>
+  <a id="Azure_Storage_Files_FileServiceClient_Uri_" data-uid="Azure.Storage.Files.FileServiceClient.Uri*"></a>
+  <h4 id="Azure_Storage_Files_FileServiceClient_Uri" data-uid="Azure.Storage.Files.FileServiceClient.Uri">Uri</h4>
+  <div class="markdown level1 summary"><p>Gets the file service's primary <a class="xref" href="Azure.Storage.Files.FileServiceClient.html#Azure_Storage_Files_FileServiceClient_Uri">Uri</a> endpoint.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Uri Uri { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Uri</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Azure_Storage_Files_FileServiceClient_GetPropertiesAsync_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Storage.Files.FileServiceClient.GetPropertiesAsync(CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/storage/Azure.Storage.Files/src/FileServiceClient.cs/#L204">View Source</a>
+  </span>
+  <a id="Azure_Storage_Files_FileServiceClient_GetPropertiesAsync_" data-uid="Azure.Storage.Files.FileServiceClient.GetPropertiesAsync*"></a>
+  <h4 id="Azure_Storage_Files_FileServiceClient_GetPropertiesAsync_CancellationToken_" data-uid="Azure.Storage.Files.FileServiceClient.GetPropertiesAsync(CancellationToken)">GetPropertiesAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.FileServiceClient.html#Azure_Storage_Files_FileServiceClient_GetPropertiesAsync_CancellationToken_">GetPropertiesAsync(CancellationToken)</a> operation gets the properties
+of a storage account’s file service, including properties for
+Storage Analytics and CORS (Cross-Origin Resource Sharing) rules.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/get-file-service-properties">https://docs.microsoft.com/en-us/rest/api/storageservices/get-file-service-properties</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Response&lt;FileServiceProperties&gt;&gt; GetPropertiesAsync(CancellationToken cancellation = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td><p>Optional <see cref="!:CancellationToken"></see> to propagate
+notifications that the operation should be cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.Models.FileServiceProperties.html">FileServiceProperties</a>&gt;&gt;</td>
+        <td><p>A <see cref="!:Task&lt;Response&lt;FileServiceProperties>>"></see> describing
+the service properties.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Files_FileServiceClient_GetPropertiesAsync_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
+a failure occurs.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Azure_Storage_Files_FileServiceClient_GetShareClient_System_String_.md&amp;value=---%0Auid%3A%20Azure.Storage.Files.FileServiceClient.GetShareClient(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/storage/Azure.Storage.Files/src/FileServiceClient.cs/#L110">View Source</a>
+  </span>
+  <a id="Azure_Storage_Files_FileServiceClient_GetShareClient_" data-uid="Azure.Storage.Files.FileServiceClient.GetShareClient*"></a>
+  <h4 id="Azure_Storage_Files_FileServiceClient_GetShareClient_System_String_" data-uid="Azure.Storage.Files.FileServiceClient.GetShareClient(System.String)">GetShareClient(String)</h4>
+  <div class="markdown level1 summary"><p>Create a new <a class="xref" href="Azure.Storage.Files.ShareClient.html">ShareClient</a> object by appending
+<code data-dev-comment-type="paramref" class="paramref">shareName</code> to the end of <a class="xref" href="Azure.Storage.Files.FileServiceClient.html#Azure_Storage_Files_FileServiceClient_Uri">Uri</a>.
+The new <a class="xref" href="Azure.Storage.Files.ShareClient.html">ShareClient</a> uses the same request
+policy pipeline as the <a class="xref" href="Azure.Storage.Files.FileServiceClient.html">FileServiceClient</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ShareClient GetShareClient(string shareName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">shareName</span></td>
+        <td><p>The name of the share to reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Files.ShareClient.html">ShareClient</a></td>
+        <td><p>A <a class="xref" href="Azure.Storage.Files.ShareClient.html">ShareClient</a> for the desired share.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Azure_Storage_Files_FileServiceClient_ListSharesSegmentAsync_System_String_System_Nullable_Azure_Storage_Files_SharesSegmentOptions__CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Storage.Files.FileServiceClient.ListSharesSegmentAsync(System.String%2CSystem.Nullable%7BAzure.Storage.Files.SharesSegmentOptions%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/storage/Azure.Storage.Files/src/FileServiceClient.cs/#L148">View Source</a>
+  </span>
+  <a id="Azure_Storage_Files_FileServiceClient_ListSharesSegmentAsync_" data-uid="Azure.Storage.Files.FileServiceClient.ListSharesSegmentAsync*"></a>
+  <h4 id="Azure_Storage_Files_FileServiceClient_ListSharesSegmentAsync_System_String_System_Nullable_Azure_Storage_Files_SharesSegmentOptions__CancellationToken_" data-uid="Azure.Storage.Files.FileServiceClient.ListSharesSegmentAsync(System.String,System.Nullable{Azure.Storage.Files.SharesSegmentOptions},CancellationToken)">ListSharesSegmentAsync(String, Nullable&lt;SharesSegmentOptions&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.FileServiceClient.html#Azure_Storage_Files_FileServiceClient_ListSharesSegmentAsync_System_String_System_Nullable_Azure_Storage_Files_SharesSegmentOptions__CancellationToken_">ListSharesSegmentAsync(String, Nullable&lt;SharesSegmentOptions&gt;, CancellationToken)</a> operation returns a
+single segment of shares in the storage account, starting
+from the specified <code data-dev-comment-type="paramref" class="paramref">marker</code>.  Use an empty
+<code data-dev-comment-type="paramref" class="paramref">marker</code> to start enumeration from the beginning
+and the <a class="xref" href="Azure.Storage.Files.Models.SharesSegment.html#Azure_Storage_Files_Models_SharesSegment_NextMarker">NextMarker</a> if it's not
+empty to make subsequent calls to <a class="xref" href="Azure.Storage.Files.FileServiceClient.html#Azure_Storage_Files_FileServiceClient_ListSharesSegmentAsync_System_String_System_Nullable_Azure_Storage_Files_SharesSegmentOptions__CancellationToken_">ListSharesSegmentAsync(String, Nullable&lt;SharesSegmentOptions&gt;, CancellationToken)</a>
+to continue enumerating the shares segment by segment.</p>
+<p>For more information, <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/list-shares">https://docs.microsoft.com/en-us/rest/api/storageservices/list-shares</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Response&lt;SharesSegment&gt;&gt; ListSharesSegmentAsync(string marker = null, SharesSegmentOptions? options = null, CancellationToken cancellation = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">marker</span></td>
+        <td><p>An optional string value that identifies the segment of the list
+of shares to be returned with the next listing operation.  The
+operation returns a non-empty <a class="xref" href="Azure.Storage.Files.Models.SharesSegment.html#Azure_Storage_Files_Models_SharesSegment_NextMarker">NextMarker</a>
+if the listing operation did not return all shares remaining
+to be listed with the current segment.  The NextMarker value can
+be used as the value for the <code data-dev-comment-type="paramref" class="paramref">marker</code> parameter
+in a subsequent call to request the next segment of list items.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Azure.Storage.Files.SharesSegmentOptions.html">SharesSegmentOptions</a>&gt;</td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Specifies options for listing, filtering, and shaping the
+shares.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td><p>Optional <see cref="!:CancellationToken"></see> to propagate
+notifications that the operation should be cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.Models.SharesSegment.html">SharesSegment</a>&gt;&gt;</td>
+        <td><p>A <see cref="!:Task&lt;Response&lt;SharesSegment>>"></see> describing a
+segment of the shares in the storage account.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Files_FileServiceClient_ListSharesSegmentAsync_System_String_System_Nullable_Azure_Storage_Files_SharesSegmentOptions__CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
+a failure occurs.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Azure_Storage_Files_FileServiceClient_SetPropertiesAsync_Azure_Storage_Files_Models_FileServiceProperties_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Storage.Files.FileServiceClient.SetPropertiesAsync(Azure.Storage.Files.Models.FileServiceProperties%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/storage/Azure.Storage.Files/src/FileServiceClient.cs/#L254">View Source</a>
+  </span>
+  <a id="Azure_Storage_Files_FileServiceClient_SetPropertiesAsync_" data-uid="Azure.Storage.Files.FileServiceClient.SetPropertiesAsync*"></a>
+  <h4 id="Azure_Storage_Files_FileServiceClient_SetPropertiesAsync_Azure_Storage_Files_Models_FileServiceProperties_CancellationToken_" data-uid="Azure.Storage.Files.FileServiceClient.SetPropertiesAsync(Azure.Storage.Files.Models.FileServiceProperties,CancellationToken)">SetPropertiesAsync(FileServiceProperties, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.FileServiceClient.html#Azure_Storage_Files_FileServiceClient_SetPropertiesAsync_Azure_Storage_Files_Models_FileServiceProperties_CancellationToken_">SetPropertiesAsync(FileServiceProperties, CancellationToken)</a> operation sets properties for
+a storage account’s File service endpoint, including properties
+for Storage Analytics, CORS (Cross-Origin Resource Sharing) rules
+and soft delete settings.  You can also use this operation to set
+the default request version for all incoming requests to the File
+service that do not have a version specified.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/set-file-service-properties">https://docs.microsoft.com/en-us/rest/api/storageservices/set-file-service-properties</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Response&gt; SetPropertiesAsync(FileServiceProperties properties, CancellationToken cancellation = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Files.Models.FileServiceProperties.html">FileServiceProperties</a></td>
+        <td><span class="parametername">properties</span></td>
+        <td><p>The file service properties.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td><p>Optional <see cref="!:CancellationToken"></see> to propagate
+notifications that the operation should be cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="../OtherApis/Azure.Response.html">Response</a>&gt;</td>
+        <td><p>A <see cref="!:Task&lt;Response>"></see> if the operation was successful.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Files_FileServiceClient_SetPropertiesAsync_Azure_Storage_Files_Models_FileServiceProperties_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
+a failure occurs.</p>
+</div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="../ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.AppConfigurationAzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AppConfigurationAzureClientBuilderExtensions_AddAppConfiguration__2___0_System_String___1_">AppConfigurationAzureClientBuilderExtensions.AddAppConfiguration&lt;TBuilder, TConfiguration&gt;(TBuilder, String, TConfiguration)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Azure_Storage_Files_FileServiceClient.md&amp;value=---%0Auid%3A%20Azure.Storage.Files.FileServiceClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/storage/Azure.Storage.Files/src/FileServiceClient.cs/#L21" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

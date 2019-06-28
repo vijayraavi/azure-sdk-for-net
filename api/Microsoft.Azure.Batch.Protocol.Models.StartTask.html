@@ -1,0 +1,482 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class StartTask
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class StartTask
+   ">
+    <meta name="generator" content="docfx 2.43.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Microsoft.Azure.Batch.Protocol.Models.StartTask">
+  
+  
+  <h1 id="Microsoft_Azure_Batch_Protocol_Models_StartTask" data-uid="Microsoft.Azure.Batch.Protocol.Models.StartTask" class="text-break">Class StartTask
+  </h1>
+  <div class="markdown level0 summary"><p>A task which is run when a compute node joins a pool in the Azure Batch
+service, or when the compute node is rebooted or reimaged.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">StartTask</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.html">Microsoft.Azure.Batch.Protocol.Models</a></h6>
+  <h6><strong>Assembly</strong>: Microsoft.Azure.Batch.dll</h6>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_StartTask_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class StartTask : object</code></pre>
+  </div>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_StartTask_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Batch will retry tasks when a recovery operation is triggered on a
+compute node. Examples of recovery operations include (but are not
+limited to) when an unhealthy compute node is rebooted or a compute
+node disappeared due to host failure. Retries due to recovery
+operations are independent of and are not counted against the
+maxTaskRetryCount. Even if the maxTaskRetryCount is 0, an internal
+retry due to a recovery operation may occur. Because of this, all tasks
+should be idempotent. This means tasks need to tolerate being
+interrupted and restarted without causing any corruption or duplicate
+data. The best practice for long running tasks is to use some form of
+checkpointing. In some cases the start task may be re-run even though
+the node was not rebooted. Special care should be taken to avoid start
+tasks which create breakaway process or install/launch services from
+the start task working directory, as this will block Batch from being
+able to re-run the start task.</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_Models_StartTask__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.StartTask.#ctor*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_Models_StartTask__ctor" data-uid="Microsoft.Azure.Batch.Protocol.Models.StartTask.#ctor">StartTask()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the StartTask class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StartTask()</code></pre>
+  </div>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_Models_StartTask__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.StartTask.#ctor*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_Models_StartTask__ctor_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskContainerSettings_IList_Microsoft_Azure_Batch_Protocol_Models_ResourceFile__IList_Microsoft_Azure_Batch_Protocol_Models_EnvironmentSetting__Microsoft_Azure_Batch_Protocol_Models_UserIdentity_System_Nullable_System_Int32__System_Nullable_System_Boolean__" data-uid="Microsoft.Azure.Batch.Protocol.Models.StartTask.#ctor(System.String,Microsoft.Azure.Batch.Protocol.Models.TaskContainerSettings,IList{Microsoft.Azure.Batch.Protocol.Models.ResourceFile},IList{Microsoft.Azure.Batch.Protocol.Models.EnvironmentSetting},Microsoft.Azure.Batch.Protocol.Models.UserIdentity,System.Nullable{System.Int32},System.Nullable{System.Boolean})">StartTask(String, TaskContainerSettings, IList&lt;ResourceFile&gt;, IList&lt;EnvironmentSetting&gt;, UserIdentity, Nullable&lt;Int32&gt;, Nullable&lt;Boolean&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the StartTask class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StartTask(string commandLine, TaskContainerSettings containerSettings = null, IList&lt;ResourceFile&gt; resourceFiles = null, IList&lt;EnvironmentSetting&gt; environmentSettings = null, UserIdentity userIdentity = null, int? maxTaskRetryCount = null, bool? waitForSuccess = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">commandLine</span></td>
+        <td><p>The command line of the start
+task.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.TaskContainerSettings.html">TaskContainerSettings</a></td>
+        <td><span class="parametername">containerSettings</span></td>
+        <td><p>The settings for the container
+under which the start task runs.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IList</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ResourceFile.html">ResourceFile</a>&gt;</td>
+        <td><span class="parametername">resourceFiles</span></td>
+        <td><p>A list of files that the Batch service
+will download to the compute node before running the command line.
+There is a maximum size for the list of resource files. When the
+max size is exceeded, the request will fail and the response error
+code will be RequestEntityTooLarge. If this occurs, the collection
+of ResourceFiles must be reduced in size. This can be achieved
+using .zip files, Application Packages, or Docker
+Containers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IList</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.EnvironmentSetting.html">EnvironmentSetting</a>&gt;</td>
+        <td><span class="parametername">environmentSettings</span></td>
+        <td><p>A list of environment variable
+settings for the start task.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.UserIdentity.html">UserIdentity</a></td>
+        <td><span class="parametername">userIdentity</span></td>
+        <td><p>The user identity under which the start
+task runs.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">maxTaskRetryCount</span></td>
+        <td><p>The maximum number of times the
+task may be retried.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">waitForSuccess</span></td>
+        <td><p>Whether the Batch service should wait
+for the start task to complete successfully (that is, to exit with
+exit code 0) before scheduling any tasks on the compute
+node.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_Models_StartTask_CommandLine_" data-uid="Microsoft.Azure.Batch.Protocol.Models.StartTask.CommandLine*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_Models_StartTask_CommandLine" data-uid="Microsoft.Azure.Batch.Protocol.Models.StartTask.CommandLine">CommandLine</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the command line of the start task.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CommandLine { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_StartTask_CommandLine_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The command line does not run under a shell, and therefore cannot
+take advantage of shell features such as environment variable
+expansion. If you want to take advantage of such features, you
+should invoke the shell in the command line, for example using &quot;cmd
+/c MyCommand&quot; in Windows or &quot;/bin/sh -c MyCommand&quot; in Linux. If the
+command line refers to file paths, it should use a relative path
+(relative to the task working directory), or use the Batch provided
+environment variable
+(<a href="https://docs.microsoft.com/en-us/azure/batch/batch-compute-node-environment-variables">https://docs.microsoft.com/en-us/azure/batch/batch-compute-node-environment-variables</a>).</p>
+</div>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_Models_StartTask_ContainerSettings_" data-uid="Microsoft.Azure.Batch.Protocol.Models.StartTask.ContainerSettings*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_Models_StartTask_ContainerSettings" data-uid="Microsoft.Azure.Batch.Protocol.Models.StartTask.ContainerSettings">ContainerSettings</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the settings for the container under which the start
+task runs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TaskContainerSettings ContainerSettings { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.TaskContainerSettings.html">TaskContainerSettings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_StartTask_ContainerSettings_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>When this is specified, all directories recursively below the
+AZ_BATCH_NODE_ROOT_DIR (the root of Azure Batch directories on the
+node) are mapped into the container, all task environment variables
+are mapped into the container, and the task command line is
+executed in the container. Files produced in the container outside
+of AZ_BATCH_NODE_ROOT_DIR might not be reflected to the host disk,
+meaning that Batch file APIs will not be able to access those
+files.</p>
+</div>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_Models_StartTask_EnvironmentSettings_" data-uid="Microsoft.Azure.Batch.Protocol.Models.StartTask.EnvironmentSettings*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_Models_StartTask_EnvironmentSettings" data-uid="Microsoft.Azure.Batch.Protocol.Models.StartTask.EnvironmentSettings">EnvironmentSettings</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a list of environment variable settings for the start
+task.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IList&lt;EnvironmentSetting&gt; EnvironmentSettings { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IList</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.EnvironmentSetting.html">EnvironmentSetting</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_Models_StartTask_MaxTaskRetryCount_" data-uid="Microsoft.Azure.Batch.Protocol.Models.StartTask.MaxTaskRetryCount*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_Models_StartTask_MaxTaskRetryCount" data-uid="Microsoft.Azure.Batch.Protocol.Models.StartTask.MaxTaskRetryCount">MaxTaskRetryCount</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the maximum number of times the task may be retried.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? MaxTaskRetryCount { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_StartTask_MaxTaskRetryCount_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The Batch service retries a task if its exit code is nonzero. Note
+that this value specifically controls the number of retries. The
+Batch service will try the task once, and may then retry up to this
+limit. For example, if the maximum retry count is 3, Batch tries
+the task up to 4 times (one initial try and 3 retries). If the
+maximum retry count is 0, the Batch service does not retry the
+task. If the maximum retry count is -1, the Batch service retries
+the task without limit.</p>
+</div>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_Models_StartTask_ResourceFiles_" data-uid="Microsoft.Azure.Batch.Protocol.Models.StartTask.ResourceFiles*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_Models_StartTask_ResourceFiles" data-uid="Microsoft.Azure.Batch.Protocol.Models.StartTask.ResourceFiles">ResourceFiles</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a list of files that the Batch service will download
+to the compute node before running the command line.  There is a
+maximum size for the list of resource files. When the max size is
+exceeded, the request will fail and the response error code will be
+RequestEntityTooLarge. If this occurs, the collection of
+ResourceFiles must be reduced in size. This can be achieved using
+.zip files, Application Packages, or Docker Containers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IList&lt;ResourceFile&gt; ResourceFiles { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IList</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ResourceFile.html">ResourceFile</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_StartTask_ResourceFiles_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Files listed under this element are located in the task's working
+directory.</p>
+</div>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_Models_StartTask_UserIdentity_" data-uid="Microsoft.Azure.Batch.Protocol.Models.StartTask.UserIdentity*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_Models_StartTask_UserIdentity" data-uid="Microsoft.Azure.Batch.Protocol.Models.StartTask.UserIdentity">UserIdentity</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the user identity under which the start task runs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UserIdentity UserIdentity { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.UserIdentity.html">UserIdentity</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_StartTask_UserIdentity_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If omitted, the task runs as a non-administrative user unique to
+the task.</p>
+</div>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_Models_StartTask_WaitForSuccess_" data-uid="Microsoft.Azure.Batch.Protocol.Models.StartTask.WaitForSuccess*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_Models_StartTask_WaitForSuccess" data-uid="Microsoft.Azure.Batch.Protocol.Models.StartTask.WaitForSuccess">WaitForSuccess</h4>
+  <div class="markdown level1 summary"><p>Gets or sets whether the Batch service should wait for the start
+task to complete successfully (that is, to exit with exit code 0)
+before scheduling any tasks on the compute node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? WaitForSuccess { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_StartTask_WaitForSuccess_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If true and the start task fails on a compute node, the Batch
+service retries the start task up to its maximum retry count
+(maxTaskRetryCount). If the task has still not completed
+successfully after all retries, then the Batch service marks the
+compute node unusable, and will not schedule tasks to it. This
+condition can be detected via the node state and failure info
+details. If false, the Batch service will not wait for the start
+task to complete. In this case, other tasks can start executing on
+the compute node while the start task is still running; and even if
+the start task fails, new tasks will continue to be scheduled on
+the node. The default is false.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

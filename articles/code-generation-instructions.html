@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>How to generate Code </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="How to generate Code ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="how-to-generate-code">How to generate Code</h1>
+
+<p>To generate code, simply run the <code>generate.ps1</code> powershell script.</p>
+<p>If code generation fails for any reason, here are a few common steps to resolve the issues.</p>
+<ul>
+<li>Clean the repo</li>
+</ul>
+<pre><code>git clean -xdf
+</code></pre>
+<ul>
+<li>Download and install the latest build tools (use a VS 2017 developer prompt to run msbuild)</li>
+</ul>
+<pre><code>msbuild build.proj
+</code></pre>
+<ul>
+<li>Run the <code>generate.ps1</code> command again</li>
+</ul>
+<h2 id="powershell-code-generation-script">Powershell code generation script</h2>
+<p>When the build tools are installed, AutoRest code generation commandlets are also installed on the user machine under the current user profile.</p>
+<p>If a powershell script does not exist under the RP directory, create one using the script generation utility script <a href="https://github.com/Azure/azure-sdk-for-net/blob/psSdkJson6/tools/HelperUtilities/psScripts/Create-AutoRestCodeGenerationScript.ps1">here</a>
+An example usage is as below</p>
+<pre><code>tools\HelperUtilities\psScripts\Create-AutoRestCodeGenerationScript.ps1 -ResourceProvider compute/resource-manager -ScriptPath &quot;src\SDKs\Compute\Management.Compute\&quot;
+</code></pre>
+<p>The generation script can also be manually created using an example <a href="https://github.com/Azure/azure-sdk-for-net/blob/psSdkJson6/src/SDKs/Compute/Management.Compute/generate.ps1">here</a>.</p>
+<p>Please make sure that the <code>--output-folder</code> setting is set in the configuration file for the RP. This path should be relative to <code>src\SDKs</code>. For example, the <code>--output-folder</code> in configuration file for Compute is to</p>
+<pre><code>$(csharp-sdks-folder)/Compute/Management.Compute/Generated
+</code></pre>
+<p>The code generation script defaults <code>csharp-sdks-folder</code> to <code>src\SDKs</code>. If for some reason this is incorrectly set, one can explicitly set the final location where code is generated using <code>SdkGenerationDirectory</code> parameter. This is discouraged though. When using the <code>SdkGenerationDirectory</code> parameter the <code>generate.ps1</code> code would look like</p>
+<pre><code>Start-AutoRestCodeGeneration -ResourceProvider &quot;compute/resource-manager&quot; -AutoRestVersion &quot;latest&quot; SdkGenerationDirectory &quot;$PSScriptRoot&quot;
+</code></pre>
+<h1 id="when-opening-a-pr">When opening a PR</h1>
+<h2 id="general-instructions">General instructions</h2>
+<ul>
+<li>Please link the REST spec API PR which helps the review process</li>
+<li>Please check whether a new API version is introduced in the REST spec repo; this is important while addressing the instructions below</li>
+<li>Please read the SLA information and other instructions on the PR template before opening the PR</li>
+</ul>
+<h2 id="rest-api-version-artifacts">REST API version artifacts</h2>
+<p>If there is a new version of the REST API from which code is being generated for the PR, the following files should be modified/created in the PR</p>
+<ul>
+<li>A <code>.props</code> file which holds information about the REST API versions eg: <a href="https://github.com/Azure/azure-sdk-for-net/blob/psSdkJson6/src/SDKs/Compute/AzSdk.RP.props">here</a></li>
+<li>A <code>SdkInfo_*.cs</code> file which holds information about the REST API versions eg: <a href="https://github.com/Azure/azure-sdk-for-net/blob/psSdkJson6/src/SDKs/Compute/AzSdk.RP.props">here</a></li>
+</ul>
+<p>To generate the <code>.props</code> artifact, please run (use the VS 2017 developer prompt for msbuild):</p>
+<pre><code>msbuild build.proj /t:build /p:Scope=SDKs\&lt;RP&gt;
+</code></pre>
+<p>RP is the resource provider's directory under SDKs, eg.: Compute</p>
+<p>To generate the <code>SdkInfo*.cs</code> file, please run the <code>generate.ps1</code> script</p>
+<h2 id="code-generation-artifacts">Code generation artifacts</h2>
+<p>If code is generated using <code>generate.ps1</code>, information related to the code generation gets logged in a <code>.txt</code> file under <code>src\SDKs\_metadata</code> eg.: <a href="https://github.com/Azure/azure-sdk-for-net/blob/psSdkJson6/src/SDKs/_metadata/compute_resource-manager.txt">here</a></p>
+<p>Please check the branch and fork of the REST spec for which the code was generated, this must always be <code>Azure</code> and <code>master</code> respectively for a PR to be valid. Code generated using specifications not checked in the Azure master branch will not be merged.</p>
+<h1 id="how-to-signpublish-bits">How to sign/publish bits</h1>
+<p>For detailed information about publishing and the overall workflow towards developing a powershell cli, click <a href="https://github.com/Azure/adx-documentation-pr/blob/master/engineering/autorest-to-powershell.md">here</a></p>
+<h1 id="how-to-generate-code-from-a-different-fork-and-branch">How to generate code from a different fork and branch</h1>
+<p>For testing purposes, code can be generated from any fork and branch.
+To do so, modify the <code>generate.ps1</code> as below</p>
+<pre><code>Start-AutoRestCodeGeneration -ResourceProvider &quot;&lt;resourceprovider&gt;&quot; -AutoRestVersion &quot;latest&quot; -SpecsRepoFork &quot;&lt;forkname&gt;&quot; -SpecsRepoBranch &quot;&lt;branchname&gt;&quot;
+</code></pre>
+<p>If the spec is in a completely different repo, add the following argument to the command above</p>
+<pre><code>-SpecsRepoName &quot;&lt;specsrepo&gt;&quot;
+</code></pre>
+<p>We can also generate an sdk from a spec on a local path.</p>
+<pre><code>Start-AutoRestCodeGenerationWithLocalConfig -ResourceProvider &quot;&lt;resourceprovider&gt;&quot; -AutoRestVersion &quot;latest&quot; -LocalConfigFilePath &quot;&lt;path_to_config_file&gt;&quot;
+</code></pre>
+<p>Please note that the code generated from a spec on the local disk will not be accepted in the PRs against azure-sdk-for-net repo, this is for testing purposes only.</p>
+<p>The <code>StartAutoRestCodeGeneration</code> and <code>Start-AutoRestCodeGenerationWithLocalConfig</code> also expose a number of other useful parameters that can be checked by running</p>
+<pre><code>Get-Help StartAutoRestCodeGeneration
+Get-Help Start-AutoRestCodeGenerationWithLocalConfig
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/docfx_project/articles/code-generation-instructions.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

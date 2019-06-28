@@ -1,0 +1,745 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ImageInsights
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ImageInsights
+   ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageInsights">
+  
+  
+  <h1 id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImageInsights" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageInsights" class="text-break">Class ImageInsights
+  </h1>
+  <div class="markdown level0 summary"><p>The top-level object that the response includes when an image insights
+request succeeds. For information about requesting image insights, see
+the
+<a href="https://docs.microsoft.com/en-us/rest/api/cognitiveservices/bing-images-api-v7-reference#insightstoken">insightsToken</a>
+query parameter. The modules query parameter affects the fields that
+Bing includes in the response. If you set
+<a href="https://docs.microsoft.com/en-us/rest/api/cognitiveservices/bing-images-api-v7-reference#modulesrequested">modules</a>
+to only Caption, then this object includes only the imageCaption field.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ResponseBase.html">ResponseBase</a></div>
+    <div class="level2"><a class="xref" href="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.Identifiable.html">Identifiable</a></div>
+    <div class="level3"><a class="xref" href="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.Response.html">Response</a></div>
+    <div class="level4"><span class="xref">ImageInsights</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.Response.html#Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_Response_ReadLink">Response.ReadLink</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.Response.html#Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_Response_WebSearchUrl">Response.WebSearchUrl</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.Identifiable.html#Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_Identifiable_Id">Identifiable.Id</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.html">Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models</a></h6>
+  <h6><strong>Assembly</strong>: Microsoft.Azure.CognitiveServices.Search.BingImageSearch.dll</h6>
+  <h5 id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImageInsights_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ImageInsights : Response</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImageInsights__ctor.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageInsights.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Search.BingImageSearch/src/Generated/ImageSearch/Models/ImageInsights.cs/#L27">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImageInsights__ctor_" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageInsights.#ctor*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImageInsights__ctor" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageInsights.#ctor">ImageInsights()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the ImageInsights class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImageInsights()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImageInsights__ctor_System_String_System_String_System_String_System_String_Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_Query_Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImageInsightsImageCaption_Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_RelatedCollectionsModule_Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImagesModule_Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_AggregateOffer_Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_RelatedSearchesModule_Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_RecipesModule_Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImagesModule_Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImagesModule_Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_RecognizedEntitiesModule_Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImageTagsModule_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageInsights.%23ctor(System.String%2CSystem.String%2CSystem.String%2CSystem.String%2CMicrosoft.Azure.CognitiveServices.Search.ImageSearch.Models.Query%2CMicrosoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageInsightsImageCaption%2CMicrosoft.Azure.CognitiveServices.Search.ImageSearch.Models.RelatedCollectionsModule%2CMicrosoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImagesModule%2CMicrosoft.Azure.CognitiveServices.Search.ImageSearch.Models.AggregateOffer%2CMicrosoft.Azure.CognitiveServices.Search.ImageSearch.Models.RelatedSearchesModule%2CMicrosoft.Azure.CognitiveServices.Search.ImageSearch.Models.RecipesModule%2CMicrosoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImagesModule%2CMicrosoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImagesModule%2CMicrosoft.Azure.CognitiveServices.Search.ImageSearch.Models.RecognizedEntitiesModule%2CMicrosoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageTagsModule)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Search.BingImageSearch/src/Generated/ImageSearch/Models/ImageInsights.cs/#L85">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImageInsights__ctor_" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageInsights.#ctor*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImageInsights__ctor_System_String_System_String_System_String_System_String_Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_Query_Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImageInsightsImageCaption_Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_RelatedCollectionsModule_Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImagesModule_Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_AggregateOffer_Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_RelatedSearchesModule_Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_RecipesModule_Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImagesModule_Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImagesModule_Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_RecognizedEntitiesModule_Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImageTagsModule_" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageInsights.#ctor(System.String,System.String,System.String,System.String,Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.Query,Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageInsightsImageCaption,Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.RelatedCollectionsModule,Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImagesModule,Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.AggregateOffer,Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.RelatedSearchesModule,Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.RecipesModule,Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImagesModule,Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImagesModule,Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.RecognizedEntitiesModule,Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageTagsModule)">ImageInsights(String, String, String, String, Query, ImageInsightsImageCaption, RelatedCollectionsModule, ImagesModule, AggregateOffer, RelatedSearchesModule, RecipesModule, ImagesModule, ImagesModule, RecognizedEntitiesModule, ImageTagsModule)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the ImageInsights class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImageInsights(string id = null, string readLink = null, string webSearchUrl = null, string imageInsightsToken = null, Query bestRepresentativeQuery = null, ImageInsightsImageCaption imageCaption = null, RelatedCollectionsModule relatedCollections = null, ImagesModule pagesIncluding = null, AggregateOffer shoppingSources = null, RelatedSearchesModule relatedSearches = null, RecipesModule recipes = null, ImagesModule visuallySimilarImages = null, ImagesModule visuallySimilarProducts = null, RecognizedEntitiesModule recognizedEntityGroups = null, ImageTagsModule imageTags = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>A String identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">readLink</span></td>
+        <td><p>The URL that returns this resource.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">webSearchUrl</span></td>
+        <td><p>The URL To Bing's search result for this
+item.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">imageInsightsToken</span></td>
+        <td><p>A token that you use in a
+subsequent call to the Image Search API to get more information
+about the image. For information about using this token, see the
+insightsToken query parameter. This token has the same usage as the
+token in the Image object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.Query.html">Query</a></td>
+        <td><span class="parametername">bestRepresentativeQuery</span></td>
+        <td><p>The query term that best
+represents the image. Clicking the link in the Query object, takes
+the user to a webpage with more pictures of the image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageInsightsImageCaption.html">ImageInsightsImageCaption</a></td>
+        <td><span class="parametername">imageCaption</span></td>
+        <td><p>The caption to use for the
+image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.RelatedCollectionsModule.html">RelatedCollectionsModule</a></td>
+        <td><span class="parametername">relatedCollections</span></td>
+        <td><p>A list of links to webpages that
+contain related images.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImagesModule.html">ImagesModule</a></td>
+        <td><span class="parametername">pagesIncluding</span></td>
+        <td><p>A list of webpages that contain the
+image. To access the webpage, use the URL in the image's
+hostPageUrl field.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.AggregateOffer.html">AggregateOffer</a></td>
+        <td><span class="parametername">shoppingSources</span></td>
+        <td><p>A list of merchants that offer items
+related to the image. For example, if the image is of an apple pie,
+the list contains merchants that are selling apple pies.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.RelatedSearchesModule.html">RelatedSearchesModule</a></td>
+        <td><span class="parametername">relatedSearches</span></td>
+        <td><p>A list of related queries made by
+others.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.RecipesModule.html">RecipesModule</a></td>
+        <td><span class="parametername">recipes</span></td>
+        <td><p>A list of recipes related to the image. For
+example, if the image is of an apple pie, the list contains recipes
+for making an apple pie.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImagesModule.html">ImagesModule</a></td>
+        <td><span class="parametername">visuallySimilarImages</span></td>
+        <td><p>A list of images that are
+visually similar to the original image. For example, if the
+specified image is of a sunset over a body of water, the list of
+similar images are of a sunset over a body of water. If the
+specified image is of a person, similar images might be of the same
+person or they might be of persons dressed similarly or in a
+similar setting. The criteria for similarity continues to
+evolve.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImagesModule.html">ImagesModule</a></td>
+        <td><span class="parametername">visuallySimilarProducts</span></td>
+        <td><p>A list of images that contain
+products that are visually similar to products found in the
+original image. For example, if the specified image contains a
+dress, the list of similar images contain a dress. The image
+provides summary information about offers that Bing found online
+for the product.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.RecognizedEntitiesModule.html">RecognizedEntitiesModule</a></td>
+        <td><span class="parametername">recognizedEntityGroups</span></td>
+        <td><p>A list of groups that contain
+images of entities that match the entity found in the specified
+image. For example, the response might include images from the
+general celebrity group if the entity was recognized in that
+group.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageTagsModule.html">ImageTagsModule</a></td>
+        <td><span class="parametername">imageTags</span></td>
+        <td><p>A list of characteristics of the content
+found in the image. For example, if the image is of a person, the
+tags might indicate the person's gender and the type of clothes
+they're wearing.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImageInsights_BestRepresentativeQuery.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageInsights.BestRepresentativeQuery%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Search.BingImageSearch/src/Generated/ImageSearch/Models/ImageInsights.cs/#L122">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImageInsights_BestRepresentativeQuery_" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageInsights.BestRepresentativeQuery*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImageInsights_BestRepresentativeQuery" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageInsights.BestRepresentativeQuery">BestRepresentativeQuery</h4>
+  <div class="markdown level1 summary"><p>Gets the query term that best represents the image. Clicking the
+link in the Query object, takes the user to a webpage with more
+pictures of the image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Query BestRepresentativeQuery { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.Query.html">Query</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImageInsights_ImageCaption.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageInsights.ImageCaption%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Search.BingImageSearch/src/Generated/ImageSearch/Models/ImageInsights.cs/#L128">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImageInsights_ImageCaption_" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageInsights.ImageCaption*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImageInsights_ImageCaption" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageInsights.ImageCaption">ImageCaption</h4>
+  <div class="markdown level1 summary"><p>Gets the caption to use for the image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImageInsightsImageCaption ImageCaption { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageInsightsImageCaption.html">ImageInsightsImageCaption</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImageInsights_ImageInsightsToken.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageInsights.ImageInsightsToken%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Search.BingImageSearch/src/Generated/ImageSearch/Models/ImageInsights.cs/#L114">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImageInsights_ImageInsightsToken_" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageInsights.ImageInsightsToken*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImageInsights_ImageInsightsToken" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageInsights.ImageInsightsToken">ImageInsightsToken</h4>
+  <div class="markdown level1 summary"><p>Gets a token that you use in a subsequent call to the Image Search
+API to get more information about the image. For information about
+using this token, see the insightsToken query parameter. This token
+has the same usage as the token in the Image object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ImageInsightsToken { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImageInsights_ImageTags.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageInsights.ImageTags%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Search.BingImageSearch/src/Generated/ImageSearch/Models/ImageInsights.cs/#L202">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImageInsights_ImageTags_" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageInsights.ImageTags*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImageInsights_ImageTags" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageInsights.ImageTags">ImageTags</h4>
+  <div class="markdown level1 summary"><p>Gets a list of characteristics of the content found in the image.
+For example, if the image is of a person, the tags might indicate
+the person's gender and the type of clothes they're wearing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImageTagsModule ImageTags { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageTagsModule.html">ImageTagsModule</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImageInsights_PagesIncluding.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageInsights.PagesIncluding%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Search.BingImageSearch/src/Generated/ImageSearch/Models/ImageInsights.cs/#L141">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImageInsights_PagesIncluding_" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageInsights.PagesIncluding*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImageInsights_PagesIncluding" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageInsights.PagesIncluding">PagesIncluding</h4>
+  <div class="markdown level1 summary"><p>Gets a list of webpages that contain the image. To access the
+webpage, use the URL in the image's hostPageUrl field.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImagesModule PagesIncluding { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImagesModule.html">ImagesModule</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImageInsights_Recipes.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageInsights.Recipes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Search.BingImageSearch/src/Generated/ImageSearch/Models/ImageInsights.cs/#L163">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImageInsights_Recipes_" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageInsights.Recipes*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImageInsights_Recipes" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageInsights.Recipes">Recipes</h4>
+  <div class="markdown level1 summary"><p>Gets a list of recipes related to the image. For example, if the
+image is of an apple pie, the list contains recipes for making an
+apple pie.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RecipesModule Recipes { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.RecipesModule.html">RecipesModule</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImageInsights_RecognizedEntityGroups.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageInsights.RecognizedEntityGroups%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Search.BingImageSearch/src/Generated/ImageSearch/Models/ImageInsights.cs/#L194">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImageInsights_RecognizedEntityGroups_" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageInsights.RecognizedEntityGroups*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImageInsights_RecognizedEntityGroups" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageInsights.RecognizedEntityGroups">RecognizedEntityGroups</h4>
+  <div class="markdown level1 summary"><p>Gets a list of groups that contain images of entities that match
+the entity found in the specified image. For example, the response
+might include images from the general celebrity group if the entity
+was recognized in that group.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RecognizedEntitiesModule RecognizedEntityGroups { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.RecognizedEntitiesModule.html">RecognizedEntitiesModule</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImageInsights_RelatedCollections.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageInsights.RelatedCollections%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Search.BingImageSearch/src/Generated/ImageSearch/Models/ImageInsights.cs/#L134">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImageInsights_RelatedCollections_" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageInsights.RelatedCollections*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImageInsights_RelatedCollections" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageInsights.RelatedCollections">RelatedCollections</h4>
+  <div class="markdown level1 summary"><p>Gets a list of links to webpages that contain related images.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RelatedCollectionsModule RelatedCollections { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.RelatedCollectionsModule.html">RelatedCollectionsModule</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImageInsights_RelatedSearches.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageInsights.RelatedSearches%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Search.BingImageSearch/src/Generated/ImageSearch/Models/ImageInsights.cs/#L155">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImageInsights_RelatedSearches_" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageInsights.RelatedSearches*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImageInsights_RelatedSearches" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageInsights.RelatedSearches">RelatedSearches</h4>
+  <div class="markdown level1 summary"><p>Gets a list of related queries made by others.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RelatedSearchesModule RelatedSearches { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.RelatedSearchesModule.html">RelatedSearchesModule</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImageInsights_ShoppingSources.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageInsights.ShoppingSources%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Search.BingImageSearch/src/Generated/ImageSearch/Models/ImageInsights.cs/#L149">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImageInsights_ShoppingSources_" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageInsights.ShoppingSources*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImageInsights_ShoppingSources" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageInsights.ShoppingSources">ShoppingSources</h4>
+  <div class="markdown level1 summary"><p>Gets a list of merchants that offer items related to the image. For
+example, if the image is of an apple pie, the list contains
+merchants that are selling apple pies.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AggregateOffer ShoppingSources { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.AggregateOffer.html">AggregateOffer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImageInsights_VisuallySimilarImages.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageInsights.VisuallySimilarImages%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Search.BingImageSearch/src/Generated/ImageSearch/Models/ImageInsights.cs/#L175">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImageInsights_VisuallySimilarImages_" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageInsights.VisuallySimilarImages*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImageInsights_VisuallySimilarImages" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageInsights.VisuallySimilarImages">VisuallySimilarImages</h4>
+  <div class="markdown level1 summary"><p>Gets a list of images that are visually similar to the original
+image. For example, if the specified image is of a sunset over a
+body of water, the list of similar images are of a sunset over a
+body of water. If the specified image is of a person, similar
+images might be of the same person or they might be of persons
+dressed similarly or in a similar setting. The criteria for
+similarity continues to evolve.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImagesModule VisuallySimilarImages { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImagesModule.html">ImagesModule</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImageInsights_VisuallySimilarProducts.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageInsights.VisuallySimilarProducts%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Search.BingImageSearch/src/Generated/ImageSearch/Models/ImageInsights.cs/#L185">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImageInsights_VisuallySimilarProducts_" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageInsights.VisuallySimilarProducts*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImageInsights_VisuallySimilarProducts" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageInsights.VisuallySimilarProducts">VisuallySimilarProducts</h4>
+  <div class="markdown level1 summary"><p>Gets a list of images that contain products that are visually
+similar to products found in the original image. For example, if
+the specified image contains a dress, the list of similar images
+contain a dress. The image provides summary information about
+offers that Bing found online for the product.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImagesModule VisuallySimilarProducts { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImagesModule.html">ImagesModule</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImageInsights_Validate.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageInsights.Validate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Search.BingImageSearch/src/Generated/ImageSearch/Models/ImageInsights.cs/#L211">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImageInsights_Validate_" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageInsights.Validate*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImageInsights_Validate" data-uid="Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageInsights.Validate">Validate()</h4>
+  <div class="markdown level1 summary"><p>Validate the object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Validate()</code></pre>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="../ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.AppConfigurationAzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AppConfigurationAzureClientBuilderExtensions_AddAppConfiguration__2___0_System_String___1_">AppConfigurationAzureClientBuilderExtensions.AddAppConfiguration&lt;TBuilder, TConfiguration&gt;(TBuilder, String, TConfiguration)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_ImageSearch_Models_ImageInsights.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models.ImageInsights%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Search.BingImageSearch/src/Generated/ImageSearch/Models/ImageInsights.cs/#L22" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

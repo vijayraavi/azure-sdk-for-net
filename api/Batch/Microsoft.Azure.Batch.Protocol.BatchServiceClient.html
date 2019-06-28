@@ -1,0 +1,931 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BatchServiceClient
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BatchServiceClient
+   ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient">
+  
+  
+  <h1 id="Microsoft_Azure_Batch_Protocol_BatchServiceClient" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient" class="text-break">Class BatchServiceClient
+  </h1>
+  <div class="markdown level0 summary"><p>A client for issuing REST requests to the Azure Batch service.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">BatchServiceClient</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Microsoft.Azure.Batch.Protocol.IBatchServiceClient.html">IBatchServiceClient</a></div>
+    <div><span class="xref">System.IDisposable</span></div>
+    <div><span class="xref">IAzureClient</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.Azure.Batch.Protocol.html">Microsoft.Azure.Batch.Protocol</a></h6>
+  <h6><strong>Assembly</strong>: Microsoft.Azure.Batch.dll</h6>
+  <h5 id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BatchServiceClient : ServiceClient&lt;BatchServiceClient&gt;, IBatchServiceClient, System.IDisposable, IAzureClient</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_BatchServiceClient__ctor_DelegatingHandler___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.BatchServiceClient.%23ctor(DelegatingHandler%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/BatchServiceClient.cs/#L141">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Batch_Protocol_BatchServiceClient__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_BatchServiceClient__ctor_DelegatingHandler___" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.#ctor(DelegatingHandler[])">BatchServiceClient(DelegatingHandler[])</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the BatchServiceClient class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected BatchServiceClient(params DelegatingHandler[] handlers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DelegatingHandler</span>[]</td>
+        <td><span class="parametername">handlers</span></td>
+        <td><p>Optional. The delegating handlers to add to the http client pipeline.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_BatchServiceClient__ctor_HttpClient_System_Boolean_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.BatchServiceClient.%23ctor(HttpClient%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/BatchServiceClient.cs/#L130">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Batch_Protocol_BatchServiceClient__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_BatchServiceClient__ctor_HttpClient_System_Boolean_" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.#ctor(HttpClient,System.Boolean)">BatchServiceClient(HttpClient, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the BatchServiceClient class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected BatchServiceClient(HttpClient httpClient, bool disposeHttpClient)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">HttpClient</span></td>
+        <td><span class="parametername">httpClient</span></td>
+        <td><p>HttpClient to be used</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">disposeHttpClient</span></td>
+        <td><p>True: will dispose the provided httpClient on calling BatchServiceClient.Dispose(). False: will not dispose provided httpClient</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_BatchServiceClient__ctor_HttpClientHandler_DelegatingHandler___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.BatchServiceClient.%23ctor(HttpClientHandler%2CDelegatingHandler%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/BatchServiceClient.cs/#L155">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Batch_Protocol_BatchServiceClient__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_BatchServiceClient__ctor_HttpClientHandler_DelegatingHandler___" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.#ctor(HttpClientHandler,DelegatingHandler[])">BatchServiceClient(HttpClientHandler, DelegatingHandler[])</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the BatchServiceClient class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected BatchServiceClient(HttpClientHandler rootHandler, params DelegatingHandler[] handlers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">HttpClientHandler</span></td>
+        <td><span class="parametername">rootHandler</span></td>
+        <td><p>Optional. The http client handler used to handle http transport.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DelegatingHandler</span>[]</td>
+        <td><span class="parametername">handlers</span></td>
+        <td><p>Optional. The delegating handlers to add to the http client pipeline.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_BatchServiceClient__ctor_ServiceClientCredentials_DelegatingHandler___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.BatchServiceClient.%23ctor(ServiceClientCredentials%2CDelegatingHandler%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/BatchServiceClient.cs/#L172">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Batch_Protocol_BatchServiceClient__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_BatchServiceClient__ctor_ServiceClientCredentials_DelegatingHandler___" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.#ctor(ServiceClientCredentials,DelegatingHandler[])">BatchServiceClient(ServiceClientCredentials, DelegatingHandler[])</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the BatchServiceClient class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BatchServiceClient(ServiceClientCredentials credentials, params DelegatingHandler[] handlers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ServiceClientCredentials</span></td>
+        <td><span class="parametername">credentials</span></td>
+        <td><p>Required. Credentials needed for the client to connect to Azure.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DelegatingHandler</span>[]</td>
+        <td><span class="parametername">handlers</span></td>
+        <td><p>Optional. The delegating handlers to add to the http client pipeline.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_BatchServiceClient__ctor_ServiceClientCredentials_HttpClient_System_Boolean_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.BatchServiceClient.%23ctor(ServiceClientCredentials%2CHttpClient%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/BatchServiceClient.cs/#L199">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Batch_Protocol_BatchServiceClient__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_BatchServiceClient__ctor_ServiceClientCredentials_HttpClient_System_Boolean_" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.#ctor(ServiceClientCredentials,HttpClient,System.Boolean)">BatchServiceClient(ServiceClientCredentials, HttpClient, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the BatchServiceClient class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BatchServiceClient(ServiceClientCredentials credentials, HttpClient httpClient, bool disposeHttpClient)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ServiceClientCredentials</span></td>
+        <td><span class="parametername">credentials</span></td>
+        <td><p>Required. Credentials needed for the client to connect to Azure.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">HttpClient</span></td>
+        <td><span class="parametername">httpClient</span></td>
+        <td><p>HttpClient to be used</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">disposeHttpClient</span></td>
+        <td><p>True: will dispose the provided httpClient on calling BatchServiceClient.Dispose(). False: will not dispose provided httpClient</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_BatchServiceClient__ctor_ServiceClientCredentials_HttpClientHandler_DelegatingHandler___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.BatchServiceClient.%23ctor(ServiceClientCredentials%2CHttpClientHandler%2CDelegatingHandler%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/BatchServiceClient.cs/#L227">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Batch_Protocol_BatchServiceClient__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_BatchServiceClient__ctor_ServiceClientCredentials_HttpClientHandler_DelegatingHandler___" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.#ctor(ServiceClientCredentials,HttpClientHandler,DelegatingHandler[])">BatchServiceClient(ServiceClientCredentials, HttpClientHandler, DelegatingHandler[])</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the BatchServiceClient class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BatchServiceClient(ServiceClientCredentials credentials, HttpClientHandler rootHandler, params DelegatingHandler[] handlers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ServiceClientCredentials</span></td>
+        <td><span class="parametername">credentials</span></td>
+        <td><p>Required. Credentials needed for the client to connect to Azure.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">HttpClientHandler</span></td>
+        <td><span class="parametername">rootHandler</span></td>
+        <td><p>Optional. The http client handler used to handle http transport.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DelegatingHandler</span>[]</td>
+        <td><span class="parametername">handlers</span></td>
+        <td><p>Optional. The delegating handlers to add to the http client pipeline.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_BatchServiceClient_AcceptLanguage.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.BatchServiceClient.AcceptLanguage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/BatchServiceClient.cs/#L62">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_AcceptLanguage_" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.AcceptLanguage*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_AcceptLanguage" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.AcceptLanguage">AcceptLanguage</h4>
+  <div class="markdown level1 summary"><p>The preferred language for the response.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string AcceptLanguage { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_BatchServiceClient_Account.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.BatchServiceClient.Account%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/BatchServiceClient.cs/#L90">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_Account_" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.Account*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_Account" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.Account">Account</h4>
+  <div class="markdown level1 summary"><p>Gets the IAccountOperations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IAccountOperations Account { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.IAccountOperations.html">IAccountOperations</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_BatchServiceClient_ApiVersion.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.BatchServiceClient.ApiVersion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/BatchServiceClient.cs/#L52">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_ApiVersion_" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.ApiVersion*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_ApiVersion" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.ApiVersion">ApiVersion</h4>
+  <div class="markdown level1 summary"><p>Client API Version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ApiVersion { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_BatchServiceClient_Application.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.BatchServiceClient.Application%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/BatchServiceClient.cs/#L80">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_Application_" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.Application*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_Application" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.Application">Application</h4>
+  <div class="markdown level1 summary"><p>Gets the IApplicationOperations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IApplicationOperations Application { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.IApplicationOperations.html">IApplicationOperations</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_BatchServiceClient_BatchUrl.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.BatchServiceClient.BatchUrl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/BatchServiceClient.cs/#L57">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_BatchUrl_" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.BatchUrl*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_BatchUrl" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.BatchUrl">BatchUrl</h4>
+  <div class="markdown level1 summary"><p>The base URL for all Azure Batch service requests.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string BatchUrl { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_BatchServiceClient_Certificate.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.BatchServiceClient.Certificate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/BatchServiceClient.cs/#L100">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_Certificate_" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.Certificate*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_Certificate" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.Certificate">Certificate</h4>
+  <div class="markdown level1 summary"><p>Gets the ICertificateOperations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ICertificateOperations Certificate { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.ICertificateOperations.html">ICertificateOperations</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_BatchServiceClient_ComputeNode.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.BatchServiceClient.ComputeNode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/BatchServiceClient.cs/#L120">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_ComputeNode_" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.ComputeNode*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_ComputeNode" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.ComputeNode">ComputeNode</h4>
+  <div class="markdown level1 summary"><p>Gets the IComputeNodeOperations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IComputeNodeOperations ComputeNode { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.IComputeNodeOperations.html">IComputeNodeOperations</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_BatchServiceClient_Credentials.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.BatchServiceClient.Credentials%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/BatchServiceClient.cs/#L47">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_Credentials_" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.Credentials*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_Credentials" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.Credentials">Credentials</h4>
+  <div class="markdown level1 summary"><p>Credentials needed for the client to connect to Azure.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ServiceClientCredentials Credentials { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ServiceClientCredentials</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_BatchServiceClient_DeserializationSettings.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.BatchServiceClient.DeserializationSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/BatchServiceClient.cs/#L42">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_DeserializationSettings_" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.DeserializationSettings*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_DeserializationSettings" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.DeserializationSettings">DeserializationSettings</h4>
+  <div class="markdown level1 summary"><p>Gets or sets json deserialization settings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonSerializerSettings DeserializationSettings { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">JsonSerializerSettings</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_BatchServiceClient_File.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.BatchServiceClient.File%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/BatchServiceClient.cs/#L105">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_File_" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.File*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_File" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.File">File</h4>
+  <div class="markdown level1 summary"><p>Gets the IFileOperations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IFileOperations File { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.IFileOperations.html">IFileOperations</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_BatchServiceClient_GenerateClientRequestId.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.BatchServiceClient.GenerateClientRequestId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/BatchServiceClient.cs/#L75">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_GenerateClientRequestId_" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.GenerateClientRequestId*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_GenerateClientRequestId" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.GenerateClientRequestId">GenerateClientRequestId</h4>
+  <div class="markdown level1 summary"><p>Whether a unique x-ms-client-request-id should be generated. When set to
+true a unique x-ms-client-request-id value is generated and included in
+each request. Default is true.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? GenerateClientRequestId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_BatchServiceClient_Job.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.BatchServiceClient.Job%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/BatchServiceClient.cs/#L95">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_Job_" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.Job*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_Job" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.Job">Job</h4>
+  <div class="markdown level1 summary"><p>Gets the IJobOperations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IJobOperations Job { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.IJobOperations.html">IJobOperations</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_BatchServiceClient_JobSchedule.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.BatchServiceClient.JobSchedule%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/BatchServiceClient.cs/#L110">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_JobSchedule_" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.JobSchedule*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_JobSchedule" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.JobSchedule">JobSchedule</h4>
+  <div class="markdown level1 summary"><p>Gets the IJobScheduleOperations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IJobScheduleOperations JobSchedule { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.IJobScheduleOperations.html">IJobScheduleOperations</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_BatchServiceClient_LongRunningOperationRetryTimeout.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.BatchServiceClient.LongRunningOperationRetryTimeout%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/BatchServiceClient.cs/#L68">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_LongRunningOperationRetryTimeout_" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.LongRunningOperationRetryTimeout*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_LongRunningOperationRetryTimeout" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.LongRunningOperationRetryTimeout">LongRunningOperationRetryTimeout</h4>
+  <div class="markdown level1 summary"><p>The retry timeout in seconds for Long Running Operations. Default value is
+30.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? LongRunningOperationRetryTimeout { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_BatchServiceClient_Pool.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.BatchServiceClient.Pool%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/BatchServiceClient.cs/#L85">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_Pool_" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.Pool*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_Pool" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.Pool">Pool</h4>
+  <div class="markdown level1 summary"><p>Gets the IPoolOperations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IPoolOperations Pool { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.IPoolOperations.html">IPoolOperations</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_BatchServiceClient_SerializationSettings.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.BatchServiceClient.SerializationSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/BatchServiceClient.cs/#L37">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_SerializationSettings_" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.SerializationSettings*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_SerializationSettings" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.SerializationSettings">SerializationSettings</h4>
+  <div class="markdown level1 summary"><p>Gets or sets json serialization settings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonSerializerSettings SerializationSettings { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">JsonSerializerSettings</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_BatchServiceClient_Task.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.BatchServiceClient.Task%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/BatchServiceClient.cs/#L115">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_Task_" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.Task*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_Task" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.Task">Task</h4>
+  <div class="markdown level1 summary"><p>Gets the ITaskOperations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ITaskOperations Task { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.ITaskOperations.html">ITaskOperations</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.IBatchServiceClient.html">IBatchServiceClient</a>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <div>
+      <span class="xref">IAzureClient</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="../ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.AppConfigurationAzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AppConfigurationAzureClientBuilderExtensions_AddAppConfiguration__2___0_System_String___1_">AppConfigurationAzureClientBuilderExtensions.AddAppConfiguration&lt;TBuilder, TConfiguration&gt;(TBuilder, String, TConfiguration)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_BatchServiceClient.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.BatchServiceClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/BatchServiceClient.cs/#L27" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

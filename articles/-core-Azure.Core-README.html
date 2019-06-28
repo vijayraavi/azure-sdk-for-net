@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Azure.Core shared library for .NET </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Azure.Core shared library for .NET ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="azurecore-shared-library-for-net">Azure.Core shared library for .NET</h1>
+
+<p>Azure.Core provides shared primitives, abstractions, and helpers for modern .NET Azure SDK client libraries.
+These libraries follow the <a href="https://azuresdkspecs.z5.web.core.windows.net/DotNetSpec.html">Azure SDK Design Guidelines for .NET</a>
+and can be easily identified by package and namespaces names starting with 'Azure', e.g. <code>Azure.Storage.Blobs</code>.
+A more complete list of client libraries using Azure.Core can be found <a href="https://github.com/Azure/azure-sdk-for-net#core-services">here</a>.</p>
+<p>Azure.Core allows client libraries to expose common functionality in a consistent fashion,
+so that once you learn how to use these APIs in one client library, you will know how to use them in other client libraries.</p>
+<p>The main shared concepts of Azure.Core (and so Azure SDK libraries using Azure.Core) include:</p>
+<ul>
+<li>Configuring service clients, e.g. configuring retries, logging.</li>
+<li>Accessing HTTP response details.</li>
+<li>Calling long running operations (LROs).</li>
+<li>Paging and asynchronous streams (<code>IAsyncEnumerable&lt;T&gt;</code>)</li>
+<li>Exceptions for reporting errors from service requests in a consistent fashion.</li>
+<li>Abstractions for representing Azure SDK credentials.</li>
+</ul>
+<p>Below, you will find sections explaining these shared concepts in more detail.</p>
+<h2 id="installing">Installing</h2>
+<p>Typically, you will not need to install Azure.Core;
+it will be installed for you when you install one of the client libraries using it.
+In case you want to install it explicitly (to implement your own client library, for example),
+you can find the NuGet package <a href="https://www.nuget.org/packages/Azure.Core">here</a>.</p>
+<h2 id="usage-scenarios-and-samples">Usage Scenarios and Samples</h2>
+<h3 id="configuring-service-clients-using-clientoptions">Configuring Service Clients Using <code>ClientOptions</code></h3>
+<p>Azure SDK client libraries typically expose one or more <em>service client</em> types that
+are the main starting points for calling corresponding Azure services.
+You can easily find these client types as their names end with the word <em>Client</em>.
+For example, <code>BlockBlobClient</code> can be used to call blob storage service,
+and <code>KeyClient</code> can be used to access KeyVault service cryptographic keys.</p>
+<p>These client types can be instantiated by calling a simple constructor,
+or its overload that takes various configuration options.
+These options are passed as a parameter that extends <code>ClientOptions</code> class exposed by Azure.Core.
+Various service specific options are usually added to its subclasses, but a set of SDK-wide options are
+available directly on <code>ClientOptions</code>.</p>
+<pre><code class="lang-csharp">public void ConfigureServiceClient()
+{
+    // BlobConnectionOptions inherits/extends ClientOptions
+    ClientOptions options = new BlobConnectionOptions();     
+    
+    // configure retries
+    options.RetryPolicy.MaxRetries = 5; // default is 3
+    options.RetryPolicy.Mode = RetryMode.Exponential; // default is fixed retry policy
+    options.RetryPolicy.Delay = TimeSpan.FromSeconds(1); // default is 0.8s
+
+    // finally create BlobContainerClient, but many Azure SDK clients will work similarly
+    var client = new BlobContainerClient(connectionString, &quot;container&quot;, options);
+
+    // if you don't specify the options, default options will be used, e.g.
+    var clientWithDefaultOptions = new BlobContainerClient(connectionString, &quot;container&quot;);
+}
+</code></pre>
+<h3 id="accessing-http-response-details-using-responset">Accessing HTTP Response Details Using <code>Response&lt;T&gt;</code></h3>
+<p><em>Service clients</em> have methods that can be used to call Azure services.
+We refer to these client methods <em>service methods</em>.
+<em>Service methods</em> return a shared Azure.Core type <code>Response&lt;T&gt;</code> (in rare cases its non-generic sibling, a raw <code>Response</code>).
+This type provides access to both the deserialized result of the service call,
+and to the details of the HTTP response returned from the server.</p>
+<pre><code class="lang-csharp">public async Task UsingResponseOfT()
+{
+    // create a client
+    var client = new BlobContainerClient(connectionString, &quot;container&quot;);
+
+    // call a service method, which returns Response&lt;T&gt;
+    Response&lt;ContainerItem&gt; response = await client.GetPropertiesAsync();
+
+    // Response&lt;T&gt; has two main accessors. 
+    // Value property for accessing the deserialized result of the call
+    ContainerItem container = response.Value;
+
+    // .. and GetRawResponse method for accessing all the details of the HTTP response
+    Response http = response.GetRawResponse();
+
+    // for example, you can access HTTP status
+    int status = http.Status;
+
+    // or the headers
+    foreach(HttpHeader header = http.Headers) {
+        Console.WriteLine($&quot;{header.Name} {header.Value}&quot;);
+    }
+
+    // or the stream of the response content
+    Stream content = http.ContentStream;
+
+    // but, if you are not interested in all HTTP details, 
+    // and just want the result of the service call,
+    // Response&lt;T&gt; provides a cast to get you directly to the result
+    ContainerItem result = await client.GetPropertiesAsync();
+}
+</code></pre>
+<h3 id="reporting-errors-requestfailedexception">Reporting Errors <code>RequestFailedException</code></h3>
+<p>Coming soon ...</p>
+<h3 id="consuming-service-methods-returning-iasyncenumerablet">Consuming Service Methods Returning <code>IAsyncEnumerable&lt;T&gt;</code></h3>
+<p>Coming soon ...</p>
+<h3 id="consuming-long-running-operations-using-operationt">Consuming Long Running Operations Using <code>Operation&lt;T&gt;</code></h3>
+<p>Comming soon ...</p>
+<h3 id="mocking">Mocking</h3>
+<p>Comming soon ...</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/docfx_project/articles/-core-Azure.Core-README.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

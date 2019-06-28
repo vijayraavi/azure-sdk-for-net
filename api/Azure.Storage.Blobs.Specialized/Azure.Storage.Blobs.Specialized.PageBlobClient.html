@@ -1,0 +1,946 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PageBlobClient
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PageBlobClient
+   ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient">
+  
+  
+  <h1 id="Azure_Storage_Blobs_Specialized_PageBlobClient" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient" class="text-break">Class PageBlobClient
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Azure.Storage.Blobs.Specialized.BlobClient.html">BlobClient</a></div>
+    <div class="level2"><span class="xref">PageBlobClient</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobClient.html#Azure_Storage_Blobs_Specialized_BlobClient_AbortCopyFromUriAsync_System_String_System_Nullable_Azure_Storage_Blobs_LeaseAccessConditions__System_Threading_CancellationToken_">BlobClient.AbortCopyFromUriAsync(String, Nullable&lt;LeaseAccessConditions&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobClient.html#Azure_Storage_Blobs_Specialized_BlobClient_AcquireLeaseAsync_System_Int32_System_String_System_Nullable_Azure_Storage_Blobs_HttpAccessConditions__System_Threading_CancellationToken_">BlobClient.AcquireLeaseAsync(Int32, String, Nullable&lt;HttpAccessConditions&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobClient.html#Azure_Storage_Blobs_Specialized_BlobClient_BreakLeaseAsync_System_Nullable_System_Int32__System_Nullable_Azure_Storage_Blobs_HttpAccessConditions__System_Threading_CancellationToken_">BlobClient.BreakLeaseAsync(Nullable&lt;Int32&gt;, Nullable&lt;HttpAccessConditions&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobClient.html#Azure_Storage_Blobs_Specialized_BlobClient_ChangeLeaseAsync_System_String_System_String_System_Nullable_Azure_Storage_Blobs_HttpAccessConditions__System_Threading_CancellationToken_">BlobClient.ChangeLeaseAsync(String, String, Nullable&lt;HttpAccessConditions&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobClient.html#Azure_Storage_Blobs_Specialized_BlobClient_CreateSnapshotAsync_System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_BlobAccessConditions__System_Threading_CancellationToken_">BlobClient.CreateSnapshotAsync(IDictionary&lt;String,String&gt;, Nullable&lt;BlobAccessConditions&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobClient.html#Azure_Storage_Blobs_Specialized_BlobClient_DeleteAsync_System_Nullable_Azure_Storage_Blobs_Models_DeleteSnapshotsOption__System_Nullable_Azure_Storage_Blobs_BlobAccessConditions__System_Threading_CancellationToken_">BlobClient.DeleteAsync(Nullable&lt;DeleteSnapshotsOption&gt;, Nullable&lt;BlobAccessConditions&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobClient.html#Azure_Storage_Blobs_Specialized_BlobClient_DownloadAsync_Azure_Storage_Blobs_HttpRange_System_Nullable_Azure_Storage_Blobs_BlobAccessConditions__System_Boolean_System_Threading_CancellationToken_">BlobClient.DownloadAsync(HttpRange, Nullable&lt;BlobAccessConditions&gt;, Boolean, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobClient.html#Azure_Storage_Blobs_Specialized_BlobClient_GetAccountInfoAsync_System_Threading_CancellationToken_">BlobClient.GetAccountInfoAsync(CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobClient.html#Azure_Storage_Blobs_Specialized_BlobClient_GetPropertiesAsync_System_Nullable_Azure_Storage_Blobs_BlobAccessConditions__System_Threading_CancellationToken_">BlobClient.GetPropertiesAsync(Nullable&lt;BlobAccessConditions&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobClient.html#Azure_Storage_Blobs_Specialized_BlobClient_Pipeline">BlobClient.Pipeline</a>
+    </div>
+    <div>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobClient.html#Azure_Storage_Blobs_Specialized_BlobClient_ReleaseLeaseAsync_System_String_System_Nullable_Azure_Storage_Blobs_HttpAccessConditions__System_Threading_CancellationToken_">BlobClient.ReleaseLeaseAsync(String, Nullable&lt;HttpAccessConditions&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobClient.html#Azure_Storage_Blobs_Specialized_BlobClient_RenewLeaseAsync_System_String_System_Nullable_Azure_Storage_Blobs_HttpAccessConditions__System_Threading_CancellationToken_">BlobClient.RenewLeaseAsync(String, Nullable&lt;HttpAccessConditions&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobClient.html#Azure_Storage_Blobs_Specialized_BlobClient_SetHttpHeadersAsync_System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Nullable_Azure_Storage_Blobs_BlobAccessConditions__System_Threading_CancellationToken_">BlobClient.SetHttpHeadersAsync(Nullable&lt;BlobHttpHeaders&gt;, Nullable&lt;BlobAccessConditions&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobClient.html#Azure_Storage_Blobs_Specialized_BlobClient_SetMetadataAsync_System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_BlobAccessConditions__System_Threading_CancellationToken_">BlobClient.SetMetadataAsync(IDictionary&lt;String,String&gt;, Nullable&lt;BlobAccessConditions&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobClient.html#Azure_Storage_Blobs_Specialized_BlobClient_SetTierAsync_Azure_Storage_Blobs_Models_AccessTier_System_Nullable_Azure_Storage_Blobs_LeaseAccessConditions__System_Threading_CancellationToken_">BlobClient.SetTierAsync(AccessTier, Nullable&lt;LeaseAccessConditions&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobClient.html#Azure_Storage_Blobs_Specialized_BlobClient_StartCopyFromUriAsync_System_Uri_System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_BlobAccessConditions__System_Threading_CancellationToken_">BlobClient.StartCopyFromUriAsync(Uri, IDictionary&lt;String,String&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;BlobAccessConditions&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobClient.html#Azure_Storage_Blobs_Specialized_BlobClient_UndeleteAsync_System_Threading_CancellationToken_">BlobClient.UndeleteAsync(CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobClient.html#Azure_Storage_Blobs_Specialized_BlobClient_Uri">BlobClient.Uri</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="../Azure.Storage.Blobs.Specialized.html">Azure.Storage.Blobs.Specialized</a></h6>
+  <h6><strong>Assembly</strong>: Azure.Storage.Blobs.dll</h6>
+  <h5 id="Azure_Storage_Blobs_Specialized_PageBlobClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PageBlobClient : Azure.Storage.Blobs.Specialized.BlobClient</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Azure_Storage_Blobs_Specialized_PageBlobClient__ctor_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.#ctor*"></a>
+  <h4 id="Azure_Storage_Blobs_Specialized_PageBlobClient__ctor_System_Uri_Azure_Storage_Blobs_BlobConnectionOptions_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.#ctor(System.Uri,Azure.Storage.Blobs.BlobConnectionOptions)">PageBlobClient(Uri, BlobConnectionOptions)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PageBlobClient (Uri primaryUri, Azure.Storage.Blobs.BlobConnectionOptions connectionOptions = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">primaryUri</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Azure.Storage.Blobs/Azure.Storage.Blobs.BlobConnectionOptions.html">BlobConnectionOptions</a></td>
+        <td><span class="parametername">connectionOptions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Blobs_Specialized_PageBlobClient__ctor_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.#ctor*"></a>
+  <h4 id="Azure_Storage_Blobs_Specialized_PageBlobClient__ctor_System_String_System_String_System_String_Azure_Storage_Blobs_BlobConnectionOptions_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.#ctor(System.String,System.String,System.String,Azure.Storage.Blobs.BlobConnectionOptions)">PageBlobClient(String, String, String, BlobConnectionOptions)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PageBlobClient (string connectionString, string containerName, string blobName, Azure.Storage.Blobs.BlobConnectionOptions connectionOptions = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">connectionString</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">containerName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">blobName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Azure.Storage.Blobs/Azure.Storage.Blobs.BlobConnectionOptions.html">BlobConnectionOptions</a></td>
+        <td><span class="parametername">connectionOptions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Azure_Storage_Blobs_Specialized_PageBlobClient_PageBlobMaxUploadPagesBytes" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.PageBlobMaxUploadPagesBytes">PageBlobMaxUploadPagesBytes</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int PageBlobMaxUploadPagesBytes = 4194304;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Azure_Storage_Blobs_Specialized_PageBlobClient_PageBlobPageBytes" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.PageBlobPageBytes">PageBlobPageBytes</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int PageBlobPageBytes = 512;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Azure_Storage_Blobs_Specialized_PageBlobClient_ClearPagesAsync_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.ClearPagesAsync*"></a>
+  <h4 id="Azure_Storage_Blobs_Specialized_PageBlobClient_ClearPagesAsync_Azure_Storage_Blobs_HttpRange_System_Nullable_Azure_Storage_Blobs_PageBlobAccessConditions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.ClearPagesAsync(Azure.Storage.Blobs.HttpRange,System.Nullable{Azure.Storage.Blobs.PageBlobAccessConditions},System.Threading.CancellationToken)">ClearPagesAsync(HttpRange, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;&gt; ClearPagesAsync (Azure.Storage.Blobs.HttpRange range, Nullable&lt;Azure.Storage.Blobs.PageBlobAccessConditions&gt; accessConditions = null, System.Threading.CancellationToken cancellation = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure.Storage.Blobs/Azure.Storage.Blobs.HttpRange.html">HttpRange</a></td>
+        <td><span class="parametername">range</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="../Azure.Storage.Blobs/Azure.Storage.Blobs.PageBlobAccessConditions.html">PageBlobAccessConditions</a>&gt;</td>
+        <td><span class="parametername">accessConditions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.BlobContentInfo.html">BlobContentInfo</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Blobs_Specialized_PageBlobClient_CreateAsync_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.CreateAsync*"></a>
+  <h4 id="Azure_Storage_Blobs_Specialized_PageBlobClient_CreateAsync_System_Int64_System_Nullable_System_Int64__System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_PageBlobAccessConditions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.CreateAsync(System.Int64,System.Nullable{System.Int64},System.Nullable{Azure.Storage.Blobs.Models.BlobHttpHeaders},System.Collections.Generic.IDictionary{System.String,System.String},System.Nullable{Azure.Storage.Blobs.PageBlobAccessConditions},System.Threading.CancellationToken)">CreateAsync(Int64, Nullable&lt;Int64&gt;, Nullable&lt;BlobHttpHeaders&gt;, IDictionary&lt;String,String&gt;, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;&gt; CreateAsync (long size, Nullable&lt;long&gt; sequenceNumber = null, Nullable&lt;Azure.Storage.Blobs.Models.BlobHttpHeaders&gt; httpHeaders = null, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = null, Nullable&lt;Azure.Storage.Blobs.PageBlobAccessConditions&gt; accessConditions = null, System.Threading.CancellationToken cancellation = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">sequenceNumber</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.BlobHttpHeaders.html">BlobHttpHeaders</a>&gt;</td>
+        <td><span class="parametername">httpHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;<span class="xref">System.String</span>,<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">metadata</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="../Azure.Storage.Blobs/Azure.Storage.Blobs.PageBlobAccessConditions.html">PageBlobAccessConditions</a>&gt;</td>
+        <td><span class="parametername">accessConditions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.BlobContentInfo.html">BlobContentInfo</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Blobs_Specialized_PageBlobClient_GetPageRangesAsync_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.GetPageRangesAsync*"></a>
+  <h4 id="Azure_Storage_Blobs_Specialized_PageBlobClient_GetPageRangesAsync_System_Nullable_Azure_Storage_Blobs_HttpRange__System_String_System_Nullable_Azure_Storage_Blobs_PageBlobAccessConditions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.GetPageRangesAsync(System.Nullable{Azure.Storage.Blobs.HttpRange},System.String,System.Nullable{Azure.Storage.Blobs.PageBlobAccessConditions},System.Threading.CancellationToken)">GetPageRangesAsync(Nullable&lt;HttpRange&gt;, String, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.PageRangesInfo&gt;&gt; GetPageRangesAsync (Nullable&lt;Azure.Storage.Blobs.HttpRange&gt; range = null, string snapshot = null, Nullable&lt;Azure.Storage.Blobs.PageBlobAccessConditions&gt; accessConditions = null, System.Threading.CancellationToken cancellation = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="../Azure.Storage.Blobs/Azure.Storage.Blobs.HttpRange.html">HttpRange</a>&gt;</td>
+        <td><span class="parametername">range</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">snapshot</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="../Azure.Storage.Blobs/Azure.Storage.Blobs.PageBlobAccessConditions.html">PageBlobAccessConditions</a>&gt;</td>
+        <td><span class="parametername">accessConditions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageRangesInfo.html">PageRangesInfo</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Blobs_Specialized_PageBlobClient_GetPageRangesDiffAsync_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.GetPageRangesDiffAsync*"></a>
+  <h4 id="Azure_Storage_Blobs_Specialized_PageBlobClient_GetPageRangesDiffAsync_System_Nullable_Azure_Storage_Blobs_HttpRange__System_String_System_String_System_Nullable_Azure_Storage_Blobs_PageBlobAccessConditions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.GetPageRangesDiffAsync(System.Nullable{Azure.Storage.Blobs.HttpRange},System.String,System.String,System.Nullable{Azure.Storage.Blobs.PageBlobAccessConditions},System.Threading.CancellationToken)">GetPageRangesDiffAsync(Nullable&lt;HttpRange&gt;, String, String, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.PageRangesInfo&gt;&gt; GetPageRangesDiffAsync (Nullable&lt;Azure.Storage.Blobs.HttpRange&gt; range = null, string snapshot = null, string prevSnapshot = null, Nullable&lt;Azure.Storage.Blobs.PageBlobAccessConditions&gt; accessConditions = null, System.Threading.CancellationToken cancellation = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="../Azure.Storage.Blobs/Azure.Storage.Blobs.HttpRange.html">HttpRange</a>&gt;</td>
+        <td><span class="parametername">range</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">snapshot</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">prevSnapshot</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="../Azure.Storage.Blobs/Azure.Storage.Blobs.PageBlobAccessConditions.html">PageBlobAccessConditions</a>&gt;</td>
+        <td><span class="parametername">accessConditions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageRangesInfo.html">PageRangesInfo</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Blobs_Specialized_PageBlobClient_ResizeAsync_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.ResizeAsync*"></a>
+  <h4 id="Azure_Storage_Blobs_Specialized_PageBlobClient_ResizeAsync_System_Int64_System_Nullable_Azure_Storage_Blobs_PageBlobAccessConditions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.ResizeAsync(System.Int64,System.Nullable{Azure.Storage.Blobs.PageBlobAccessConditions},System.Threading.CancellationToken)">ResizeAsync(Int64, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobInfo&gt;&gt; ResizeAsync (long size, Nullable&lt;Azure.Storage.Blobs.PageBlobAccessConditions&gt; accessConditions = null, System.Threading.CancellationToken cancellation = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="../Azure.Storage.Blobs/Azure.Storage.Blobs.PageBlobAccessConditions.html">PageBlobAccessConditions</a>&gt;</td>
+        <td><span class="parametername">accessConditions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.BlobInfo.html">BlobInfo</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Blobs_Specialized_PageBlobClient_StartCopyIncrementalAsync_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.StartCopyIncrementalAsync*"></a>
+  <h4 id="Azure_Storage_Blobs_Specialized_PageBlobClient_StartCopyIncrementalAsync_System_Uri_System_String_System_Nullable_Azure_Storage_Blobs_PageBlobAccessConditions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.StartCopyIncrementalAsync(System.Uri,System.String,System.Nullable{Azure.Storage.Blobs.PageBlobAccessConditions},System.Threading.CancellationToken)">StartCopyIncrementalAsync(Uri, String, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobCopyInfo&gt;&gt; StartCopyIncrementalAsync (Uri sourceUri, string snapshot, Nullable&lt;Azure.Storage.Blobs.PageBlobAccessConditions&gt; accessConditions = null, System.Threading.CancellationToken cancellation = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">sourceUri</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">snapshot</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="../Azure.Storage.Blobs/Azure.Storage.Blobs.PageBlobAccessConditions.html">PageBlobAccessConditions</a>&gt;</td>
+        <td><span class="parametername">accessConditions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.BlobCopyInfo.html">BlobCopyInfo</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Blobs_Specialized_PageBlobClient_UpdateSequenceNumberAsync_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.UpdateSequenceNumberAsync*"></a>
+  <h4 id="Azure_Storage_Blobs_Specialized_PageBlobClient_UpdateSequenceNumberAsync_Azure_Storage_Blobs_Models_SequenceNumberAction_System_Nullable_System_Int64__System_Nullable_Azure_Storage_Blobs_PageBlobAccessConditions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.UpdateSequenceNumberAsync(Azure.Storage.Blobs.Models.SequenceNumberAction,System.Nullable{System.Int64},System.Nullable{Azure.Storage.Blobs.PageBlobAccessConditions},System.Threading.CancellationToken)">UpdateSequenceNumberAsync(SequenceNumberAction, Nullable&lt;Int64&gt;, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobInfo&gt;&gt; UpdateSequenceNumberAsync (Azure.Storage.Blobs.Models.SequenceNumberAction action, Nullable&lt;long&gt; sequenceNumber = null, Nullable&lt;Azure.Storage.Blobs.PageBlobAccessConditions&gt; accessConditions = null, System.Threading.CancellationToken cancellation = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.SequenceNumberAction.html">SequenceNumberAction</a></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">sequenceNumber</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="../Azure.Storage.Blobs/Azure.Storage.Blobs.PageBlobAccessConditions.html">PageBlobAccessConditions</a>&gt;</td>
+        <td><span class="parametername">accessConditions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.BlobInfo.html">BlobInfo</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Blobs_Specialized_PageBlobClient_UploadPagesAsync_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.UploadPagesAsync*"></a>
+  <h4 id="Azure_Storage_Blobs_Specialized_PageBlobClient_UploadPagesAsync_System_IO_Stream_System_Int64_System_Byte___System_Nullable_Azure_Storage_Blobs_PageBlobAccessConditions__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.UploadPagesAsync(System.IO.Stream,System.Int64,System.Byte[],System.Nullable{Azure.Storage.Blobs.PageBlobAccessConditions},System.IProgress{Azure.Storage.Common.StorageProgress},System.Threading.CancellationToken)">UploadPagesAsync(Stream, Int64, Byte[], Nullable&lt;PageBlobAccessConditions&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;&gt; UploadPagesAsync (System.IO.Stream content, long offset, byte[] transactionalContentHash = null, Nullable&lt;Azure.Storage.Blobs.PageBlobAccessConditions&gt; accessConditions = null, IProgress&lt;Azure.Storage.Common.StorageProgress&gt; progressHandler = null, System.Threading.CancellationToken cancellation = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">transactionalContentHash</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="../Azure.Storage.Blobs/Azure.Storage.Blobs.PageBlobAccessConditions.html">PageBlobAccessConditions</a>&gt;</td>
+        <td><span class="parametername">accessConditions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IProgress</span>&lt;<a class="xref" href="../Azure.Storage.Common/Azure.Storage.Common.StorageProgress.html">StorageProgress</a>&gt;</td>
+        <td><span class="parametername">progressHandler</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.BlobContentInfo.html">BlobContentInfo</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Blobs_Specialized_PageBlobClient_UploadPagesFromUriAsync_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.UploadPagesFromUriAsync*"></a>
+  <h4 id="Azure_Storage_Blobs_Specialized_PageBlobClient_UploadPagesFromUriAsync_System_Uri_Azure_Storage_Blobs_HttpRange_Azure_Storage_Blobs_HttpRange_System_Byte___System_Nullable_Azure_Storage_Blobs_PageBlobAccessConditions__System_Nullable_Azure_Storage_Blobs_PageBlobAccessConditions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.UploadPagesFromUriAsync(System.Uri,Azure.Storage.Blobs.HttpRange,Azure.Storage.Blobs.HttpRange,System.Byte[],System.Nullable{Azure.Storage.Blobs.PageBlobAccessConditions},System.Nullable{Azure.Storage.Blobs.PageBlobAccessConditions},System.Threading.CancellationToken)">UploadPagesFromUriAsync(Uri, HttpRange, HttpRange, Byte[], Nullable&lt;PageBlobAccessConditions&gt;, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;&gt; UploadPagesFromUriAsync (Uri sourceUri, Azure.Storage.Blobs.HttpRange sourceRange, Azure.Storage.Blobs.HttpRange range, byte[] sourceContentHash = null, Nullable&lt;Azure.Storage.Blobs.PageBlobAccessConditions&gt; accessConditions = null, Nullable&lt;Azure.Storage.Blobs.PageBlobAccessConditions&gt; sourceAccessConditions = null, System.Threading.CancellationToken cancellation = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">sourceUri</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Azure.Storage.Blobs/Azure.Storage.Blobs.HttpRange.html">HttpRange</a></td>
+        <td><span class="parametername">sourceRange</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Azure.Storage.Blobs/Azure.Storage.Blobs.HttpRange.html">HttpRange</a></td>
+        <td><span class="parametername">range</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">sourceContentHash</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="../Azure.Storage.Blobs/Azure.Storage.Blobs.PageBlobAccessConditions.html">PageBlobAccessConditions</a>&gt;</td>
+        <td><span class="parametername">accessConditions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="../Azure.Storage.Blobs/Azure.Storage.Blobs.PageBlobAccessConditions.html">PageBlobAccessConditions</a>&gt;</td>
+        <td><span class="parametername">sourceAccessConditions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.BlobContentInfo.html">BlobContentInfo</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Blobs_Specialized_PageBlobClient_WithSnapshot_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.WithSnapshot*"></a>
+  <h4 id="Azure_Storage_Blobs_Specialized_PageBlobClient_WithSnapshot_System_String_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.WithSnapshot(System.String)">WithSnapshot(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Azure.Storage.Blobs.Specialized.PageBlobClient WithSnapshot (string snapshot);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">snapshot</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html">PageBlobClient</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Blobs_Specialized_PageBlobClient_WithSnapshotImpl_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.WithSnapshotImpl*"></a>
+  <h4 id="Azure_Storage_Blobs_Specialized_PageBlobClient_WithSnapshotImpl_System_String_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.WithSnapshotImpl(System.String)">WithSnapshotImpl(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override sealed Azure.Storage.Blobs.Specialized.BlobClient WithSnapshotImpl (string snapshot);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">snapshot</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Blobs.Specialized.BlobClient.html">BlobClient</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

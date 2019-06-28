@@ -1,0 +1,1416 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class JsonWebKeyVerifier
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class JsonWebKeyVerifier
+   ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier">
+  
+  
+  <h1 id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier" class="text-break">Class JsonWebKeyVerifier
+  </h1>
+  <div class="markdown level0 summary"><p>A class that verifies instances of <a class="xref" href="Microsoft.Azure.KeyVault.WebKey.JsonWebKey.html">JsonWebKey</a> according to key type.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">JsonWebKeyVerifier</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.Azure.KeyVault.WebKey.html">Microsoft.Azure.KeyVault.WebKey</a></h6>
+  <h6><strong>Assembly</strong>: Microsoft.Azure.KeyVault.WebKey.dll</h6>
+  <h5 id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class JsonWebKeyVerifier : object</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier__ctor_System_String_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.%23ctor(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/keyvault/Microsoft.Azure.KeyVault.WebKey/src/JsonWebKeyVerifier.cs/#L30">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier__ctor_" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.#ctor*"></a>
+  <h4 id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier__ctor_System_String_" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.#ctor(System.String)">JsonWebKeyVerifier(String)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance setting the specified value in the <a class="xref" href="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.html#Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Kty">Kty</a> property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected JsonWebKeyVerifier(string kty)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">kty</span></td>
+        <td><p>Indicates which type of key this verifier applies to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_HasSecretKey.md&amp;value=---%0Auid%3A%20Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.HasSecretKey%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/keyvault/Microsoft.Azure.KeyVault.WebKey/src/JsonWebKeyVerifier.cs/#L72">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_HasSecretKey_" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.HasSecretKey*"></a>
+  <h4 id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_HasSecretKey" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.HasSecretKey">HasSecretKey</h4>
+  <div class="markdown level1 summary"><p>Tells if the type of key verified by this object contains a secret component, such as a hardware key token.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool HasSecretKey { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_IsPublicKeyCrypto.md&amp;value=---%0Auid%3A%20Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.IsPublicKeyCrypto%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/keyvault/Microsoft.Azure.KeyVault.WebKey/src/JsonWebKeyVerifier.cs/#L58">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_IsPublicKeyCrypto_" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.IsPublicKeyCrypto*"></a>
+  <h4 id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_IsPublicKeyCrypto" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.IsPublicKeyCrypto">IsPublicKeyCrypto</h4>
+  <div class="markdown level1 summary"><p>Tells if the type of key verified by this object supports public key algorithms.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool IsPublicKeyCrypto { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_IsSymmetricKeyCrypto.md&amp;value=---%0Auid%3A%20Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.IsSymmetricKeyCrypto%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/keyvault/Microsoft.Azure.KeyVault.WebKey/src/JsonWebKeyVerifier.cs/#L65">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_IsSymmetricKeyCrypto_" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.IsSymmetricKeyCrypto*"></a>
+  <h4 id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_IsSymmetricKeyCrypto" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.IsSymmetricKeyCrypto">IsSymmetricKeyCrypto</h4>
+  <div class="markdown level1 summary"><p>Tells if the type of key verified by this object supports symmetric key algorithms.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool IsSymmetricKeyCrypto { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Kty.md&amp;value=---%0Auid%3A%20Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.Kty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/keyvault/Microsoft.Azure.KeyVault.WebKey/src/JsonWebKeyVerifier.cs/#L22">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Kty_" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.Kty*"></a>
+  <h4 id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Kty" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.Kty">Kty</h4>
+  <div class="markdown level1 summary"><p>Indicates which type of key this verifier applies to.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Kty { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_AddCompatibleOperations_ICollection_System_String__.md&amp;value=---%0Auid%3A%20Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.AddCompatibleOperations(ICollection%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/keyvault/Microsoft.Azure.KeyVault.WebKey/src/JsonWebKeyVerifier.cs/#L284">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_AddCompatibleOperations_" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.AddCompatibleOperations*"></a>
+  <h4 id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_AddCompatibleOperations_ICollection_System_String__" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.AddCompatibleOperations(ICollection{System.String})">AddCompatibleOperations(ICollection&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Adds to the specified collection all operations that can be performed with keys whose type is handled by
+this object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void AddCompatibleOperations(ICollection&lt;string&gt; compatibleOperations)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ICollection</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">compatibleOperations</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_AddItem__1_ICollection___0_____0_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.AddItem%60%601(ICollection%7B%60%600%7D%40%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/keyvault/Microsoft.Azure.KeyVault.WebKey/src/JsonWebKeyVerifier.cs/#L733">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_AddItem_" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.AddItem*"></a>
+  <h4 id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_AddItem__1_ICollection___0_____0_" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.AddItem``1(ICollection{``0}@,``0)">AddItem&lt;T&gt;(ref ICollection&lt;T&gt;, T)</h4>
+  <div class="markdown level1 summary"><p>Helper method that joins the operation of creating a collection (if required) and adding an item to it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void AddItem&lt;T&gt;(ref ICollection&lt;T&gt; items, T newItem)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ICollection</span>&lt;T&gt;</td>
+        <td><span class="parametername">items</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">newItem</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_AddUsedProperties_ICollection_System_String__.md&amp;value=---%0Auid%3A%20Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.AddUsedProperties(ICollection%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/keyvault/Microsoft.Azure.KeyVault.WebKey/src/JsonWebKeyVerifier.cs/#L316">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_AddUsedProperties_" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.AddUsedProperties*"></a>
+  <h4 id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_AddUsedProperties_ICollection_System_String__" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.AddUsedProperties(ICollection{System.String})">AddUsedProperties(ICollection&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Adds to the specified collection all JsonWebKey properties that are useful to keys whose type is handled by
+this object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void AddUsedProperties(ICollection&lt;string&gt; usedProperties)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ICollection</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">usedProperties</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_GetVerifier_System_String_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.GetVerifier(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/keyvault/Microsoft.Azure.KeyVault.WebKey/src/JsonWebKeyVerifier.cs/#L516">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_GetVerifier_" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.GetVerifier*"></a>
+  <h4 id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_GetVerifier_System_String_" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.GetVerifier(System.String)">GetVerifier(String)</h4>
+  <div class="markdown level1 summary"><p>Returns the verifier registered for the specified kty value, or null if the kty value was not registered.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static JsonWebKeyVerifier GetVerifier(string kty)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">kty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.html">JsonWebKeyVerifier</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_GetVerifier_System_String__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.html#Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Register_Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_">Register(JsonWebKeyVerifier)</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_IsAnyPrivateKeyParamSpecified_Microsoft_Azure_KeyVault_WebKey_JsonWebKey_ICollection_System_String___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.IsAnyPrivateKeyParamSpecified(Microsoft.Azure.KeyVault.WebKey.JsonWebKey%2CICollection%7BSystem.String%7D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/keyvault/Microsoft.Azure.KeyVault.WebKey/src/JsonWebKeyVerifier.cs/#L140">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_IsAnyPrivateKeyParamSpecified_" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.IsAnyPrivateKeyParamSpecified*"></a>
+  <h4 id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_IsAnyPrivateKeyParamSpecified_Microsoft_Azure_KeyVault_WebKey_JsonWebKey_ICollection_System_String___" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.IsAnyPrivateKeyParamSpecified(Microsoft.Azure.KeyVault.WebKey.JsonWebKey,ICollection{System.String}@)">IsAnyPrivateKeyParamSpecified(JsonWebKey, ref ICollection&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Determines if the specified <a class="xref" href="Microsoft.Azure.KeyVault.WebKey.JsonWebKey.html">JsonWebKey</a> instance contains values in one or more properties that
+represent the private key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsAnyPrivateKeyParamSpecified(JsonWebKey webKey, ref ICollection&lt;string&gt; specifiedProps)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.KeyVault.WebKey.JsonWebKey.html">JsonWebKey</a></td>
+        <td><span class="parametername">webKey</span></td>
+        <td><p>The instance to verify.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">ICollection</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">specifiedProps</span></td>
+        <td><p>A reference to a variable that tells the list of specified properties. Callers must
+set the variable to <pre><code>null</code></pre> and examine the value only if this method returns <pre><code>true</code></pre>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><pre><code>true</code></pre> if a value is found in at least one property that describe the private key;
+<pre><code>false</code></pre> otherwise.
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_IsOperationCompatible_System_String_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.IsOperationCompatible(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/keyvault/Microsoft.Azure.KeyVault.WebKey/src/JsonWebKeyVerifier.cs/#L262">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_IsOperationCompatible_" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.IsOperationCompatible*"></a>
+  <h4 id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_IsOperationCompatible_System_String_" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.IsOperationCompatible(System.String)">IsOperationCompatible(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsOperationCompatible(string opName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">opName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_IsOperationValid_System_String_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.IsOperationValid(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/keyvault/Microsoft.Azure.KeyVault.WebKey/src/JsonWebKeyVerifier.cs/#L243">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_IsOperationValid_" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.IsOperationValid*"></a>
+  <h4 id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_IsOperationValid_System_String_" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.IsOperationValid(System.String)">IsOperationValid(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsOperationValid(string opName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">opName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_IsPrivateKeyComplete_Microsoft_Azure_KeyVault_WebKey_JsonWebKey_ICollection_System_String___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.IsPrivateKeyComplete(Microsoft.Azure.KeyVault.WebKey.JsonWebKey%2CICollection%7BSystem.String%7D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/keyvault/Microsoft.Azure.KeyVault.WebKey/src/JsonWebKeyVerifier.cs/#L113">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_IsPrivateKeyComplete_" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.IsPrivateKeyComplete*"></a>
+  <h4 id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_IsPrivateKeyComplete_Microsoft_Azure_KeyVault_WebKey_JsonWebKey_ICollection_System_String___" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.IsPrivateKeyComplete(Microsoft.Azure.KeyVault.WebKey.JsonWebKey,ICollection{System.String}@)">IsPrivateKeyComplete(JsonWebKey, ref ICollection&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Same as <a class="xref" href="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.html#Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_IsPublicKeyComplete_Microsoft_Azure_KeyVault_WebKey_JsonWebKey_ICollection_System_String___">IsPublicKeyComplete(JsonWebKey, ref ICollection&lt;String&gt;)</a>, but for the private key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsPrivateKeyComplete(JsonWebKey webKey, ref ICollection&lt;string&gt; missingProps)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.KeyVault.WebKey.JsonWebKey.html">JsonWebKey</a></td>
+        <td><span class="parametername">webKey</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ICollection</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">missingProps</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_IsPrivateKeyValid_Microsoft_Azure_KeyVault_WebKey_JsonWebKey_System_String__.md&amp;value=---%0Auid%3A%20Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.IsPrivateKeyValid(Microsoft.Azure.KeyVault.WebKey.JsonWebKey%2CSystem.String%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/keyvault/Microsoft.Azure.KeyVault.WebKey/src/JsonWebKeyVerifier.cs/#L121">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_IsPrivateKeyValid_" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.IsPrivateKeyValid*"></a>
+  <h4 id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_IsPrivateKeyValid_Microsoft_Azure_KeyVault_WebKey_JsonWebKey_System_String__" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.IsPrivateKeyValid(Microsoft.Azure.KeyVault.WebKey.JsonWebKey,System.String@)">IsPrivateKeyValid(JsonWebKey, ref String)</h4>
+  <div class="markdown level1 summary"><p>Same as <a class="xref" href="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.html#Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_IsPublicKeyValid_Microsoft_Azure_KeyVault_WebKey_JsonWebKey_System_String__">IsPublicKeyValid(JsonWebKey, ref String)</a>, but for the private key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsPrivateKeyValid(JsonWebKey webKey, ref string errorMsg)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.KeyVault.WebKey.JsonWebKey.html">JsonWebKey</a></td>
+        <td><span class="parametername">webKey</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">errorMsg</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_IsPropertyUsed_System_String_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.IsPropertyUsed(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/keyvault/Microsoft.Azure.KeyVault.WebKey/src/JsonWebKeyVerifier.cs/#L288">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_IsPropertyUsed_" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.IsPropertyUsed*"></a>
+  <h4 id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_IsPropertyUsed_System_String_" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.IsPropertyUsed(System.String)">IsPropertyUsed(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPropertyUsed(string propName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">propName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_IsPublicKeyComplete_Microsoft_Azure_KeyVault_WebKey_JsonWebKey_ICollection_System_String___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.IsPublicKeyComplete(Microsoft.Azure.KeyVault.WebKey.JsonWebKey%2CICollection%7BSystem.String%7D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/keyvault/Microsoft.Azure.KeyVault.WebKey/src/JsonWebKeyVerifier.cs/#L84">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_IsPublicKeyComplete_" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.IsPublicKeyComplete*"></a>
+  <h4 id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_IsPublicKeyComplete_Microsoft_Azure_KeyVault_WebKey_JsonWebKey_ICollection_System_String___" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.IsPublicKeyComplete(Microsoft.Azure.KeyVault.WebKey.JsonWebKey,ICollection{System.String}@)">IsPublicKeyComplete(JsonWebKey, ref ICollection&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Determines if the specified <a class="xref" href="Microsoft.Azure.KeyVault.WebKey.JsonWebKey.html">JsonWebKey</a> instance contains values at properties that represent the public key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsPublicKeyComplete(JsonWebKey webKey, ref ICollection&lt;string&gt; missingProps)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.KeyVault.WebKey.JsonWebKey.html">JsonWebKey</a></td>
+        <td><span class="parametername">webKey</span></td>
+        <td><p>The instance to verify.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">ICollection</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">missingProps</span></td>
+        <td><p>A reference to a variable that tells the list of missing properties. Callers must
+set the variable to <pre><code>null</code></pre>, and examine the value only if this method returns <pre><code>false</code></pre>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_IsPublicKeyValid_Microsoft_Azure_KeyVault_WebKey_JsonWebKey_System_String__.md&amp;value=---%0Auid%3A%20Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.IsPublicKeyValid(Microsoft.Azure.KeyVault.WebKey.JsonWebKey%2CSystem.String%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/keyvault/Microsoft.Azure.KeyVault.WebKey/src/JsonWebKeyVerifier.cs/#L105">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_IsPublicKeyValid_" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.IsPublicKeyValid*"></a>
+  <h4 id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_IsPublicKeyValid_Microsoft_Azure_KeyVault_WebKey_JsonWebKey_System_String__" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.IsPublicKeyValid(Microsoft.Azure.KeyVault.WebKey.JsonWebKey,System.String@)">IsPublicKeyValid(JsonWebKey, ref String)</h4>
+  <div class="markdown level1 summary"><p>Determines if the specified <a class="xref" href="Microsoft.Azure.KeyVault.WebKey.JsonWebKey.html">JsonWebKey</a> instance contains a possibly valid public key (see remarks).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsPublicKeyValid(JsonWebKey webKey, ref string errorMsg)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.KeyVault.WebKey.JsonWebKey.html">JsonWebKey</a></td>
+        <td><span class="parametername">webKey</span></td>
+        <td><p>The instance to verify.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">errorMsg</span></td>
+        <td><p>A reference to a variable that will contain an error message. Callers must
+set the variable to <pre><code>null</code></pre>, and examine the value only if this method returns <pre><code>false</code></pre>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_IsSecretKeyComplete_Microsoft_Azure_KeyVault_WebKey_JsonWebKey_ICollection_System_String___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.IsSecretKeyComplete(Microsoft.Azure.KeyVault.WebKey.JsonWebKey%2CICollection%7BSystem.String%7D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/keyvault/Microsoft.Azure.KeyVault.WebKey/src/JsonWebKeyVerifier.cs/#L207">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_IsSecretKeyComplete_" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.IsSecretKeyComplete*"></a>
+  <h4 id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_IsSecretKeyComplete_Microsoft_Azure_KeyVault_WebKey_JsonWebKey_ICollection_System_String___" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.IsSecretKeyComplete(Microsoft.Azure.KeyVault.WebKey.JsonWebKey,ICollection{System.String}@)">IsSecretKeyComplete(JsonWebKey, ref ICollection&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Determines if the specified <a class="xref" href="Microsoft.Azure.KeyVault.WebKey.JsonWebKey.html">JsonWebKey</a> instance contains values at properties that represent the secret key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsSecretKeyComplete(JsonWebKey webKey, ref ICollection&lt;string&gt; missingProps)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.KeyVault.WebKey.JsonWebKey.html">JsonWebKey</a></td>
+        <td><span class="parametername">webKey</span></td>
+        <td><p>The instance to verify.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">ICollection</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">missingProps</span></td>
+        <td><p>A reference to a variable that tells the list of missing properties. Callers must
+set the variable to <pre><code>null</code></pre>, and examine the value only if this method returns <pre><code>false</code></pre>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_IsSecretKeyValid_Microsoft_Azure_KeyVault_WebKey_JsonWebKey_System_String__.md&amp;value=---%0Auid%3A%20Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.IsSecretKeyValid(Microsoft.Azure.KeyVault.WebKey.JsonWebKey%2CSystem.String%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/keyvault/Microsoft.Azure.KeyVault.WebKey/src/JsonWebKeyVerifier.cs/#L228">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_IsSecretKeyValid_" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.IsSecretKeyValid*"></a>
+  <h4 id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_IsSecretKeyValid_Microsoft_Azure_KeyVault_WebKey_JsonWebKey_System_String__" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.IsSecretKeyValid(Microsoft.Azure.KeyVault.WebKey.JsonWebKey,System.String@)">IsSecretKeyValid(JsonWebKey, ref String)</h4>
+  <div class="markdown level1 summary"><p>Determines if the specified <a class="xref" href="Microsoft.Azure.KeyVault.WebKey.JsonWebKey.html">JsonWebKey</a> instance contains a possibly valid secret key (see remarks).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsSecretKeyValid(JsonWebKey webKey, ref string errorMsg)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.KeyVault.WebKey.JsonWebKey.html">JsonWebKey</a></td>
+        <td><span class="parametername">webKey</span></td>
+        <td><p>The instance to verify.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">errorMsg</span></td>
+        <td><p>A reference to a variable that will contain an error message. Callers must
+set the variable to <pre><code>null</code></pre>, and examine the value only if this method returns <pre><code>false</code></pre>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_IsSymmetricKeyComplete_Microsoft_Azure_KeyVault_WebKey_JsonWebKey_ICollection_System_String___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.IsSymmetricKeyComplete(Microsoft.Azure.KeyVault.WebKey.JsonWebKey%2CICollection%7BSystem.String%7D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/keyvault/Microsoft.Azure.KeyVault.WebKey/src/JsonWebKeyVerifier.cs/#L163">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_IsSymmetricKeyComplete_" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.IsSymmetricKeyComplete*"></a>
+  <h4 id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_IsSymmetricKeyComplete_Microsoft_Azure_KeyVault_WebKey_JsonWebKey_ICollection_System_String___" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.IsSymmetricKeyComplete(Microsoft.Azure.KeyVault.WebKey.JsonWebKey,ICollection{System.String}@)">IsSymmetricKeyComplete(JsonWebKey, ref ICollection&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Determines if the specified <a class="xref" href="Microsoft.Azure.KeyVault.WebKey.JsonWebKey.html">JsonWebKey</a> instance contains values at properties that represent the symmetric key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsSymmetricKeyComplete(JsonWebKey webKey, ref ICollection&lt;string&gt; missingProps)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.KeyVault.WebKey.JsonWebKey.html">JsonWebKey</a></td>
+        <td><span class="parametername">webKey</span></td>
+        <td><p>The instance to verify.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">ICollection</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">missingProps</span></td>
+        <td><p>A reference to a variable that tells the list of missing properties. Callers must
+set the variable to <pre><code>null</code></pre>, and examine the value only if this method returns <pre><code>false</code></pre>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_IsSymmetricKeyValid_Microsoft_Azure_KeyVault_WebKey_JsonWebKey_System_String__.md&amp;value=---%0Auid%3A%20Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.IsSymmetricKeyValid(Microsoft.Azure.KeyVault.WebKey.JsonWebKey%2CSystem.String%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/keyvault/Microsoft.Azure.KeyVault.WebKey/src/JsonWebKeyVerifier.cs/#L184">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_IsSymmetricKeyValid_" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.IsSymmetricKeyValid*"></a>
+  <h4 id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_IsSymmetricKeyValid_Microsoft_Azure_KeyVault_WebKey_JsonWebKey_System_String__" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.IsSymmetricKeyValid(Microsoft.Azure.KeyVault.WebKey.JsonWebKey,System.String@)">IsSymmetricKeyValid(JsonWebKey, ref String)</h4>
+  <div class="markdown level1 summary"><p>Determines if the specified <a class="xref" href="Microsoft.Azure.KeyVault.WebKey.JsonWebKey.html">JsonWebKey</a> instance contains a possibly valid symmetric key (see remarks).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsSymmetricKeyValid(JsonWebKey webKey, ref string errorMsg)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.KeyVault.WebKey.JsonWebKey.html">JsonWebKey</a></td>
+        <td><span class="parametername">webKey</span></td>
+        <td><p>The instance to verify.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">errorMsg</span></td>
+        <td><p>A reference to a variable that will contain an error message. Callers must
+set the variable to <pre><code>null</code></pre>, and examine the value only if this method returns <pre><code>false</code></pre>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Register_Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.Register(Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/keyvault/Microsoft.Azure.KeyVault.WebKey/src/JsonWebKeyVerifier.cs/#L489">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Register_" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.Register*"></a>
+  <h4 id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Register_Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.Register(Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier)">Register(JsonWebKeyVerifier)</h4>
+  <div class="markdown level1 summary"><p>Registers a verifier for a <a class="xref" href="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.html#Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Kty">Kty</a> value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Register(JsonWebKeyVerifier verifier)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.html">JsonWebKeyVerifier</a></td>
+        <td><span class="parametername">verifier</span></td>
+        <td><p>The verifier to register.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Register_Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.html#Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_GetVerifier_System_String_">GetVerifier(String)</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_SurroundWithQuotes_ICollection_System_String__.md&amp;value=---%0Auid%3A%20Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.SurroundWithQuotes(ICollection%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/keyvault/Microsoft.Azure.KeyVault.WebKey/src/JsonWebKeyVerifier.cs/#L724">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_SurroundWithQuotes_" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.SurroundWithQuotes*"></a>
+  <h4 id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_SurroundWithQuotes_ICollection_System_String__" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.SurroundWithQuotes(ICollection{System.String})">SurroundWithQuotes(ICollection&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Helper method that surrounds string values with double-quotes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static string SurroundWithQuotes(ICollection&lt;string&gt; items)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ICollection</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">items</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_ValidateKeyParameterSize_System_Byte___System_String_System_Int32_System_String__.md&amp;value=---%0Auid%3A%20Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.ValidateKeyParameterSize(System.Byte%5B%5D%2CSystem.String%2CSystem.Int32%2CSystem.String%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/keyvault/Microsoft.Azure.KeyVault.WebKey/src/JsonWebKeyVerifier.cs/#L755">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_ValidateKeyParameterSize_" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.ValidateKeyParameterSize*"></a>
+  <h4 id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_ValidateKeyParameterSize_System_Byte___System_String_System_Int32_System_String__" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.ValidateKeyParameterSize(System.Byte[],System.String,System.Int32,System.String@)">ValidateKeyParameterSize(Byte[], String, Int32, ref String)</h4>
+  <div class="markdown level1 summary"><p>Helper method that validates the size of a byte array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static bool ValidateKeyParameterSize(byte[] value, string name, int requiredSize, ref string errorMsg)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The array to validate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The array name, which may be used to build error messages.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">requiredSize</span></td>
+        <td><p>The required size, in bytes.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">errorMsg</span></td>
+        <td><p>A reference to a variable that will contain the error message. This is only set
+if the method returns <pre><code>false</code></pre>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><pre><code>true</code></pre> if the array has a valid size; <pre><code>false otherwise</code></pre>.
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Verify_Microsoft_Azure_KeyVault_WebKey_JsonWebKey_Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Options_System_String__.md&amp;value=---%0Auid%3A%20Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.Verify(Microsoft.Azure.KeyVault.WebKey.JsonWebKey%2CMicrosoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.Options%2CSystem.String%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/keyvault/Microsoft.Azure.KeyVault.WebKey/src/JsonWebKeyVerifier.cs/#L383">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Verify_" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.Verify*"></a>
+  <h4 id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Verify_Microsoft_Azure_KeyVault_WebKey_JsonWebKey_Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Options_System_String__" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.Verify(Microsoft.Azure.KeyVault.WebKey.JsonWebKey,Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.Options,System.String@)">Verify(JsonWebKey, JsonWebKeyVerifier.Options, ref String)</h4>
+  <div class="markdown level1 summary"><p>Verifies the specified JsonWebKey instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Verify(JsonWebKey webKey, JsonWebKeyVerifier.Options options, ref string error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.KeyVault.WebKey.JsonWebKey.html">JsonWebKey</a></td>
+        <td><span class="parametername">webKey</span></td>
+        <td><p>The instance to verify.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.Options.html">JsonWebKeyVerifier.Options</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Tells how verification is to behave.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">error</span></td>
+        <td><p>A reference to a variable that will tell the error message, if verification fails. This
+is only set if the method returns <pre><code>false</code></pre>. If the method returns <pre><code>true</code></pre> or throws
+an exception, the <code data-dev-comment-type="paramref" class="paramref">error</code> will not me modified.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><pre><code>true</code></pre> if the JsonWebKey value is valid, <pre><code>false otherwise</code></pre>.
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerificationException.html">JsonWebKeyVerificationException</a></td>
+        <td><p>If the JsonWebKey object is invalid and the option
+<a class="xref" href="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.Options.html#Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Options_ThrowException">ThrowException</a> was specified.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Verify_Microsoft_Azure_KeyVault_WebKey_JsonWebKey_Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Options_System_String___seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.Options.html">JsonWebKeyVerifier.Options</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_VerifyByKeyType_Microsoft_Azure_KeyVault_WebKey_JsonWebKey_Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Options_System_String__.md&amp;value=---%0Auid%3A%20Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.VerifyByKeyType(Microsoft.Azure.KeyVault.WebKey.JsonWebKey%2CMicrosoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.Options%2CSystem.String%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/keyvault/Microsoft.Azure.KeyVault.WebKey/src/JsonWebKeyVerifier.cs/#L442">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_VerifyByKeyType_" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.VerifyByKeyType*"></a>
+  <h4 id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_VerifyByKeyType_Microsoft_Azure_KeyVault_WebKey_JsonWebKey_Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Options_System_String__" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.VerifyByKeyType(Microsoft.Azure.KeyVault.WebKey.JsonWebKey,Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.Options,System.String@)">VerifyByKeyType(JsonWebKey, JsonWebKeyVerifier.Options, ref String)</h4>
+  <div class="markdown level1 summary"><p>Verifies the specified JsonWebKey instance according to <a class="xref" href="Microsoft.Azure.KeyVault.WebKey.JsonWebKey.html#Microsoft_Azure_KeyVault_WebKey_JsonWebKey_Kty">Kty</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool VerifyByKeyType(JsonWebKey webKey, JsonWebKeyVerifier.Options options, ref string error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.KeyVault.WebKey.JsonWebKey.html">JsonWebKey</a></td>
+        <td><span class="parametername">webKey</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.Options.html">JsonWebKeyVerifier.Options</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_VerifyByKeyType_Microsoft_Azure_KeyVault_WebKey_JsonWebKey_Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Options_System_String___seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.html#Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Verify_Microsoft_Azure_KeyVault_WebKey_JsonWebKey_Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Options_System_String__">Verify(JsonWebKey, JsonWebKeyVerifier.Options, ref String)</a></div>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="../ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.AppConfigurationAzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AppConfigurationAzureClientBuilderExtensions_AddAppConfiguration__2___0_System_String___1_">AppConfigurationAzureClientBuilderExtensions.AddAppConfiguration&lt;TBuilder, TConfiguration&gt;(TBuilder, String, TConfiguration)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier.md&amp;value=---%0Auid%3A%20Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/keyvault/Microsoft.Azure.KeyVault.WebKey/src/JsonWebKeyVerifier.cs/#L15" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

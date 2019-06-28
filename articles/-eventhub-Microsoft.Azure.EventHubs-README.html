@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Azure Event Hubs client library for .NET </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Azure Event Hubs client library for .NET ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="azure-event-hubs-client-library-for-net">Azure Event Hubs client library for .NET</h1>
+
+<p>Azure Event Hubs is a highly scalable publish-subscribe service that can ingest millions of events per second and stream them into multiple applications. This lets you process and analyze the massive amounts of data produced by your connected devices and applications. Once Event Hubs has collected the data, you can retrieve, transform and store it by using any real-time analytics provider or with batching/storage adapters.</p>
+<p>The Azure Events Hubs client library for .NET allows for both sending and receiving of events.  Most common scenarios call for an application to act as either an event publisher or an event consumer, but rarely both.</p>
+<p>An <strong>event publisher</strong> is a source of telemetry data, diagnostics information, usage logs, or other log data, as
+part of an embedded device solution, a mobile device application, a game title running on a console or other device,
+some client or server based business solution, or a web site.</p>
+<p>An <strong>event consumer</strong> picks up such information from the Event Hub and processes it. Processing may involve aggregation, complex
+computation and filtering. Processing may also involve distribution or storage of the information in a raw or transformed fashion.
+Event Hub consumers are often robust and high-scale platform infrastructure parts with built-in analytics capabilities, like Azure
+Stream Analytics, Apache Spark, or Apache Storm.</p>
+<p>This directory contains the open source subset of the .NET SDK. For documentation of the complete Azure SDK, please see the <a href="http://azure.microsoft.com/en-us/develop/net/">Microsoft Azure .NET Developer Center</a>.</p>
+<p>Use the client library for Event Hubs to:</p>
+<ul>
+<li><p>Emit telemetry about your application for business intelligence and diagnostic purposes.</p>
+</li>
+<li><p>Publish facts about the state of your application which interested parties may observe and use as a trigger for taking action.</p>
+</li>
+<li><p>Observe interesting operations and interactions happening within your business or other ecosystem, allowing loosely coupled systems to interact without the need to bind them together.</p>
+</li>
+<li><p>Receive events from one or more publishers, transform them to better meet the needs of your ecosystem, then publish the transformed events to a new stream for consumers to observe.</p>
+</li>
+</ul>
+<p><a href="https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/eventhub/Microsoft.Azure.EventHubs">Source code</a> | <a href="https://www.nuget.org/packages/Microsoft.Azure.EventHubs/">Package (NuGet)</a> | <a href="https://docs.microsoft.com/en-us/dotnet/api/overview/azure/event-hubs?view=azure-dotnet">API reference documentation</a> | <a href="https://docs.microsoft.com/en-us/azure/event-hubs/">Product documentation</a></p>
+<h2 id="getting-started">Getting started</h2>
+<p>The complete Microsoft Azure SDK can be downloaded from the <a href="http://azure.microsoft.com/en-us/downloads/?sdk=net">Microsoft Azure Downloads Page</a> and ships with support for building deployment packages, integrating with tooling, rich command line tooling, and more.</p>
+<p>If you are not already familiar with Azure Event Hubs, please review: <a href="https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-about">What is Event Hubs?</a>.</p>
+<p>For the best development experience, developers should use the official Microsoft NuGet packages for libraries. NuGet packages are regularly updated with new functionality and hotfixes.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li><p>Microsoft Azure Subscription: To call Microsoft Azure services, including Azure Event Hubs, you need to first <a href="https://account.windowsazure.com/Home/Index">create an account</a>. If you do not have an existing Azure account, you may sign up for a free trial or use your MSDN subscriber benefits.</p>
+</li>
+<li><p>The Azure Event Hubs client library shares the same <a href="https://github.com/azure/azure-sdk-for-net#prerequisites">Prerequisites</a> as the Microsoft Azure SDK for .NET.</p>
+</li>
+</ul>
+<h2 id="samples">Samples</h2>
+<p>Code samples for the Azure Event Hubs client library that detail how to get started and how to implement common scenarios can be found in the following locations:</p>
+<ul>
+<li><a href="https://azure.microsoft.com/en-us/resources/samples/?sort=0&amp;service=event-hubs&amp;platform=dotnet">Azure Code Samples</a></li>
+<li><a href="https://docs.microsoft.com/en-us/azure/event-hubs/">Azure Event Hubs Documentation</a></li>
+<li><a href="https://github.com/Azure/azure-event-hubs/tree/master/samples">Azure Event Hubs Sample Repository</a></li>
+<li><a href="https://github.com/Azure-Samples/event-hubs-dotnet-user-notifications">Azure Event Hubs Notification Sample</a></li>
+<li><a href="https://github.com/Azure-Samples/event-hubs-dotnet-ingest">Azure Event Hubs Publishing Sample</a></li>
+</ul>
+<h2 id="to-build">To build</h2>
+<p>For information on building the Azure Event Hubs client library, please see <a href="https://github.com/azure/azure-sdk-for-net#to-build">Building the Microsoft Azure SDK for .NET</a></p>
+<h2 id="running-tests">Running tests</h2>
+<ol>
+<li><p>Deploy the Azure Resource Manager template located at <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/eventhub/Microsoft.Azure.EventHubs/assets/azure-deploy-test-dependencies.json">/sdk/eventhub/Microsoft.Azure.EventHubs/assets/azure-deploy-test-dependencies.json</a> by clicking the following button:</p>
+ <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-sdk-for-net%2Fmaster%2Fsdk%2Feventhub%2FMicrosoft.Azure.EventHubs%2Fassets%2Fazure-deploy-test-dependencies.json" target="_blank">
+     <img src="http://azuredeploy.net/deploybutton.png">
+ </a>
+<p><em>Running the above template will provision a standard Event Hubs namespace along with the required entities to successfully run the unit tests.</em></p>
+</li>
+<li><p>Add an Environment Variable named <code>EVENT_HUBS_CONNECTION_STRING</code> and set the value as the connection string of the newly created namespace. <strong>Please note that if you are using Visual Studio, you must restart Visual Studio in order to use new Environment Variables.</strong></p>
+</li>
+<li><p>Add an Environment Variable named <code>EVENT_HUBS_STORAGE_CONNECTION_STRING</code> and set the value as the connection string of the newly created storage account. <strong>Please note that if you are using Visual Studio, you must restart Visual Studio in order to use new Environment Variables.</strong></p>
+</li>
+</ol>
+<p>Once you have completed the above, you can run <code>dotnet test</code> from the <code>/sdk/eventhub/Microsoft.Azure.EventHubs/tests</code> directory.</p>
+<h2 id="development-history">Development history</h2>
+<p>For additional insight and context, the development, release, and issue history for the Azure Event Hubs client library will continue to be available in read-only form, located in the stand-alone <a href="https://github.com/Azure/azure-event-hubs-dotnet">Azure Event Hubs .NET repository</a>.</p>
+<h2 id="versioning-information">Versioning information</h2>
+<p>The Azure Event Hubs client library uses <a href="http://semver.org/">the semantic versioning scheme.</a></p>
+<h2 id="target-frameworks">Target frameworks</h2>
+<p>For information about the target frameworks of the Azure Event Hubs client library, please refer to the <a href="https://github.com/azure/azure-sdk-for-net#target-frameworks">Target Frameworks</a> of the Microsoft Azure SDK for .NET.</p>
+<h2 id="contributing">Contributing</h2>
+<p>This project has adopted the <a href="https://opensource.microsoft.com/codeofconduct/">Microsoft Open Source Code of Conduct</a>. For more information see the <a href="https://opensource.microsoft.com/codeofconduct/faq/">Code of Conduct FAQ</a> or contact <a href="mailto:opencode@microsoft.com">opencode@microsoft.com</a> with any additional questions or comments.</p>
+<h2 id="additional-documentation">Additional documentation</h2>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/event-hubs/">Azure Event Hubs General Documentation</a></li>
+<li><a href="https://docs.microsoft.com/en-us/rest/api/eventhub/">Azure Event Hubs REST API Reference</a></li>
+<li><a href="https://docs.microsoft.com/en-us/dotnet/api/overview/azure/event-hubs?view=azure-dotnet">Azure Event Hubs SDK for .NET Documentation</a></li>
+</ul>
+<p><img src="https://azure-sdk-impressions.azurewebsites.net/api/impressions/azure-sdk-for-net%2Fsdk%2Feventhub%2FMicrosoft.Azure.EventHubs%2FFREADME.png" alt="Impressions"></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/docfx_project/articles/-eventhub-Microsoft.Azure.EventHubs-README.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

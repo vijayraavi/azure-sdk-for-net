@@ -1,0 +1,748 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ContentModeratorClient
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ContentModeratorClient
+   ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient">
+  
+  
+  <h1 id="Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient" class="text-break">Class ContentModeratorClient
+  </h1>
+  <div class="markdown level0 summary"><p>You use the API to scan your content as it is generated. Content
+Moderator then processes your content and sends the results along with
+relevant information either back to your systems or to the built-in
+review tool. You can use this information to take decisions e.g. take
+it down, send to human judge, etc.</p>
+<p>When using the API, images need to have a minimum of 128 pixels and a
+maximum file size of 4MB.
+Text can be at most 1024 characters long.
+If the content passed to the text API or the image API exceeds the size
+limits, the API will return an error code that informs about the issue.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ContentModeratorClient</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Microsoft.Azure.CognitiveServices.ContentModerator.IContentModeratorClient.html">IContentModeratorClient</a></div>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.Azure.CognitiveServices.ContentModerator.html">Microsoft.Azure.CognitiveServices.ContentModerator</a></h6>
+  <h6><strong>Assembly</strong>: Microsoft.Azure.CognitiveServices.Vision.ContentModerator.dll</h6>
+  <h5 id="Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ContentModeratorClient : ServiceClient&lt;ContentModeratorClient&gt;, IContentModeratorClient, System.IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient__ctor_DelegatingHandler___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient.%23ctor(DelegatingHandler%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Vision.ContentModerator/src/Generated/ContentModeratorClient.cs/#L113">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient__ctor_" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient__ctor_DelegatingHandler___" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient.#ctor(DelegatingHandler[])">ContentModeratorClient(DelegatingHandler[])</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the ContentModeratorClient class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ContentModeratorClient(params DelegatingHandler[] handlers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DelegatingHandler</span>[]</td>
+        <td><span class="parametername">handlers</span></td>
+        <td><p>Optional. The delegating handlers to add to the http client pipeline.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient__ctor_HttpClient_System_Boolean_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient.%23ctor(HttpClient%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Vision.ContentModerator/src/Generated/ContentModeratorClient.cs/#L102">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient__ctor_" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient__ctor_HttpClient_System_Boolean_" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient.#ctor(HttpClient,System.Boolean)">ContentModeratorClient(HttpClient, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the ContentModeratorClient class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ContentModeratorClient(HttpClient httpClient, bool disposeHttpClient)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">HttpClient</span></td>
+        <td><span class="parametername">httpClient</span></td>
+        <td><p>HttpClient to be used</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">disposeHttpClient</span></td>
+        <td><p>True: will dispose the provided httpClient on calling ContentModeratorClient.Dispose(). False: will not dispose provided httpClient</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient__ctor_HttpClientHandler_DelegatingHandler___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient.%23ctor(HttpClientHandler%2CDelegatingHandler%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Vision.ContentModerator/src/Generated/ContentModeratorClient.cs/#L127">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient__ctor_" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient__ctor_HttpClientHandler_DelegatingHandler___" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient.#ctor(HttpClientHandler,DelegatingHandler[])">ContentModeratorClient(HttpClientHandler, DelegatingHandler[])</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the ContentModeratorClient class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ContentModeratorClient(HttpClientHandler rootHandler, params DelegatingHandler[] handlers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">HttpClientHandler</span></td>
+        <td><span class="parametername">rootHandler</span></td>
+        <td><p>Optional. The http client handler used to handle http transport.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DelegatingHandler</span>[]</td>
+        <td><span class="parametername">handlers</span></td>
+        <td><p>Optional. The delegating handlers to add to the http client pipeline.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient__ctor_ServiceClientCredentials_DelegatingHandler___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient.%23ctor(ServiceClientCredentials%2CDelegatingHandler%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Vision.ContentModerator/src/Generated/ContentModeratorClient.cs/#L144">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient__ctor_" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient__ctor_ServiceClientCredentials_DelegatingHandler___" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient.#ctor(ServiceClientCredentials,DelegatingHandler[])">ContentModeratorClient(ServiceClientCredentials, DelegatingHandler[])</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the ContentModeratorClient class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ContentModeratorClient(ServiceClientCredentials credentials, params DelegatingHandler[] handlers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ServiceClientCredentials</span></td>
+        <td><span class="parametername">credentials</span></td>
+        <td><p>Required. Subscription credentials which uniquely identify client subscription.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DelegatingHandler</span>[]</td>
+        <td><span class="parametername">handlers</span></td>
+        <td><p>Optional. The delegating handlers to add to the http client pipeline.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient__ctor_ServiceClientCredentials_HttpClient_System_Boolean_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient.%23ctor(ServiceClientCredentials%2CHttpClient%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Vision.ContentModerator/src/Generated/ContentModeratorClient.cs/#L171">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient__ctor_" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient__ctor_ServiceClientCredentials_HttpClient_System_Boolean_" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient.#ctor(ServiceClientCredentials,HttpClient,System.Boolean)">ContentModeratorClient(ServiceClientCredentials, HttpClient, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the ContentModeratorClient class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ContentModeratorClient(ServiceClientCredentials credentials, HttpClient httpClient, bool disposeHttpClient)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ServiceClientCredentials</span></td>
+        <td><span class="parametername">credentials</span></td>
+        <td><p>Required. Subscription credentials which uniquely identify client subscription.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">HttpClient</span></td>
+        <td><span class="parametername">httpClient</span></td>
+        <td><p>HttpClient to be used</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">disposeHttpClient</span></td>
+        <td><p>True: will dispose the provided httpClient on calling ContentModeratorClient.Dispose(). False: will not dispose provided httpClient</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient__ctor_ServiceClientCredentials_HttpClientHandler_DelegatingHandler___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient.%23ctor(ServiceClientCredentials%2CHttpClientHandler%2CDelegatingHandler%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Vision.ContentModerator/src/Generated/ContentModeratorClient.cs/#L199">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient__ctor_" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient__ctor_ServiceClientCredentials_HttpClientHandler_DelegatingHandler___" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient.#ctor(ServiceClientCredentials,HttpClientHandler,DelegatingHandler[])">ContentModeratorClient(ServiceClientCredentials, HttpClientHandler, DelegatingHandler[])</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the ContentModeratorClient class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ContentModeratorClient(ServiceClientCredentials credentials, HttpClientHandler rootHandler, params DelegatingHandler[] handlers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ServiceClientCredentials</span></td>
+        <td><span class="parametername">credentials</span></td>
+        <td><p>Required. Subscription credentials which uniquely identify client subscription.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">HttpClientHandler</span></td>
+        <td><span class="parametername">rootHandler</span></td>
+        <td><p>Optional. The http client handler used to handle http transport.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DelegatingHandler</span>[]</td>
+        <td><span class="parametername">handlers</span></td>
+        <td><p>Optional. The delegating handlers to add to the http client pipeline.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient_Credentials.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient.Credentials%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Vision.ContentModerator/src/Generated/ContentModeratorClient.cs/#L57">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient_Credentials_" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient.Credentials*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient_Credentials" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient.Credentials">Credentials</h4>
+  <div class="markdown level1 summary"><p>Subscription credentials which uniquely identify client subscription.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ServiceClientCredentials Credentials { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ServiceClientCredentials</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient_DeserializationSettings.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient.DeserializationSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Vision.ContentModerator/src/Generated/ContentModeratorClient.cs/#L46">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient_DeserializationSettings_" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient.DeserializationSettings*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient_DeserializationSettings" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient.DeserializationSettings">DeserializationSettings</h4>
+  <div class="markdown level1 summary"><p>Gets or sets json deserialization settings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonSerializerSettings DeserializationSettings { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">JsonSerializerSettings</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient_Endpoint.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient.Endpoint%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Vision.ContentModerator/src/Generated/ContentModeratorClient.cs/#L52">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient_Endpoint_" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient.Endpoint*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient_Endpoint" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient.Endpoint">Endpoint</h4>
+  <div class="markdown level1 summary"><p>Supported Cognitive Services endpoints (protocol and hostname, for example:
+<a href="https://westus.api.cognitive.microsoft.com">https://westus.api.cognitive.microsoft.com</a>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Endpoint { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient_ImageModeration.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient.ImageModeration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Vision.ContentModerator/src/Generated/ContentModeratorClient.cs/#L62">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient_ImageModeration_" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient.ImageModeration*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient_ImageModeration" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient.ImageModeration">ImageModeration</h4>
+  <div class="markdown level1 summary"><p>Gets the IImageModeration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IImageModeration ImageModeration { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.ContentModerator.IImageModeration.html">IImageModeration</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient_ListManagementImage.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient.ListManagementImage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Vision.ContentModerator/src/Generated/ContentModeratorClient.cs/#L82">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient_ListManagementImage_" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient.ListManagementImage*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient_ListManagementImage" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient.ListManagementImage">ListManagementImage</h4>
+  <div class="markdown level1 summary"><p>Gets the IListManagementImage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IListManagementImage ListManagementImage { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.ContentModerator.IListManagementImage.html">IListManagementImage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient_ListManagementImageLists.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient.ListManagementImageLists%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Vision.ContentModerator/src/Generated/ContentModeratorClient.cs/#L72">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient_ListManagementImageLists_" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient.ListManagementImageLists*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient_ListManagementImageLists" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient.ListManagementImageLists">ListManagementImageLists</h4>
+  <div class="markdown level1 summary"><p>Gets the IListManagementImageLists.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IListManagementImageLists ListManagementImageLists { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.ContentModerator.IListManagementImageLists.html">IListManagementImageLists</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient_ListManagementTerm.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient.ListManagementTerm%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Vision.ContentModerator/src/Generated/ContentModeratorClient.cs/#L87">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient_ListManagementTerm_" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient.ListManagementTerm*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient_ListManagementTerm" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient.ListManagementTerm">ListManagementTerm</h4>
+  <div class="markdown level1 summary"><p>Gets the IListManagementTerm.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IListManagementTerm ListManagementTerm { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.ContentModerator.IListManagementTerm.html">IListManagementTerm</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient_ListManagementTermLists.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient.ListManagementTermLists%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Vision.ContentModerator/src/Generated/ContentModeratorClient.cs/#L77">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient_ListManagementTermLists_" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient.ListManagementTermLists*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient_ListManagementTermLists" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient.ListManagementTermLists">ListManagementTermLists</h4>
+  <div class="markdown level1 summary"><p>Gets the IListManagementTermLists.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IListManagementTermLists ListManagementTermLists { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.ContentModerator.IListManagementTermLists.html">IListManagementTermLists</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient_Reviews.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient.Reviews%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Vision.ContentModerator/src/Generated/ContentModeratorClient.cs/#L92">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient_Reviews_" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient.Reviews*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient_Reviews" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient.Reviews">Reviews</h4>
+  <div class="markdown level1 summary"><p>Gets the IReviews.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IReviews Reviews { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.ContentModerator.IReviews.html">IReviews</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient_SerializationSettings.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient.SerializationSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Vision.ContentModerator/src/Generated/ContentModeratorClient.cs/#L41">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient_SerializationSettings_" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient.SerializationSettings*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient_SerializationSettings" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient.SerializationSettings">SerializationSettings</h4>
+  <div class="markdown level1 summary"><p>Gets or sets json serialization settings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonSerializerSettings SerializationSettings { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">JsonSerializerSettings</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient_TextModeration.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient.TextModeration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Vision.ContentModerator/src/Generated/ContentModeratorClient.cs/#L67">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient_TextModeration_" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient.TextModeration*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient_TextModeration" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient.TextModeration">TextModeration</h4>
+  <div class="markdown level1 summary"><p>Gets the ITextModeration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ITextModeration TextModeration { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.ContentModerator.ITextModeration.html">ITextModeration</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.ContentModerator.IContentModeratorClient.html">IContentModeratorClient</a>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="../ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.AppConfigurationAzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AppConfigurationAzureClientBuilderExtensions_AddAppConfiguration__2___0_System_String___1_">AppConfigurationAzureClientBuilderExtensions.AddAppConfiguration&lt;TBuilder, TConfiguration&gt;(TBuilder, String, TConfiguration)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_ContentModerator_ContentModeratorClient.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Vision.ContentModerator/src/Generated/ContentModeratorClient.cs/#L31" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,898 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Struct FileSasBuilder
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Struct FileSasBuilder
+   ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Azure.Storage.Files.FileSasBuilder">
+  
+  
+  <h1 id="Azure_Storage_Files_FileSasBuilder" data-uid="Azure.Storage.Files.FileSasBuilder" class="text-break">Struct FileSasBuilder
+  </h1>
+  <div class="markdown level0 summary"><p><a class="xref" href="Azure.Storage.Files.FileSasBuilder.html">FileSasBuilder</a> is used to generate a Shared Access
+Signature (SAS) for an Azure Storage share, directory, or file.
+For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/constructing-a-service-sas">https://docs.microsoft.com/en-us/rest/api/storageservices/constructing-a-service-sas</a>.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">IEquatable</span>&lt;<a class="xref" href="Azure.Storage.Files.FileSasBuilder.html">FileSasBuilder</a>&gt;</div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Azure.Storage.Files.html">Azure.Storage.Files</a></h6>
+  <h6><strong>Assembly</strong>: Azure.Storage.Files.dll</h6>
+  <h5 id="Azure_Storage_Files_FileSasBuilder_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct FileSasBuilder : IEquatable&lt;FileSasBuilder&gt;</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Azure_Storage_Files_FileSasBuilder_CacheControl.md&amp;value=---%0Auid%3A%20Azure.Storage.Files.FileSasBuilder.CacheControl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/storage/Azure.Storage.Files/src/FileSasBuilder.cs/#L87">View Source</a>
+  </span>
+  <a id="Azure_Storage_Files_FileSasBuilder_CacheControl_" data-uid="Azure.Storage.Files.FileSasBuilder.CacheControl*"></a>
+  <h4 id="Azure_Storage_Files_FileSasBuilder_CacheControl" data-uid="Azure.Storage.Files.FileSasBuilder.CacheControl">CacheControl</h4>
+  <div class="markdown level1 summary"><p>Override the value returned for Cache-Control response header.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CacheControl { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Azure_Storage_Files_FileSasBuilder_ContentDisposition.md&amp;value=---%0Auid%3A%20Azure.Storage.Files.FileSasBuilder.ContentDisposition%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/storage/Azure.Storage.Files/src/FileSasBuilder.cs/#L93">View Source</a>
+  </span>
+  <a id="Azure_Storage_Files_FileSasBuilder_ContentDisposition_" data-uid="Azure.Storage.Files.FileSasBuilder.ContentDisposition*"></a>
+  <h4 id="Azure_Storage_Files_FileSasBuilder_ContentDisposition" data-uid="Azure.Storage.Files.FileSasBuilder.ContentDisposition">ContentDisposition</h4>
+  <div class="markdown level1 summary"><p>Override the value returned for Content-Disposition response
+header.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ContentDisposition { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Azure_Storage_Files_FileSasBuilder_ContentEncoding.md&amp;value=---%0Auid%3A%20Azure.Storage.Files.FileSasBuilder.ContentEncoding%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/storage/Azure.Storage.Files/src/FileSasBuilder.cs/#L98">View Source</a>
+  </span>
+  <a id="Azure_Storage_Files_FileSasBuilder_ContentEncoding_" data-uid="Azure.Storage.Files.FileSasBuilder.ContentEncoding*"></a>
+  <h4 id="Azure_Storage_Files_FileSasBuilder_ContentEncoding" data-uid="Azure.Storage.Files.FileSasBuilder.ContentEncoding">ContentEncoding</h4>
+  <div class="markdown level1 summary"><p>Override the value returned for Cache-Encoding response header.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ContentEncoding { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Azure_Storage_Files_FileSasBuilder_ContentLanguage.md&amp;value=---%0Auid%3A%20Azure.Storage.Files.FileSasBuilder.ContentLanguage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/storage/Azure.Storage.Files/src/FileSasBuilder.cs/#L103">View Source</a>
+  </span>
+  <a id="Azure_Storage_Files_FileSasBuilder_ContentLanguage_" data-uid="Azure.Storage.Files.FileSasBuilder.ContentLanguage*"></a>
+  <h4 id="Azure_Storage_Files_FileSasBuilder_ContentLanguage" data-uid="Azure.Storage.Files.FileSasBuilder.ContentLanguage">ContentLanguage</h4>
+  <div class="markdown level1 summary"><p>Override the value returned for Cache-Language response header.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ContentLanguage { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Azure_Storage_Files_FileSasBuilder_ContentType.md&amp;value=---%0Auid%3A%20Azure.Storage.Files.FileSasBuilder.ContentType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/storage/Azure.Storage.Files/src/FileSasBuilder.cs/#L108">View Source</a>
+  </span>
+  <a id="Azure_Storage_Files_FileSasBuilder_ContentType_" data-uid="Azure.Storage.Files.FileSasBuilder.ContentType*"></a>
+  <h4 id="Azure_Storage_Files_FileSasBuilder_ContentType" data-uid="Azure.Storage.Files.FileSasBuilder.ContentType">ContentType</h4>
+  <div class="markdown level1 summary"><p>Override the value returned for Cache-Type response header.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ContentType { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Azure_Storage_Files_FileSasBuilder_ExpiryTime.md&amp;value=---%0Auid%3A%20Azure.Storage.Files.FileSasBuilder.ExpiryTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/storage/Azure.Storage.Files/src/FileSasBuilder.cs/#L45">View Source</a>
+  </span>
+  <a id="Azure_Storage_Files_FileSasBuilder_ExpiryTime_" data-uid="Azure.Storage.Files.FileSasBuilder.ExpiryTime*"></a>
+  <h4 id="Azure_Storage_Files_FileSasBuilder_ExpiryTime" data-uid="Azure.Storage.Files.FileSasBuilder.ExpiryTime">ExpiryTime</h4>
+  <div class="markdown level1 summary"><p>The time at which the shared access signature becomes invalid.
+This field must be omitted if it has been specified in an
+associated stored access policy.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeOffset ExpiryTime { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DateTimeOffset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Azure_Storage_Files_FileSasBuilder_FilePath.md&amp;value=---%0Auid%3A%20Azure.Storage.Files.FileSasBuilder.FilePath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/storage/Azure.Storage.Files/src/FileSasBuilder.cs/#L82">View Source</a>
+  </span>
+  <a id="Azure_Storage_Files_FileSasBuilder_FilePath_" data-uid="Azure.Storage.Files.FileSasBuilder.FilePath*"></a>
+  <h4 id="Azure_Storage_Files_FileSasBuilder_FilePath" data-uid="Azure.Storage.Files.FileSasBuilder.FilePath">FilePath</h4>
+  <div class="markdown level1 summary"><p>The path of the file or directory being made accessible, or <see cref="!:String.Empty"></see>
+for a share SAS.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string FilePath { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Azure_Storage_Files_FileSasBuilder_Identifier.md&amp;value=---%0Auid%3A%20Azure.Storage.Files.FileSasBuilder.Identifier%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/storage/Azure.Storage.Files/src/FileSasBuilder.cs/#L71">View Source</a>
+  </span>
+  <a id="Azure_Storage_Files_FileSasBuilder_Identifier_" data-uid="Azure.Storage.Files.FileSasBuilder.Identifier*"></a>
+  <h4 id="Azure_Storage_Files_FileSasBuilder_Identifier" data-uid="Azure.Storage.Files.FileSasBuilder.Identifier">Identifier</h4>
+  <div class="markdown level1 summary"><p>An optional unique value up to 64 characters in length that
+correlates to an access policy specified for the share.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Identifier { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Azure_Storage_Files_FileSasBuilder_IPRange.md&amp;value=---%0Auid%3A%20Azure.Storage.Files.FileSasBuilder.IPRange%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/storage/Azure.Storage.Files/src/FileSasBuilder.cs/#L65">View Source</a>
+  </span>
+  <a id="Azure_Storage_Files_FileSasBuilder_IPRange_" data-uid="Azure.Storage.Files.FileSasBuilder.IPRange*"></a>
+  <h4 id="Azure_Storage_Files_FileSasBuilder_IPRange" data-uid="Azure.Storage.Files.FileSasBuilder.IPRange">IPRange</h4>
+  <div class="markdown level1 summary"><p>Specifies an IP address or a range of IP addresses from which to
+accept requests. If the IP address from which the request
+originates does not match the IP address or address range
+specified on the SAS token, the request is not authenticated.
+When specifying a range of IP addresses, note that the range is
+inclusive.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IPRange IPRange { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Common.IPRange.html">IPRange</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Azure_Storage_Files_FileSasBuilder_Permissions.md&amp;value=---%0Auid%3A%20Azure.Storage.Files.FileSasBuilder.Permissions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/storage/Azure.Storage.Files/src/FileSasBuilder.cs/#L55">View Source</a>
+  </span>
+  <a id="Azure_Storage_Files_FileSasBuilder_Permissions_" data-uid="Azure.Storage.Files.FileSasBuilder.Permissions*"></a>
+  <h4 id="Azure_Storage_Files_FileSasBuilder_Permissions" data-uid="Azure.Storage.Files.FileSasBuilder.Permissions">Permissions</h4>
+  <div class="markdown level1 summary"><p>The permissions associated with the shared access signature. The
+user is restricted to operations allowed by the permissions. This
+field must be omitted if it has been specified in an associated
+stored access policy.  The <a class="xref" href="Azure.Storage.Files.FileSasPermissions.html">FileSasPermissions</a>
+and <a class="xref" href="Azure.Storage.Files.ShareSasPermissions.html">ShareSasPermissions</a>
+can be used to create the permissions string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Permissions { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Azure_Storage_Files_FileSasBuilder_Protocol.md&amp;value=---%0Auid%3A%20Azure.Storage.Files.FileSasBuilder.Protocol%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/storage/Azure.Storage.Files/src/FileSasBuilder.cs/#L30">View Source</a>
+  </span>
+  <a id="Azure_Storage_Files_FileSasBuilder_Protocol_" data-uid="Azure.Storage.Files.FileSasBuilder.Protocol*"></a>
+  <h4 id="Azure_Storage_Files_FileSasBuilder_Protocol" data-uid="Azure.Storage.Files.FileSasBuilder.Protocol">Protocol</h4>
+  <div class="markdown level1 summary"><p>The optional signed protocol field specifies the protocol
+permitted for a request made with the SAS.  Possible values are
+<a class="xref" href="Azure.Storage.Common.SasProtocol.html#Azure_Storage_Common_SasProtocol_HttpsAndHttp">HttpsAndHttp</a>, <a class="xref" href="Azure.Storage.Common.SasProtocol.html#Azure_Storage_Common_SasProtocol_Https">Https</a>,
+and <a class="xref" href="Azure.Storage.Common.SasProtocol.html#Azure_Storage_Common_SasProtocol_None">None</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SasProtocol Protocol { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Common.SasProtocol.html">SasProtocol</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Azure_Storage_Files_FileSasBuilder_ShareName.md&amp;value=---%0Auid%3A%20Azure.Storage.Files.FileSasBuilder.ShareName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/storage/Azure.Storage.Files/src/FileSasBuilder.cs/#L76">View Source</a>
+  </span>
+  <a id="Azure_Storage_Files_FileSasBuilder_ShareName_" data-uid="Azure.Storage.Files.FileSasBuilder.ShareName*"></a>
+  <h4 id="Azure_Storage_Files_FileSasBuilder_ShareName" data-uid="Azure.Storage.Files.FileSasBuilder.ShareName">ShareName</h4>
+  <div class="markdown level1 summary"><p>The name of the share being made accessible.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ShareName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Azure_Storage_Files_FileSasBuilder_StartTime.md&amp;value=---%0Auid%3A%20Azure.Storage.Files.FileSasBuilder.StartTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/storage/Azure.Storage.Files/src/FileSasBuilder.cs/#L38">View Source</a>
+  </span>
+  <a id="Azure_Storage_Files_FileSasBuilder_StartTime_" data-uid="Azure.Storage.Files.FileSasBuilder.StartTime*"></a>
+  <h4 id="Azure_Storage_Files_FileSasBuilder_StartTime" data-uid="Azure.Storage.Files.FileSasBuilder.StartTime">StartTime</h4>
+  <div class="markdown level1 summary"><p>Optionally specify the time at which the shared access signature
+becomes valid.  If omitted when DateTimeOffset.MinValue is used,
+start time for this call is assumed to be the time when the
+storage service receives the request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeOffset StartTime { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DateTimeOffset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Azure_Storage_Files_FileSasBuilder_Version.md&amp;value=---%0Auid%3A%20Azure.Storage.Files.FileSasBuilder.Version%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/storage/Azure.Storage.Files/src/FileSasBuilder.cs/#L22">View Source</a>
+  </span>
+  <a id="Azure_Storage_Files_FileSasBuilder_Version_" data-uid="Azure.Storage.Files.FileSasBuilder.Version*"></a>
+  <h4 id="Azure_Storage_Files_FileSasBuilder_Version" data-uid="Azure.Storage.Files.FileSasBuilder.Version">Version</h4>
+  <div class="markdown level1 summary"><p>The storage service version to use to authenticate requests made
+with this shared access signature, and the service version to use
+when handling requests made with this shared access signature.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Version { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Azure_Storage_Files_FileSasBuilder_Equals_Azure_Storage_Files_FileSasBuilder_.md&amp;value=---%0Auid%3A%20Azure.Storage.Files.FileSasBuilder.Equals(Azure.Storage.Files.FileSasBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/storage/Azure.Storage.Files/src/FileSasBuilder.cs/#L246">View Source</a>
+  </span>
+  <a id="Azure_Storage_Files_FileSasBuilder_Equals_" data-uid="Azure.Storage.Files.FileSasBuilder.Equals*"></a>
+  <h4 id="Azure_Storage_Files_FileSasBuilder_Equals_Azure_Storage_Files_FileSasBuilder_" data-uid="Azure.Storage.Files.FileSasBuilder.Equals(Azure.Storage.Files.FileSasBuilder)">Equals(FileSasBuilder)</h4>
+  <div class="markdown level1 summary"><p>Check if two FileSasBuilder instances are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(FileSasBuilder other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Files.FileSasBuilder.html">FileSasBuilder</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if they're equal, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Azure_Storage_Files_FileSasBuilder_Equals_System_Object_.md&amp;value=---%0Auid%3A%20Azure.Storage.Files.FileSasBuilder.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/storage/Azure.Storage.Files/src/FileSasBuilder.cs/#L201">View Source</a>
+  </span>
+  <a id="Azure_Storage_Files_FileSasBuilder_Equals_" data-uid="Azure.Storage.Files.FileSasBuilder.Equals*"></a>
+  <h4 id="Azure_Storage_Files_FileSasBuilder_Equals_System_Object_" data-uid="Azure.Storage.Files.FileSasBuilder.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"><p>Check if two FileSasBuilder instances are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The instance to compare to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if they're equal, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Azure_Storage_Files_FileSasBuilder_GetHashCode.md&amp;value=---%0Auid%3A%20Azure.Storage.Files.FileSasBuilder.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/storage/Azure.Storage.Files/src/FileSasBuilder.cs/#L208">View Source</a>
+  </span>
+  <a id="Azure_Storage_Files_FileSasBuilder_GetHashCode_" data-uid="Azure.Storage.Files.FileSasBuilder.GetHashCode*"></a>
+  <h4 id="Azure_Storage_Files_FileSasBuilder_GetHashCode" data-uid="Azure.Storage.Files.FileSasBuilder.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"><p>Get a hash code for the FileSasBuilder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Hash code for the FileSasBuilder.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Azure_Storage_Files_FileSasBuilder_ToSasQueryParameters_Azure_Storage_SharedKeyCredentials_.md&amp;value=---%0Auid%3A%20Azure.Storage.Files.FileSasBuilder.ToSasQueryParameters(Azure.Storage.SharedKeyCredentials)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/storage/Azure.Storage.Files/src/FileSasBuilder.cs/#L121">View Source</a>
+  </span>
+  <a id="Azure_Storage_Files_FileSasBuilder_ToSasQueryParameters_" data-uid="Azure.Storage.Files.FileSasBuilder.ToSasQueryParameters*"></a>
+  <h4 id="Azure_Storage_Files_FileSasBuilder_ToSasQueryParameters_Azure_Storage_SharedKeyCredentials_" data-uid="Azure.Storage.Files.FileSasBuilder.ToSasQueryParameters(Azure.Storage.SharedKeyCredentials)">ToSasQueryParameters(SharedKeyCredentials)</h4>
+  <div class="markdown level1 summary"><p>Use an account's <a class="xref" href="Azure.Storage.SharedKeyCredentials.html">SharedKeyCredentials</a> to sign this
+shared access signature values to produce the proper SAS query
+parameters for authenticating requests.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SasQueryParameters ToSasQueryParameters(SharedKeyCredentials sharedKeyCredential)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.SharedKeyCredentials.html">SharedKeyCredentials</a></td>
+        <td><span class="parametername">sharedKeyCredential</span></td>
+        <td><p>The storage account's <a class="xref" href="Azure.Storage.SharedKeyCredentials.html">SharedKeyCredentials</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Files.SasQueryParameters.html">SasQueryParameters</a></td>
+        <td><p>The <a class="xref" href="Azure.Storage.Files.SasQueryParameters.html">SasQueryParameters</a> used for authenticating requests.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Azure_Storage_Files_FileSasBuilder_op_Equality_Azure_Storage_Files_FileSasBuilder_Azure_Storage_Files_FileSasBuilder_.md&amp;value=---%0Auid%3A%20Azure.Storage.Files.FileSasBuilder.op_Equality(Azure.Storage.Files.FileSasBuilder%2CAzure.Storage.Files.FileSasBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/storage/Azure.Storage.Files/src/FileSasBuilder.cs/#L231">View Source</a>
+  </span>
+  <a id="Azure_Storage_Files_FileSasBuilder_op_Equality_" data-uid="Azure.Storage.Files.FileSasBuilder.op_Equality*"></a>
+  <h4 id="Azure_Storage_Files_FileSasBuilder_op_Equality_Azure_Storage_Files_FileSasBuilder_Azure_Storage_Files_FileSasBuilder_" data-uid="Azure.Storage.Files.FileSasBuilder.op_Equality(Azure.Storage.Files.FileSasBuilder,Azure.Storage.Files.FileSasBuilder)">Equality(FileSasBuilder, FileSasBuilder)</h4>
+  <div class="markdown level1 summary"><p>Check if two FileSasBuilder instances are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(FileSasBuilder left, FileSasBuilder right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Files.FileSasBuilder.html">FileSasBuilder</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The first instance to compare.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Files.FileSasBuilder.html">FileSasBuilder</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The second instance to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if they're equal, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Azure_Storage_Files_FileSasBuilder_op_Inequality_Azure_Storage_Files_FileSasBuilder_Azure_Storage_Files_FileSasBuilder_.md&amp;value=---%0Auid%3A%20Azure.Storage.Files.FileSasBuilder.op_Inequality(Azure.Storage.Files.FileSasBuilder%2CAzure.Storage.Files.FileSasBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/storage/Azure.Storage.Files/src/FileSasBuilder.cs/#L239">View Source</a>
+  </span>
+  <a id="Azure_Storage_Files_FileSasBuilder_op_Inequality_" data-uid="Azure.Storage.Files.FileSasBuilder.op_Inequality*"></a>
+  <h4 id="Azure_Storage_Files_FileSasBuilder_op_Inequality_Azure_Storage_Files_FileSasBuilder_Azure_Storage_Files_FileSasBuilder_" data-uid="Azure.Storage.Files.FileSasBuilder.op_Inequality(Azure.Storage.Files.FileSasBuilder,Azure.Storage.Files.FileSasBuilder)">Inequality(FileSasBuilder, FileSasBuilder)</h4>
+  <div class="markdown level1 summary"><p>Check if two FileSasBuilder instances are not equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(FileSasBuilder left, FileSasBuilder right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Files.FileSasBuilder.html">FileSasBuilder</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The first instance to compare.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Files.FileSasBuilder.html">FileSasBuilder</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The second instance to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if they're not equal, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">IEquatable&lt;&gt;</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="../ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.AppConfigurationAzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AppConfigurationAzureClientBuilderExtensions_AddAppConfiguration__2___0_System_String___1_">AppConfigurationAzureClientBuilderExtensions.AddAppConfiguration&lt;TBuilder, TConfiguration&gt;(TBuilder, String, TConfiguration)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Azure_Storage_Files_FileSasBuilder.md&amp;value=---%0Auid%3A%20Azure.Storage.Files.FileSasBuilder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/storage/Azure.Storage.Files/src/FileSasBuilder.cs/#L15" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

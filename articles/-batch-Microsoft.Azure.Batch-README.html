@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>License notes </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="License notes ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="license-notes">License notes</h1>
+
+<p>The Azure Batch C# client is now under the MIT license. Prior to March 10 2017 it was under the Apache 2.0 license.</p>
+<h1 id="azure-batch-client-developer-guide">Azure Batch client developer guide</h1>
+<p>Batch.sln is your one stop shop for all things related to the Azure Batch C# client library. This solution file contains all of the projects affiliated with the Azure Batch client (including testing and tooling).</p>
+<h2 id="changing-the-azure-batch-client">Changing the Azure Batch client</h2>
+<p>Depending on the type of change you want to make, the work required varies. If you follow this process you shouldn't miss anything:</p>
+<ol>
+<li>Update the Azure Batch Swagger specification, which resides in the <a href="https://github.com/Azure/azure-rest-api-specs">Azure/azure-rest-api-specs</a> GitHub repository.</li>
+</ol>
+<ul>
+<li>Add new entity types into the Swagger specification.</li>
+<li>Add new APIs as path-verb pairs in the Swagger specification.</li>
+<li>Add/remove properties on existing entity types in the Swagger specification.</li>
+</ul>
+<ol start="2">
+<li>Regenerate the <code>src\GeneratedProtocol</code> folder using the steps <a href="#the-srcgeneratedprotocol-folder">below</a>.</li>
+<li>Update the convenience layer specification file: <code>Tools\ObjectModelCodeGeneration\ObjectModelCodeGenerator\BatchProperties.json</code>.</li>
+</ol>
+<ul>
+<li>Add new entities that match the Swagger defined entities.</li>
+<li>Add/remove properties on existing entities as done in the Swagger specification.</li>
+</ul>
+<ol start="4">
+<li>Regenerate the <code>src\Generated</code> folder from the convenience layer specification file using the steps <a href="#the-srcgenerated-folder">below</a>.</li>
+<li>Add any custom code on the <code>Generated</code> objects into <code>partial</code> classes located in the <code>src</code> directory.</li>
+</ol>
+<ul>
+<li>You might want to do this to add an <code>[Obsolete]</code> attribute or to add some helper factory methods.</li>
+</ul>
+<ol start="6">
+<li>If any APIs have changed, or if new APIs have been added, you must update the following places:</li>
+</ol>
+<ul>
+<li>The <code>src\IProtocolLayer.cs</code> interface.</li>
+<li>The <code>src\ProtocolLayer.cs</code> class.</li>
+<li>The corresponding operations class, for example <code>PoolOperations.cs</code>.</li>
+<li>The corresponding entity which the operation is performed on, for example <code>CloudPool.cs</code>.</li>
+</ul>
+<ol start="7">
+<li>Add tests for your new models and APIs into the correct test projects.</li>
+</ol>
+<ul>
+<li><code>Azure.Batch.Unit.Tests</code> for unit tests. These tests do not have any external dependencies (they run entirely in-memory) and are used in the continuous integration job to validate checkins.</li>
+<li><code>BatchClientIntegrationTests</code> for integration tests. These tests run against a live Azure Batch endpoint and do not run during CI.</li>
+<li><strong>Note:</strong> You should prefer to add unit tests over integration tests where possible -- integration tests should be reserved for ensuring that the Batch Service accepts the Swagger requests. Testing service behavior should occur in a service test, not the client.</li>
+</ul>
+<h3 id="the-srcgeneratedprotocol-folder">The <code>src\GeneratedProtocol</code> folder</h3>
+<p>The GeneratedProtocol folder holds the code generated by the AutoRest tool from a Swagger specification. In order to regenerate this code, all you need to do is run: <code>RegenerateBatch.cmd &lt;Path to Swagger file&gt;</code>.</p>
+<p>You can optionally edit the <code>RegenerateBatch.cmd</code> script to point to a newer version of AutoRest if you would like to take advantage of new AutoRest features.</p>
+<h3 id="the-srcgenerated-folder">The <code>src\Generated</code> folder</h3>
+<p>This folder contains the convenience layer models for Azure Batch. It is generated from a custom tool. The custom tool reads a specification file located here: <code>Tools\ObjectModelCodeGeneration\ObjectModelCodeGenerator\BatchProperties.json</code>. The convenience layer models require more metadata than the Swagger specification provides, so this file is an extra mapping layer on top of Swagger which provides more detail. <strong>Note:</strong> The <code>BatchProperties.json</code> specification file just contains the entities; it doesn't have anything related to the actual APIs.</p>
+<ol>
+<li>New entities defined in the Swagger specification have to be added here as well. See an existing entity for an example.</li>
+<li>If the type or name of a property has changed in the underlying Swagger specification, it should be updated here as well.</li>
+</ol>
+<p>There are a number of special flags which have meaning in the <code>BatchProperties.json</code> file. The easiest way to see a list of what flags are supported and at what level is to look at the backing code generation code:</p>
+<ol>
+<li>For properties: <code>Tools\ObjectModelCodeGeneration\CodeGenerationLibrary\PropertyData.cs</code></li>
+<li>For types: <code>Tools\ObjectModelCodeGeneration\CodeGenerationLibrary\ObjectModelTypeData.cs</code></li>
+</ol>
+<p>Once <code>BatchProperties.json</code> is updated with your changes, mark the <code>ObjectModelCodeGenerator</code> as your startup project in Visual Studio and run it -- it will regenerate the contents of the <code>src\Generated</code> folder.</p>
+<p><img src="https://azure-sdk-impressions.azurewebsites.net/api/impressions/azure-sdk-for-net%2Fsrc%2FSDKs%2FBatch%2FDataPlane%2FREADME.png" alt="Impressions"></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/docfx_project/articles/-batch-Microsoft.Azure.Batch-README.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

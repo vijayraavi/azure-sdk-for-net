@@ -1,0 +1,276 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Using Microsoft.Rest.ClientRuntime.Azure.TestFramework </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Using Microsoft.Rest.ClientRuntime.Azure.TestFramework ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="using-microsoftrestclientruntimeazuretestframework">Using Microsoft.Rest.ClientRuntime.Azure.TestFramework</h1>
+
+<ol>
+<li>Getting Started</li>
+<li>Accquring TestFramework</li>
+<li>Setup prior to Record/Playback tests
+<ol>
+<li>Environment Variables</li>
+<li>Playback Test</li>
+<li>Record Test with Interactive login using OrgId</li>
+<li>Record Test with ServicePrincipal</li>
+</ol>
+</li>
+<li>Record/Playback tests</li>
+<li>Change Test Environment settings at run-time</li>
+<li>Troubleshooting</li>
+<li>Supported Key=Value pairs in ConnectionString</li>
+<li>Environment Variable Reference</li>
+</ol>
+<h2 id="2-accquring-testframework">2. Accquring TestFramework</h2>
+<p>TestFramework is available on NuGet at <a href="https://www.nuget.org/packages/Microsoft.Rest.ClientRuntime.Azure.TestFramework/">https://www.nuget.org/packages/Microsoft.Rest.ClientRuntime.Azure.TestFramework/</a> .</p>
+<p>Instructions to manually download it are available on NuGet. However TestFramework will be downloaded automatically as part of the build process, so manually downloading it should generally be unnecessary.</p>
+<h2 id="3-setup-prior-to-recordplayback-of-tests">3. Setup prior to Record/Playback of tests</h2>
+<p>In order to Record/Playback a test, you need to setup a connection string that consists various key/value pairs that provides information to the test environment.</p>
+<h4 id="31-environment-variables">3.1 Environment Variables</h4>
+<blockquote>
+<p>TEST_CSM_ORGID_AUTHENTICATION</p>
+</blockquote>
+<p>Value of the env. variable is the connection string that determines how to connect to Azure. This includes authentiation and the Azure environment to connect to.</p>
+<blockquote>
+<p>AZURE_TEST_MODE</p>
+</blockquote>
+<p>This specifies whether test framework will <code>Record</code> test sessions or <code>Playback</code> previously recorded test sessions.</p>
+<h4 id="32-playback-test">3.2 Playback Test</h4>
+<p>The default mode is Playback mode, so no setting up of connection string is required.</p>
+<h4 id="33-record-test-with-interactive-login-using-orgid">3.3 Record Test with Interactive login using OrgId</h4>
+<p>This is no longer the preferred option because it only works when running on .NET Framework (Full Desktop version of .NET - 4.5.1+) When running on .NET Core you may get an error like <code>Interactive Login is supported only in NET45 projects</code>.</p>
+<p>To use interactive login, set the following environment variables before starting Visual Studio:</p>
+<pre><code>TEST_CSM_ORGID_AUTHENTICATION=SubscriptionId={SubId};AADTenant={tenantId};Environment={env};HttpRecorderMode=Record;
+AZURE_TEST_MODE=Record
+</code></pre>
+<h4 id="34-record-test-with-serviceprincipal">3.4 Record Test with ServicePrincipal</h4>
+<p>This is the preferred option for record because it works with both .NET Framework and .NET Core.</p>
+<p>To create a service principal, follow the <a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal#create-an-active-directory-application">Azure AD guide to create a Application Service Principal</a>. The application type should be <code>Web app / API</code> and the sign-on URL value is irrelevant (you can set any value).</p>
+<p>After the service principal is created, you will need to give it access to Azure resources. This can be done with the following PowerShell command, with the <a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal#get-application-id-and-authentication-key">Service Principal Application ID</a> (this is a guid, not the display name of the service principal) substituted in for <code>{clientId}</code>.</p>
+<pre><code>New-AzureRmRoleAssignment -ServicePrincipalName {clientId} -RoleDefinitionName Contributor
+</code></pre>
+<p>To use this option, set the following environment variable before starting Visual Studio. The following values are substituted into the below connection string:</p>
+<p><code>clientId</code>: The <a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal#get-application-id-and-authentication-key">Service Principal Application ID</a></p>
+<p><code>clientSecret</code>: A <a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal#get-application-id-and-authentication-key">Service Principal Authentication Key</a></p>
+<p><code>tenantId</code>: The <a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal#get-tenant-id">AAD Tenant ID</a></p>
+<pre><code>TEST_CSM_ORGID_AUTHENTICATION=SubscriptionId={SubId};ServicePrincipal={clientId};ServicePrincipalSecret={clientSecret};AADTenant={tenantId};Environment={env};HttpRecorderMode=Record;
+AZURE_TEST_MODE=Record
+</code></pre>
+<h2 id="4-recordplayback-tests">4. Record/Playback Tests</h2>
+<ol>
+<li>Run the test and make sure that you got a generated .json file that matches the test name in the bin folder under *SessionRecords folder</li>
+<li>Copy SessionRecords folder inside the test project and add all *.json files in Visual Studio setting &quot;Copy to Output Directory&quot; property to &quot;Copy if newer&quot;</li>
+<li>To assure that the records work fine, delete the connection string (default mode is Playback mode) OR change HttpRecorderMode within the connection string to &quot;Playback&quot;</li>
+</ol>
+<h2 id="5-change-test-environment-settings-at-run-time">5. Change Test Environment settings at run-time</h2>
+<h4 id="1-once-you-set-your-connection-string-you-can-add-or-update-keyvalue-settings">1. Once you set your connection string, you can add or update key/value settings</h4>
+<pre><code>Add new key/value pair
+TestEnvironment.ConnectionString.KeyValuePairs.Add(&quot;Foo&quot;, &quot;FooValue&quot;);
+
+Update Existing key/value pair
+TestEnvironment.ConnectionString.KeyValuePairs[&quot;keyName&quot;]=&quot;new value&quot;
+
+Accessing/Updating TestEndpoints
+TestEnvironment.Endpoints.GraphUri = new Uri(&quot;https://newGraphUri.windows.net&quot;);
+</code></pre>
+<p>###Note:###
+Changing the above properties at run-time has the potential to hard code few things in your tests. Best practice would be to use these properties to change values at run-time from immediate window at run-time and avoid hard-coding certain values.</p>
+<h2 id="6-troubleshooting">6. Troubleshooting</h2>
+<h4 id="issue-exceptions-in-microsoftazuretesthttprecorder">Issue: exceptions in Microsoft.Azure.Test.HttpRecorder</h4>
+<p>Ensure that the <code>HttpRecorderMode</code> in the <code>TEST_CSM_ORGID_AUTHENTICATION</code> environment variable is consistent with the value in <code>AZURE_TEST_MODE</code> environment variable.</p>
+<p>##7. Connection string</p>
+<h4 id="71-supported-keyvalue-pairs-in-connectionstring">7.1 Supported Key=Value pairs in Connectionstring</h4>
+<pre><code>* ManagementCertificate
+* SubscriptionId
+* AADTenant
+* UserId
+* Password
+* ServicePrincipal
+* ServicePrincipalSecret
+* Environment={Prod | DogFood | Next | Current | Custom}
+* RawToken
+* RawGraphToken
+* HttpRecorderMode={Record | Playback}
+* AADAuthEndpoint
+* OptimizeRecordedFile={true | false:default}  
+true: will trim recorded files when long running operations are detected.
+
+* GraphTokenAudienceUri
+* BaseUri
+* AADAuthUri
+* GalleryUri
+* GraphUri
+* IbizaPortalUri
+* RdfePortalUri
+* ResourceManagementUri
+* ServiceManagementUri
+* AADTokenAudienceUri
+* GraphTokenAudienceUri
+* DataLakeStoreServiceUri
+* DataLakeAnalyticsJobAndCatalogServiceUri
+</code></pre>
+<h2 id="8-supported-environment-in-test-framework-azure-environments">8. Supported Environment in Test framework (Azure environments)</h2>
+<h4 id="81-default-environments-and-associated-uri">8.1 Default Environments and associated Uri</h4>
+<h5 id="environment--prod">Environment = Prod</h5>
+<pre><code>AADAuthUri = &quot;https://login.microsoftonline.com&quot;
+GalleryUri = &quot;https://gallery.azure.com/&quot;
+GraphUri = &quot;https://graph.windows.net/&quot;
+IbizaPortalUri = &quot;https://portal.azure.com/&quot;
+RdfePortalUri = &quot;http://go.microsoft.com/fwlink/?LinkId=254433&quot;
+ResourceManagementUri = &quot;https://management.azure.com/&quot;
+ServiceManagementUri = &quot;https://management.core.windows.net&quot;
+AADTokenAudienceUri = &quot;https://management.core.windows.net&quot;
+GraphTokenAudienceUri = &quot;https://graph.windows.net/&quot;
+DataLakeStoreServiceUri = &quot;https://azuredatalakestore.net&quot;
+DataLakeAnalyticsJobAndCatalogServiceUri = &quot;https://azuredatalakeanalytics.net&quot;
+</code></pre>
+<h5 id="environment--dogfood">Environment = Dogfood</h5>
+<pre><code>AADAuthUri = &quot;https://login.windows-ppe.net&quot;;
+GalleryUri = &quot;https://df.gallery.azure-test.net/&quot;;
+GraphUri = &quot;https://graph.ppe.windows.net/&quot;;
+IbizaPortalUri = &quot;http://df.onecloud.azure-test.net&quot;;
+RdfePortalUri = &quot;https://windows.azure-test.net&quot;;
+ResourceManagementUri = &quot;https://api-dogfood.resources.windows-int.net/&quot;;
+ServiceManagementUri = &quot;https://management-preview.core.windows-int.net&quot;;
+AADTokenAudienceUri = &quot;https://management.core.windows.net&quot;;
+GraphTokenAudienceUri = &quot;https://graph.ppe.windows.net/&quot;;
+DataLakeStoreServiceUri = &quot;https://caboaccountdogfood.net&quot;;
+DataLakeAnalyticsJobAndCatalogServiceUri = &quot;https://konaaccountdogfood.net&quot;;
+</code></pre>
+<h5 id="environment--next">Environment = Next</h5>
+<pre><code>AADAuthUri = &quot;https://login.windows-ppe.net&quot;
+GalleryUri = &quot;https://next.gallery.azure-test.net/&quot;
+GraphUri = &quot;https://graph.ppe.windows.net/&quot;
+IbizaPortalUri = &quot;http://next.onecloud.azure-test.net&quot;
+RdfePortalUri = &quot;https://auxnext.windows.azure-test.net&quot;
+ResourceManagementUri = &quot;https://api-next.resources.windows-int.net/&quot;
+ServiceManagementUri = &quot;https://managementnext.rdfetest.dnsdemo4.com&quot;
+AADTokenAudienceUri = &quot;https://management.core.windows.net&quot;
+GraphTokenAudienceUri = &quot;https://graph.ppe.windows.net/&quot;
+DataLakeStoreServiceUri = &quot;https://caboaccountdogfood.net&quot;
+DataLakeAnalyticsJobAndCatalogServiceUri = &quot;https://konaaccountdogfood.net&quot;
+</code></pre>
+<h5 id="environment--current">Environment = Current</h5>
+<pre><code>AADAuthUri = &quot;https://login.windows-ppe.net&quot;
+GalleryUri = &quot;https://df.gallery.azure-test.net/&quot;
+GraphUri = &quot;https://graph.ppe.windows.net/&quot;
+IbizaPortalUri = &quot;http://df.onecloud.azure-test.net&quot;
+RdfePortalUri = &quot;https://windows.azure-test.net&quot;
+ResourceManagementUri = &quot;https://api-dogfood.resources.windows-int.net/&quot;
+ServiceManagementUri = &quot;https://management-preview.core.windows-int.net&quot;
+AADTokenAudienceUri = &quot;https://management.core.windows.net&quot;
+GraphTokenAudienceUri = &quot;https://graph.ppe.windows.net/&quot;
+DataLakeStoreServiceUri = &quot;https://caboaccountdogfood.net&quot;
+DataLakeAnalyticsJoAbndCatalogServiceUri = &quot;https://konaaccountdogfood.net&quot;
+</code></pre>
+<h5 id="environment--custom">Environment = Custom</h5>
+<p>When specified, test framework expect all Uri's to be provided by the user as part of the connection string.</p>
+<p>What is also supported is as below (connections string example)</p>
+<blockquote>
+<p>SubscriptionId=subId;Environment=Prod;AADAuthUri=customAuthUri;ResourceManagementUri=CustomResourceMgmtUri</p>
+</blockquote>
+<p>Which translates to, all Uri from pre-defined Prod environment will be used, but AADAuthUri and ResourceManagementUri will be overridden by the one provided in the connection string</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/docfx_project/articles/Using-Azure-TestFramework.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,2168 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IComputerVisionClient
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IComputerVisionClient
+   ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient">
+  
+  
+  <h1 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient" class="text-break">Interface IComputerVisionClient
+  </h1>
+  <div class="markdown level0 summary"><p>The Computer Vision API provides state-of-the-art algorithms to process
+images and return information. For example, it can be used to determine
+if an image contains mature content, or it can be used to find all the
+faces in an image.  It also has other features like estimating dominant
+and accent colors, categorizing the content of images, and describing
+an image with complete English sentences.  Additionally, it can also
+intelligently generate images thumbnails for displaying large images
+effectively.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.html">Microsoft.Azure.CognitiveServices.Vision.ComputerVision</a></h6>
+  <h6><strong>Assembly</strong>: Microsoft.Azure.CognitiveServices.Vision.ComputerVision.dll</h6>
+  <h5 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IComputerVisionClient : System.IDisposable</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_Credentials.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.Credentials%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Vision.ComputerVision/src/Generated/IComputerVisionClient.cs/#L57">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_Credentials_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.Credentials*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_Credentials" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.Credentials">Credentials</h4>
+  <div class="markdown level1 summary"><p>Subscription credentials which uniquely identify client
+subscription.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ServiceClientCredentials Credentials { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ServiceClientCredentials</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_DeserializationSettings.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.DeserializationSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Vision.ComputerVision/src/Generated/IComputerVisionClient.cs/#L46">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_DeserializationSettings_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.DeserializationSettings*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_DeserializationSettings" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.DeserializationSettings">DeserializationSettings</h4>
+  <div class="markdown level1 summary"><p>Gets or sets json deserialization settings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">JsonSerializerSettings DeserializationSettings { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">JsonSerializerSettings</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_Endpoint.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.Endpoint%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Vision.ComputerVision/src/Generated/IComputerVisionClient.cs/#L51">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_Endpoint_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.Endpoint*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_Endpoint" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.Endpoint">Endpoint</h4>
+  <div class="markdown level1 summary"><p>Supported Cognitive Services endpoints.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string Endpoint { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_SerializationSettings.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.SerializationSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Vision.ComputerVision/src/Generated/IComputerVisionClient.cs/#L41">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_SerializationSettings_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.SerializationSettings*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_SerializationSettings" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.SerializationSettings">SerializationSettings</h4>
+  <div class="markdown level1 summary"><p>The base URI of the service.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">JsonSerializerSettings SerializationSettings { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">JsonSerializerSettings</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_AnalyzeImageByDomainInStreamWithHttpMessagesAsync_System_String_Stream_System_String_Dictionary_System_String_List_System_String___CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.AnalyzeImageByDomainInStreamWithHttpMessagesAsync(System.String%2CStream%2CSystem.String%2CDictionary%7BSystem.String%2CList%7BSystem.String%7D%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Vision.ComputerVision/src/Generated/IComputerVisionClient.cs/#L616">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_AnalyzeImageByDomainInStreamWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.AnalyzeImageByDomainInStreamWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_AnalyzeImageByDomainInStreamWithHttpMessagesAsync_System_String_Stream_System_String_Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.AnalyzeImageByDomainInStreamWithHttpMessagesAsync(System.String,Stream,System.String,Dictionary{System.String,List{System.String}},CancellationToken)">AnalyzeImageByDomainInStreamWithHttpMessagesAsync(String, Stream, String, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>This operation recognizes content within an image by applying a
+domain-specific model. The list of domain-specific models that are
+supported by the Computer Vision API can be retrieved using the
+/models GET request. Currently, the API provides following
+domain-specific models: celebrities, landmarks.
+Two input methods are supported -- (1) Uploading an image or (2)
+specifying an image URL.
+A successful response will be returned in JSON.
+If the request failed, the response will contain an error code and
+a message to help understand what went wrong.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;HttpOperationResponse&lt;DomainModelResults&gt;&gt; AnalyzeImageByDomainInStreamWithHttpMessagesAsync(string model, Stream image, string language = null, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">model</span></td>
+        <td><p>The domain-specific content to recognize.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">image</span></td>
+        <td><p>An image stream.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">language</span></td>
+        <td><p>The desired language for output generation. If this parameter is
+not specified, the default value is
+&amp;quot;en&amp;quot;.Supported languages:en - English, Default.
+es - Spanish, ja - Japanese, pt - Portuguese, zh - Simplified
+Chinese. Possible values include: 'en', 'es', 'ja', 'pt', 'zh'</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">HttpOperationResponse</span>&lt;<a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.DomainModelResults.html">DomainModelResults</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_AnalyzeImageByDomainWithHttpMessagesAsync_System_String_System_String_System_String_Dictionary_System_String_List_System_String___CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.AnalyzeImageByDomainWithHttpMessagesAsync(System.String%2CSystem.String%2CSystem.String%2CDictionary%7BSystem.String%2CList%7BSystem.String%7D%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Vision.ComputerVision/src/Generated/IComputerVisionClient.cs/#L215">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_AnalyzeImageByDomainWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.AnalyzeImageByDomainWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_AnalyzeImageByDomainWithHttpMessagesAsync_System_String_System_String_System_String_Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.AnalyzeImageByDomainWithHttpMessagesAsync(System.String,System.String,System.String,Dictionary{System.String,List{System.String}},CancellationToken)">AnalyzeImageByDomainWithHttpMessagesAsync(String, String, String, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>This operation recognizes content within an image by applying a
+domain-specific model. The list of domain-specific models that are
+supported by the Computer Vision API can be retrieved using the
+/models GET request. Currently, the API provides following
+domain-specific models: celebrities, landmarks.
+Two input methods are supported -- (1) Uploading an image or (2)
+specifying an image URL.
+A successful response will be returned in JSON.
+If the request failed, the response will contain an error code and
+a message to help understand what went wrong.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;HttpOperationResponse&lt;DomainModelResults&gt;&gt; AnalyzeImageByDomainWithHttpMessagesAsync(string model, string url, string language = null, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">model</span></td>
+        <td><p>The domain-specific content to recognize.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">url</span></td>
+        <td><p>Publicly reachable URL of an image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">language</span></td>
+        <td><p>The desired language for output generation. If this parameter is
+not specified, the default value is
+&amp;quot;en&amp;quot;.Supported languages:en - English, Default.
+es - Spanish, ja - Japanese, pt - Portuguese, zh - Simplified
+Chinese. Possible values include: 'en', 'es', 'ja', 'pt', 'zh'</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">HttpOperationResponse</span>&lt;<a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.DomainModelResults.html">DomainModelResults</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_AnalyzeImageInStreamWithHttpMessagesAsync_Stream_IList_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_Models_VisualFeatureTypes__IList_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_Models_Details__System_String_Dictionary_System_String_List_System_String___CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.AnalyzeImageInStreamWithHttpMessagesAsync(Stream%2CIList%7BMicrosoft.Azure.CognitiveServices.Vision.ComputerVision.Models.VisualFeatureTypes%7D%2CIList%7BMicrosoft.Azure.CognitiveServices.Vision.ComputerVision.Models.Details%7D%2CSystem.String%2CDictionary%7BSystem.String%2CList%7BSystem.String%7D%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Vision.ComputerVision/src/Generated/IComputerVisionClient.cs/#L470">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_AnalyzeImageInStreamWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.AnalyzeImageInStreamWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_AnalyzeImageInStreamWithHttpMessagesAsync_Stream_IList_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_Models_VisualFeatureTypes__IList_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_Models_Details__System_String_Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.AnalyzeImageInStreamWithHttpMessagesAsync(Stream,IList{Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.VisualFeatureTypes},IList{Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.Details},System.String,Dictionary{System.String,List{System.String}},CancellationToken)">AnalyzeImageInStreamWithHttpMessagesAsync(Stream, IList&lt;VisualFeatureTypes&gt;, IList&lt;Details&gt;, String, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>This operation extracts a rich set of visual features based on the
+image content.
+Two input methods are supported -- (1) Uploading an image or (2)
+specifying an image URL. Within your request, there is an optional
+parameter to allow you to choose which features to return. By
+default, image categories are returned in the response.
+A successful response will be returned in JSON. If the request
+failed, the response will contain an error code and a message to
+help understand what went wrong.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;HttpOperationResponse&lt;ImageAnalysis&gt;&gt; AnalyzeImageInStreamWithHttpMessagesAsync(Stream image, IList&lt;VisualFeatureTypes&gt; visualFeatures = null, IList&lt;Details&gt; details = null, string language = null, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">image</span></td>
+        <td><p>An image stream.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IList</span>&lt;<a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.VisualFeatureTypes.html">VisualFeatureTypes</a>&gt;</td>
+        <td><span class="parametername">visualFeatures</span></td>
+        <td><p>A string indicating what visual feature types to return. Multiple
+values should be comma-separated. Valid visual feature types
+include: Categories - categorizes image content according to a
+taxonomy defined in documentation. Tags - tags the image with a
+detailed list of words related to the image content. Description -
+describes the image content with a complete English sentence. Faces</p>
+<ul>
+<li>detects if faces are present. If present, generate coordinates,
+gender and age. ImageType - detects if image is clipart or a line
+drawing. Color - determines the accent color, dominant color, and
+whether an image is black&amp;white. Adult - detects if the image
+is pornographic in nature (depicts nudity or a sex act).  Sexually
+suggestive content is also detected. Objects - detects various
+objects within an image, including the approximate location. The
+Objects argument is only available in English. Brands - detects
+various brands within an image, including the approximate location.
+The Brands argument is only available in English.</li>
+</ul>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IList</span>&lt;<a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.Details.html">Details</a>&gt;</td>
+        <td><span class="parametername">details</span></td>
+        <td><p>A string indicating which domain-specific details to return.
+Multiple values should be comma-separated. Valid visual feature
+types include: Celebrities - identifies celebrities if detected in
+the image, Landmarks - identifies notable landmarks in the image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">language</span></td>
+        <td><p>The desired language for output generation. If this parameter is
+not specified, the default value is
+&amp;quot;en&amp;quot;.Supported languages:en - English, Default.
+es - Spanish, ja - Japanese, pt - Portuguese, zh - Simplified
+Chinese. Possible values include: 'en', 'es', 'ja', 'pt', 'zh'</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">HttpOperationResponse</span>&lt;<a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.ImageAnalysis.html">ImageAnalysis</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_AnalyzeImageWithHttpMessagesAsync_System_String_IList_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_Models_VisualFeatureTypes__IList_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_Models_Details__System_String_Dictionary_System_String_List_System_String___CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.AnalyzeImageWithHttpMessagesAsync(System.String%2CIList%7BMicrosoft.Azure.CognitiveServices.Vision.ComputerVision.Models.VisualFeatureTypes%7D%2CIList%7BMicrosoft.Azure.CognitiveServices.Vision.ComputerVision.Models.Details%7D%2CSystem.String%2CDictionary%7BSystem.String%2CList%7BSystem.String%7D%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Vision.ComputerVision/src/Generated/IComputerVisionClient.cs/#L111">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_AnalyzeImageWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.AnalyzeImageWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_AnalyzeImageWithHttpMessagesAsync_System_String_IList_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_Models_VisualFeatureTypes__IList_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_Models_Details__System_String_Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.AnalyzeImageWithHttpMessagesAsync(System.String,IList{Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.VisualFeatureTypes},IList{Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.Details},System.String,Dictionary{System.String,List{System.String}},CancellationToken)">AnalyzeImageWithHttpMessagesAsync(String, IList&lt;VisualFeatureTypes&gt;, IList&lt;Details&gt;, String, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>This operation extracts a rich set of visual features based on the
+image content.
+Two input methods are supported -- (1) Uploading an image or (2)
+specifying an image URL. Within your request, there is an optional
+parameter to allow you to choose which features to return. By
+default, image categories are returned in the response.
+A successful response will be returned in JSON. If the request
+failed, the response will contain an error code and a message to
+help understand what went wrong.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;HttpOperationResponse&lt;ImageAnalysis&gt;&gt; AnalyzeImageWithHttpMessagesAsync(string url, IList&lt;VisualFeatureTypes&gt; visualFeatures = null, IList&lt;Details&gt; details = null, string language = null, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">url</span></td>
+        <td><p>Publicly reachable URL of an image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IList</span>&lt;<a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.VisualFeatureTypes.html">VisualFeatureTypes</a>&gt;</td>
+        <td><span class="parametername">visualFeatures</span></td>
+        <td><p>A string indicating what visual feature types to return. Multiple
+values should be comma-separated. Valid visual feature types
+include: Categories - categorizes image content according to a
+taxonomy defined in documentation. Tags - tags the image with a
+detailed list of words related to the image content. Description -
+describes the image content with a complete English sentence. Faces</p>
+<ul>
+<li>detects if faces are present. If present, generate coordinates,
+gender and age. ImageType - detects if image is clipart or a line
+drawing. Color - determines the accent color, dominant color, and
+whether an image is black&amp;white. Adult - detects if the image
+is pornographic in nature (depicts nudity or a sex act).  Sexually
+suggestive content is also detected. Objects - detects various
+objects within an image, including the approximate location. The
+Objects argument is only available in English. Brands - detects
+various brands within an image, including the approximate location.
+The Brands argument is only available in English.</li>
+</ul>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IList</span>&lt;<a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.Details.html">Details</a>&gt;</td>
+        <td><span class="parametername">details</span></td>
+        <td><p>A string indicating which domain-specific details to return.
+Multiple values should be comma-separated. Valid visual feature
+types include: Celebrities - identifies celebrities if detected in
+the image, Landmarks - identifies notable landmarks in the image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">language</span></td>
+        <td><p>The desired language for output generation. If this parameter is
+not specified, the default value is
+&amp;quot;en&amp;quot;.Supported languages:en - English, Default.
+es - Spanish, ja - Japanese, pt - Portuguese, zh - Simplified
+Chinese. Possible values include: 'en', 'es', 'ja', 'pt', 'zh'</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">HttpOperationResponse</span>&lt;<a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.ImageAnalysis.html">ImageAnalysis</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_BatchReadFileInStreamWithHttpMessagesAsync_Stream_Dictionary_System_String_List_System_String___CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.BatchReadFileInStreamWithHttpMessagesAsync(Stream%2CDictionary%7BSystem.String%2CList%7BSystem.String%7D%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Vision.ComputerVision/src/Generated/IComputerVisionClient.cs/#L725">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_BatchReadFileInStreamWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.BatchReadFileInStreamWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_BatchReadFileInStreamWithHttpMessagesAsync_Stream_Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.BatchReadFileInStreamWithHttpMessagesAsync(Stream,Dictionary{System.String,List{System.String}},CancellationToken)">BatchReadFileInStreamWithHttpMessagesAsync(Stream, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Use this interface to get the result of a Read Document operation,
+employing the state-of-the-art Optical Character Recognition (OCR)
+algorithms optimized for text-heavy documents. When you use the
+Read Document interface, the response contains a field called
+'Operation-Location'. The 'Operation-Location' field contains the
+URL that you must use for your 'Get Read Result operation' to
+access OCR results.​</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;HttpOperationHeaderResponse&lt;BatchReadFileInStreamHeaders&gt;&gt; BatchReadFileInStreamWithHttpMessagesAsync(Stream image, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">image</span></td>
+        <td><p>An image stream.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">HttpOperationHeaderResponse</span>&lt;<a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.BatchReadFileInStreamHeaders.html">BatchReadFileInStreamHeaders</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_BatchReadFileWithHttpMessagesAsync_System_String_Dictionary_System_String_List_System_String___CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.BatchReadFileWithHttpMessagesAsync(System.String%2CDictionary%7BSystem.String%2CList%7BSystem.String%7D%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Vision.ComputerVision/src/Generated/IComputerVisionClient.cs/#L400">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_BatchReadFileWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.BatchReadFileWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_BatchReadFileWithHttpMessagesAsync_System_String_Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.BatchReadFileWithHttpMessagesAsync(System.String,Dictionary{System.String,List{System.String}},CancellationToken)">BatchReadFileWithHttpMessagesAsync(String, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Use this interface to get the result of a Read operation, employing
+the state-of-the-art Optical Character Recognition (OCR) algorithms
+optimized for text-heavy documents. When you use the Read File
+interface, the response contains a field called
+'Operation-Location'. The 'Operation-Location' field contains the
+URL that you must use for your 'GetReadOperationResult' operation
+to access OCR results.​</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;HttpOperationHeaderResponse&lt;BatchReadFileHeaders&gt;&gt; BatchReadFileWithHttpMessagesAsync(string url, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">url</span></td>
+        <td><p>Publicly reachable URL of an image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">HttpOperationHeaderResponse</span>&lt;<a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.BatchReadFileHeaders.html">BatchReadFileHeaders</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_DescribeImageInStreamWithHttpMessagesAsync_Stream_System_Nullable_System_Int32__System_String_Dictionary_System_String_List_System_String___CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.DescribeImageInStreamWithHttpMessagesAsync(Stream%2CSystem.Nullable%7BSystem.Int32%7D%2CSystem.String%2CDictionary%7BSystem.String%2CList%7BSystem.String%7D%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Vision.ComputerVision/src/Generated/IComputerVisionClient.cs/#L527">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_DescribeImageInStreamWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.DescribeImageInStreamWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_DescribeImageInStreamWithHttpMessagesAsync_Stream_System_Nullable_System_Int32__System_String_Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.DescribeImageInStreamWithHttpMessagesAsync(Stream,System.Nullable{System.Int32},System.String,Dictionary{System.String,List{System.String}},CancellationToken)">DescribeImageInStreamWithHttpMessagesAsync(Stream, Nullable&lt;Int32&gt;, String, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>This operation generates a description of an image in human
+readable language with complete sentences. The description is based
+on a collection of content tags, which are also returned by the
+operation. More than one description can be generated for each
+image. Descriptions are ordered by their confidence score. All
+descriptions are in English.
+Two input methods are supported -- (1) Uploading an image or (2)
+specifying an image URL.
+A successful response will be returned in JSON. If the request
+failed, the response will contain an error code and a message to
+help understand what went wrong.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;HttpOperationResponse&lt;ImageDescription&gt;&gt; DescribeImageInStreamWithHttpMessagesAsync(Stream image, int? maxCandidates, string language = null, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">image</span></td>
+        <td><p>An image stream.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">maxCandidates</span></td>
+        <td><p>Maximum number of candidate descriptions to be returned.  The
+default is 1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">language</span></td>
+        <td><p>The desired language for output generation. If this parameter is
+not specified, the default value is
+&amp;quot;en&amp;quot;.Supported languages:en - English, Default.
+es - Spanish, ja - Japanese, pt - Portuguese, zh - Simplified
+Chinese. Possible values include: 'en', 'es', 'ja', 'pt', 'zh'</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">HttpOperationResponse</span>&lt;<a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.ImageDescription.html">ImageDescription</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_DescribeImageWithHttpMessagesAsync_System_String_System_Nullable_System_Int32__System_String_Dictionary_System_String_List_System_String___CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.DescribeImageWithHttpMessagesAsync(System.String%2CSystem.Nullable%7BSystem.Int32%7D%2CSystem.String%2CDictionary%7BSystem.String%2CList%7BSystem.String%7D%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Vision.ComputerVision/src/Generated/IComputerVisionClient.cs/#L146">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_DescribeImageWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.DescribeImageWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_DescribeImageWithHttpMessagesAsync_System_String_System_Nullable_System_Int32__System_String_Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.DescribeImageWithHttpMessagesAsync(System.String,System.Nullable{System.Int32},System.String,Dictionary{System.String,List{System.String}},CancellationToken)">DescribeImageWithHttpMessagesAsync(String, Nullable&lt;Int32&gt;, String, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>This operation generates a description of an image in human
+readable language with complete sentences. The description is based
+on a collection of content tags, which are also returned by the
+operation. More than one description can be generated for each
+image. Descriptions are ordered by their confidence score. All
+descriptions are in English.
+Two input methods are supported -- (1) Uploading an image or (2)
+specifying an image URL.
+A successful response will be returned in JSON. If the request
+failed, the response will contain an error code and a message to
+help understand what went wrong.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;HttpOperationResponse&lt;ImageDescription&gt;&gt; DescribeImageWithHttpMessagesAsync(string url, int? maxCandidates, string language = null, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">url</span></td>
+        <td><p>Publicly reachable URL of an image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">maxCandidates</span></td>
+        <td><p>Maximum number of candidate descriptions to be returned.  The
+default is 1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">language</span></td>
+        <td><p>The desired language for output generation. If this parameter is
+not specified, the default value is
+&amp;quot;en&amp;quot;.Supported languages:en - English, Default.
+es - Spanish, ja - Japanese, pt - Portuguese, zh - Simplified
+Chinese. Possible values include: 'en', 'es', 'ja', 'pt', 'zh'</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">HttpOperationResponse</span>&lt;<a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.ImageDescription.html">ImageDescription</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_DetectObjectsInStreamWithHttpMessagesAsync_Stream_Dictionary_System_String_List_System_String___CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.DetectObjectsInStreamWithHttpMessagesAsync(Stream%2CDictionary%7BSystem.String%2CList%7BSystem.String%7D%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Vision.ComputerVision/src/Generated/IComputerVisionClient.cs/#L546">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_DetectObjectsInStreamWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.DetectObjectsInStreamWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_DetectObjectsInStreamWithHttpMessagesAsync_Stream_Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.DetectObjectsInStreamWithHttpMessagesAsync(Stream,Dictionary{System.String,List{System.String}},CancellationToken)">DetectObjectsInStreamWithHttpMessagesAsync(Stream, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Performs object detection on the specified image.
+Two input methods are supported -- (1) Uploading an image or (2)
+specifying an image URL.
+A successful response will be returned in JSON. If the request
+failed, the response will contain an error code and a message to
+help understand what went wrong.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;HttpOperationResponse&lt;DetectResult&gt;&gt; DetectObjectsInStreamWithHttpMessagesAsync(Stream image, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">image</span></td>
+        <td><p>An image stream.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">HttpOperationResponse</span>&lt;<a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.DetectResult.html">DetectResult</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_DetectObjectsWithHttpMessagesAsync_System_String_Dictionary_System_String_List_System_String___CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.DetectObjectsWithHttpMessagesAsync(System.String%2CDictionary%7BSystem.String%2CList%7BSystem.String%7D%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Vision.ComputerVision/src/Generated/IComputerVisionClient.cs/#L165">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_DetectObjectsWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.DetectObjectsWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_DetectObjectsWithHttpMessagesAsync_System_String_Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.DetectObjectsWithHttpMessagesAsync(System.String,Dictionary{System.String,List{System.String}},CancellationToken)">DetectObjectsWithHttpMessagesAsync(String, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Performs object detection on the specified image.
+Two input methods are supported -- (1) Uploading an image or (2)
+specifying an image URL.
+A successful response will be returned in JSON. If the request
+failed, the response will contain an error code and a message to
+help understand what went wrong.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;HttpOperationResponse&lt;DetectResult&gt;&gt; DetectObjectsWithHttpMessagesAsync(string url, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">url</span></td>
+        <td><p>Publicly reachable URL of an image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">HttpOperationResponse</span>&lt;<a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.DetectResult.html">DetectResult</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_GenerateThumbnailInStreamWithHttpMessagesAsync_System_Int32_System_Int32_Stream_System_Nullable_System_Boolean__Dictionary_System_String_List_System_String___CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.GenerateThumbnailInStreamWithHttpMessagesAsync(System.Int32%2CSystem.Int32%2CStream%2CSystem.Nullable%7BSystem.Boolean%7D%2CDictionary%7BSystem.String%2CList%7BSystem.String%7D%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Vision.ComputerVision/src/Generated/IComputerVisionClient.cs/#L583">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_GenerateThumbnailInStreamWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.GenerateThumbnailInStreamWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_GenerateThumbnailInStreamWithHttpMessagesAsync_System_Int32_System_Int32_Stream_System_Nullable_System_Boolean__Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.GenerateThumbnailInStreamWithHttpMessagesAsync(System.Int32,System.Int32,Stream,System.Nullable{System.Boolean},Dictionary{System.String,List{System.String}},CancellationToken)">GenerateThumbnailInStreamWithHttpMessagesAsync(Int32, Int32, Stream, Nullable&lt;Boolean&gt;, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>This operation generates a thumbnail image with the user-specified
+width and height. By default, the service analyzes the image,
+identifies the region of interest (ROI), and generates smart
+cropping coordinates based on the ROI. Smart cropping helps when
+you specify an aspect ratio that differs from that of the input
+image.
+A successful response contains the thumbnail image binary. If the
+request failed, the response contains an error code and a message
+to help determine what went wrong.
+Upon failure, the error code and an error message are returned. The
+error code could be one of InvalidImageUrl, InvalidImageFormat,
+InvalidImageSize, InvalidThumbnailSize, NotSupportedImage,
+FailedToProcess, Timeout, or InternalServerError.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;HttpOperationResponse&lt;Stream&gt;&gt; GenerateThumbnailInStreamWithHttpMessagesAsync(int width, int height, Stream image, bool? smartCropping, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">width</span></td>
+        <td><p>Width of the thumbnail, in pixels. It must be between 1 and 1024.
+Recommended minimum of 50.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">height</span></td>
+        <td><p>Height of the thumbnail, in pixels. It must be between 1 and 1024.
+Recommended minimum of 50.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">image</span></td>
+        <td><p>An image stream.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">smartCropping</span></td>
+        <td><p>Boolean flag for enabling smart cropping.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">HttpOperationResponse</span>&lt;<span class="xref">Stream</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_GenerateThumbnailWithHttpMessagesAsync_System_Int32_System_Int32_System_String_System_Nullable_System_Boolean__Dictionary_System_String_List_System_String___CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.GenerateThumbnailWithHttpMessagesAsync(System.Int32%2CSystem.Int32%2CSystem.String%2CSystem.Nullable%7BSystem.Boolean%7D%2CDictionary%7BSystem.String%2CList%7BSystem.String%7D%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Vision.ComputerVision/src/Generated/IComputerVisionClient.cs/#L319">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_GenerateThumbnailWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.GenerateThumbnailWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_GenerateThumbnailWithHttpMessagesAsync_System_Int32_System_Int32_System_String_System_Nullable_System_Boolean__Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.GenerateThumbnailWithHttpMessagesAsync(System.Int32,System.Int32,System.String,System.Nullable{System.Boolean},Dictionary{System.String,List{System.String}},CancellationToken)">GenerateThumbnailWithHttpMessagesAsync(Int32, Int32, String, Nullable&lt;Boolean&gt;, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>This operation generates a thumbnail image with the user-specified
+width and height. By default, the service analyzes the image,
+identifies the region of interest (ROI), and generates smart
+cropping coordinates based on the ROI. Smart cropping helps when
+you specify an aspect ratio that differs from that of the input
+image.
+A successful response contains the thumbnail image binary. If the
+request failed, the response contains an error code and a message
+to help determine what went wrong.
+Upon failure, the error code and an error message are returned. The
+error code could be one of InvalidImageUrl, InvalidImageFormat,
+InvalidImageSize, InvalidThumbnailSize, NotSupportedImage,
+FailedToProcess, Timeout, or InternalServerError.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;HttpOperationResponse&lt;Stream&gt;&gt; GenerateThumbnailWithHttpMessagesAsync(int width, int height, string url, bool? smartCropping, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">width</span></td>
+        <td><p>Width of the thumbnail, in pixels. It must be between 1 and 1024.
+Recommended minimum of 50.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">height</span></td>
+        <td><p>Height of the thumbnail, in pixels. It must be between 1 and 1024.
+Recommended minimum of 50.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">url</span></td>
+        <td><p>Publicly reachable URL of an image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">smartCropping</span></td>
+        <td><p>Boolean flag for enabling smart cropping.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">HttpOperationResponse</span>&lt;<span class="xref">Stream</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_GetAreaOfInterestInStreamWithHttpMessagesAsync_Stream_Dictionary_System_String_List_System_String___CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.GetAreaOfInterestInStreamWithHttpMessagesAsync(Stream%2CDictionary%7BSystem.String%2CList%7BSystem.String%7D%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Vision.ComputerVision/src/Generated/IComputerVisionClient.cs/#L492">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_GetAreaOfInterestInStreamWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.GetAreaOfInterestInStreamWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_GetAreaOfInterestInStreamWithHttpMessagesAsync_Stream_Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.GetAreaOfInterestInStreamWithHttpMessagesAsync(Stream,Dictionary{System.String,List{System.String}},CancellationToken)">GetAreaOfInterestInStreamWithHttpMessagesAsync(Stream, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>This operation returns a bounding box around the most important
+area of the image.
+A successful response will be returned in JSON. If the request
+failed, the response contains an error code and a message to help
+determine what went wrong.
+Upon failure, the error code and an error message are returned. The
+error code could be one of InvalidImageUrl, InvalidImageFormat,
+InvalidImageSize, NotSupportedImage, FailedToProcess, Timeout, or
+InternalServerError.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;HttpOperationResponse&lt;AreaOfInterestResult&gt;&gt; GetAreaOfInterestInStreamWithHttpMessagesAsync(Stream image, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">image</span></td>
+        <td><p>An image stream.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">HttpOperationResponse</span>&lt;<a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.AreaOfInterestResult.html">AreaOfInterestResult</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_GetAreaOfInterestWithHttpMessagesAsync_System_String_Dictionary_System_String_List_System_String___CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.GetAreaOfInterestWithHttpMessagesAsync(System.String%2CDictionary%7BSystem.String%2CList%7BSystem.String%7D%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Vision.ComputerVision/src/Generated/IComputerVisionClient.cs/#L341">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_GetAreaOfInterestWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.GetAreaOfInterestWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_GetAreaOfInterestWithHttpMessagesAsync_System_String_Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.GetAreaOfInterestWithHttpMessagesAsync(System.String,Dictionary{System.String,List{System.String}},CancellationToken)">GetAreaOfInterestWithHttpMessagesAsync(String, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>This operation returns a bounding box around the most important
+area of the image.
+A successful response will be returned in JSON. If the request
+failed, the response contains an error code and a message to help
+determine what went wrong.
+Upon failure, the error code and an error message are returned. The
+error code could be one of InvalidImageUrl, InvalidImageFormat,
+InvalidImageSize, NotSupportedImage, FailedToProcess, Timeout, or
+InternalServerError.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;HttpOperationResponse&lt;AreaOfInterestResult&gt;&gt; GetAreaOfInterestWithHttpMessagesAsync(string url, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">url</span></td>
+        <td><p>Publicly reachable URL of an image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">HttpOperationResponse</span>&lt;<a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.AreaOfInterestResult.html">AreaOfInterestResult</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_GetReadOperationResultWithHttpMessagesAsync_System_String_Dictionary_System_String_List_System_String___CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.GetReadOperationResultWithHttpMessagesAsync(System.String%2CDictionary%7BSystem.String%2CList%7BSystem.String%7D%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Vision.ComputerVision/src/Generated/IComputerVisionClient.cs/#L417">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_GetReadOperationResultWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.GetReadOperationResultWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_GetReadOperationResultWithHttpMessagesAsync_System_String_Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.GetReadOperationResultWithHttpMessagesAsync(System.String,Dictionary{System.String,List{System.String}},CancellationToken)">GetReadOperationResultWithHttpMessagesAsync(String, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>This interface is used for getting OCR results of Read operation.
+The URL to this interface should be retrieved from
+'Operation-Location' field returned from Batch Read File interface.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;HttpOperationResponse&lt;ReadOperationResult&gt;&gt; GetReadOperationResultWithHttpMessagesAsync(string operationId, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">operationId</span></td>
+        <td><p>Id of read operation returned in the response of the 'Batch Read
+File' interface.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">HttpOperationResponse</span>&lt;<a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.ReadOperationResult.html">ReadOperationResult</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_GetTextOperationResultWithHttpMessagesAsync_System_String_Dictionary_System_String_List_System_String___CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.GetTextOperationResultWithHttpMessagesAsync(System.String%2CDictionary%7BSystem.String%2CList%7BSystem.String%7D%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Vision.ComputerVision/src/Generated/IComputerVisionClient.cs/#L380">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_GetTextOperationResultWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.GetTextOperationResultWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_GetTextOperationResultWithHttpMessagesAsync_System_String_Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.GetTextOperationResultWithHttpMessagesAsync(System.String,Dictionary{System.String,List{System.String}},CancellationToken)">GetTextOperationResultWithHttpMessagesAsync(String, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>This interface is used for getting text operation result. The URL
+to this interface should be retrieved from 'Operation-Location'
+field returned from Recognize Text interface.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;HttpOperationResponse&lt;TextOperationResult&gt;&gt; GetTextOperationResultWithHttpMessagesAsync(string operationId, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">operationId</span></td>
+        <td><p>Id of the text operation returned in the response of the 'Recognize
+Text'</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">HttpOperationResponse</span>&lt;<a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.TextOperationResult.html">TextOperationResult</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_ListModelsWithHttpMessagesAsync_Dictionary_System_String_List_System_String___CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.ListModelsWithHttpMessagesAsync(Dictionary%7BSystem.String%2CList%7BSystem.String%7D%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Vision.ComputerVision/src/Generated/IComputerVisionClient.cs/#L182">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_ListModelsWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.ListModelsWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_ListModelsWithHttpMessagesAsync_Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.ListModelsWithHttpMessagesAsync(Dictionary{System.String,List{System.String}},CancellationToken)">ListModelsWithHttpMessagesAsync(Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>This operation returns the list of domain-specific models that are
+supported by the Computer Vision API. Currently, the API supports
+following domain-specific models: celebrity recognizer, landmark
+recognizer.
+A successful response will be returned in JSON. If the request
+failed, the response will contain an error code and a message to
+help understand what went wrong.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;HttpOperationResponse&lt;ListModelsResult&gt;&gt; ListModelsWithHttpMessagesAsync(Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">HttpOperationResponse</span>&lt;<a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.ListModelsResult.html">ListModelsResult</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_RecognizePrintedTextInStreamWithHttpMessagesAsync_System_Boolean_Stream_System_Nullable_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_Models_OcrLanguages__Dictionary_System_String_List_System_String___CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.RecognizePrintedTextInStreamWithHttpMessagesAsync(System.Boolean%2CStream%2CSystem.Nullable%7BMicrosoft.Azure.CognitiveServices.Vision.ComputerVision.Models.OcrLanguages%7D%2CDictionary%7BSystem.String%2CList%7BSystem.String%7D%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Vision.ComputerVision/src/Generated/IComputerVisionClient.cs/#L650">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_RecognizePrintedTextInStreamWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.RecognizePrintedTextInStreamWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_RecognizePrintedTextInStreamWithHttpMessagesAsync_System_Boolean_Stream_System_Nullable_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_Models_OcrLanguages__Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.RecognizePrintedTextInStreamWithHttpMessagesAsync(System.Boolean,Stream,System.Nullable{Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.OcrLanguages},Dictionary{System.String,List{System.String}},CancellationToken)">RecognizePrintedTextInStreamWithHttpMessagesAsync(Boolean, Stream, Nullable&lt;OcrLanguages&gt;, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Optical Character Recognition (OCR) detects text in an image and
+extracts the recognized characters into a machine-usable character
+stream.
+Upon success, the OCR results will be returned.
+Upon failure, the error code together with an error message will be
+returned. The error code can be one of InvalidImageUrl,
+InvalidImageFormat, InvalidImageSize, NotSupportedImage,
+NotSupportedLanguage, or InternalServerError.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;HttpOperationResponse&lt;OcrResult&gt;&gt; RecognizePrintedTextInStreamWithHttpMessagesAsync(bool detectOrientation, Stream image, OcrLanguages? language = null, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">detectOrientation</span></td>
+        <td><p>Whether detect the text orientation in the image. With
+detectOrientation=true the OCR service tries to detect the image
+orientation and correct it before further processing (e.g. if it's
+upside-down).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">image</span></td>
+        <td><p>An image stream.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.OcrLanguages.html">OcrLanguages</a>&gt;</td>
+        <td><span class="parametername">language</span></td>
+        <td><p>The BCP-47 language code of the text to be detected in the image.
+The default value is 'unk'. Possible values include: 'unk',
+'zh-Hans', 'zh-Hant', 'cs', 'da', 'nl', 'en', 'fi', 'fr', 'de',
+'el', 'hu', 'it', 'ja', 'ko', 'nb', 'pl', 'pt', 'ru', 'es', 'sv',
+'tr', 'ar', 'ro', 'sr-Cyrl', 'sr-Latn', 'sk'</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">HttpOperationResponse</span>&lt;<a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.OcrResult.html">OcrResult</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_RecognizePrintedTextWithHttpMessagesAsync_System_Boolean_System_String_System_Nullable_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_Models_OcrLanguages__Dictionary_System_String_List_System_String___CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.RecognizePrintedTextWithHttpMessagesAsync(System.Boolean%2CSystem.String%2CSystem.Nullable%7BMicrosoft.Azure.CognitiveServices.Vision.ComputerVision.Models.OcrLanguages%7D%2CDictionary%7BSystem.String%2CList%7BSystem.String%7D%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Vision.ComputerVision/src/Generated/IComputerVisionClient.cs/#L249">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_RecognizePrintedTextWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.RecognizePrintedTextWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_RecognizePrintedTextWithHttpMessagesAsync_System_Boolean_System_String_System_Nullable_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_Models_OcrLanguages__Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.RecognizePrintedTextWithHttpMessagesAsync(System.Boolean,System.String,System.Nullable{Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.OcrLanguages},Dictionary{System.String,List{System.String}},CancellationToken)">RecognizePrintedTextWithHttpMessagesAsync(Boolean, String, Nullable&lt;OcrLanguages&gt;, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Optical Character Recognition (OCR) detects text in an image and
+extracts the recognized characters into a machine-usable character
+stream.
+Upon success, the OCR results will be returned.
+Upon failure, the error code together with an error message will be
+returned. The error code can be one of InvalidImageUrl,
+InvalidImageFormat, InvalidImageSize, NotSupportedImage,
+NotSupportedLanguage, or InternalServerError.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;HttpOperationResponse&lt;OcrResult&gt;&gt; RecognizePrintedTextWithHttpMessagesAsync(bool detectOrientation, string url, OcrLanguages? language = null, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">detectOrientation</span></td>
+        <td><p>Whether detect the text orientation in the image. With
+detectOrientation=true the OCR service tries to detect the image
+orientation and correct it before further processing (e.g. if it's
+upside-down).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">url</span></td>
+        <td><p>Publicly reachable URL of an image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.OcrLanguages.html">OcrLanguages</a>&gt;</td>
+        <td><span class="parametername">language</span></td>
+        <td><p>The BCP-47 language code of the text to be detected in the image.
+The default value is 'unk'. Possible values include: 'unk',
+'zh-Hans', 'zh-Hant', 'cs', 'da', 'nl', 'en', 'fi', 'fr', 'de',
+'el', 'hu', 'it', 'ja', 'ko', 'nb', 'pl', 'pt', 'ru', 'es', 'sv',
+'tr', 'ar', 'ro', 'sr-Cyrl', 'sr-Latn', 'sk'</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">HttpOperationResponse</span>&lt;<a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.OcrResult.html">OcrResult</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_RecognizeTextInStreamWithHttpMessagesAsync_Stream_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_Models_TextRecognitionMode_Dictionary_System_String_List_System_String___CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.RecognizeTextInStreamWithHttpMessagesAsync(Stream%2CMicrosoft.Azure.CognitiveServices.Vision.ComputerVision.Models.TextRecognitionMode%2CDictionary%7BSystem.String%2CList%7BSystem.String%7D%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Vision.ComputerVision/src/Generated/IComputerVisionClient.cs/#L705">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_RecognizeTextInStreamWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.RecognizeTextInStreamWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_RecognizeTextInStreamWithHttpMessagesAsync_Stream_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_Models_TextRecognitionMode_Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.RecognizeTextInStreamWithHttpMessagesAsync(Stream,Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.TextRecognitionMode,Dictionary{System.String,List{System.String}},CancellationToken)">RecognizeTextInStreamWithHttpMessagesAsync(Stream, TextRecognitionMode, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Recognize Text operation. When you use the Recognize Text
+interface, the response contains a field called
+'Operation-Location'. The 'Operation-Location' field contains the
+URL that you must use for your Get Recognize Text Operation Result
+operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;HttpOperationHeaderResponse&lt;RecognizeTextInStreamHeaders&gt;&gt; RecognizeTextInStreamWithHttpMessagesAsync(Stream image, TextRecognitionMode mode, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">image</span></td>
+        <td><p>An image stream.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.TextRecognitionMode.html">TextRecognitionMode</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td><p>Type of text to recognize. Possible values include: 'Handwritten',
+'Printed'</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">HttpOperationHeaderResponse</span>&lt;<a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.RecognizeTextInStreamHeaders.html">RecognizeTextInStreamHeaders</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_RecognizeTextWithHttpMessagesAsync_System_String_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_Models_TextRecognitionMode_Dictionary_System_String_List_System_String___CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.RecognizeTextWithHttpMessagesAsync(System.String%2CMicrosoft.Azure.CognitiveServices.Vision.ComputerVision.Models.TextRecognitionMode%2CDictionary%7BSystem.String%2CList%7BSystem.String%7D%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Vision.ComputerVision/src/Generated/IComputerVisionClient.cs/#L363">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_RecognizeTextWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.RecognizeTextWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_RecognizeTextWithHttpMessagesAsync_System_String_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_Models_TextRecognitionMode_Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.RecognizeTextWithHttpMessagesAsync(System.String,Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.TextRecognitionMode,Dictionary{System.String,List{System.String}},CancellationToken)">RecognizeTextWithHttpMessagesAsync(String, TextRecognitionMode, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Recognize Text operation. When you use the Recognize Text
+interface, the response contains a field called
+'Operation-Location'. The 'Operation-Location' field contains the
+URL that you must use for your Get Recognize Text Operation Result
+operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;HttpOperationHeaderResponse&lt;RecognizeTextHeaders&gt;&gt; RecognizeTextWithHttpMessagesAsync(string url, TextRecognitionMode mode, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">url</span></td>
+        <td><p>Publicly reachable URL of an image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.TextRecognitionMode.html">TextRecognitionMode</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td><p>Type of text to recognize. Possible values include: 'Handwritten',
+'Printed'</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">HttpOperationHeaderResponse</span>&lt;<a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.RecognizeTextHeaders.html">RecognizeTextHeaders</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_TagImageInStreamWithHttpMessagesAsync_Stream_System_String_Dictionary_System_String_List_System_String___CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.TagImageInStreamWithHttpMessagesAsync(Stream%2CSystem.String%2CDictionary%7BSystem.String%2CList%7BSystem.String%7D%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Vision.ComputerVision/src/Generated/IComputerVisionClient.cs/#L683">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_TagImageInStreamWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.TagImageInStreamWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_TagImageInStreamWithHttpMessagesAsync_Stream_System_String_Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.TagImageInStreamWithHttpMessagesAsync(Stream,System.String,Dictionary{System.String,List{System.String}},CancellationToken)">TagImageInStreamWithHttpMessagesAsync(Stream, String, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>This operation generates a list of words, or tags, that are
+relevant to the content of the supplied image. The Computer Vision
+API can return tags based on objects, living beings, scenery or
+actions found in images. Unlike categories, tags are not organized
+according to a hierarchical classification system, but correspond
+to image content. Tags may contain hints to avoid ambiguity or
+provide context, for example the tag &quot;cello&quot; may be accompanied by
+the hint &quot;musical instrument&quot;. All tags are in English.
+Two input methods are supported -- (1) Uploading an image or (2)
+specifying an image URL.
+A successful response will be returned in JSON. If the request
+failed, the response will contain an error code and a message to
+help understand what went wrong.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;HttpOperationResponse&lt;TagResult&gt;&gt; TagImageInStreamWithHttpMessagesAsync(Stream image, string language = null, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">image</span></td>
+        <td><p>An image stream.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">language</span></td>
+        <td><p>The desired language for output generation. If this parameter is
+not specified, the default value is
+&amp;quot;en&amp;quot;.Supported languages:en - English, Default.
+es - Spanish, ja - Japanese, pt - Portuguese, zh - Simplified
+Chinese. Possible values include: 'en', 'es', 'ja', 'pt', 'zh'</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">HttpOperationResponse</span>&lt;<a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.TagResult.html">TagResult</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_TagImageWithHttpMessagesAsync_System_String_System_String_Dictionary_System_String_List_System_String___CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.TagImageWithHttpMessagesAsync(System.String%2CSystem.String%2CDictionary%7BSystem.String%2CList%7BSystem.String%7D%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Vision.ComputerVision/src/Generated/IComputerVisionClient.cs/#L282">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_TagImageWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.TagImageWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_TagImageWithHttpMessagesAsync_System_String_System_String_Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.TagImageWithHttpMessagesAsync(System.String,System.String,Dictionary{System.String,List{System.String}},CancellationToken)">TagImageWithHttpMessagesAsync(String, String, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>This operation generates a list of words, or tags, that are
+relevant to the content of the supplied image. The Computer Vision
+API can return tags based on objects, living beings, scenery or
+actions found in images. Unlike categories, tags are not organized
+according to a hierarchical classification system, but correspond
+to image content. Tags may contain hints to avoid ambiguity or
+provide context, for example the tag &quot;cello&quot; may be accompanied by
+the hint &quot;musical instrument&quot;. All tags are in English.
+Two input methods are supported -- (1) Uploading an image or (2)
+specifying an image URL.
+A successful response will be returned in JSON. If the request
+failed, the response will contain an error code and a message to
+help understand what went wrong.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;HttpOperationResponse&lt;TagResult&gt;&gt; TagImageWithHttpMessagesAsync(string url, string language = null, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">url</span></td>
+        <td><p>Publicly reachable URL of an image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">language</span></td>
+        <td><p>The desired language for output generation. If this parameter is
+not specified, the default value is
+&amp;quot;en&amp;quot;.Supported languages:en - English, Default.
+es - Spanish, ja - Japanese, pt - Portuguese, zh - Simplified
+Chinese. Possible values include: 'en', 'es', 'ja', 'pt', 'zh'</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">HttpOperationResponse</span>&lt;<a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.TagResult.html">TagResult</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClientExtensions.html#Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClientExtensions_AnalyzeImageAsync_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_System_String_IList_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_Models_VisualFeatureTypes__IList_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_Models_Details__System_String_CancellationToken_">ComputerVisionClientExtensions.AnalyzeImageAsync(IComputerVisionClient, String, IList&lt;VisualFeatureTypes&gt;, IList&lt;Details&gt;, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClientExtensions.html#Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClientExtensions_DescribeImageAsync_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_System_String_System_Nullable_System_Int32__System_String_CancellationToken_">ComputerVisionClientExtensions.DescribeImageAsync(IComputerVisionClient, String, Nullable&lt;Int32&gt;, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClientExtensions.html#Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClientExtensions_DetectObjectsAsync_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_System_String_CancellationToken_">ComputerVisionClientExtensions.DetectObjectsAsync(IComputerVisionClient, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClientExtensions.html#Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClientExtensions_ListModelsAsync_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_CancellationToken_">ComputerVisionClientExtensions.ListModelsAsync(IComputerVisionClient, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClientExtensions.html#Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClientExtensions_AnalyzeImageByDomainAsync_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_System_String_System_String_System_String_CancellationToken_">ComputerVisionClientExtensions.AnalyzeImageByDomainAsync(IComputerVisionClient, String, String, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClientExtensions.html#Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClientExtensions_RecognizePrintedTextAsync_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_System_Boolean_System_String_System_Nullable_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_Models_OcrLanguages__CancellationToken_">ComputerVisionClientExtensions.RecognizePrintedTextAsync(IComputerVisionClient, Boolean, String, Nullable&lt;OcrLanguages&gt;, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClientExtensions.html#Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClientExtensions_TagImageAsync_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_System_String_System_String_CancellationToken_">ComputerVisionClientExtensions.TagImageAsync(IComputerVisionClient, String, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClientExtensions.html#Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClientExtensions_GenerateThumbnailAsync_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_System_Int32_System_Int32_System_String_System_Nullable_System_Boolean__CancellationToken_">ComputerVisionClientExtensions.GenerateThumbnailAsync(IComputerVisionClient, Int32, Int32, String, Nullable&lt;Boolean&gt;, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClientExtensions.html#Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClientExtensions_GetAreaOfInterestAsync_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_System_String_CancellationToken_">ComputerVisionClientExtensions.GetAreaOfInterestAsync(IComputerVisionClient, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClientExtensions.html#Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClientExtensions_RecognizeTextAsync_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_System_String_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_Models_TextRecognitionMode_CancellationToken_">ComputerVisionClientExtensions.RecognizeTextAsync(IComputerVisionClient, String, TextRecognitionMode, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClientExtensions.html#Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClientExtensions_GetTextOperationResultAsync_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_System_String_CancellationToken_">ComputerVisionClientExtensions.GetTextOperationResultAsync(IComputerVisionClient, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClientExtensions.html#Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClientExtensions_BatchReadFileAsync_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_System_String_CancellationToken_">ComputerVisionClientExtensions.BatchReadFileAsync(IComputerVisionClient, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClientExtensions.html#Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClientExtensions_GetReadOperationResultAsync_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_System_String_CancellationToken_">ComputerVisionClientExtensions.GetReadOperationResultAsync(IComputerVisionClient, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClientExtensions.html#Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClientExtensions_AnalyzeImageInStreamAsync_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_Stream_IList_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_Models_VisualFeatureTypes__IList_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_Models_Details__System_String_CancellationToken_">ComputerVisionClientExtensions.AnalyzeImageInStreamAsync(IComputerVisionClient, Stream, IList&lt;VisualFeatureTypes&gt;, IList&lt;Details&gt;, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClientExtensions.html#Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClientExtensions_GetAreaOfInterestInStreamAsync_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_Stream_CancellationToken_">ComputerVisionClientExtensions.GetAreaOfInterestInStreamAsync(IComputerVisionClient, Stream, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClientExtensions.html#Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClientExtensions_DescribeImageInStreamAsync_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_Stream_System_Nullable_System_Int32__System_String_CancellationToken_">ComputerVisionClientExtensions.DescribeImageInStreamAsync(IComputerVisionClient, Stream, Nullable&lt;Int32&gt;, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClientExtensions.html#Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClientExtensions_DetectObjectsInStreamAsync_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_Stream_CancellationToken_">ComputerVisionClientExtensions.DetectObjectsInStreamAsync(IComputerVisionClient, Stream, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClientExtensions.html#Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClientExtensions_GenerateThumbnailInStreamAsync_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_System_Int32_System_Int32_Stream_System_Nullable_System_Boolean__CancellationToken_">ComputerVisionClientExtensions.GenerateThumbnailInStreamAsync(IComputerVisionClient, Int32, Int32, Stream, Nullable&lt;Boolean&gt;, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClientExtensions.html#Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClientExtensions_AnalyzeImageByDomainInStreamAsync_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_System_String_Stream_System_String_CancellationToken_">ComputerVisionClientExtensions.AnalyzeImageByDomainInStreamAsync(IComputerVisionClient, String, Stream, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClientExtensions.html#Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClientExtensions_RecognizePrintedTextInStreamAsync_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_System_Boolean_Stream_System_Nullable_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_Models_OcrLanguages__CancellationToken_">ComputerVisionClientExtensions.RecognizePrintedTextInStreamAsync(IComputerVisionClient, Boolean, Stream, Nullable&lt;OcrLanguages&gt;, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClientExtensions.html#Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClientExtensions_TagImageInStreamAsync_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_Stream_System_String_CancellationToken_">ComputerVisionClientExtensions.TagImageInStreamAsync(IComputerVisionClient, Stream, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClientExtensions.html#Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClientExtensions_RecognizeTextInStreamAsync_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_Stream_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_Models_TextRecognitionMode_CancellationToken_">ComputerVisionClientExtensions.RecognizeTextInStreamAsync(IComputerVisionClient, Stream, TextRecognitionMode, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClientExtensions.html#Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClientExtensions_BatchReadFileInStreamAsync_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_Stream_CancellationToken_">ComputerVisionClientExtensions.BatchReadFileInStreamAsync(IComputerVisionClient, Stream, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="../ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.AppConfigurationAzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AppConfigurationAzureClientBuilderExtensions_AddAppConfiguration__2___0_System_String___1_">AppConfigurationAzureClientBuilderExtensions.AddAppConfiguration&lt;TBuilder, TConfiguration&gt;(TBuilder, String, TConfiguration)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/cognitiveservices/Vision.ComputerVision/src/Generated/IComputerVisionClient.cs/#L32" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

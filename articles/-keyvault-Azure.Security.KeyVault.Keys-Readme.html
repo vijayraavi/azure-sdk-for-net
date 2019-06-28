@@ -1,0 +1,357 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Azure Key Vault Key client library for .NET </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Azure Key Vault Key client library for .NET ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="azure-key-vault-key-client-library-for-net">Azure Key Vault Key client library for .NET</h1>
+
+<p>Azure Key Vault is a cloud service that provides secure storage of keys for encrypting your data. Multiple keys, and multiple versions of the same key, can be kept in the Key Vault. Cryptographic keys in Key Vault are represented as <a href="https://tools.ietf.org/html/rfc7517">JSON Web Key (JWK)</a> objects.</p>
+<p>The Azure Key Vault keys library client supports RSA keys and Elliptic Curve (EC) keys, each with corresponding support in hardware security modules (HSM). It offers operations to create, retrieve, update, delete, purge, backup, restore and list the keys and its versions.</p>
+<p><a href="https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/keyvault/Azure.Security.KeyVault.Keys/src">Source code</a> | Package (NuGet) (coming soon) | [API reference documentation] (coming soon) | <a href="https://docs.microsoft.com/en-us/azure/key-vault/">Product documentation</a> | <a href="https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/keyvault/Azure.Security.KeyVault.Keys/samples">Samples</a></p>
+<h2 id="getting-started">Getting started</h2>
+<h3 id="install-the-package">Install the package</h3>
+<p>Install the Azure Key Vault Keys client library for .NET with <a href="https://www.nuget.org/">NuGet</a>:</p>
+<pre><code class="lang-PowerShell">Install-Package Azure.Security.KeyVault.Keys -IncludePrerelease
+</code></pre>
+<h3 id="prerequisites">Prerequisites</h3>
+<ul>
+<li>An <a href="https://azure.microsoft.com/free/">Azure subscription</a>.</li>
+<li>An existing Key Vault. If you need to create a Key Vault, you can use the Azure Portal or <a href="https://docs.microsoft.com/cli/azure">Azure CLI</a>.</li>
+</ul>
+<p>If you use the Azure CLI, replace <code>&lt;your-resource-group-name&gt;</code> and <code>&lt;your-key-vault-name&gt;</code> with your own, unique names:</p>
+<pre><code class="lang-PowerShell">az keyvault create --resource-group &lt;your-resource-group-name&gt; --name &lt;your-key-vault-name&gt;
+</code></pre>
+<h3 id="authenticate-the-client">Authenticate the client</h3>
+<p>In order to interact with the Key Vault service, you'll need to create an instance of the <a href="src/KeyClient.cs">KeyClient</a> class. You would need a <strong>vault url</strong> and <strong>client secret credentials (client id, client secret, tenant id)</strong> to instantiate a client object.</p>
+<p>Client secret credential authentication is being used in this getting started section but you can find more ways to authenticate with <a href="https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/identity/Azure.Identity">Azure identity</a>.</p>
+<h4 id="createget-credentials">Create/Get credentials</h4>
+<p>Use the <a href="https://docs.microsoft.com/cli/azure">Azure CLI</a> snippet below to create/get client secret credentials.</p>
+<ul>
+<li>Create a service principal and configure its access to Azure resources:
+<pre><code class="lang-PowerShell">az ad sp create-for-rbac -n &lt;your-application-name&gt; --skip-assignment
+</code></pre>
+Output:
+<pre><code class="lang-json">{
+    &quot;appId&quot;: &quot;generated-app-ID&quot;,
+    &quot;displayName&quot;: &quot;dummy-app-name&quot;,
+    &quot;name&quot;: &quot;http://dummy-app-name&quot;,
+    &quot;password&quot;: &quot;random-password&quot;,
+    &quot;tenant&quot;: &quot;tenant-ID&quot;
+}
+</code></pre>
+</li>
+<li>Use the returned credentials above to set  <strong>AZURE_CLIENT_ID</strong>(appId), <strong>AZURE_CLIENT_SECRET</strong>(password) and <strong>AZURE_TENANT_ID</strong>(tenant) environment variables. The following example shows a way to do this in Powershell:</li>
+</ul>
+<pre><code class="lang-cmd">$Env:AZURE_CLIENT_ID=&quot;generated-app-ID&quot;
+$Env:AZURE_CLIENT_SECRET=&quot;random-password&quot;
+$Env:AZURE_TENANT_ID=&quot;tenant-ID&quot;
+</code></pre>
+<ul>
+<li><p>Grant the above mentioned application authorization to perform key operations on the key vault:</p>
+<pre><code class="lang-PowerShell">az keyvault set-policy --name &lt;your-key-vault-name&gt; --spn $AZURE_CLIENT_ID --key-permissions backup delete get list set
+</code></pre>
+<blockquote>
+<p>--key-permissions:
+Accepted values: backup, delete, get, list, purge, recover, restore, set</p>
+</blockquote>
+</li>
+<li><p>Use the above mentioned Key Vault name to retrieve details of your Vault which also contains your Key Vault URL:</p>
+<pre><code class="lang-PowerShell">az keyvault show --name &lt;your-key-vault-name&gt; 
+</code></pre>
+</li>
+</ul>
+<h4 id="create-keyclient">Create KeyClient</h4>
+<p>Once you've populated the <strong>AZURE_CLIENT_ID</strong>, <strong>AZURE_CLIENT_SECRET</strong> and <strong>AZURE_TENANT_ID</strong> environment variables and replaced <strong>your-vault-url</strong> with the above returned URI, you can create the <a href="src/KeyClient.cs">KeyClient</a>:</p>
+<pre><code class="lang-c#">using Azure.Identity;
+using Azure.Security.KeyVault.Keys;
+
+// Create a new key client using the default credential from Azure.Identity
+var client = new KeyClient(vaultUri: &lt;your-vault-url&gt;, credential: new DefaultAzureCredential());
+
+// Create a new key using the key client
+Key key = await Client.CreateKey(&quot;key-name&quot;, KeyType.EllipticCurve);
+</code></pre>
+<blockquote>
+<p>new DefaultAzureCredential():
+Uses the environment variables previously set (<code>AZURE_CLIENT_ID</code>, <code>AZURE_CLIENT_SECRET</code>, and <code>AZURE_TENANT_ID</code>).</p>
+</blockquote>
+<h2 id="key-concepts">Key concepts</h2>
+<h3 id="keys">Keys</h3>
+<p>Azure Key Vault supports multiple key types and algorithms, and enables the use of Hardware Security Modules (HSM) for high value keys.</p>
+<h3 id="key-client">Key Client:</h3>
+<p>A KeyClient providing both synchronous and asynchronous operations exists in the SDK allowing for selection of a client based on an application's use case. Once you've initialized a KeyClient, you can interact with the primary resource types in Key Vault.</p>
+<h2 id="examples">Examples</h2>
+<p>The Azure.Security.KeyVault.Keys package supports synchronous and asynchronous APIs.</p>
+<p>The following section provides several code snippets using the <a href="#create-keyclient">above created</a> <code>client</code>, covering some of the most common Azure Key Vault Key service related tasks:</p>
+<h3 id="sync-examples">Sync examples</h3>
+<ul>
+<li><a href="#create-a-key">Create a Key</a></li>
+<li><a href="#retrieve-a-key">Retrieve a Key</a></li>
+<li><a href="#update-an-existing-key">Update an existing Key</a></li>
+<li><a href="#delete-a-key">Delete a Key</a></li>
+<li><a href="#list-keys">List Keys</a></li>
+</ul>
+<h3 id="async-examples">Async examples</h3>
+<ul>
+<li><a href="#async-create-a-key">Create a Key</a></li>
+</ul>
+<h3 id="create-a-key">Create a Key</h3>
+<p>Create a Key to be stored in the Azure Key Vault. If a key with the same name already exists, then a new version of the key is created.</p>
+<pre><code class="lang-c#">// Create a key. Note that you can specify the type of key
+// i.e. Elliptic curve, Hardware Elliptic Curve, RSA
+Key key = client.CreateKey(&quot;key-name&quot;, KeyType.EllipticCurve);
+
+Console.WriteLine(key.Name);
+Console.WriteLine(key.KeyMaterial.KeyType);
+
+// Create a software RSA key
+var rsaCreateKey = new RsaKeyCreateOptions(&quot;rsa-key-name&quot;, hsm: false);
+Key rsaKey = client.CreateRsaKey(rsaCreateKey);
+
+Console.WriteLine(rsaKey.Name);
+Console.WriteLine(rsaKey.KeyMaterial.KeyType);
+
+// Create a hardware Elliptic Curve key
+var echsmkey = new EcKeyCreateOptions(&quot;ec-key-name&quot;, hsm: true);
+Key ecKey = client.CreateEcKey(echsmkey);
+
+Console.WriteLine(ecKey.Name);
+Console.WriteLine(ecKey.KeyMaterial.KeyType);
+</code></pre>
+<h3 id="retrieve-a-key">Retrieve a Key</h3>
+<p><code>GetKey</code> retrieves a key previously stored in the Key Vault.</p>
+<pre><code class="lang-c#">Key key = client.GetKey(&quot;key-name&quot;);
+
+Console.WriteLine(key.Name);
+Console.WriteLine(key.KeyMaterial.KeyType);
+</code></pre>
+<h3 id="update-an-existing-key">Update an existing Key</h3>
+<p><code>UpdateKey</code> updates a key previously stored in the Key Vault.</p>
+<pre><code class="lang-c#">Key key = client.CreateKey(&quot;key-name&quot;, KeyType.EllipticCurve);
+
+// You can specify additional application-specific metadata in the form of tags.
+key.Tags[&quot;foo&quot;] = &quot;updated tag&quot;;
+
+KeyBase updatedKey = client.UpdateKey(key);
+
+Console.WriteLine(updatedKey.Name);
+Console.WriteLine(updatedKey.Version);
+Console.WriteLine(updatedKey.Updated);
+</code></pre>
+<h3 id="delete-a-key">Delete a Key</h3>
+<p><code>DeleteKey</code> deletes a key previously stored in the Key Vault. When <a href="https://docs.microsoft.com/en-us/azure/key-vault/key-vault-ovw-soft-delete">soft-delete</a> is not enabled for the Key Vault, this operation permanently deletes the key.</p>
+<pre><code class="lang-c#">DeletedKey key = client.DeleteKey(&quot;key-name&quot;);
+
+Console.WriteLine(key.Name);
+Console.WriteLine(key.DeletedDate);
+</code></pre>
+<h3 id="list-keys">List Keys</h3>
+<p>This example lists all the keys in the specified Key Vault.</p>
+<pre><code class="lang-c#">IEnumerable&lt;Response&lt;KeyBase&gt;&gt; allKeys = client.GetKeys();
+
+  foreach (Key key in allKeys)
+  {
+    Console.WriteLine(key.Name);
+  }
+</code></pre>
+<h3 id="async-create-a-key">Async create a Key</h3>
+<p>Async APIs are identical to their synchronous counterparts. Note that all methods end with <code>Async</code>.</p>
+<pre><code class="lang-c#">// Create a key of any type
+Key key = await client.CreateKeyAsync(&quot;key-name&quot;, KeyType.EllipticCurve);
+
+Console.WriteLine(key.Name);
+Console.WriteLine(key.KeyMaterial.KeyType);
+
+// Create a software RSA key
+var rsaCreateKey = new RsaKeyCreateOptions(&quot;rsa-key-name&quot;, hsm: false);
+Key rsaKey = await client.CreateRsaKeyAsync(rsarsaCreateKeyKey);
+
+Console.WriteLine(rsaKey.Name);
+Console.WriteLine(rsaKey.KeyMaterial.KeyType);
+
+// Create a hardware Elliptic Curve key
+var echsmkey = new EcKeyCreateOptions(&quot;ec-key-name&quot;, hsm: true);
+Key ecKey = await client.CreateEcKeyAsync(echsmkey);
+
+Console.WriteLine(ecKey.Name);
+Console.WriteLine(ecKey.KeyMaterial.KeyType);
+</code></pre>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<h3 id="general">General</h3>
+<p>When you interact with the Azure Key Vault Key client library using the .NET SDK, errors returned by the service correspond to the same HTTP status codes returned for <a href="https://docs.microsoft.com/en-us/rest/api/keyvault/">REST API</a> requests.</p>
+<p>For example, if you try to retrieve a Key that doesn't exist in your Key Vault, a <code>404</code> error is returned, indicating <code>Not Found</code>.</p>
+<pre><code class="lang-c#">try
+{
+  Key key = await Client.GetKeyAsync(&quot;some_key&quot;);
+}
+catch (RequestFailedException ex)
+{
+  System.Console.WriteLine(ex.ToString());
+}
+</code></pre>
+<p>You will notice that additional information is logged, like the Client Request ID of the operation.</p>
+<pre><code>Message: 
+    Azure.RequestFailedException : Service request failed.
+    Status: 404 (Not Found) 
+Content:
+    {&quot;error&quot;:{&quot;code&quot;:&quot;KeyNotFound&quot;,&quot;message&quot;:&quot;Key not found: some_key&quot;}}
+    
+Headers:
+    Cache-Control: no-cache
+    Pragma: no-cache
+    Server: Microsoft-IIS/10.0
+    x-ms-keyvault-region: westus
+    x-ms-request-id: 625f870e-10ea-41e5-8380-282e5cf768f2
+    x-ms-keyvault-service-version: 1.1.0.866
+    x-ms-keyvault-network-info: addr=131.107.174.199;act_addr_fam=InterNetwork;
+    X-AspNet-Version: 4.0.30319
+    X-Powered-By: ASP.NET
+    Strict-Transport-Security: max-age=31536000;includeSubDomains
+    X-Content-Type-Options: nosniff
+    Date: Tue, 18 Jun 2019 16:02:11 GMT
+    Content-Length: 75
+    Content-Type: application/json; charset=utf-8
+    Expires: -1
+</code></pre>
+<h2 id="next-steps">Next steps</h2>
+<p>Several Key Vault Keys client library samples are available to you in this GitHub repository. These samples provide example code for additional scenarios commonly encountered while working with Key Vault:</p>
+<ul>
+<li><p><a href="samples/Sample1_HelloWorld.cs">HelloWorld.cs</a> and <a href="samples/Sample1_HelloWorldAsync.cs">HelloWorldAsync.cs</a> - for working with Azure Key Vault, including:</p>
+<ul>
+<li>Create a key</li>
+<li>Get an existing key</li>
+<li>Update an existing key</li>
+<li>Delete a key</li>
+</ul>
+</li>
+<li><p><a href="samples/Sample2_BackupAndRestore.cs">BackupAndRestore.cs</a> and <a href="samples/Sample2_BackupAndRestoreAsync.cs">BackupAndRestoreAsync.cs</a> - Contains the code snippets working with Key Vault keys, including:</p>
+<ul>
+<li>Backup and recover a key</li>
+</ul>
+</li>
+<li><p><a href="samples/Sample3_GetKeys.cs">GetKeys.cs</a> and <a href="samples/Sample3_GetKeysAsync.cs">GetKeysAsync.cs</a> - Example code for working with Key Vault keys, including:</p>
+<ul>
+<li>Create keys</li>
+<li>List all keys in the Key Vault</li>
+<li>Update keys in the Key Vault</li>
+<li>List versions of a specified key</li>
+<li>Delete keys from the Key Vault</li>
+<li>List deleted keys in the Key Vault</li>
+</ul>
+</li>
+</ul>
+<h3 id="additional-documentation">Additional Documentation</h3>
+<ul>
+<li>For more extensive documentation on Azure Key Vault, see the <a href="https://docs.microsoft.com/en-us/rest/api/keyvault/">API reference documentation</a>.</li>
+<li>For Secrets client library see <a href="https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/keyvault/Azure.Security.KeyVault.Secrets">Secrets client library</a>.</li>
+<li>For Certificates client library see <a href="https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/keyvault/Azure.Security.KeyVault.Certificates">Certificates client library</a>.</li>
+</ul>
+<h2 id="contributing">Contributing</h2>
+<p>This project welcomes contributions and suggestions. Most contributions require you to agree to a Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us the rights to use your contribution. For details, visit <a href="https://cla.microsoft.com">https://cla.microsoft.com</a>.</p>
+<p>When you submit a pull request, a CLA-bot will automatically determine whether you need to provide a CLA and decorate the PR appropriately (e.g., label, comment). Simply follow the instructions provided by the bot. You will only need to do this once across all repos using our CLA.</p>
+<p>This project has adopted the <a href="https://opensource.microsoft.com/codeofconduct/">Microsoft Open Source Code of Conduct</a>. For more information see the Code of Conduct FAQ or contact opencode@microsoft.com with any additional questions or comments.</p>
+<!-- LINKS -->
+<p><img src="https://azure-sdk-impressions.azurewebsites.net/api/impressions/azure-sdk-for-net%2Fsdk%2Fkeyvault%2FAzure.Security.KeyVault.Keys%2FFREADME.png" alt="Impressions"></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/docfx_project/articles/-keyvault-Azure.Security.KeyVault.Keys-Readme.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

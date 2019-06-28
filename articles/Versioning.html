@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Azure SDK .NET - Versioning </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Azure SDK .NET - Versioning ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="azure-sdk-net---versioning">Azure SDK .NET - Versioning</h1>
+
+<p>This document covers the basic versioning strategy and which properties to use. It is based on the rules outlined in our <a href="https://github.com/Azure/azure-sdk/blob/master/docs/engineering-system/releases.md#net">Azure SDK Releases doc</a> and it closely matches the <a href="https://github.com/dotnet/arcade/blob/master/Documentation/CorePackages/Versioning.md">.NET versioning rules</a> but simplified to only include the parts necessary for our libraries.</p>
+<h2 id="package-versioning">Package Versioning</h2>
+<p>Package version will look like:</p>
+<pre><code>MAJOR.MINOR.PATCH-PRERELEASE
+</code></pre>
+<p>In the project file use the <code>VersionPrefix</code> property to define the <code>MAJOR.MINOR.PATCH</code> part of the version.</p>
+<pre><code>&lt;VersionPrefix&gt;1.0.0&lt;/VersionPrefix&gt;
+</code></pre>
+<p><code>PRERELEASE</code> will be controlled by:</p>
+<ul>
+<li><strong>BuildNumber:</strong> Should be in the format <code>yyyyMMdd.&lt;build revision&gt;</code> and defaults to today's date <code>yyyyMMdd.1</code> but can be set by passing in and msbuild property for <code>OfficialBuildId</code> with a matching format.</li>
+<li><strong>PreReleaseLabel:</strong> Defaults to <code>dev</code> but can be set by passing in the msbuild property for <code>PreReleaseVersionLabel</code>. Some examples might be &quot;preview&quot;, &quot;preview.1&quot;, etc.</li>
+<li><strong>VersionKind:</strong> Defaults to &quot;&quot; which results to the default dev build label but can be set by passing in the msbuild property <code>DotNetFinalVersionKind</code> to one of the values &quot;&quot;, &quot;prerelease&quot;, or &quot;release&quot;.</li>
+</ul>
+<p>Examples:</p>
+<table>
+<thead>
+<tr>
+<th>VersionKind</th>
+<th>Package version format</th>
+<th>Example package versions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&quot;&quot;</td>
+<td><code>1.2.3-&lt;PreReleaseLabel&gt;.&lt;BuildNumber&gt;</code></td>
+<td><code>1.2.3-dev.20190509.1</code></td>
+</tr>
+<tr>
+<td>&quot;prerelease&quot;</td>
+<td><code>1.2.3-&lt;PreReleaseLabel&gt;</code></td>
+<td><code>1.2.3-preview.1</code></td>
+</tr>
+<tr>
+<td>&quot;release&quot;</td>
+<td><code>1.2.3</code></td>
+<td><code>1.2.3</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="assembly-versioning">Assembly Versioning</h2>
+<p>By default the assembly version will be set to the <code>VersionPrefix</code> property but if the assembly version needs to be different for some reason then it can be independently set by the <code>AssemblyVersion</code> property.</p>
+<h2 id="file-versioning">File Versioning</h2>
+<p>File version has 4 parts and needs to increase every official build. This is especially important when building MSIs.</p>
+<p>They will use the following format which is also used by the .NET team:</p>
+<pre><code>FILEMAJOR.FILEMINOR.FILEPATCH.FILEREVISION
+</code></pre>
+<ul>
+<li><code>FILEMAJOR</code>: Specified in the first part of <code>VersionPrefix</code> property.</li>
+<li><code>FILEMINOR</code>: Set to <code>MINOR * 100 + PATCH / 100</code>, where <code>MINOR</code> and <code>PATCH</code> are the 2nd and 3rd parts of <code>VersionPrefix</code> property.</li>
+<li><code>FILEPATCH</code>: Set to <code>(PATCH % 100) * 100 + yy</code>.</li>
+<li><code>FILEREVISION</code>: Set to <code>(50 * mm + dd) * 100 + r</code>. This algorithm makes it easy to parse the month and date from <code>FILEREVISION</code> while staying in the range of a short which is what a version element uses.</li>
+</ul>
+<p>The versioning scheme imposes the following limits on these version parts:</p>
+<ul>
+<li><code>MAJOR</code> version is in range [0-65535]</li>
+<li><code>MINOR</code> version is in range [0-654]</li>
+<li><code>PATCH</code> version is in range [0-9999]</li>
+</ul>
+<h2 id="build-parameters">Build Parameters</h2>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OfficialBuildId</td>
+<td>ID of current build. The accepted format is <code>yyyyMMdd.r</code>. Should be passed to build in YAML official build defintion.</td>
+</tr>
+<tr>
+<td>DotNetFinalVersionKind</td>
+<td>Specify the kind of version being generated: <code>release</code>, <code>prerelease</code> or empty.</td>
+</tr>
+<tr>
+<td>PreReleaseVersionLabel</td>
+<td>Pre-release label to be used on the string. E.g., <code>preview</code>, <code>preview.1</code>, etc.</td>
+</tr>
+<tr>
+<td>VersionPrefix</td>
+<td>Specify the leading part of the version string. If empty it will default to 1.0.0 from the SDK.</td>
+</tr>
+</tbody>
+</table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/docfx_project/articles/Versioning.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

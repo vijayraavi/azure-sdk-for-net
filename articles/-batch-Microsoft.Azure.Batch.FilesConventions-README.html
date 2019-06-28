@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Azure Batch File Conventions </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Azure Batch File Conventions ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="azure-batch-file-conventions">Azure Batch File Conventions</h1>
+
+<p>A convention-based library for saving and retrieving Azure Batch task output files.</p>
+<h2 id="purpose">Purpose</h2>
+<p>When you run a task in Azure Batch, the files created by that task are on the
+compute node where the task ran.  As long as the compute node remains up, and within
+the file retention time of the task, you can retrieve those files via the Batch API.
+However, if you need the files to remain available even if the compute node is taken
+down (for example, as part of a pool resize), or after the retention time has expired,
+you must persist those files to a durable store.</p>
+<p>This library encapsulates a convention for persisting job and task outputs in Azure blob
+storage.  This allows client code to easily locate the outputs for a given job or
+task, allowing those outputs to be listed or retrieved by ID and purpose.  For example,
+a client can use the library to request 'list all the intermediate files for task 7'
+or 'get me the thumbnail preview for job &quot;mymovie&quot;' without needing to know names or locations.</p>
+<p>The categorization of persisted files as 'output', 'preview', etc. is done using the
+JobOutputKind and TaskOutputKind types.  For job output files, the predefined kinds
+are &quot;JobOutput&quot; and &quot;JobPreview&quot;; for task output files, &quot;TaskOutput&quot;, &quot;TaskPreview&quot;,
+&quot;TaskLog&quot; and &quot;TaskIntermediate&quot;.  You can also define custom kinds if these
+are useful in your workflow.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>The library uses the Azure Storage account linked to your Batch account.  If your Batch account
+doesn't have a linked storage account, you can configure one using the <a href="https://portal.azure.com">Azure portal</a>.</p>
+<h2 id="usage">Usage</h2>
+<p>The library is intended for use in both task code and client code -- in task code to
+persist files, in client code to list and retrieve them.</p>
+<h3 id="persisting-files-in-task-code">Persisting Files in Task Code</h3>
+<p>To persist a file from task code, use the JobOutputStorage and TaskOutputStorage
+constructors that take a job output container URL, and call the SaveAsync method:</p>
+<pre><code>var linkedStorageAccount = new CloudStorageAccount(/* credentials */);
+var jobId = Environment.GetEnvironmentVariable(&quot;AZ_BATCH_JOB_ID&quot;);
+var taskId = Environment.GetEnvironmentVariable(&quot;AZ_BATCH_TASK_ID&quot;);
+
+var taskOutputStorage = new TaskOutputStorage(linkedStorageAccount, jobId, taskId);
+
+await taskOutputStorage.SaveAsync(TaskOutputKind.TaskOutput, &quot;frame_full_res.jpg&quot;);
+await taskOutputStorage.SaveAsync(TaskOutputKind.TaskPreview, &quot;frame_low_res.jpg&quot;);
+</code></pre>
+<p>Note that all output files from a job, including task outputs, are stored in the same container. This means that
+<a href="https://azure.microsoft.com/en-us/documentation/articles/storage-performance-checklist/#blobs">storage throttling limits</a>
+may be enforced if a large number of tasks try to persist files at the same time.</p>
+<h3 id="listing-and-retrieving-files-in-client-code">Listing and Retrieving Files in Client Code</h3>
+<p>To access persisted files from client code, you must configure the client with
+the details of the linked storage account.  Then use the JobOutputStorage and
+TaskOutputStorage constructors that take a CloudStorageAccount, or the extension
+methods on CloudJob and CloudTask.</p>
+<pre><code>var job = await batchClient.JobOperations.GetJobAsync(jobId);
+var jobOutputStorage = job.OutputStorage(linkedStorageAccount);
+
+var jobOutputBlob = jobOutputStorage.ListOutputs(JobOutputKind.JobOutput)
+                                    .SingleOrDefault()
+                                    as CloudBlockBlob;
+
+if (jobOutputBlob != null)
+{
+    await jobOutputBlob.DownloadToFileAsync(&quot;movie.mp4&quot;, FileMode.Create);
+}
+</code></pre>
+<h2 id="conventions">Conventions</h2>
+<p>The conventions library defines paths in Azure blob storage for output storage.
+All outputs from a job, including task outputs, are stored in a single container.
+Within that container, outputs are stored by kind and (for task outputs) task ID.
+This section describes the conventions for the job output container name and for
+paths within the job output container.</p>
+<h3 id="job-output-container-name">Job Output Container Name</h3>
+<p>The job output container name is formed according to the following rules:</p>
+<ul>
+<li>Normalize the job ID to lower case. (Due to the restricted set of letters
+permitted in IDs, there are no locale issues with this normalization.)</li>
+<li>If prepending &quot;job-&quot; to the normalized ID gives a valid container name,
+use that.</li>
+<li>Otherwise:
+<ul>
+<li>Calculate the SHA1 hash of the normalized ID, and express it
+as a 40-character hex string.</li>
+<li>Replace all underscores, colons, and sequences of one or more hyphens in
+the normalized ID by single hyphens, then remove any leading or trailing
+hyphens.</li>
+<li>If the resulting string is empty, use the string &quot;job&quot; instead.</li>
+<li>If the resulting string is longer than 15 characters, truncate it
+to 15 characters. If truncation results in a trailing hyphen, remove
+it.</li>
+<li>The container name is the string &quot;job-&quot;, followed by the truncated
+ID, followed by a hyphen, followed by the hash.</li>
+</ul>
+</li>
+</ul>
+<p>For example, if the job ID is <code>MyTerrificJob</code>, then the container name is
+<code>job-myterrificjob</code> as this is a valid container name. If the job ID is
+<code>my-_EVEN_MORE_-terrific-job</code>, we cannot use <code>job-my-_even_more_-terrific-job</code>
+as this is not a valid container name, so we apply the algorithm:</p>
+<ul>
+<li>The SHA1 hash of <code>my-_even_more_-terrific-job</code> (all lower case) is
+<code>68b05a7d8aa6aa65b9a6892c667a6c406a16ad65</code>.</li>
+<li>Replacing hyphens and underscores by single hyphens in the lower case
+ID gives <code>my-even-more-terrific-job</code>. There are no leading or trailing
+hyphens to remove.</li>
+<li>Truncating to 15 characters gives us <code>my-even-more-te</code>. Again there are
+no leading or trailing hyphens to remove.</li>
+<li>The final container name is <code>job-my-even-more-te-68b05a7d8aa6aa65b9a6892c667a6c406a16ad65</code>.</li>
+</ul>
+<p>The purpose behind this algorithm is to ensure that jobs are given valid and
+unique container names, while preserving human readability as far as possible,
+by where possible using the job ID, and in other cases including a prefix
+based on the job ID.</p>
+<h3 id="blob-path">Blob Path</h3>
+<p>The blob path within the container depends on whether the output is being stored
+as a job output or task output.</p>
+<p>Job outputs are stored as &quot;${kind}/{filename}&quot;.  For example, if the file
+&quot;out/mergeresults.txt&quot; is stored under JobOutputKind.JobOutput, then its path
+within the container is &quot;$JobOutput/out/mergeresults.txt&quot;.</p>
+<p>Task outputs are stored as &quot;{taskid}/${kind}/{filename}&quot;.  For example, if
+the file &quot;analytics.log&quot; from task &quot;analysis-309&quot; is stored under TaskOutputKind.TaskLog,
+then its path within the container is &quot;analysis-309/$TaskLog/analytics.log&quot;.</p>
+<p>The purpose behind this structure is to enable clients to readily locate
+outputs based on their kind - for example, &quot;list the main outputs of the job&quot;
+or &quot;list the log files for task analysis-309&quot;.</p>
+<p><img src="https://azure-sdk-impressions.azurewebsites.net/api/impressions/azure-sdk-for-net%2Fsrc%2FSDKs%2FBatch%2FSupport%2FFileConventions%2FREADME.png" alt="Impressions"></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/docfx_project/articles/-batch-Microsoft.Azure.Batch.FilesConventions-README.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

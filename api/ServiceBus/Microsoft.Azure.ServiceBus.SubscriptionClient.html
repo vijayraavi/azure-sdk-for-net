@@ -1,0 +1,1519 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SubscriptionClient
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SubscriptionClient
+   ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient">
+  
+  
+  <h1 id="Microsoft_Azure_ServiceBus_SubscriptionClient" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient" class="text-break">Class SubscriptionClient
+  </h1>
+  <div class="markdown level0 summary"><p>SubscriptionClient can be used for all basic interactions with a Service Bus Subscription.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Microsoft.Azure.ServiceBus.ClientEntity.html">ClientEntity</a></div>
+    <div class="level2"><span class="xref">SubscriptionClient</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Microsoft.Azure.ServiceBus.ISubscriptionClient.html">ISubscriptionClient</a></div>
+    <div><a class="xref" href="Microsoft.Azure.ServiceBus.Core.IReceiverClient.html">IReceiverClient</a></div>
+    <div><a class="xref" href="Microsoft.Azure.ServiceBus.IClientEntity.html">IClientEntity</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.ClientEntity.html#Microsoft_Azure_ServiceBus_ClientEntity_IsClosedOrClosing">ClientEntity.IsClosedOrClosing</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.ClientEntity.html#Microsoft_Azure_ServiceBus_ClientEntity_OwnsConnection">ClientEntity.OwnsConnection</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.ClientEntity.html#Microsoft_Azure_ServiceBus_ClientEntity_ClientId">ClientEntity.ClientId</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.ClientEntity.html#Microsoft_Azure_ServiceBus_ClientEntity_RetryPolicy">ClientEntity.RetryPolicy</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.ClientEntity.html#Microsoft_Azure_ServiceBus_ClientEntity_CloseAsync">ClientEntity.CloseAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.ClientEntity.html#Microsoft_Azure_ServiceBus_ClientEntity_GetNextId">ClientEntity.GetNextId()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.ClientEntity.html#Microsoft_Azure_ServiceBus_ClientEntity_GenerateClientId_System_String_System_String_">ClientEntity.GenerateClientId(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.ClientEntity.html#Microsoft_Azure_ServiceBus_ClientEntity_ThrowIfClosed">ClientEntity.ThrowIfClosed()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.Azure.ServiceBus.html">Microsoft.Azure.ServiceBus</a></h6>
+  <h6><strong>Assembly</strong>: Microsoft.Azure.ServiceBus.dll</h6>
+  <h5 id="Microsoft_Azure_ServiceBus_SubscriptionClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SubscriptionClient : ClientEntity, ISubscriptionClient, IReceiverClient, IClientEntity</code></pre>
+  </div>
+  <h5 id="Microsoft_Azure_ServiceBus_SubscriptionClient_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>It uses AMQP protocol for communicating with service bus. Use <a class="xref" href="Microsoft.Azure.ServiceBus.Core.MessageReceiver.html">MessageReceiver</a> for advanced set of functionality.</p>
+</div>
+  <h5 id="Microsoft_Azure_ServiceBus_SubscriptionClient_examples"><strong>Examples</strong></h5>
+  <p>Create a new SubscriptionClient</p>
+<pre><code>ISubscriptionClient subscriptionClient = new SubscriptionClient(
+    namespaceConnectionString,
+    topicName,
+    subscriptionName,
+    ReceiveMode.PeekLock,
+    RetryExponential);</code></pre>
+<p>Register a message handler which will be invoked every time a message is received.</p>
+<pre><code>subscriptionClient.RegisterMessageHandler(
+       async (message, token) =>
+       {
+           // Process the message
+           Console.WriteLine($&quot;Received message: SequenceNumber:{message.SystemProperties.SequenceNumber} Body:{Encoding.UTF8.GetString(message.Body)}&quot;);
+
+           // Complete the message so that it is not received again.
+           // This can be done only if the subscriptionClient is opened in ReceiveMode.PeekLock mode.
+           await subscriptionClient.CompleteAsync(message.SystemProperties.LockToken);
+       },
+       async (exceptionEvent) =>
+       {
+           // Process the exception
+           Console.WriteLine(&quot;Exception = &quot; + exceptionEvent.Exception);
+           return Task.CompletedTask;
+       });</code></pre>
+
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SubscriptionClient__ctor_Microsoft_Azure_ServiceBus_ServiceBusConnection_System_String_System_String_Microsoft_Azure_ServiceBus_ReceiveMode_Microsoft_Azure_ServiceBus_RetryPolicy_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SubscriptionClient.%23ctor(Microsoft.Azure.ServiceBus.ServiceBusConnection%2CSystem.String%2CSystem.String%2CMicrosoft.Azure.ServiceBus.ReceiveMode%2CMicrosoft.Azure.ServiceBus.RetryPolicy)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SubscriptionClient.cs/#L123">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_SubscriptionClient__ctor_" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_SubscriptionClient__ctor_Microsoft_Azure_ServiceBus_ServiceBusConnection_System_String_System_String_Microsoft_Azure_ServiceBus_ReceiveMode_Microsoft_Azure_ServiceBus_RetryPolicy_" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.#ctor(Microsoft.Azure.ServiceBus.ServiceBusConnection,System.String,System.String,Microsoft.Azure.ServiceBus.ReceiveMode,Microsoft.Azure.ServiceBus.RetryPolicy)">SubscriptionClient(ServiceBusConnection, String, String, ReceiveMode, RetryPolicy)</h4>
+  <div class="markdown level1 summary"><p>Creates a new instance of the Subscription client on a given <a class="xref" href="Microsoft.Azure.ServiceBus.SubscriptionClient.html#Microsoft_Azure_ServiceBus_SubscriptionClient_ServiceBusConnection">ServiceBusConnection</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SubscriptionClient(ServiceBusConnection serviceBusConnection, string topicPath, string subscriptionName, ReceiveMode receiveMode, RetryPolicy retryPolicy)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusConnection.html">ServiceBusConnection</a></td>
+        <td><span class="parametername">serviceBusConnection</span></td>
+        <td><p>Connection object to the service bus namespace.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">topicPath</span></td>
+        <td><p>Topic path.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">subscriptionName</span></td>
+        <td><p>Subscription name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ReceiveMode.html">ReceiveMode</a></td>
+        <td><span class="parametername">receiveMode</span></td>
+        <td><p>Mode of receive of messages. Defaults to <a class="xref" href="Microsoft.Azure.ServiceBus.SubscriptionClient.html#Microsoft_Azure_ServiceBus_SubscriptionClient_ReceiveMode">ReceiveMode</a>.PeekLock.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.RetryPolicy.html">RetryPolicy</a></td>
+        <td><span class="parametername">retryPolicy</span></td>
+        <td><p>Retry policy for subscription operations. Defaults to <a class="xref" href="Microsoft.Azure.ServiceBus.RetryPolicy.html#Microsoft_Azure_ServiceBus_RetryPolicy_Default">Default</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SubscriptionClient__ctor_Microsoft_Azure_ServiceBus_ServiceBusConnectionStringBuilder_System_String_Microsoft_Azure_ServiceBus_ReceiveMode_Microsoft_Azure_ServiceBus_RetryPolicy_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SubscriptionClient.%23ctor(Microsoft.Azure.ServiceBus.ServiceBusConnectionStringBuilder%2CSystem.String%2CMicrosoft.Azure.ServiceBus.ReceiveMode%2CMicrosoft.Azure.ServiceBus.RetryPolicy)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SubscriptionClient.cs/#L68">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_SubscriptionClient__ctor_" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_SubscriptionClient__ctor_Microsoft_Azure_ServiceBus_ServiceBusConnectionStringBuilder_System_String_Microsoft_Azure_ServiceBus_ReceiveMode_Microsoft_Azure_ServiceBus_RetryPolicy_" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.#ctor(Microsoft.Azure.ServiceBus.ServiceBusConnectionStringBuilder,System.String,Microsoft.Azure.ServiceBus.ReceiveMode,Microsoft.Azure.ServiceBus.RetryPolicy)">SubscriptionClient(ServiceBusConnectionStringBuilder, String, ReceiveMode, RetryPolicy)</h4>
+  <div class="markdown level1 summary"><p>Instantiates a new <a class="xref" href="Microsoft.Azure.ServiceBus.SubscriptionClient.html">SubscriptionClient</a> to perform operations on a subscription.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SubscriptionClient(ServiceBusConnectionStringBuilder connectionStringBuilder, string subscriptionName, ReceiveMode receiveMode = ReceiveMode.PeekLock, RetryPolicy retryPolicy = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusConnectionStringBuilder.html">ServiceBusConnectionStringBuilder</a></td>
+        <td><span class="parametername">connectionStringBuilder</span></td>
+        <td><p><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusConnectionStringBuilder.html">ServiceBusConnectionStringBuilder</a> having namespace and topic information.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">subscriptionName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ReceiveMode.html">ReceiveMode</a></td>
+        <td><span class="parametername">receiveMode</span></td>
+        <td><p>Mode of receive of messages. Defaults to <a class="xref" href="Microsoft.Azure.ServiceBus.SubscriptionClient.html#Microsoft_Azure_ServiceBus_SubscriptionClient_ReceiveMode">ReceiveMode</a>.PeekLock.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.RetryPolicy.html">RetryPolicy</a></td>
+        <td><span class="parametername">retryPolicy</span></td>
+        <td><p>Retry policy for subscription operations. Defaults to <a class="xref" href="Microsoft.Azure.ServiceBus.RetryPolicy.html#Microsoft_Azure_ServiceBus_RetryPolicy_Default">Default</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_SubscriptionClient__ctor_Microsoft_Azure_ServiceBus_ServiceBusConnectionStringBuilder_System_String_Microsoft_Azure_ServiceBus_ReceiveMode_Microsoft_Azure_ServiceBus_RetryPolicy__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Creates a new connection to the subscription, which is opened during the first receive operation.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SubscriptionClient__ctor_System_String_System_String_System_String_Microsoft_Azure_ServiceBus_Primitives_ITokenProvider_Microsoft_Azure_ServiceBus_TransportType_Microsoft_Azure_ServiceBus_ReceiveMode_Microsoft_Azure_ServiceBus_RetryPolicy_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SubscriptionClient.%23ctor(System.String%2CSystem.String%2CSystem.String%2CMicrosoft.Azure.ServiceBus.Primitives.ITokenProvider%2CMicrosoft.Azure.ServiceBus.TransportType%2CMicrosoft.Azure.ServiceBus.ReceiveMode%2CMicrosoft.Azure.ServiceBus.RetryPolicy)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SubscriptionClient.cs/#L102">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_SubscriptionClient__ctor_" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_SubscriptionClient__ctor_System_String_System_String_System_String_Microsoft_Azure_ServiceBus_Primitives_ITokenProvider_Microsoft_Azure_ServiceBus_TransportType_Microsoft_Azure_ServiceBus_ReceiveMode_Microsoft_Azure_ServiceBus_RetryPolicy_" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.#ctor(System.String,System.String,System.String,Microsoft.Azure.ServiceBus.Primitives.ITokenProvider,Microsoft.Azure.ServiceBus.TransportType,Microsoft.Azure.ServiceBus.ReceiveMode,Microsoft.Azure.ServiceBus.RetryPolicy)">SubscriptionClient(String, String, String, ITokenProvider, TransportType, ReceiveMode, RetryPolicy)</h4>
+  <div class="markdown level1 summary"><p>Creates a new instance of the Subscription client using the specified endpoint, entity path, and token provider.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SubscriptionClient(string endpoint, string topicPath, string subscriptionName, ITokenProvider tokenProvider, TransportType transportType = default(TransportType), ReceiveMode receiveMode = ReceiveMode.PeekLock, RetryPolicy retryPolicy = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">endpoint</span></td>
+        <td><p>Fully qualified domain name for Service Bus. Most likely, {yournamespace}.servicebus.windows.net</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">topicPath</span></td>
+        <td><p>Topic path.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">subscriptionName</span></td>
+        <td><p>Subscription name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.Primitives.ITokenProvider.html">ITokenProvider</a></td>
+        <td><span class="parametername">tokenProvider</span></td>
+        <td><p>Token provider which will generate security tokens for authorization.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.TransportType.html">TransportType</a></td>
+        <td><span class="parametername">transportType</span></td>
+        <td><p>Transport type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ReceiveMode.html">ReceiveMode</a></td>
+        <td><span class="parametername">receiveMode</span></td>
+        <td><p>Mode of receive of messages. Defaults to <a class="xref" href="Microsoft.Azure.ServiceBus.SubscriptionClient.html#Microsoft_Azure_ServiceBus_SubscriptionClient_ReceiveMode">ReceiveMode</a>.PeekLock.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.RetryPolicy.html">RetryPolicy</a></td>
+        <td><span class="parametername">retryPolicy</span></td>
+        <td><p>Retry policy for subscription operations. Defaults to <a class="xref" href="Microsoft.Azure.ServiceBus.RetryPolicy.html#Microsoft_Azure_ServiceBus_RetryPolicy_Default">Default</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_SubscriptionClient__ctor_System_String_System_String_System_String_Microsoft_Azure_ServiceBus_Primitives_ITokenProvider_Microsoft_Azure_ServiceBus_TransportType_Microsoft_Azure_ServiceBus_ReceiveMode_Microsoft_Azure_ServiceBus_RetryPolicy__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Creates a new connection to the subscription, which is opened during the first receive operation.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SubscriptionClient__ctor_System_String_System_String_System_String_Microsoft_Azure_ServiceBus_ReceiveMode_Microsoft_Azure_ServiceBus_RetryPolicy_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SubscriptionClient.%23ctor(System.String%2CSystem.String%2CSystem.String%2CMicrosoft.Azure.ServiceBus.ReceiveMode%2CMicrosoft.Azure.ServiceBus.RetryPolicy)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SubscriptionClient.cs/#L80">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_SubscriptionClient__ctor_" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_SubscriptionClient__ctor_System_String_System_String_System_String_Microsoft_Azure_ServiceBus_ReceiveMode_Microsoft_Azure_ServiceBus_RetryPolicy_" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.#ctor(System.String,System.String,System.String,Microsoft.Azure.ServiceBus.ReceiveMode,Microsoft.Azure.ServiceBus.RetryPolicy)">SubscriptionClient(String, String, String, ReceiveMode, RetryPolicy)</h4>
+  <div class="markdown level1 summary"><p>Instantiates a new <a class="xref" href="Microsoft.Azure.ServiceBus.SubscriptionClient.html">SubscriptionClient</a> to perform operations on a subscription.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SubscriptionClient(string connectionString, string topicPath, string subscriptionName, ReceiveMode receiveMode = ReceiveMode.PeekLock, RetryPolicy retryPolicy = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">connectionString</span></td>
+        <td><p>Namespace connection string. Must not contain topic or subscription information.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">topicPath</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">subscriptionName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ReceiveMode.html">ReceiveMode</a></td>
+        <td><span class="parametername">receiveMode</span></td>
+        <td><p>Mode of receive of messages. Defaults to <a class="xref" href="Microsoft.Azure.ServiceBus.SubscriptionClient.html#Microsoft_Azure_ServiceBus_SubscriptionClient_ReceiveMode">ReceiveMode</a>.PeekLock.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.RetryPolicy.html">RetryPolicy</a></td>
+        <td><span class="parametername">retryPolicy</span></td>
+        <td><p>Retry policy for subscription operations. Defaults to <a class="xref" href="Microsoft.Azure.ServiceBus.RetryPolicy.html#Microsoft_Azure_ServiceBus_RetryPolicy_Default">Default</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_SubscriptionClient__ctor_System_String_System_String_System_String_Microsoft_Azure_ServiceBus_ReceiveMode_Microsoft_Azure_ServiceBus_RetryPolicy__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Creates a new connection to the subscription, which is opened during the first receive operation.</p>
+</div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SubscriptionClient_OperationTimeout.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SubscriptionClient.OperationTimeout%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SubscriptionClient.cs/#L183">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_SubscriptionClient_OperationTimeout_" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.OperationTimeout*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_SubscriptionClient_OperationTimeout" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.OperationTimeout">OperationTimeout</h4>
+  <div class="markdown level1 summary"><p>Duration after which individual operations will timeout.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TimeSpan OperationTimeout { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TimeSpan</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Microsoft.Azure.ServiceBus.ClientEntity.html#Microsoft_Azure_ServiceBus_ClientEntity_OperationTimeout">ClientEntity.OperationTimeout</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SubscriptionClient_Path.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SubscriptionClient.Path%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SubscriptionClient.cs/#L168">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_SubscriptionClient_Path_" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.Path*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_SubscriptionClient_Path" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.Path">Path</h4>
+  <div class="markdown level1 summary"><p>Gets the formatted path of the subscription client.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Path { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Microsoft.Azure.ServiceBus.ClientEntity.html#Microsoft_Azure_ServiceBus_ClientEntity_Path">ClientEntity.Path</a></div>
+  <h5 id="Microsoft_Azure_ServiceBus_SubscriptionClient_Path_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Microsoft.Azure.ServiceBus.EntityNameHelper.html#Microsoft_Azure_ServiceBus_EntityNameHelper_FormatSubscriptionPath_System_String_System_String_">FormatSubscriptionPath(String, String)</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SubscriptionClient_PrefetchCount.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SubscriptionClient.PrefetchCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SubscriptionClient.cs/#L208">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_SubscriptionClient_PrefetchCount_" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.PrefetchCount*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_SubscriptionClient_PrefetchCount" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.PrefetchCount">PrefetchCount</h4>
+  <div class="markdown level1 summary"><p>Prefetch speeds up the message flow by aiming to have a message readily available for local retrieval when and before the application asks for one using Receive.
+Setting a non-zero value prefetches PrefetchCount number of messages.
+Setting the value to zero turns prefetch off.
+Defaults to 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int PrefetchCount { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_SubscriptionClient_PrefetchCount_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+When Prefetch is enabled, the client will quietly acquire more messages, up to the PrefetchCount limit, than what the application
+immediately asks for. The message pump will therefore acquire a message for immediate consumption
+that will be returned as soon as available, and the client will proceed to acquire further messages to fill the prefetch buffer in the background.
+</p>
+<p>
+While messages are available in the prefetch buffer, any subsequent ReceiveAsync calls will be immediately satisfied from the buffer, and the buffer is
+replenished in the background as space becomes available.If there are no messages available for delivery, the receive operation will drain the
+buffer and then wait or block as expected.
+</p>
+<p>Updates to this value take effect on the next receive call to the service.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SubscriptionClient_ReceiveMode.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SubscriptionClient.ReceiveMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SubscriptionClient.cs/#L178">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_SubscriptionClient_ReceiveMode_" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.ReceiveMode*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_SubscriptionClient_ReceiveMode" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.ReceiveMode">ReceiveMode</h4>
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="Microsoft.Azure.ServiceBus.ReceiveMode.html">ReceiveMode</a> for the SubscriptionClient.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReceiveMode ReceiveMode { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ReceiveMode.html">ReceiveMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SubscriptionClient_RegisteredPlugins.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SubscriptionClient.RegisteredPlugins%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SubscriptionClient.cs/#L605">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_SubscriptionClient_RegisteredPlugins_" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.RegisteredPlugins*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_SubscriptionClient_RegisteredPlugins" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.RegisteredPlugins">RegisteredPlugins</h4>
+  <div class="markdown level1 summary"><p>Gets a list of currently registered plugins for this SubscriptionClient.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IList&lt;ServiceBusPlugin&gt; RegisteredPlugins { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IList</span>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.Core.ServiceBusPlugin.html">ServiceBusPlugin</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Microsoft.Azure.ServiceBus.ClientEntity.html#Microsoft_Azure_ServiceBus_ClientEntity_RegisteredPlugins">ClientEntity.RegisteredPlugins</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SubscriptionClient_ServiceBusConnection.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SubscriptionClient.ServiceBusConnection%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SubscriptionClient.cs/#L232">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_SubscriptionClient_ServiceBusConnection_" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.ServiceBusConnection*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_SubscriptionClient_ServiceBusConnection" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.ServiceBusConnection">ServiceBusConnection</h4>
+  <div class="markdown level1 summary"><p>Connection object to the service bus namespace.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override ServiceBusConnection ServiceBusConnection { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusConnection.html">ServiceBusConnection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Microsoft.Azure.ServiceBus.ClientEntity.html#Microsoft_Azure_ServiceBus_ClientEntity_ServiceBusConnection">ClientEntity.ServiceBusConnection</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SubscriptionClient_SubscriptionName.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SubscriptionClient.SubscriptionName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SubscriptionClient.cs/#L173">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_SubscriptionClient_SubscriptionName_" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.SubscriptionName*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_SubscriptionClient_SubscriptionName" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.SubscriptionName">SubscriptionName</h4>
+  <div class="markdown level1 summary"><p>Gets the name of the subscription.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SubscriptionName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SubscriptionClient_TopicPath.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SubscriptionClient.TopicPath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SubscriptionClient.cs/#L162">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_SubscriptionClient_TopicPath_" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.TopicPath*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_SubscriptionClient_TopicPath" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.TopicPath">TopicPath</h4>
+  <div class="markdown level1 summary"><p>Gets the path of the corresponding topic.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string TopicPath { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SubscriptionClient_AbandonAsync_System_String_IDictionary_System_String_System_Object__.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SubscriptionClient.AbandonAsync(System.String%2CIDictionary%7BSystem.String%2CSystem.Object%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SubscriptionClient.cs/#L334">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_SubscriptionClient_AbandonAsync_" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.AbandonAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_SubscriptionClient_AbandonAsync_System_String_IDictionary_System_String_System_Object__" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.AbandonAsync(System.String,IDictionary{System.String,System.Object})">AbandonAsync(String, IDictionary&lt;String, Object&gt;)</h4>
+  <div class="markdown level1 summary"><p>Abandons a <a class="xref" href="Microsoft.Azure.ServiceBus.Message.html">Message</a> using a lock token. This will make the message available again for processing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task AbandonAsync(string lockToken, IDictionary&lt;string, object&gt; propertiesToModify = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">lockToken</span></td>
+        <td><p>The lock token of the corresponding message to abandon.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;</td>
+        <td><span class="parametername">propertiesToModify</span></td>
+        <td><p>The properties of the message to modify while abandoning the message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_SubscriptionClient_AbandonAsync_System_String_IDictionary_System_String_System_Object___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A lock token can be found in <a class="xref" href="Microsoft.Azure.ServiceBus.Message.SystemPropertiesCollection.html#Microsoft_Azure_ServiceBus_Message_SystemPropertiesCollection_LockToken">LockToken</a>,
+only when <a class="xref" href="Microsoft.Azure.ServiceBus.SubscriptionClient.html#Microsoft_Azure_ServiceBus_SubscriptionClient_ReceiveMode">ReceiveMode</a> is set to <a class="xref" href="Microsoft.Azure.ServiceBus.ReceiveMode.html#Microsoft_Azure_ServiceBus_ReceiveMode_PeekLock">PeekLock</a>.
+Abandoning a message will increase the delivery count on the message.
+This operation can only be performed on messages that were received by this client.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SubscriptionClient_AddRuleAsync_Microsoft_Azure_ServiceBus_RuleDescription_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SubscriptionClient.AddRuleAsync(Microsoft.Azure.ServiceBus.RuleDescription)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SubscriptionClient.cs/#L480">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_SubscriptionClient_AddRuleAsync_" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.AddRuleAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_SubscriptionClient_AddRuleAsync_Microsoft_Azure_ServiceBus_RuleDescription_" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.AddRuleAsync(Microsoft.Azure.ServiceBus.RuleDescription)">AddRuleAsync(RuleDescription)</h4>
+  <div class="markdown level1 summary"><p>Adds a rule to the current subscription to filter the messages reaching from topic to the subscription.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task AddRuleAsync(RuleDescription description)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.RuleDescription.html">RuleDescription</a></td>
+        <td><span class="parametername">description</span></td>
+        <td><p>The rule description that provides the rule to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>A task instance that represents the asynchronous add rule operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_SubscriptionClient_AddRuleAsync_Microsoft_Azure_ServiceBus_RuleDescription__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>You can add rules to the subscription that decides which messages from the topic should reach the subscription.
+A default <a class="xref" href="Microsoft.Azure.ServiceBus.TrueFilter.html">TrueFilter</a> rule named <a class="xref" href="Microsoft.Azure.ServiceBus.RuleDescription.html#Microsoft_Azure_ServiceBus_RuleDescription_DefaultRuleName">DefaultRuleName</a> is always added while creation of the Subscription.
+You can add multiple rules with distinct names to the same subscription.
+Multiple filters combine with each other using logical OR condition. i.e., If any filter succeeds, the message is passed on to the subscription.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SubscriptionClient_AddRuleAsync_System_String_Microsoft_Azure_ServiceBus_Filter_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SubscriptionClient.AddRuleAsync(System.String%2CMicrosoft.Azure.ServiceBus.Filter)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SubscriptionClient.cs/#L464">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_SubscriptionClient_AddRuleAsync_" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.AddRuleAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_SubscriptionClient_AddRuleAsync_System_String_Microsoft_Azure_ServiceBus_Filter_" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.AddRuleAsync(System.String,Microsoft.Azure.ServiceBus.Filter)">AddRuleAsync(String, Filter)</h4>
+  <div class="markdown level1 summary"><p>Adds a rule to the current subscription to filter the messages reaching from topic to the subscription.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task AddRuleAsync(string ruleName, Filter filter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">ruleName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.Filter.html">Filter</a></td>
+        <td><span class="parametername">filter</span></td>
+        <td><p>The filter expression against which messages will be matched.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>A task instance that represents the asynchronous add rule operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_SubscriptionClient_AddRuleAsync_System_String_Microsoft_Azure_ServiceBus_Filter__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>You can add rules to the subscription that decides which messages from the topic should reach the subscription.
+A default <a class="xref" href="Microsoft.Azure.ServiceBus.TrueFilter.html">TrueFilter</a> rule named <a class="xref" href="Microsoft.Azure.ServiceBus.RuleDescription.html#Microsoft_Azure_ServiceBus_RuleDescription_DefaultRuleName">DefaultRuleName</a> is always added while creation of the Subscription.
+You can add multiple rules with distinct names to the same subscription.
+Multiple filters combine with each other using logical OR condition. i.e., If any filter succeeds, the message is passed on to the subscription.
+Max allowed length of rule name is 50 chars.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SubscriptionClient_CompleteAsync_System_String_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SubscriptionClient.CompleteAsync(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SubscriptionClient.cs/#L318">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_SubscriptionClient_CompleteAsync_" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.CompleteAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_SubscriptionClient_CompleteAsync_System_String_" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.CompleteAsync(System.String)">CompleteAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Completes a <a class="xref" href="Microsoft.Azure.ServiceBus.Message.html">Message</a> using its lock token. This will delete the message from the subscription.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task CompleteAsync(string lockToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">lockToken</span></td>
+        <td><p>The lock token of the corresponding message to complete.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_SubscriptionClient_CompleteAsync_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A lock token can be found in <a class="xref" href="Microsoft.Azure.ServiceBus.Message.SystemPropertiesCollection.html#Microsoft_Azure_ServiceBus_Message_SystemPropertiesCollection_LockToken">LockToken</a>,
+only when <a class="xref" href="Microsoft.Azure.ServiceBus.SubscriptionClient.html#Microsoft_Azure_ServiceBus_SubscriptionClient_ReceiveMode">ReceiveMode</a> is set to <a class="xref" href="Microsoft.Azure.ServiceBus.ReceiveMode.html#Microsoft_Azure_ServiceBus_ReceiveMode_PeekLock">PeekLock</a>.
+This operation can only be performed on messages that were received by this client.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SubscriptionClient_DeadLetterAsync_System_String_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SubscriptionClient.DeadLetterAsync(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SubscriptionClient.cs/#L351">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_SubscriptionClient_DeadLetterAsync_" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.DeadLetterAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_SubscriptionClient_DeadLetterAsync_System_String_" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.DeadLetterAsync(System.String)">DeadLetterAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Moves a message to the deadletter sub-queue.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task DeadLetterAsync(string lockToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">lockToken</span></td>
+        <td><p>The lock token of the corresponding message to deadletter.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_SubscriptionClient_DeadLetterAsync_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A lock token can be found in <a class="xref" href="Microsoft.Azure.ServiceBus.Message.SystemPropertiesCollection.html#Microsoft_Azure_ServiceBus_Message_SystemPropertiesCollection_LockToken">LockToken</a>,
+only when <a class="xref" href="Microsoft.Azure.ServiceBus.SubscriptionClient.html#Microsoft_Azure_ServiceBus_SubscriptionClient_ReceiveMode">ReceiveMode</a> is set to <a class="xref" href="Microsoft.Azure.ServiceBus.ReceiveMode.html#Microsoft_Azure_ServiceBus_ReceiveMode_PeekLock">PeekLock</a>.
+In order to receive a message from the deadletter sub-queue, you will need a new <a class="xref" href="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.html">IMessageReceiver</a> or <a class="xref" href="Microsoft.Azure.ServiceBus.ISubscriptionClient.html">ISubscriptionClient</a>, with the corresponding path.
+You can use <a class="xref" href="Microsoft.Azure.ServiceBus.EntityNameHelper.html#Microsoft_Azure_ServiceBus_EntityNameHelper_FormatDeadLetterPath_System_String_">FormatDeadLetterPath(String)</a> to help with this.
+This operation can only be performed on messages that were received by this client.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SubscriptionClient_DeadLetterAsync_System_String_IDictionary_System_String_System_Object__.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SubscriptionClient.DeadLetterAsync(System.String%2CIDictionary%7BSystem.String%2CSystem.Object%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SubscriptionClient.cs/#L369">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_SubscriptionClient_DeadLetterAsync_" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.DeadLetterAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_SubscriptionClient_DeadLetterAsync_System_String_IDictionary_System_String_System_Object__" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.DeadLetterAsync(System.String,IDictionary{System.String,System.Object})">DeadLetterAsync(String, IDictionary&lt;String, Object&gt;)</h4>
+  <div class="markdown level1 summary"><p>Moves a message to the deadletter sub-queue.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task DeadLetterAsync(string lockToken, IDictionary&lt;string, object&gt; propertiesToModify)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">lockToken</span></td>
+        <td><p>The lock token of the corresponding message to deadletter.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;</td>
+        <td><span class="parametername">propertiesToModify</span></td>
+        <td><p>The properties of the message to modify while moving to sub-queue.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_SubscriptionClient_DeadLetterAsync_System_String_IDictionary_System_String_System_Object___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A lock token can be found in <a class="xref" href="Microsoft.Azure.ServiceBus.Message.SystemPropertiesCollection.html#Microsoft_Azure_ServiceBus_Message_SystemPropertiesCollection_LockToken">LockToken</a>,
+only when <a class="xref" href="Microsoft.Azure.ServiceBus.SubscriptionClient.html#Microsoft_Azure_ServiceBus_SubscriptionClient_ReceiveMode">ReceiveMode</a> is set to <a class="xref" href="Microsoft.Azure.ServiceBus.ReceiveMode.html#Microsoft_Azure_ServiceBus_ReceiveMode_PeekLock">PeekLock</a>.
+In order to receive a message from the deadletter queue, you will need a new <a class="xref" href="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.html">IMessageReceiver</a>, with the corresponding path.
+You can use <a class="xref" href="Microsoft.Azure.ServiceBus.EntityNameHelper.html#Microsoft_Azure_ServiceBus_EntityNameHelper_FormatDeadLetterPath_System_String_">FormatDeadLetterPath(String)</a> to help with this.
+This operation can only be performed on messages that were received by this receiver.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SubscriptionClient_DeadLetterAsync_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SubscriptionClient.DeadLetterAsync(System.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SubscriptionClient.cs/#L388">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_SubscriptionClient_DeadLetterAsync_" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.DeadLetterAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_SubscriptionClient_DeadLetterAsync_System_String_System_String_System_String_" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.DeadLetterAsync(System.String,System.String,System.String)">DeadLetterAsync(String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Moves a message to the deadletter sub-queue.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task DeadLetterAsync(string lockToken, string deadLetterReason, string deadLetterErrorDescription = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">lockToken</span></td>
+        <td><p>The lock token of the corresponding message to deadletter.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">deadLetterReason</span></td>
+        <td><p>The reason for deadlettering the message.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">deadLetterErrorDescription</span></td>
+        <td><p>The error description for deadlettering the message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_SubscriptionClient_DeadLetterAsync_System_String_System_String_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A lock token can be found in <a class="xref" href="Microsoft.Azure.ServiceBus.Message.SystemPropertiesCollection.html#Microsoft_Azure_ServiceBus_Message_SystemPropertiesCollection_LockToken">LockToken</a>,
+only when <a class="xref" href="Microsoft.Azure.ServiceBus.SubscriptionClient.html#Microsoft_Azure_ServiceBus_SubscriptionClient_ReceiveMode">ReceiveMode</a> is set to <a class="xref" href="Microsoft.Azure.ServiceBus.ReceiveMode.html#Microsoft_Azure_ServiceBus_ReceiveMode_PeekLock">PeekLock</a>.
+In order to receive a message from the deadletter queue, you will need a new <a class="xref" href="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.html">IMessageReceiver</a>, with the corresponding path.
+You can use <a class="xref" href="Microsoft.Azure.ServiceBus.EntityNameHelper.html#Microsoft_Azure_ServiceBus_EntityNameHelper_FormatDeadLetterPath_System_String_">FormatDeadLetterPath(String)</a> to help with this.
+This operation can only be performed on messages that were received by this receiver.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SubscriptionClient_GetRulesAsync.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SubscriptionClient.GetRulesAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SubscriptionClient.cs/#L564">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_SubscriptionClient_GetRulesAsync_" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.GetRulesAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_SubscriptionClient_GetRulesAsync" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.GetRulesAsync">GetRulesAsync()</h4>
+  <div class="markdown level1 summary"><p>Get all rules associated with the subscription.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;RuleDescription&gt;&gt; GetRulesAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.RuleDescription.html">RuleDescription</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SubscriptionClient_OnClosingAsync.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SubscriptionClient.OnClosingAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SubscriptionClient.cs/#L627">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_SubscriptionClient_OnClosingAsync_" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.OnClosingAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_SubscriptionClient_OnClosingAsync" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.OnClosingAsync">OnClosingAsync()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override Task OnClosingAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Microsoft.Azure.ServiceBus.ClientEntity.html#Microsoft_Azure_ServiceBus_ClientEntity_OnClosingAsync">ClientEntity.OnClosingAsync()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SubscriptionClient_RegisterMessageHandler_Func_Microsoft_Azure_ServiceBus_Message_CancellationToken_Task__Func_Microsoft_Azure_ServiceBus_ExceptionReceivedEventArgs_Task__.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SubscriptionClient.RegisterMessageHandler(Func%7BMicrosoft.Azure.ServiceBus.Message%2CCancellationToken%2CTask%7D%2CFunc%7BMicrosoft.Azure.ServiceBus.ExceptionReceivedEventArgs%2CTask%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SubscriptionClient.cs/#L403">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_SubscriptionClient_RegisterMessageHandler_" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.RegisterMessageHandler*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_SubscriptionClient_RegisterMessageHandler_Func_Microsoft_Azure_ServiceBus_Message_CancellationToken_Task__Func_Microsoft_Azure_ServiceBus_ExceptionReceivedEventArgs_Task__" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.RegisterMessageHandler(Func{Microsoft.Azure.ServiceBus.Message,CancellationToken,Task},Func{Microsoft.Azure.ServiceBus.ExceptionReceivedEventArgs,Task})">RegisterMessageHandler(Func&lt;Message, CancellationToken, Task&gt;, Func&lt;ExceptionReceivedEventArgs, Task&gt;)</h4>
+  <div class="markdown level1 summary"><p>Receive messages continuously from the entity. Registers a message handler and begins a new thread to receive messages.
+This handler(<see cref="!:Func&lt;Message, CancellationToken, Task>"></see>) is awaited on every time a new message is received by the receiver.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterMessageHandler(Func&lt;Message, CancellationToken, Task&gt; handler, Func&lt;ExceptionReceivedEventArgs, Task&gt; exceptionReceivedHandler)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.Message.html">Message</a>, <span class="xref">CancellationToken</span>, <span class="xref">Task</span>&gt;</td>
+        <td><span class="parametername">handler</span></td>
+        <td><p>A <see cref="!:Func&lt;Message, CancellationToken, Task>"></see> that processes messages.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.ExceptionReceivedEventArgs.html">ExceptionReceivedEventArgs</a>, <span class="xref">Task</span>&gt;</td>
+        <td><span class="parametername">exceptionReceivedHandler</span></td>
+        <td><p>A <see cref="!:Func&lt;T1, TResult>"></see> that is invoked during exceptions.
+<a class="xref" href="Microsoft.Azure.ServiceBus.ExceptionReceivedEventArgs.html">ExceptionReceivedEventArgs</a> contains contextual information regarding the exception.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_SubscriptionClient_RegisterMessageHandler_Func_Microsoft_Azure_ServiceBus_Message_CancellationToken_Task__Func_Microsoft_Azure_ServiceBus_ExceptionReceivedEventArgs_Task___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Enable prefetch to speed up the receive rate.
+Use <a class="xref" href="Microsoft.Azure.ServiceBus.SubscriptionClient.html#Microsoft_Azure_ServiceBus_SubscriptionClient_RegisterMessageHandler_Func_Microsoft_Azure_ServiceBus_Message_CancellationToken_Task__Microsoft_Azure_ServiceBus_MessageHandlerOptions_">RegisterMessageHandler(Func&lt;Message, CancellationToken, Task&gt;, MessageHandlerOptions)</a> to configure the settings of the pump.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SubscriptionClient_RegisterMessageHandler_Func_Microsoft_Azure_ServiceBus_Message_CancellationToken_Task__Microsoft_Azure_ServiceBus_MessageHandlerOptions_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SubscriptionClient.RegisterMessageHandler(Func%7BMicrosoft.Azure.ServiceBus.Message%2CCancellationToken%2CTask%7D%2CMicrosoft.Azure.ServiceBus.MessageHandlerOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SubscriptionClient.cs/#L416">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_SubscriptionClient_RegisterMessageHandler_" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.RegisterMessageHandler*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_SubscriptionClient_RegisterMessageHandler_Func_Microsoft_Azure_ServiceBus_Message_CancellationToken_Task__Microsoft_Azure_ServiceBus_MessageHandlerOptions_" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.RegisterMessageHandler(Func{Microsoft.Azure.ServiceBus.Message,CancellationToken,Task},Microsoft.Azure.ServiceBus.MessageHandlerOptions)">RegisterMessageHandler(Func&lt;Message, CancellationToken, Task&gt;, MessageHandlerOptions)</h4>
+  <div class="markdown level1 summary"><p>Receive messages continuously from the entity. Registers a message handler and begins a new thread to receive messages.
+This handler(<see cref="!:Func&lt;Message, CancellationToken, Task>"></see>) is awaited on every time a new message is received by the receiver.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterMessageHandler(Func&lt;Message, CancellationToken, Task&gt; handler, MessageHandlerOptions messageHandlerOptions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.Message.html">Message</a>, <span class="xref">CancellationToken</span>, <span class="xref">Task</span>&gt;</td>
+        <td><span class="parametername">handler</span></td>
+        <td><p>A <see cref="!:Func&lt;Message, CancellationToken, Task>"></see> that processes messages.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.MessageHandlerOptions.html">MessageHandlerOptions</a></td>
+        <td><span class="parametername">messageHandlerOptions</span></td>
+        <td><p>The <a class="xref" href="Microsoft.Azure.ServiceBus.MessageHandlerOptions.html">MessageHandlerOptions</a> options used to configure the settings of the pump.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_SubscriptionClient_RegisterMessageHandler_Func_Microsoft_Azure_ServiceBus_Message_CancellationToken_Task__Microsoft_Azure_ServiceBus_MessageHandlerOptions__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Enable prefetch to speed up the receive rate.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SubscriptionClient_RegisterPlugin_Microsoft_Azure_ServiceBus_Core_ServiceBusPlugin_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SubscriptionClient.RegisterPlugin(Microsoft.Azure.ServiceBus.Core.ServiceBusPlugin)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SubscriptionClient.cs/#L611">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_SubscriptionClient_RegisterPlugin_" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.RegisterPlugin*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_SubscriptionClient_RegisterPlugin_Microsoft_Azure_ServiceBus_Core_ServiceBusPlugin_" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.RegisterPlugin(Microsoft.Azure.ServiceBus.Core.ServiceBusPlugin)">RegisterPlugin(ServiceBusPlugin)</h4>
+  <div class="markdown level1 summary"><p>Registers a <a class="xref" href="Microsoft.Azure.ServiceBus.Core.ServiceBusPlugin.html">ServiceBusPlugin</a> to be used for receiving messages from Service Bus.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void RegisterPlugin(ServiceBusPlugin serviceBusPlugin)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.Core.ServiceBusPlugin.html">ServiceBusPlugin</a></td>
+        <td><span class="parametername">serviceBusPlugin</span></td>
+        <td><p>The <a class="xref" href="Microsoft.Azure.ServiceBus.Core.ServiceBusPlugin.html">ServiceBusPlugin</a> to register</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Microsoft.Azure.ServiceBus.ClientEntity.html#Microsoft_Azure_ServiceBus_ClientEntity_RegisterPlugin_Microsoft_Azure_ServiceBus_Core_ServiceBusPlugin_">ClientEntity.RegisterPlugin(ServiceBusPlugin)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SubscriptionClient_RegisterSessionHandler_Func_Microsoft_Azure_ServiceBus_IMessageSession_Microsoft_Azure_ServiceBus_Message_CancellationToken_Task__Func_Microsoft_Azure_ServiceBus_ExceptionReceivedEventArgs_Task__.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SubscriptionClient.RegisterSessionHandler(Func%7BMicrosoft.Azure.ServiceBus.IMessageSession%2CMicrosoft.Azure.ServiceBus.Message%2CCancellationToken%2CTask%7D%2CFunc%7BMicrosoft.Azure.ServiceBus.ExceptionReceivedEventArgs%2CTask%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SubscriptionClient.cs/#L432">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_SubscriptionClient_RegisterSessionHandler_" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.RegisterSessionHandler*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_SubscriptionClient_RegisterSessionHandler_Func_Microsoft_Azure_ServiceBus_IMessageSession_Microsoft_Azure_ServiceBus_Message_CancellationToken_Task__Func_Microsoft_Azure_ServiceBus_ExceptionReceivedEventArgs_Task__" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.RegisterSessionHandler(Func{Microsoft.Azure.ServiceBus.IMessageSession,Microsoft.Azure.ServiceBus.Message,CancellationToken,Task},Func{Microsoft.Azure.ServiceBus.ExceptionReceivedEventArgs,Task})">RegisterSessionHandler(Func&lt;IMessageSession, Message, CancellationToken, Task&gt;, Func&lt;ExceptionReceivedEventArgs, Task&gt;)</h4>
+  <div class="markdown level1 summary"><p>Receive session messages continuously from the queue. Registers a message handler and begins a new thread to receive session-messages.
+This handler(<see cref="!:Func&lt;IMessageSession, Message, CancellationToken, Task>"></see>) is awaited on every time a new message is received by the subscription client.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterSessionHandler(Func&lt;IMessageSession, Message, CancellationToken, Task&gt; handler, Func&lt;ExceptionReceivedEventArgs, Task&gt; exceptionReceivedHandler)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.IMessageSession.html">IMessageSession</a>, <a class="xref" href="Microsoft.Azure.ServiceBus.Message.html">Message</a>, <span class="xref">CancellationToken</span>, <span class="xref">Task</span>&gt;</td>
+        <td><span class="parametername">handler</span></td>
+        <td><p>A <see cref="!:Func&lt;IMessageSession, Message, CancellationToken, Task>"></see> that processes messages.
+<a class="xref" href="Microsoft.Azure.ServiceBus.IMessageSession.html">IMessageSession</a> contains the session information, and must be used to perform Complete/Abandon/Deadletter or other such operations on the <a class="xref" href="Microsoft.Azure.ServiceBus.Message.html">Message</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.ExceptionReceivedEventArgs.html">ExceptionReceivedEventArgs</a>, <span class="xref">Task</span>&gt;</td>
+        <td><span class="parametername">exceptionReceivedHandler</span></td>
+        <td><p>A <see cref="!:Func&lt;T1, TResult>"></see> that is invoked during exceptions.
+<a class="xref" href="Microsoft.Azure.ServiceBus.ExceptionReceivedEventArgs.html">ExceptionReceivedEventArgs</a> contains contextual information regarding the exception.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_SubscriptionClient_RegisterSessionHandler_Func_Microsoft_Azure_ServiceBus_IMessageSession_Microsoft_Azure_ServiceBus_Message_CancellationToken_Task__Func_Microsoft_Azure_ServiceBus_ExceptionReceivedEventArgs_Task___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Enable prefetch to speed up the receive rate.
+Use <a class="xref" href="Microsoft.Azure.ServiceBus.SubscriptionClient.html#Microsoft_Azure_ServiceBus_SubscriptionClient_RegisterSessionHandler_Func_Microsoft_Azure_ServiceBus_IMessageSession_Microsoft_Azure_ServiceBus_Message_CancellationToken_Task__Microsoft_Azure_ServiceBus_SessionHandlerOptions_">RegisterSessionHandler(Func&lt;IMessageSession, Message, CancellationToken, Task&gt;, SessionHandlerOptions)</a> to configure the settings of the pump.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SubscriptionClient_RegisterSessionHandler_Func_Microsoft_Azure_ServiceBus_IMessageSession_Microsoft_Azure_ServiceBus_Message_CancellationToken_Task__Microsoft_Azure_ServiceBus_SessionHandlerOptions_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SubscriptionClient.RegisterSessionHandler(Func%7BMicrosoft.Azure.ServiceBus.IMessageSession%2CMicrosoft.Azure.ServiceBus.Message%2CCancellationToken%2CTask%7D%2CMicrosoft.Azure.ServiceBus.SessionHandlerOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SubscriptionClient.cs/#L446">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_SubscriptionClient_RegisterSessionHandler_" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.RegisterSessionHandler*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_SubscriptionClient_RegisterSessionHandler_Func_Microsoft_Azure_ServiceBus_IMessageSession_Microsoft_Azure_ServiceBus_Message_CancellationToken_Task__Microsoft_Azure_ServiceBus_SessionHandlerOptions_" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.RegisterSessionHandler(Func{Microsoft.Azure.ServiceBus.IMessageSession,Microsoft.Azure.ServiceBus.Message,CancellationToken,Task},Microsoft.Azure.ServiceBus.SessionHandlerOptions)">RegisterSessionHandler(Func&lt;IMessageSession, Message, CancellationToken, Task&gt;, SessionHandlerOptions)</h4>
+  <div class="markdown level1 summary"><p>Receive session messages continuously from the queue. Registers a message handler and begins a new thread to receive session-messages.
+This handler(<see cref="!:Func&lt;IMessageSession, Message, CancellationToken, Task>"></see>) is awaited on every time a new message is received by the subscription client.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterSessionHandler(Func&lt;IMessageSession, Message, CancellationToken, Task&gt; handler, SessionHandlerOptions sessionHandlerOptions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.IMessageSession.html">IMessageSession</a>, <a class="xref" href="Microsoft.Azure.ServiceBus.Message.html">Message</a>, <span class="xref">CancellationToken</span>, <span class="xref">Task</span>&gt;</td>
+        <td><span class="parametername">handler</span></td>
+        <td><p>A <see cref="!:Func&lt;IMessageSession, Message, CancellationToken, Task>"></see> that processes messages.
+<a class="xref" href="Microsoft.Azure.ServiceBus.IMessageSession.html">IMessageSession</a> contains the session information, and must be used to perform Complete/Abandon/Deadletter or other such operations on the <a class="xref" href="Microsoft.Azure.ServiceBus.Message.html">Message</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.SessionHandlerOptions.html">SessionHandlerOptions</a></td>
+        <td><span class="parametername">sessionHandlerOptions</span></td>
+        <td><p>Options used to configure the settings of the session pump.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_SubscriptionClient_RegisterSessionHandler_Func_Microsoft_Azure_ServiceBus_IMessageSession_Microsoft_Azure_ServiceBus_Message_CancellationToken_Task__Microsoft_Azure_ServiceBus_SessionHandlerOptions__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Enable prefetch to speed up the receive rate.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SubscriptionClient_RemoveRuleAsync_System_String_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SubscriptionClient.RemoveRuleAsync(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SubscriptionClient.cs/#L523">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_SubscriptionClient_RemoveRuleAsync_" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.RemoveRuleAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_SubscriptionClient_RemoveRuleAsync_System_String_" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.RemoveRuleAsync(System.String)">RemoveRuleAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Removes the rule on the subscription identified by <code data-dev-comment-type="paramref" class="paramref">ruleName</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task RemoveRuleAsync(string ruleName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">ruleName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>A task instance that represents the asynchronous remove rule operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SubscriptionClient_UnregisterPlugin_System_String_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SubscriptionClient.UnregisterPlugin(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SubscriptionClient.cs/#L621">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_SubscriptionClient_UnregisterPlugin_" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.UnregisterPlugin*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_SubscriptionClient_UnregisterPlugin_System_String_" data-uid="Microsoft.Azure.ServiceBus.SubscriptionClient.UnregisterPlugin(System.String)">UnregisterPlugin(String)</h4>
+  <div class="markdown level1 summary"><p>Unregisters a <a class="xref" href="Microsoft.Azure.ServiceBus.Core.ServiceBusPlugin.html">ServiceBusPlugin</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void UnregisterPlugin(string serviceBusPluginName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">serviceBusPluginName</span></td>
+        <td><p>The name <a class="xref" href="Microsoft.Azure.ServiceBus.Core.ServiceBusPlugin.html#Microsoft_Azure_ServiceBus_Core_ServiceBusPlugin_Name">Name</a> to be unregistered</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Microsoft.Azure.ServiceBus.ClientEntity.html#Microsoft_Azure_ServiceBus_ClientEntity_UnregisterPlugin_System_String_">ClientEntity.UnregisterPlugin(String)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.ISubscriptionClient.html">ISubscriptionClient</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.Core.IReceiverClient.html">IReceiverClient</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.IClientEntity.html">IClientEntity</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="../ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.AppConfigurationAzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AppConfigurationAzureClientBuilderExtensions_AddAppConfiguration__2___0_System_String___1_">AppConfigurationAzureClientBuilderExtensions.AddAppConfiguration&lt;TBuilder, TConfiguration&gt;(TBuilder, String, TConfiguration)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SubscriptionClient.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SubscriptionClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SubscriptionClient.cs/#L51" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

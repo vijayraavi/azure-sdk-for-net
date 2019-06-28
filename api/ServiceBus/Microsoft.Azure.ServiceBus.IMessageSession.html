@@ -1,0 +1,436 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IMessageSession
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IMessageSession
+   ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Microsoft.Azure.ServiceBus.IMessageSession">
+  
+  
+  <h1 id="Microsoft_Azure_ServiceBus_IMessageSession" data-uid="Microsoft.Azure.ServiceBus.IMessageSession" class="text-break">Interface IMessageSession
+  </h1>
+  <div class="markdown level0 summary"><p>Describes a Session object. IMessageSession can be used to perform operations on sessions.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.html#Microsoft_Azure_ServiceBus_Core_IMessageReceiver_LastPeekedSequenceNumber">IMessageReceiver.LastPeekedSequenceNumber</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.html#Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveAsync">IMessageReceiver.ReceiveAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.html#Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveAsync_TimeSpan_">IMessageReceiver.ReceiveAsync(TimeSpan)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.html#Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveAsync_System_Int32_">IMessageReceiver.ReceiveAsync(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.html#Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveAsync_System_Int32_TimeSpan_">IMessageReceiver.ReceiveAsync(Int32, TimeSpan)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.html#Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveDeferredMessageAsync_System_Int64_">IMessageReceiver.ReceiveDeferredMessageAsync(Int64)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.html#Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveDeferredMessageAsync_IEnumerable_System_Int64__">IMessageReceiver.ReceiveDeferredMessageAsync(IEnumerable&lt;Int64&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.html#Microsoft_Azure_ServiceBus_Core_IMessageReceiver_CompleteAsync_IEnumerable_System_String__">IMessageReceiver.CompleteAsync(IEnumerable&lt;String&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.html#Microsoft_Azure_ServiceBus_Core_IMessageReceiver_DeferAsync_System_String_IDictionary_System_String_System_Object__">IMessageReceiver.DeferAsync(String, IDictionary&lt;String, Object&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.html#Microsoft_Azure_ServiceBus_Core_IMessageReceiver_RenewLockAsync_Microsoft_Azure_ServiceBus_Message_">IMessageReceiver.RenewLockAsync(Message)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.html#Microsoft_Azure_ServiceBus_Core_IMessageReceiver_RenewLockAsync_System_String_">IMessageReceiver.RenewLockAsync(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.html#Microsoft_Azure_ServiceBus_Core_IMessageReceiver_PeekAsync">IMessageReceiver.PeekAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.html#Microsoft_Azure_ServiceBus_Core_IMessageReceiver_PeekAsync_System_Int32_">IMessageReceiver.PeekAsync(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.html#Microsoft_Azure_ServiceBus_Core_IMessageReceiver_PeekBySequenceNumberAsync_System_Int64_">IMessageReceiver.PeekBySequenceNumberAsync(Int64)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.html#Microsoft_Azure_ServiceBus_Core_IMessageReceiver_PeekBySequenceNumberAsync_System_Int64_System_Int32_">IMessageReceiver.PeekBySequenceNumberAsync(Int64, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.Core.IReceiverClient.html#Microsoft_Azure_ServiceBus_Core_IReceiverClient_PrefetchCount">IReceiverClient.PrefetchCount</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.Core.IReceiverClient.html#Microsoft_Azure_ServiceBus_Core_IReceiverClient_ReceiveMode">IReceiverClient.ReceiveMode</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.Core.IReceiverClient.html#Microsoft_Azure_ServiceBus_Core_IReceiverClient_RegisterMessageHandler_Func_Microsoft_Azure_ServiceBus_Message_CancellationToken_Task__Func_Microsoft_Azure_ServiceBus_ExceptionReceivedEventArgs_Task__">IReceiverClient.RegisterMessageHandler(Func&lt;Message, CancellationToken, Task&gt;, Func&lt;ExceptionReceivedEventArgs, Task&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.Core.IReceiverClient.html#Microsoft_Azure_ServiceBus_Core_IReceiverClient_RegisterMessageHandler_Func_Microsoft_Azure_ServiceBus_Message_CancellationToken_Task__Microsoft_Azure_ServiceBus_MessageHandlerOptions_">IReceiverClient.RegisterMessageHandler(Func&lt;Message, CancellationToken, Task&gt;, MessageHandlerOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.Core.IReceiverClient.html#Microsoft_Azure_ServiceBus_Core_IReceiverClient_CompleteAsync_System_String_">IReceiverClient.CompleteAsync(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.Core.IReceiverClient.html#Microsoft_Azure_ServiceBus_Core_IReceiverClient_AbandonAsync_System_String_IDictionary_System_String_System_Object__">IReceiverClient.AbandonAsync(String, IDictionary&lt;String, Object&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.Core.IReceiverClient.html#Microsoft_Azure_ServiceBus_Core_IReceiverClient_DeadLetterAsync_System_String_IDictionary_System_String_System_Object__">IReceiverClient.DeadLetterAsync(String, IDictionary&lt;String, Object&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.Core.IReceiverClient.html#Microsoft_Azure_ServiceBus_Core_IReceiverClient_DeadLetterAsync_System_String_System_String_System_String_">IReceiverClient.DeadLetterAsync(String, String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.IClientEntity.html#Microsoft_Azure_ServiceBus_IClientEntity_ClientId">IClientEntity.ClientId</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.IClientEntity.html#Microsoft_Azure_ServiceBus_IClientEntity_IsClosedOrClosing">IClientEntity.IsClosedOrClosing</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.IClientEntity.html#Microsoft_Azure_ServiceBus_IClientEntity_Path">IClientEntity.Path</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.IClientEntity.html#Microsoft_Azure_ServiceBus_IClientEntity_OperationTimeout">IClientEntity.OperationTimeout</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.IClientEntity.html#Microsoft_Azure_ServiceBus_IClientEntity_CloseAsync">IClientEntity.CloseAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.IClientEntity.html#Microsoft_Azure_ServiceBus_IClientEntity_ServiceBusConnection">IClientEntity.ServiceBusConnection</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.IClientEntity.html#Microsoft_Azure_ServiceBus_IClientEntity_OwnsConnection">IClientEntity.OwnsConnection</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.IClientEntity.html#Microsoft_Azure_ServiceBus_IClientEntity_RegisteredPlugins">IClientEntity.RegisteredPlugins</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.IClientEntity.html#Microsoft_Azure_ServiceBus_IClientEntity_RegisterPlugin_Microsoft_Azure_ServiceBus_Core_ServiceBusPlugin_">IClientEntity.RegisterPlugin(ServiceBusPlugin)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.IClientEntity.html#Microsoft_Azure_ServiceBus_IClientEntity_UnregisterPlugin_System_String_">IClientEntity.UnregisterPlugin(String)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.Azure.ServiceBus.html">Microsoft.Azure.ServiceBus</a></h6>
+  <h6><strong>Assembly</strong>: Microsoft.Azure.ServiceBus.dll</h6>
+  <h5 id="Microsoft_Azure_ServiceBus_IMessageSession_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IMessageSession : IMessageReceiver, IReceiverClient, IClientEntity</code></pre>
+  </div>
+  <h5 id="Microsoft_Azure_ServiceBus_IMessageSession_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>
+Service Bus Sessions, also called &apos;Groups&apos; in the AMQP 1.0 protocol, are unbounded sequences of related messages. ServiceBus guarantees ordering of messages in a session.
+</p>
+<p>
+Any sender can create a session when submitting messages into a Topic or Queue by setting the <a class="xref" href="Microsoft.Azure.ServiceBus.Message.html#Microsoft_Azure_ServiceBus_Message_SessionId">SessionId</a> property on Message to some
+application defined unique identifier. At the AMQP 1.0 protocol level, this value maps to the group-id property.
+</p>
+<p>
+Sessions come into existence when there is at least one message with the session&apos;s SessionId in the Queue or Topic subscription.
+Once a Session exists, there is no defined moment or gesture for when the session expires or disappears.
+</p>
+</div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_IMessageSession_LockedUntilUtc.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.IMessageSession.LockedUntilUtc%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/IMessageSession.cs/#L36">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_IMessageSession_LockedUntilUtc_" data-uid="Microsoft.Azure.ServiceBus.IMessageSession.LockedUntilUtc*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_IMessageSession_LockedUntilUtc" data-uid="Microsoft.Azure.ServiceBus.IMessageSession.LockedUntilUtc">LockedUntilUtc</h4>
+  <div class="markdown level1 summary"><p>Gets the time that the session identified by <a class="xref" href="Microsoft.Azure.ServiceBus.IMessageSession.html#Microsoft_Azure_ServiceBus_IMessageSession_SessionId">SessionId</a> is locked until for this client.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DateTime LockedUntilUtc { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DateTime</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_IMessageSession_SessionId.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.IMessageSession.SessionId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/IMessageSession.cs/#L31">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_IMessageSession_SessionId_" data-uid="Microsoft.Azure.ServiceBus.IMessageSession.SessionId*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_IMessageSession_SessionId" data-uid="Microsoft.Azure.ServiceBus.IMessageSession.SessionId">SessionId</h4>
+  <div class="markdown level1 summary"><p>Gets the SessionId.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string SessionId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_IMessageSession_GetStateAsync.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.IMessageSession.GetStateAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/IMessageSession.cs/#L42">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_IMessageSession_GetStateAsync_" data-uid="Microsoft.Azure.ServiceBus.IMessageSession.GetStateAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_IMessageSession_GetStateAsync" data-uid="Microsoft.Azure.ServiceBus.IMessageSession.GetStateAsync">GetStateAsync()</h4>
+  <div class="markdown level1 summary"><p>Gets the session state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;byte[]&gt; GetStateAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Byte</span>[]&gt;</td>
+        <td><p>The session state as byte array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_IMessageSession_RenewSessionLockAsync.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.IMessageSession.RenewSessionLockAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/IMessageSession.cs/#L64">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_IMessageSession_RenewSessionLockAsync_" data-uid="Microsoft.Azure.ServiceBus.IMessageSession.RenewSessionLockAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_IMessageSession_RenewSessionLockAsync" data-uid="Microsoft.Azure.ServiceBus.IMessageSession.RenewSessionLockAsync">RenewSessionLockAsync()</h4>
+  <div class="markdown level1 summary"><p>Renews the lock on the session specified by the <a class="xref" href="Microsoft.Azure.ServiceBus.IMessageSession.html#Microsoft_Azure_ServiceBus_IMessageSession_SessionId">SessionId</a>. The lock will be renewed based on the setting specified on the entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task RenewSessionLockAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_IMessageSession_RenewSessionLockAsync_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+When you accept a session, the session is locked for this client instance by the service for a duration as specified during the Queue/Subscription creation.
+If processing of the session requires longer than this duration, the session-lock needs to be renewed. 
+For each renewal, it resets the time the session is locked by the LockDuration set on the Entity.
+</p>
+<p>
+Renewal of session renews all the messages in the session as well. Each individual message need not be renewed.
+</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_IMessageSession_SetStateAsync_System_Byte___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.IMessageSession.SetStateAsync(System.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/IMessageSession.cs/#L49">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_IMessageSession_SetStateAsync_" data-uid="Microsoft.Azure.ServiceBus.IMessageSession.SetStateAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_IMessageSession_SetStateAsync_System_Byte___" data-uid="Microsoft.Azure.ServiceBus.IMessageSession.SetStateAsync(System.Byte[])">SetStateAsync(Byte[])</h4>
+  <div class="markdown level1 summary"><p>Set a custom state on the session which can be later retrieved using <a class="xref" href="Microsoft.Azure.ServiceBus.IMessageSession.html#Microsoft_Azure_ServiceBus_IMessageSession_GetStateAsync">GetStateAsync()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task SetStateAsync(byte[] sessionState)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">sessionState</span></td>
+        <td><p>A byte array of session state</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_IMessageSession_SetStateAsync_System_Byte____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This state is stored on Service Bus forever unless you set an empty state on it.</p>
+</div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="../ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.AppConfigurationAzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AppConfigurationAzureClientBuilderExtensions_AddAppConfiguration__2___0_System_String___1_">AppConfigurationAzureClientBuilderExtensions.AddAppConfiguration&lt;TBuilder, TConfiguration&gt;(TBuilder, String, TConfiguration)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_IMessageSession.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.IMessageSession%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/IMessageSession.cs/#L26" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

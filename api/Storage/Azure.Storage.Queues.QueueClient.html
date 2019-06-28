@@ -1,0 +1,725 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class QueueClient
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class QueueClient
+   ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Azure.Storage.Queues.QueueClient">
+  
+  
+  <h1 id="Azure_Storage_Queues_QueueClient" data-uid="Azure.Storage.Queues.QueueClient" class="text-break">Class QueueClient
+  </h1>
+  <div class="markdown level0 summary"><p>A QueueClient represents a URI to the Azure Storage Queue service allowing you to manipulate a queue.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">QueueClient</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Azure.Storage.Queues.html">Azure.Storage.Queues</a></h6>
+  <h6><strong>Assembly</strong>: Azure.Storage.Queues.dll</h6>
+  <h5 id="Azure_Storage_Queues_QueueClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class QueueClient : object</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Azure_Storage_Queues_QueueClient__ctor_System_String_System_String_Azure_Storage_Queues_QueueConnectionOptions_.md&amp;value=---%0Auid%3A%20Azure.Storage.Queues.QueueClient.%23ctor(System.String%2CSystem.String%2CAzure.Storage.Queues.QueueConnectionOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/storage/Azure.Storage.Queues/src/QueueClient.cs/#L70">View Source</a>
+  </span>
+  <a id="Azure_Storage_Queues_QueueClient__ctor_" data-uid="Azure.Storage.Queues.QueueClient.#ctor*"></a>
+  <h4 id="Azure_Storage_Queues_QueueClient__ctor_System_String_System_String_Azure_Storage_Queues_QueueConnectionOptions_" data-uid="Azure.Storage.Queues.QueueClient.#ctor(System.String,System.String,Azure.Storage.Queues.QueueConnectionOptions)">QueueClient(String, String, QueueConnectionOptions)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Storage.Queues.QueueClient.html">QueueClient</a>
+class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public QueueClient(string connectionString, string queueName, QueueConnectionOptions connectionOptions = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">connectionString</span></td>
+        <td><p>A connection string includes the authentication information
+required for your application to access data in an Azure Storage
+account at runtime.</p>
+<p>For more information, <a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string">https://docs.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">queueName</span></td>
+        <td><p>The name of the queue in the storage account to reference.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Queues.QueueConnectionOptions.html">QueueConnectionOptions</a></td>
+        <td><span class="parametername">connectionOptions</span></td>
+        <td><p>Optional connection options that define the transport pipeline
+policies for authentication, retries, etc., that are applied to
+every request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Queues_QueueClient__ctor_System_String_System_String_Azure_Storage_Queues_QueueConnectionOptions__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The credentials on <code data-dev-comment-type="paramref" class="paramref">connectionString</code> will override those on <code data-dev-comment-type="paramref" class="paramref">connectionOptions</code>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Azure_Storage_Queues_QueueClient__ctor_Uri_Azure_Storage_Queues_QueueConnectionOptions_.md&amp;value=---%0Auid%3A%20Azure.Storage.Queues.QueueClient.%23ctor(Uri%2CAzure.Storage.Queues.QueueConnectionOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/storage/Azure.Storage.Queues/src/QueueClient.cs/#L101">View Source</a>
+  </span>
+  <a id="Azure_Storage_Queues_QueueClient__ctor_" data-uid="Azure.Storage.Queues.QueueClient.#ctor*"></a>
+  <h4 id="Azure_Storage_Queues_QueueClient__ctor_Uri_Azure_Storage_Queues_QueueConnectionOptions_" data-uid="Azure.Storage.Queues.QueueClient.#ctor(Uri,Azure.Storage.Queues.QueueConnectionOptions)">QueueClient(Uri, QueueConnectionOptions)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Storage.Queues.QueueClient.html">QueueClient</a>
+class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public QueueClient(Uri primaryUri, QueueConnectionOptions connectionOptions = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Uri</span></td>
+        <td><span class="parametername">primaryUri</span></td>
+        <td><p>A <a class="xref" href="Azure.Storage.Queues.QueueClient.html#Azure_Storage_Queues_QueueClient_Uri">Uri</a> referencing the queue that includes the
+name of the account, and the name of the queue.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Queues.QueueConnectionOptions.html">QueueConnectionOptions</a></td>
+        <td><span class="parametername">connectionOptions</span></td>
+        <td><p>Optional connection options that define the transport pipeline
+policies for authentication, retries, etc., that are applied to
+every request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Azure_Storage_Queues_QueueClient_MaxMessagesDequeue.md&amp;value=---%0Auid%3A%20Azure.Storage.Queues.QueueClient.MaxMessagesDequeue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/storage/Azure.Storage.Queues/src/QueueClient.cs/#L35">View Source</a>
+  </span>
+  <h4 id="Azure_Storage_Queues_QueueClient_MaxMessagesDequeue" data-uid="Azure.Storage.Queues.QueueClient.MaxMessagesDequeue">MaxMessagesDequeue</h4>
+  <div class="markdown level1 summary"><p>QueueMaxMessagesDequeue indicates the maximum number of messages
+you can retrieve with each call to Dequeue.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MaxMessagesDequeue = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Azure_Storage_Queues_QueueClient_MaxMessagesPeek.md&amp;value=---%0Auid%3A%20Azure.Storage.Queues.QueueClient.MaxMessagesPeek%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/storage/Azure.Storage.Queues/src/QueueClient.cs/#L41">View Source</a>
+  </span>
+  <h4 id="Azure_Storage_Queues_QueueClient_MaxMessagesPeek" data-uid="Azure.Storage.Queues.QueueClient.MaxMessagesPeek">MaxMessagesPeek</h4>
+  <div class="markdown level1 summary"><p>QueueMaxMessagesPeek indicates the maximum number of messages
+you can retrieve with each call to Peek.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MaxMessagesPeek = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Azure_Storage_Queues_QueueClient_MessageMaxBytes.md&amp;value=---%0Auid%3A%20Azure.Storage.Queues.QueueClient.MessageMaxBytes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/storage/Azure.Storage.Queues/src/QueueClient.cs/#L46">View Source</a>
+  </span>
+  <h4 id="Azure_Storage_Queues_QueueClient_MessageMaxBytes" data-uid="Azure.Storage.Queues.QueueClient.MessageMaxBytes">MessageMaxBytes</h4>
+  <div class="markdown level1 summary"><p>QueueMessageMaxBytes indicates the maximum number of bytes allowed for a message's UTF-8 text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MessageMaxBytes = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Azure_Storage_Queues_QueueClient_Uri.md&amp;value=---%0Auid%3A%20Azure.Storage.Queues.QueueClient.Uri%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/storage/Azure.Storage.Queues/src/QueueClient.cs/#L24">View Source</a>
+  </span>
+  <a id="Azure_Storage_Queues_QueueClient_Uri_" data-uid="Azure.Storage.Queues.QueueClient.Uri*"></a>
+  <h4 id="Azure_Storage_Queues_QueueClient_Uri" data-uid="Azure.Storage.Queues.QueueClient.Uri">Uri</h4>
+  <div class="markdown level1 summary"><p>The Uri endpoint used by the object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Uri Uri { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Uri</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Azure_Storage_Queues_QueueClient_CreateAsync_System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Storage.Queues.QueueClient.CreateAsync(System.Collections.Generic.IDictionary%7BSystem.String%2CSystem.String%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/storage/Azure.Storage.Queues/src/QueueClient.cs/#L147">View Source</a>
+  </span>
+  <a id="Azure_Storage_Queues_QueueClient_CreateAsync_" data-uid="Azure.Storage.Queues.QueueClient.CreateAsync*"></a>
+  <h4 id="Azure_Storage_Queues_QueueClient_CreateAsync_System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_" data-uid="Azure.Storage.Queues.QueueClient.CreateAsync(System.Collections.Generic.IDictionary{System.String,System.String},CancellationToken)">CreateAsync(System.Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Creates a queue.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/create-queue4">https://docs.microsoft.com/en-us/rest/api/storageservices/create-queue4</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Response&gt; CreateAsync(System.Collections.Generic.IDictionary&lt;string, string&gt; metadata = null, CancellationToken cancellation = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">metadata</span></td>
+        <td><p>Optional <see cref="!:System.Collections.Generic.IDictionary`2"></see>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td><p><see cref="!:CancellationToken"></see></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="../OtherApis/Azure.Response.html">Response</a>&gt;</td>
+        <td><p><see cref="!:Task&lt;Response>"></see></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Azure_Storage_Queues_QueueClient_DeleteAsync_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Storage.Queues.QueueClient.DeleteAsync(CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/storage/Azure.Storage.Queues/src/QueueClient.cs/#L187">View Source</a>
+  </span>
+  <a id="Azure_Storage_Queues_QueueClient_DeleteAsync_" data-uid="Azure.Storage.Queues.QueueClient.DeleteAsync*"></a>
+  <h4 id="Azure_Storage_Queues_QueueClient_DeleteAsync_CancellationToken_" data-uid="Azure.Storage.Queues.QueueClient.DeleteAsync(CancellationToken)">DeleteAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Deletes a queue.
+For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/delete-queue3">https://docs.microsoft.com/en-us/rest/api/storageservices/delete-queue3</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Response&gt; DeleteAsync(CancellationToken cancellation = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td><p><see cref="!:CancellationToken"></see></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="../OtherApis/Azure.Response.html">Response</a>&gt;</td>
+        <td><p><see cref="!:Task&lt;Response>"></see></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Azure_Storage_Queues_QueueClient_GetAccessPolicyAsync_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Storage.Queues.QueueClient.GetAccessPolicyAsync(CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/storage/Azure.Storage.Queues/src/QueueClient.cs/#L308">View Source</a>
+  </span>
+  <a id="Azure_Storage_Queues_QueueClient_GetAccessPolicyAsync_" data-uid="Azure.Storage.Queues.QueueClient.GetAccessPolicyAsync*"></a>
+  <h4 id="Azure_Storage_Queues_QueueClient_GetAccessPolicyAsync_CancellationToken_" data-uid="Azure.Storage.Queues.QueueClient.GetAccessPolicyAsync(CancellationToken)">GetAccessPolicyAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Returns details about any stored access policies specified on the queue that may be used with
+Shared Access Signatures.
+For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/get-queue-acl">https://docs.microsoft.com/en-us/rest/api/storageservices/get-queue-acl</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Response&lt;IEnumerable&lt;SignedIdentifier&gt;&gt;&gt; GetAccessPolicyAsync(CancellationToken cancellation = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td><p><see cref="!:CancellationToken"></see></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="Azure.Storage.Queues.Models.SignedIdentifier.html">SignedIdentifier</a>&gt;&gt;&gt;</td>
+        <td><p>IEnumerable of <see cref="!:Task&lt;Response&lt;IEnumerable&lt;SignedIdentifier>>>"></see></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Azure_Storage_Queues_QueueClient_GetMessagesClient.md&amp;value=---%0Auid%3A%20Azure.Storage.Queues.QueueClient.GetMessagesClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/storage/Azure.Storage.Queues/src/QueueClient.cs/#L131">View Source</a>
+  </span>
+  <a id="Azure_Storage_Queues_QueueClient_GetMessagesClient_" data-uid="Azure.Storage.Queues.QueueClient.GetMessagesClient*"></a>
+  <h4 id="Azure_Storage_Queues_QueueClient_GetMessagesClient" data-uid="Azure.Storage.Queues.QueueClient.GetMessagesClient">GetMessagesClient()</h4>
+  <div class="markdown level1 summary"><p>Create a new <a class="xref" href="Azure.Storage.Queues.MessagesClient.html">MessagesClient</a> object by appending
+&quot;messages&quot; to the end of <a class="xref" href="Azure.Storage.Queues.QueueClient.html#Azure_Storage_Queues_QueueClient_Uri">Uri</a>.  The
+new <a class="xref" href="Azure.Storage.Queues.MessagesClient.html">MessagesClient</a> uses the same request policy
+pipeline as the <a class="xref" href="Azure.Storage.Queues.QueueClient.html">QueueClient</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MessagesClient GetMessagesClient()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Queues.MessagesClient.html">MessagesClient</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Azure_Storage_Queues_QueueClient_GetPropertiesAsync_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Storage.Queues.QueueClient.GetPropertiesAsync(CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/storage/Azure.Storage.Queues/src/QueueClient.cs/#L226">View Source</a>
+  </span>
+  <a id="Azure_Storage_Queues_QueueClient_GetPropertiesAsync_" data-uid="Azure.Storage.Queues.QueueClient.GetPropertiesAsync*"></a>
+  <h4 id="Azure_Storage_Queues_QueueClient_GetPropertiesAsync_CancellationToken_" data-uid="Azure.Storage.Queues.QueueClient.GetPropertiesAsync(CancellationToken)">GetPropertiesAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Retrieves queue properties and user-defined metadata and properties on the specified queue.
+Metadata is associated with the queue as name-values pairs.
+For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/get-queue-metadata">https://docs.microsoft.com/en-us/rest/api/storageservices/get-queue-metadata</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Response&lt;QueueProperties&gt;&gt; GetPropertiesAsync(CancellationToken cancellation = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td><p><see cref="!:CancellationToken"></see></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Queues.Models.QueueProperties.html">QueueProperties</a>&gt;&gt;</td>
+        <td><p><see cref="!:Task&lt;Response&lt;QueueProperties>>"></see></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Azure_Storage_Queues_QueueClient_SetAccessPolicyAsync_IEnumerable_Azure_Storage_Queues_Models_SignedIdentifier__CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Storage.Queues.QueueClient.SetAccessPolicyAsync(IEnumerable%7BAzure.Storage.Queues.Models.SignedIdentifier%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/storage/Azure.Storage.Queues/src/QueueClient.cs/#L349">View Source</a>
+  </span>
+  <a id="Azure_Storage_Queues_QueueClient_SetAccessPolicyAsync_" data-uid="Azure.Storage.Queues.QueueClient.SetAccessPolicyAsync*"></a>
+  <h4 id="Azure_Storage_Queues_QueueClient_SetAccessPolicyAsync_IEnumerable_Azure_Storage_Queues_Models_SignedIdentifier__CancellationToken_" data-uid="Azure.Storage.Queues.QueueClient.SetAccessPolicyAsync(IEnumerable{Azure.Storage.Queues.Models.SignedIdentifier},CancellationToken)">SetAccessPolicyAsync(IEnumerable&lt;SignedIdentifier&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>SetAccessPolicyAsync sets stored access policies for the queue that may be used with Shared Access Signatures.
+For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/set-queue-acl">https://docs.microsoft.com/en-us/rest/api/storageservices/set-queue-acl</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Response&gt; SetAccessPolicyAsync(IEnumerable&lt;SignedIdentifier&gt; permissions, CancellationToken cancellation = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Azure.Storage.Queues.Models.SignedIdentifier.html">SignedIdentifier</a>&gt;</td>
+        <td><span class="parametername">permissions</span></td>
+        <td><p>IEnumerable of <a class="xref" href="Azure.Storage.Queues.Models.SignedIdentifier.html">SignedIdentifier</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td><p><see cref="!:CancellationToken"></see></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="../OtherApis/Azure.Response.html">Response</a>&gt;</td>
+        <td><p><see cref="!:Task&lt;Response>"></see></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Azure_Storage_Queues_QueueClient_SetMetadataAsync_System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Storage.Queues.QueueClient.SetMetadataAsync(System.Collections.Generic.IDictionary%7BSystem.String%2CSystem.String%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/storage/Azure.Storage.Queues/src/QueueClient.cs/#L267">View Source</a>
+  </span>
+  <a id="Azure_Storage_Queues_QueueClient_SetMetadataAsync_" data-uid="Azure.Storage.Queues.QueueClient.SetMetadataAsync*"></a>
+  <h4 id="Azure_Storage_Queues_QueueClient_SetMetadataAsync_System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_" data-uid="Azure.Storage.Queues.QueueClient.SetMetadataAsync(System.Collections.Generic.IDictionary{System.String,System.String},CancellationToken)">SetMetadataAsync(System.Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Sets user-defined metadata on the specified queue. Metadata is associated with the queue as name-value pairs.
+For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/set-queue-metadata">https://docs.microsoft.com/en-us/rest/api/storageservices/set-queue-metadata</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Response&gt; SetMetadataAsync(System.Collections.Generic.IDictionary&lt;string, string&gt; metadata, CancellationToken cancellation = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">metadata</span></td>
+        <td><p><see cref="!:System.Collections.Generic.IDictionary`2"></see></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td><p><see cref="!:CancellationToken"></see></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="../OtherApis/Azure.Response.html">Response</a>&gt;</td>
+        <td><p><see cref="!:Task&lt;Response>"></see></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="../ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.AppConfigurationAzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AppConfigurationAzureClientBuilderExtensions_AddAppConfiguration__2___0_System_String___1_">AppConfigurationAzureClientBuilderExtensions.AddAppConfiguration&lt;TBuilder, TConfiguration&gt;(TBuilder, String, TConfiguration)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Azure_Storage_Queues_QueueClient.md&amp;value=---%0Auid%3A%20Azure.Storage.Queues.QueueClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/storage/Azure.Storage.Queues/src/QueueClient.cs/#L19" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

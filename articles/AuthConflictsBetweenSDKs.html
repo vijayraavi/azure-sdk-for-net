@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Bridging gap between old and new SDKs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Bridging gap between old and new SDKs ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="bridging-gap-between-old-and-new-sdks">Bridging gap between old and new SDKs</h1>
+
+<p>Authentication conflicts can happen due to mixing old SDKs* and new SDKs*. SDKs that depend on  The credential types created by the new authentication library (Microsoft.Rest.ClientRuntime.Azure.Authentication, type = ServiceClientCredentials)  are incompatible with the credential types  used in older SDKs (Microsoft.Azure.Common, type = SubscriptionCloudCredentials). The problem is that using two different authentication libraries will require you to authenticate twice, which is a painful experience.</p>
+<p>Recommended solution
+To bridge this gap, the following adapter allows you to use the new credentials with clients that require the older credential type.</p>
+<p>Here’s the code for adapter</p>
+<pre><code>public class SubscriptionCredentialsAdapter : SubscriptionCloudCredentials
+{
+    ServiceClientCredentials _credentials;
+    string _subscriptionId;
+ 
+    public SubscriptionCredentialsAdapter(ServiceClientCredentials wrapped, string subscriptionId)
+    {
+        _credentials = wrapped;
+        _subscriptionId = subscriptionId;
+    }
+    
+    public override string SubscriptionId
+    {
+        get { return _subscriptionId; }
+    }
+ 
+    public override Task ProcessHttpRequestAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+    {
+       return _credentials.ProcessHttpRequestAsync(request, cancellationToken);
+    }
+}
+</code></pre>
+<p>Here is how you can use the adapter</p>
+<pre><code>var creds = UserTokenProvider.LoginWithPromptAsync(new ActiveDirectoryClientSettings(ClientId, new Uri(RedirectUri))).GetAwaiter().GetResult();
+var subClient = new SubscriptionClient(creds);
+var subscriptions = subClient.Subscriptions.List();
+var insightClient = new HDInsightManagementClient(new SubscriptionCredentialsAdapter(creds, subscriptions.First().SubscriptionId));
+var clusters = insightClient.Clusters.List();
+</code></pre>
+<p>Another solution would be to use the version of resource manager library that is based on Microsoft.Azure.Common. It can be found <a href="https://www.nuget.org/packages/Microsoft.Azure.Management.Resources/">here</a>.</p>
+<ul>
+<li>Old SDKs - The SDKs that depend on Microsoft.Azure.Common</li>
+<li>New SDKs - The SDKs that depend on Microsoft.Rest.ClientRuntime.Azure</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/docfx_project/articles/AuthConflictsBetweenSDKs.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

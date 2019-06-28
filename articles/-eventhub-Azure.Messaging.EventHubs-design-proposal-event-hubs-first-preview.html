@@ -1,0 +1,531 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>.NET Event Hubs Client: Track Two Proposal (First Preview) </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content=".NET Event Hubs Client: Track Two Proposal (First Preview) ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="net-event-hubs-client-track-two-proposal-first-preview">.NET Event Hubs Client: Track Two Proposal (First Preview)</h1>
+
+<h2 id="summary">Summary</h2>
+<p>Azure Event Hubs is a highly scalable publish-subscribe service that can ingest millions of events per second and stream them to multiple consumers. This lets you process and analyze the massive amounts of data produced by your connected devices and applications. Once Event Hubs has collected the data, you can retrieve, transform and store it by using any real-time analytics provider or with batching/storage adapters.</p>
+<p>The Azure Event Hubs client libraries allow for sending and receiving of Azure Event Hubs events. Most common scenarios call for an application to act as either an event publisher or an event consumer, but rarely both.</p>
+<p>An <strong>event publisher</strong> is a source of telemetry data, diagnostics information, usage logs, or other log data, as part of an embedded device solution, a mobile device application, a game title running on a console or other device, some client or server based business solution, or a web site.</p>
+<p>An <strong>event consumer</strong> picks up such information from the Event Hub and processes it. Processing may involve aggregation, complex computation and filtering. Processing may also involve distribution or storage of the information in a raw or transformed fashion. Event Hub consumers are often robust and high-scale platform infrastructure parts with built-in analytics capabilities, like Azure Stream Analytics, Apache Spark, or Apache Storm.</p>
+<h2 id="goals">Goals</h2>
+<ul>
+<li><p>Provide an API surface that allows for successfully implementing common scenarios with a minimal amount of boilerplate or bootstrapping needed; what a consumer views as one logical operation should feel like a single task when implementing.</p>
+</li>
+<li><p>Ensure that the API is as intuitive, discoverable, and straightforward as possible, guiding users of the library to success and minimizing potential pitfalls.</p>
+</li>
+<li><p>Present an API that is consistent and familiar across the different languages and technology stacks, while still conforming to the native idioms and conventions for a given ecosystem.</p>
+</li>
+<li><p>Focus the API design on the patterns best suited to users of the client library; the API may not mirror the interface used for interacting with the Event Hubs service.</p>
+</li>
+<li><p>Minimize breaking changes; ensure that changes made are done with a good reason and offer a solid return on investment.  Where possible, preserve the current interface and semantics.</p>
+</li>
+<li><p>Prioritize ease of use by providing reasonable defaults for common operations, allowing configuration and advanced behavior to be ignored unless specifically needed by a consuming application.</p>
+</li>
+<li><p>Support customization, allowing defaults to be overridden and accepting additional information such that users of the library are in control of behavior in areas supported by the Event Hubs service.</p>
+</li>
+<li><p>Embrace testability, ensuring that constructs from the API can be easily mocked within a consuming application such that the consumer may perform testing without the need to interact with the Event Hubs service or include it's own layer of abstraction over the API.</p>
+</li>
+<li><p>Make reasonable efforts to avoid redefining the vocabulary and nomenclature used with Event Hubs; to ensure that current client library users can leverage their familiarity, where possible, the new API surface should continue to use existing terminology.  Revisions and new concepts should be introduced only when necessary to reduce confusion and provide more clarity.</p>
+</li>
+<li><p>Align the target platforms with those approved as standards by the architecture board for .NET client libraries.</p>
+</li>
+</ul>
+<h2 id="non-goals">Non-Goals</h2>
+<ul>
+<li><p>Introduction of API enhancements that require upstream changes to the Event Hubs service; the track two client library should target the existing Event Hubs service operations.</p>
+</li>
+<li><p>Deprecation of the track one packages or source; until such time that the track two API and associated packages are fully reviewed, tested, and deemed ready, the track one packages will continue to be available, accept issues, and receive minor enhancements and bug fixes.</p>
+</li>
+<li><p>Preserving compatibility with the current set of target platforms supported by the track one client library.</p>
+</li>
+</ul>
+<h2 id="non-goals-for-the-first-preview">Non-Goals for the First Preview</h2>
+<ul>
+<li><p>A full rewrite of the track one codebase; where possible, existing code will be used with as few modifications as possible, allowing the new API surface to be built on proven, reliable, and well-tested code.</p>
+</li>
+<li><p>Support for scenarios outside the identified targets or revisions to associated packages, such as the Event Hubs Processor; the initial efforts will be focused on the API surface for key operations in the core client library.</p>
+</li>
+<li><p>Allowing event consumers to specify a handler to be notified when new events appear in a partition <em>(commonly referred to as the &quot;streaming consumer&quot; pattern)</em>; this requires additional design and will be deferred until after the preview.</p>
+</li>
+<li><p>Support for the Event Hubs plugin model; these are considered an advanced scenario and out of scope for the preview.</p>
+</li>
+<li><p>Advanced batching scenarios, such as automatically splitting a set of events too large for a single batch into multiple batches or providing the ability to build a size-constrained batch, are out of scope for the preview.</p>
+</li>
+<li><p>Providing a full synchronous API surface; the preview design will be primarily focused on asynchronous operations.</p>
+</li>
+<li><p>Design of the exception hierarchy; the preview will make use of the existing exception surfacing present in the track one client library.</p>
+</li>
+<li><p>Ensuring that cancellation tokens are honored throughout the implementation; they will be accepted as part of the API but may not have an effect depending on acceptance and treatment by the infrastructure provided by the track one client library.</p>
+</li>
+</ul>
+<h2 id="high-level-scenarios">High Level Scenarios</h2>
+<h3 id="producers-can-publish-events">Producers Can Publish Events</h3>
+<p>Contoso is developing a new first person shooter game, <em>Hugs and Warfare</em>, intended to be delivered across multiple platforms including the PC, consoles, and mobile devices.  One of the features offered is for players to be granted badges in real-time for completing in-game actions.  In support of this feature, <em>Hugs and Warfare</em>, would like to emit observations about a player's match as they happen so that their complex event processing system can evaluate them against award rules.</p>
+<p>Due to the expected popularity of the game, Contoso expects to be sending roughly one million events per second across 300,000 concurrent players.  Because this is an action game, the budget for network activity and latency tolerance are not generous, so maintaining a persistent connection for the duration of a match is preferred over a request/response cycle with higher latency and bandwidth needs.</p>
+<h3 id="consumers-can-receive-events">Consumers Can Receive Events</h3>
+<p>For <em>Hugs and Warfare</em> to fulfill its promise of granting badges to players in real-time for actions they perform in a match, its back-end services need to have access to the stream of observations that the game client is emitting as they become available.  Contoso is also interested in analyzing the observations made by game clients in different ways, allowing them to influence the game design and to drive business decisions.</p>
+<p>Because those interested in the observations have different purposes and throughput needs, Contoso's design calls for several sets of consumers to forward observations to downstream systems.  Each set of consumers should be able to see the same stream of observations, so that all observations are available to each interested system.  The different sets are independent from one another and should not have a need to coordinate between them.</p>
+<h3 id="when-a-consumer-recovers-from-a-crash-they-can-resume-receiving-events">When a Consumer Recovers from a Crash, They Can Resume Receiving Events</h3>
+<p>Software, hardware, and networks are inherently unreliable.  In order to provide a good player experience for <em>Hugs and Warfare</em>, Contoso has planned for their consumers suffering the occasional crash.  They've chosen to have several monitors which test the consumers and ensure that they are healthy and working correctly.</p>
+<p>In the case where a consumer has been restarted, Contoso's goal is to maximize recovery speed.  To ensure the best possible player experience,   a consumer needs to resume being productive by processing new observations.  Time spent reprocessing observations that had already been seen is wasted and likely to degrade the experience; it is important to understand the position in a stream that the consumer last read and have the ability to begin at an arbitrary point.</p>
+<h3 id="producers-and-consumers-can-view-metadata-about-an-event-hub">Producers and Consumers Can View Metadata About an Event Hub</h3>
+<p>Contoso has invested in a robust DevOps system to support <em>Hugs and Warfare</em>, helping to ensure that the back-end services can be deployed and scaled to meet player needs with minimal effort.  As a part of these efforts, the deployment for the observation consumers is self-managing.  When consumers are being deployed, the DevOps process will dynamically inspect the observation stream service to understand how many consumers should be created to process it, and ensure that each deployed consumer is configured to listen to the correct stream.</p>
+<p>To help Contoso understand the state of their ecosystem, each game client and back-end service sends telemetry data.  The observation consumers include information about their assigned observation stream, including those attributes that would be needed to restart the consumer and resume processing observations from the last that it had completed.</p>
+<h2 id="net-api">.NET API</h2>
+<h3 id="key-types">Key Types</h3>
+<h4 id="eventhubclient"><code>EventHubClient</code></h4>
+<p>The primary client for interacting with an Event Hub, intended to guide consumers towards the types used for specific Event Hub operations and simplifying the creation of those types.</p>
+<h4 id="eventproducer"><code>EventProducer</code></h4>
+<p>Enables publishing event data to an Event Hub, supporting automatic routing of events to available partitions and targeting a specific partition.</p>
+<h4 id="eventconsumer"><code>EventConsumer</code></h4>
+<p>Enables receiving event data from a single Event Hub partition, supporting exclusive or non-exclusive access to the partition event streams in the context of a consumer group.</p>
+<h4 id="eventprocessorhost"><code>EventProcessorHost</code></h4>
+<p>An opinionated extension of the <code>EventConsumer</code>, offering a ready-made solution for receiving events across all partitions and durable tracking of the current state of consumption using Azure Blob Storage.  The <code>EventHubProcessor</code> is intended to serve a simple and approachable on-boarding point for consuming Event Hubs data.</p>
+<p><em><strong>(not included in the first preview; will be designed and reviewed as an independent package at a later time)</strong></em></p>
+<h4 id="eventdata"><code>EventData</code></h4>
+<p>The raw data and collection of metadata describing an event that flows through the system.  Both send and receive operations represent their data using this type.</p>
+<h4 id="eventposition"><code>EventPosition</code></h4>
+<p>Provides a means of specifying the location of a specific in the event stream, either by strong association to the desired event or by an event's proximity to a particular point in the stream.  For example, &quot;I'd like the first available event&quot; or &quot;I'd like the first event enqueued at or after 12:00am on October 27th, 2015.&quot;</p>
+<h3 id="examples-creating-a-client">Examples: Creating a Client</h3>
+<h4 id="using-an-event-hub-connection-string-with-default-options">Using an Event Hub connection string with default options</h4>
+<pre><code class="lang-csharp">var connectionString = &quot;&lt;&lt; CONNECTION STRING WITH EVENT HUB &gt;&gt;&quot;;
+var client = new EventHubClient(connectionString);
+</code></pre>
+<h4 id="using-an-namespace-connection-string-with-default-options">Using an namespace connection string with default options</h4>
+<pre><code class="lang-csharp">var connectionString = &quot;&lt;&lt; CONNECTION STRING FOR NAMESPACE &gt;&gt;&quot;;
+var eventHubName = &quot;&lt;&lt; NAME OF THE EVENT HUB &gt;&gt;&quot;;
+var client = new EventHubClient(connectionString, eventHubName);
+</code></pre>
+<h4 id="using-an-event-hub-connection-string-with-custom-options">Using an Event Hub connection string with custom options</h4>
+<pre><code class="lang-csharp">var clientOptions = new EventHubClientOptions
+{
+    TransportType = TransportType.AmqpWebSockets,
+    DefaultTimeout = new TimeSpan.FromMinutes(1),
+    Retry = new ExponentialRetry(TimeSpan.FromSeconds(0.25), TimeSpan.FromMinutes(10), 5),
+    Proxy = new WebProxy(&quot;http://proxyserver:80&quot;, true)
+};
+
+var connectionString = &quot;&lt;&lt; CONNECTION STRING WITH EVENT HUB &gt;&gt;&quot;;
+var client = new EventHubClient(connectionString, clientOptions);
+
+</code></pre>
+<h4 id="using-a-namespace-connection-string-with-custom-options">Using a namespace connection string with custom options</h4>
+<pre><code class="lang-csharp">var clientOptions = new EventHubClientOptions
+{
+    TransportType = TransportType.AmqpWebSockets,
+    DefaultTimeout = new TimeSpan.FromMinutes(1),
+    Retry = new ExponentialRetry(TimeSpan.FromSeconds(0.25), TimeSpan.FromMinutes(10), 5),
+    Proxy = new WebProxy(&quot;http://proxyserver:80&quot;, true)
+};
+
+var connectionString = &quot;&lt;&lt; CONNECTION STRING FOR NAMESPACE &gt;&gt;&quot;;
+var eventHubName = &quot;&lt;&lt; NAME OF THE EVENT HUB &gt;&gt;&quot;;
+var client = new EventHubClient(connectionString, eventHubName, clientOptions);
+</code></pre>
+<h4 id="using-a-token-based-credential-with-custom-options">Using a token-based credential with custom options</h4>
+<pre><code class="lang-csharp">var clientOptions = new EventHubClientOptions
+{
+    TransportType = TransportType.AmqpTcp;
+    DefaultTimeout = TimeSpan.FromSeconds(38)
+};
+
+var credential = AquireAzureIdentityTokenFromAnotherLibrary();
+var client = new EventHubClient(&quot;hellokitty.servicebus.windows.net&quot;, &quot;telemetry-hub&quot;, credential, clientOptions);
+</code></pre>
+<h4 id="using-a-shared-key-credential-with-default-options">Using a shared key credential with default options</h4>
+<pre><code class="lang-csharp">var credential = new EventHubsSharedKeyCredential(&quot;&lt;&lt; KEY NAME &gt;&gt;&quot;, &quot;&lt;&lt; SHARED KEY &gt;&gt;&quot;);
+var client = new EventHubClient(&quot;hellokitty.servicebus.windows.net&quot;, &quot;telemetry-hub&quot;, credential);
+</code></pre>
+<h3 id="examples-viewing-metadata">Examples: Viewing Metadata</h3>
+<h4 id="for-an-event-hub">For an Event Hub</h4>
+<pre><code class="lang-csharp">var client = CreateClient();
+var eventHubProperties = await client.GetPropertiesAsync();
+
+Console.WriteLine($&quot;Event Hub Path: { eventHubProperties.Path }&quot;);
+Console.WriteLine($&quot;The Event Hub was created at { eventHubProperties.CreatedAtUtc }&quot;);
+Console.WriteLine($&quot;The partitions are: { String.Join(&quot;, &quot;, eventHubProperties.PartitionIds) }&quot;);
+</code></pre>
+<h4 id="for-a-partition">For a partition</h4>
+<pre><code class="lang-csharp">var client = CreateClient();
+var firstPartition = (await client.GetPropertiesAsync()).PartitionIds[0];
+var partitionInformation = await client.GetPartitionPropertiesAsync(firstPartition);
+
+Console.WriteLine($&quot;Event Hub Path: { partitionInformation.EventHubPath }&quot;);
+Console.WriteLine($&quot;Partition Id: { partitionInformation.Id }&quot;);
+Console.WriteLine($&quot;Is the Partition Empty? { partitionInformation.IsEmpty }&quot;);
+Console.WriteLine($&quot;The last offset enqueued in the partition was: { partitionInformation.LastEnqueuedOffset }&quot;);
+</code></pre>
+<h4 id="just-the-identifiers-for-each-partition-of-the-event-hub">Just the identifiers for each partition of the Event Hub</h4>
+<pre><code class="lang-csharp">var client = CreateClient();
+var partitionIds = await client.GetPartitionIdsAsync();
+
+Console.WriteLine($&quot;The partitions are: { String.Join(&quot;, &quot;, partitionIds) }&quot;);
+</code></pre>
+<h3 id="examples-creating-an-event-producer">Examples: Creating an Event Producer</h3>
+<h4 id="create-a-producer-with-default-options-allowing-automatic-routing-of-events-to-partitions">Create a producer with default options, allowing automatic routing of events to partitions</h4>
+<pre><code class="lang-csharp">var client = CreateClient();
+var producer = client.CreateProducer();
+</code></pre>
+<h4 id="create-a-producer-for-a-specific-partition">Create a producer for a specific partition</h4>
+<pre><code class="lang-csharp">var options = new EventHubProducerOptions
+{
+    PartitionId = &quot;abs32234-fccdba&quot;
+};
+
+var client = CreateClient();
+var producer = client.CreateProducer(options);
+</code></pre>
+<h4 id="create-a-producer-for-automatic-partition-routing-with-custom-options">Create a producer for automatic partition routing with custom options</h4>
+<pre><code class="lang-csharp">var options = new EventHubProducerOptions
+{
+    Timeout = new TimeSpan.FromMinutes(1),
+    Retry = new ExponentialRetry(TimeSpan.FromSeconds(0.25), TimeSpan.FromMinutes(10), 5), 
+};
+
+var client = CreateClient();
+var producer = client.CreateProducer(options);
+</code></pre>
+<h3 id="examples-publishing-events">Examples: Publishing Events</h3>
+<h4 id="publish-a-single-event-to-an-arbitrary-partition">Publish a single event to an arbitrary partition</h4>
+<pre><code class="lang-csharp">var client = CreateClient();
+var producer = client.CreateProducer();
+
+await producer.SendAsync(new EventData(GetNextThingBytes()));
+</code></pre>
+<h4 id="publish-events-to-an-arbitrary-partition">Publish events to an arbitrary partition</h4>
+<pre><code class="lang-csharp">var events = new[]
+{
+    new EventData(GetNextThingBytes()),
+    new EventData(GetNextThingBytes())
+};
+
+var client = CreateClient();
+var producer = client.CreateProducer();
+
+await producer.SendAsync(events);
+</code></pre>
+<h4 id="publish-events-to-a-specific-partition">Publish events to a specific partition</h4>
+<pre><code class="lang-csharp">var options = new EventHubProducerOptions
+{
+    PartitionId = &quot;abs32234-fccdba&quot;
+};
+
+var client = CreateClient();
+var producer = client.CreateProducer(options);
+
+var events = new[]
+{
+    new EventData(GetNextThingBytes()),
+    new EventData(GetNextThingBytes())
+};
+
+await producer.SendAsync(events);
+</code></pre>
+<h4 id="publish-events-with-custom-metadata-to-an-arbitrary-partition">Publish events with custom metadata to an arbitrary partition</h4>
+<pre><code class="lang-csharp">var playerShot = new EventData(GetPlayerShotBody());
+playerShot.Properties[&quot;eventType&quot;] = &quot;Sample.EventTypes.PlayerShot&quot;;
+playerShot.Properties[&quot;intendedConsumer&quot;] = &quot;CEP&quot;;
+
+var playerDied = new EventData(GetPlayerDiedBody());
+playerDied.Properties[&quot;eventType&quot;] = &quot;Sample.EventTypes.PlayerDied&quot;;
+playerDied.Properties[&quot;intendedConsumer&quot;] = &quot;Telemetry&quot;;
+
+var client = CreateClient();
+var producer = client.CreateProducer();
+
+await producer.SendAsync(new[] { playerShot, playerDied });
+</code></pre>
+<h4 id="send-events-that-may-exceed-the-batch-size-limit-to-an-arbitrary-partition">Send events that may exceed the batch size limit to an arbitrary partition</h4>
+<pre><code class="lang-csharp">var eventsToSend = GetPendingEvents(); 
+var client = CreateClient();
+var producer = client.CreateProducer();
+ 
+try
+{
+    await producer.SendAsync(eventsToSend);
+}
+catch (MessageSizeExceededException)
+{
+    Console.WriteLine(&quot;There were too many events in the batch&quot;);
+}
+</code></pre>
+<h4 id="send-events-with-common-partition-hashing-key-to-an-arbitrary-partition">Send events with common partition hashing key to an arbitrary partition</h4>
+<pre><code class="lang-csharp">var sendOptions = new SendOptions
+{
+    PartitionKey = &quot;these-go-to-the-same-partition-with-service-choice&quot;
+};
+
+var eventsToSend = GetPendingEvents(); 
+var client = CreateClient();
+var producer = client.CreateProducer();
+
+await producer.SendAsync(eventsToSend, sendOptions);
+</code></pre>
+<h3 id="examples-creating-an-event-consumer">Examples: Creating an Event Consumer</h3>
+<h4 id="a-consumer-for-a-specific-partition-starting-with-the-first-event-in-the-partition">A consumer for a specific partition, starting with the first event in the partition</h4>
+<pre><code class="lang-csharp">var client = CreateClient();
+var consumer = client.CreateConsumer(EventHubConsumer.DefaultConsumerGroupName, &quot;fcbac12-43cda&quot;, EventPosition.Earliest);
+</code></pre>
+<h4 id="a-consumer-for-a-specific-partition-with-custom-options">A consumer for a specific partition with custom options</h4>
+<pre><code class="lang-csharp">var options = new EventHubConsumerOptions
+{
+    Retry = new ExponentialRetry(TimeSpan.FromSeconds(0.25), TimeSpan.FromMinutes(10), 5)
+};
+
+var client = CreateClient();
+var consumer = client.CreateConsumer(&quot;NotTheDefault&quot;, fcbac12-43cda&quot;, EventPosition.Latest, options);
+</code></pre>
+<h4 id="a-consumer-that-asserts-exclusive-ownership-of-a-partition-for-a-consumer-group">A consumer that asserts exclusive ownership of a partition for a consumer group</h4>
+<pre><code class="lang-csharp">var options = new EventHubConsumerOptions
+{
+    OwnerLevel = 100
+};
+
+var client = CreateClient();
+var consumer = client.CreateConsumer(&quot;TelemetryConsumers&quot;, &quot;abc-321&quot;, EventPosition.Latest, options);
+</code></pre>
+<h3 id="examples-consuming-events-from-a-partition">Examples: Consuming Events from a Partition</h3>
+<h4 id="read-all-events">Read all events</h4>
+<pre><code class="lang-csharp">var client = CreateClient();
+var consumer = client.CreateConsumer(EventHubConsumer.DefaultConsumerGroupName, &quot;fcbac12-43cda&quot;, EventPosition.Earliest);
+var done = false;
+
+while (!done)
+{
+    var batch = await consumer.ReceiveAsync(25);
+    done = ProcessEvents(batch);
+}
+</code></pre>
+<h4 id="read-only-newly-queued-events-using-a-maximum-wait-time-specific-to-this-request">Read only newly queued events using a maximum wait time specific to this request</h4>
+<pre><code class="lang-csharp">var client = CreateClient();
+var consumer = client.CreateConsumer(EventHubConsumer.DefaultConsumerGroupName, &quot;abc4321&quot;, EventPosition.Latest);
+var consecutiveEmpties = 0;
+
+while (consecutiveEmpties &lt; 5)
+{
+    var batch = await consumer.ReceiveAsync(25, TimeSpan.FromSeconds(2));
+    
+    if (!ProcessEvents(batch))
+    {
+        ++consecutiveEmpties;
+    }
+}
+</code></pre>
+<h4 id="read-events-starting-at-a-specific-offset">Read events starting at a specific offset</h4>
+<pre><code class="lang-csharp">var client = CreateClient();
+var consumer = client.CreateConsumer(EventHubConsumer.DefaultConsumerGroupName, &quot;fcbac12-43cda&quot;, EventPosition.FromOffSet(65));
+var done = false;
+
+while (!done)
+{
+    var batch = await consumer.ReceiveAsync(25);
+    done = ProcessEvents(batch);
+}
+</code></pre>
+<h4 id="read-events-starting-at-a-specific-sequence-number-inclusive">Read events starting at a specific sequence number (inclusive)</h4>
+<pre><code class="lang-csharp">var client = CreateClient();
+var consumer = client.CreateConsumer(EventHubConsumer.DefaultConsumerGroupName, &quot;fcbac12-43cda&quot;, EventPosition.FromSequenceNumber(44, true));
+var done = false;
+
+while (!done)
+{
+    var batch = await consumer.ReceiveAsync(25);
+    done = ProcessEvents(batch);
+}
+</code></pre>
+<h4 id="read-events-starting-at-a-specific-moment-in-time">Read events starting at a specific moment in time</h4>
+<pre><code class="lang-csharp">var client = CreateClient();
+var consumer = client.CreateConsumer(&quot;Group&quot;, 0&quot;, EventPosition.FromEnqueuedTime(DateTimeOffset.Parse(&quot;2015-10-25T12:00:00Z&quot;)));
+var done = false;
+
+while (!done)
+{
+    var batch = await consumer.ReceiveAsync(25);
+    done = ProcessEvents(batch);
+}
+</code></pre>
+<h3 id="examples-saving-recovery-state">Examples: Saving Recovery State</h3>
+<pre><code class="lang-csharp">var client = CreateClient();
+var consumer = client.CreateConsumer(EventHubConsumer.DefaultConsumerGroupName, &quot;a-partition&quot;, EventPosition.Latest);
+var done = false;
+
+while (!done)
+{
+    var batch = await consumer.ReceiveAsync(25);
+    done = ProcessEvents(batch);
+    
+    var lastEvent = batch.Last();
+    PersistCheckpoint(lastEvent.Offset, lastEvent.EnqueuedTimeUtc);
+}
+</code></pre>
+<h3 id="packages">Packages</h3>
+<h4 id="azuremessagingeventhubs"><code>Azure.Messaging.EventHubs</code></h4>
+<p>The main client library package, containing the core components for interacting with the Azure Event Hubs service.</p>
+<h4 id="azuremessagingeventhubsprocessor"><code>Azure.Messaging.EventHubs.Processor</code></h4>
+<p>The package containing the <code>EventProcessorHost</code>, allowing for interested consumers to take advantage of an opinionated, ready-made construct for receiving Event Hubs data and managing state.</p>
+<p><em><strong>(not included for the first preview; will be designed and reviewed at a later time)</strong></em></p>
+<h3 id="namespaces">Namespaces</h3>
+<h4 id="azuremessagingeventhubs-1"><code>Azure.Messaging.EventHubs</code></h4>
+<p>The top-level container for the types in the client library intended to be used by Event Hubs client library users. It is intended that types most frequently used by users for basic operations belong to this namespace to ensure ease of discovery.</p>
+<h5 id="example-types"><em>Example Types:</em></h5>
+<ul>
+<li><code>EventHubClient</code></li>
+<li><code>EventHubProducer</code></li>
+<li><code>EventHubConsumer</code></li>
+<li><code>EventData</code></li>
+</ul>
+<h4 id="azuremessagingeventhubsmetadata"><code>Azure.Messaging.EventHubs.Metadata</code></h4>
+<p>The location for types associated with metadata about an Event Hub instance or events.  These types are intended to be used as read-only information for consumers and are surfaced from the API on more discoverable types, such as <code>EventHubClient.GetPropertiesAsync</code>.</p>
+<h5 id="example-types-1"><em>Example Types:</em></h5>
+<ul>
+<li><code>EventHubProperties</code></li>
+<li><code>PartitionProperties</code></li>
+</ul>
+<h4 id="azuremessagingeventhubserrors"><code>Azure.Messaging.EventHubs.Errors</code></h4>
+<p>The location for exceptions and error-related information and operations. Many of these types are surfaced as information for consumers in response to conditions encountered during a basic operation.  It is not intended that consumers need to create these types directly.</p>
+<h5 id="example-types-2"><em>Example Types:</em></h5>
+<ul>
+<li><code>MessageSizeExceededException</code></li>
+<li><code>EventHubsException</code></li>
+</ul>
+<h4 id="azuremessagingeventhubsplugins"><code>Azure.Messaging.EventHubs.Plugins</code></h4>
+<p>The location for types associated with customizing Event Hubs operations, for example, allowing an event to be transformed before it is sent.  These types are surfaced to consumers as base constructs for building on top of.</p>
+<p><em><strong>(not included for the first preview; will be considered and reviewed at a later time)</strong></em></p>
+<h5 id="example-types-3"><em>Example Types:</em></h5>
+<ul>
+<li><code>EventDataProcessor</code></li>
+</ul>
+<h4 id="azuremessagingeventhubscore"><code>Azure.Messaging.EventHubs.Core</code></h4>
+<p>The location for internal types used by the Event Hubs library to facilitate operations; these constructs are not intended to be consumed externally.</p>
+<h5 id="example-types-4"><em>Example Types:</em></h5>
+<ul>
+<li><code>MessagingEntity</code></li>
+<li><code>SystemMessagePropertyName</code></li>
+</ul>
+<h4 id="azuremessagingeventhubsamqp"><code>Azure.Messaging.EventHubs.Amqp</code></h4>
+<p>The location for internal types used by the Event Hubs library to facilitate AMQP protocol-related activities; these constructs are not intended to be consumed externally.</p>
+<h5 id="example-types-5"><em>Example Types:</em></h5>
+<ul>
+<li><code>AmqpEventHubClient</code></li>
+<li><code>AmqpEventHubConsumer</code></li>
+<li><code>ActiveClientLinkManager</code></li>
+</ul>
+<h4 id="azuremessagingeventhubsdiagnostics"><code>Azure.Messaging.EventHubs.Diagnostics</code></h4>
+<p>The location for internal types used by the Event Hubs library for diagnostics and logging activities; these constructs are not intended to be consumed externally.</p>
+<h5 id="example-types-6"><em>Example Types:</em></h5>
+<ul>
+<li><code>EventHubsEventSource</code></li>
+<li><code>EventHubsDiagnosticSource</code></li>
+</ul>
+<h4 id="azuremessagingeventhubsauthorization"><code>Azure.Messaging.EventHubs.Authorization</code></h4>
+<p>The location for types associated with authorizing operations against an Event Hub instance.  While some of these types may intended for consumers, the need for them is surfaced as part of the API for more discoverable types, such as <code>EventHubClient</code>.</p>
+<h5 id="example-types-7"><em>Example Types:</em></h5>
+<ul>
+<li><code>EventHubsSharedKeyCredential</code></li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/docfx_project/articles/-eventhub-Azure.Messaging.EventHubs-design-proposal-event-hubs-first-preview.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

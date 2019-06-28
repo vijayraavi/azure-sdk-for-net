@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Azure Storage common client library for .NET </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Azure Storage common client library for .NET ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="azure-storage-common-client-library-for-net">Azure Storage common client library for .NET</h1>
+
+<blockquote>
+<p>Server Version: 2018-11-09</p>
+</blockquote>
+<p>Azure Storage is a Microsoft-managed service providing cloud storage that is
+highly available, secure, durable, scalable, and redundant. Azure Storage
+includes Azure Blobs (objects), Azure Data Lake Storage Gen2, Azure Files,
+and Azure Queues.</p>
+<p>The Azure.Storage.Common library provides infrastructure shared by the other
+Azure Storage client libraries.</p>
+<p><a href="https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/storage/Azure.Storage.Common/src">Source code</a> | <a href="https://www.nuget.org/packages/Azure.Storage.Common/">Package (NuGet)</a> | <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/">API reference documentation</a> | <a href="https://docs.microsoft.com/en-us/azure/storage/">Product documentation</a></p>
+<h2 id="getting-started">Getting started</h2>
+<h3 id="install-the-package">Install the package</h3>
+<p>Install the Azure Storage client library for .NET you'd like to use with
+<a href="https://www.nuget.org/">NuGet</a> and the common client library will be included:</p>
+<pre><code class="lang-Powershell">Install-Package Azure.Storage.Blobs
+Install-Package Azure.Storage.Queues
+Install-Package Azure.Storage.Files
+</code></pre>
+<p><strong>Prerequisites</strong>: You must have an <a href="https://azure.microsoft.com/free/">Azure subscription</a>, and a
+<a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-account-overview">Storage Account</a> to use these packages.</p>
+<p>To create a Storage Account, you can use the <a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-quickstart-create-account?tabs=azure-portal">Azure Portal</a>,
+<a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-quickstart-create-account?tabs=azure-powershell">Azure PowerShell</a> or <a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-quickstart-create-account?tabs=azure-cli">Azure CLI</a>:</p>
+<h2 id="key-concepts">Key concepts</h2>
+<p>The Azure Storage common client library contains shared infrastructure like
+<a href="src/SharedKeyCredential.cs">authentication credentials</a> and <a href="src/StorageRequestFailedException.cs">StorageRequestFailedException</a>.</p>
+<h2 id="examples">Examples</h2>
+<p>Please see the examples for <a href="https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/storage/Azure.Storage.Blobs/README.md#Examples">Blobs</a>, <a href="https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/storage/Azure.Storage.Blobs/README.md#Examples">Files</a>,
+or <a href="https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/storage/Azure.Storage.Blobs/README.md#Examples">Queues</a> to get started.</p>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<p>All Azure Storage services will throw a <a href="src/StorageRequestFailedException.cs">StorageRequestFailedException</a>
+with helpful <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/common-rest-api-error-codes"><code>ErrorCode</code>s</a>.</p>
+<h2 id="next-steps">Next steps</h2>
+<p>Get started with <a href="https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/storage/Azure.Storage.Blobs/README.md#Examples">Blobs</a>, <a href="https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/storage/Azure.Storage.Blobs/README.md#Examples">Files</a>, or <a href="https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/storage/Azure.Storage.Blobs/README.md#Examples">Queues</a>.</p>
+<h2 id="contributing">Contributing</h2>
+<p>This project welcomes contributions and suggestions.  Most contributions require
+you to agree to a Contributor License Agreement (CLA) declaring that you have
+the right to, and actually do, grant us the rights to use your contribution. For
+details, visit <a href="https://cla.microsoft.com">https://cla.microsoft.com</a>.</p>
+<p>This project has adopted the <a href="https://opensource.microsoft.com/codeofconduct/">Microsoft Open Source Code of Conduct</a>.
+For more information see the <a href="https://opensource.microsoft.com/codeofconduct/faq/">Code of Conduct FAQ</a>
+or contact <a href="mailto:opencode@microsoft.com">opencode@microsoft.com</a> with any
+additional questions or comments.
+<img src="https://azure-sdk-impressions.azurewebsites.net/api/impressions/azure-sdk-for-net%2Fsdk%2Fstorage%2FAzure.Storage.Common%2FREADME.png" alt="Impressions"></p>
+<!-- LINKS -->
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/docfx_project/articles/-storage-Azure.Storage.Common-README.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,571 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface ISubscriptionClient
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface ISubscriptionClient
+   ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Microsoft.Azure.ServiceBus.ISubscriptionClient">
+  
+  
+  <h1 id="Microsoft_Azure_ServiceBus_ISubscriptionClient" data-uid="Microsoft.Azure.ServiceBus.ISubscriptionClient" class="text-break">Interface ISubscriptionClient
+  </h1>
+  <div class="markdown level0 summary"><p>SubscriptionClient can be used for all basic interactions with a Service Bus Subscription.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.Core.IReceiverClient.html#Microsoft_Azure_ServiceBus_Core_IReceiverClient_PrefetchCount">IReceiverClient.PrefetchCount</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.Core.IReceiverClient.html#Microsoft_Azure_ServiceBus_Core_IReceiverClient_ReceiveMode">IReceiverClient.ReceiveMode</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.Core.IReceiverClient.html#Microsoft_Azure_ServiceBus_Core_IReceiverClient_RegisterMessageHandler_Func_Microsoft_Azure_ServiceBus_Message_CancellationToken_Task__Func_Microsoft_Azure_ServiceBus_ExceptionReceivedEventArgs_Task__">IReceiverClient.RegisterMessageHandler(Func&lt;Message, CancellationToken, Task&gt;, Func&lt;ExceptionReceivedEventArgs, Task&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.Core.IReceiverClient.html#Microsoft_Azure_ServiceBus_Core_IReceiverClient_RegisterMessageHandler_Func_Microsoft_Azure_ServiceBus_Message_CancellationToken_Task__Microsoft_Azure_ServiceBus_MessageHandlerOptions_">IReceiverClient.RegisterMessageHandler(Func&lt;Message, CancellationToken, Task&gt;, MessageHandlerOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.Core.IReceiverClient.html#Microsoft_Azure_ServiceBus_Core_IReceiverClient_CompleteAsync_System_String_">IReceiverClient.CompleteAsync(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.Core.IReceiverClient.html#Microsoft_Azure_ServiceBus_Core_IReceiverClient_AbandonAsync_System_String_IDictionary_System_String_System_Object__">IReceiverClient.AbandonAsync(String, IDictionary&lt;String, Object&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.Core.IReceiverClient.html#Microsoft_Azure_ServiceBus_Core_IReceiverClient_DeadLetterAsync_System_String_IDictionary_System_String_System_Object__">IReceiverClient.DeadLetterAsync(String, IDictionary&lt;String, Object&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.Core.IReceiverClient.html#Microsoft_Azure_ServiceBus_Core_IReceiverClient_DeadLetterAsync_System_String_System_String_System_String_">IReceiverClient.DeadLetterAsync(String, String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.IClientEntity.html#Microsoft_Azure_ServiceBus_IClientEntity_ClientId">IClientEntity.ClientId</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.IClientEntity.html#Microsoft_Azure_ServiceBus_IClientEntity_IsClosedOrClosing">IClientEntity.IsClosedOrClosing</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.IClientEntity.html#Microsoft_Azure_ServiceBus_IClientEntity_Path">IClientEntity.Path</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.IClientEntity.html#Microsoft_Azure_ServiceBus_IClientEntity_OperationTimeout">IClientEntity.OperationTimeout</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.IClientEntity.html#Microsoft_Azure_ServiceBus_IClientEntity_CloseAsync">IClientEntity.CloseAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.IClientEntity.html#Microsoft_Azure_ServiceBus_IClientEntity_ServiceBusConnection">IClientEntity.ServiceBusConnection</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.IClientEntity.html#Microsoft_Azure_ServiceBus_IClientEntity_OwnsConnection">IClientEntity.OwnsConnection</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.IClientEntity.html#Microsoft_Azure_ServiceBus_IClientEntity_RegisteredPlugins">IClientEntity.RegisteredPlugins</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.IClientEntity.html#Microsoft_Azure_ServiceBus_IClientEntity_RegisterPlugin_Microsoft_Azure_ServiceBus_Core_ServiceBusPlugin_">IClientEntity.RegisterPlugin(ServiceBusPlugin)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.IClientEntity.html#Microsoft_Azure_ServiceBus_IClientEntity_UnregisterPlugin_System_String_">IClientEntity.UnregisterPlugin(String)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.Azure.ServiceBus.html">Microsoft.Azure.ServiceBus</a></h6>
+  <h6><strong>Assembly</strong>: Microsoft.Azure.ServiceBus.dll</h6>
+  <h5 id="Microsoft_Azure_ServiceBus_ISubscriptionClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface ISubscriptionClient : IReceiverClient, IClientEntity</code></pre>
+  </div>
+  <h5 id="Microsoft_Azure_ServiceBus_ISubscriptionClient_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Use <a class="xref" href="Microsoft.Azure.ServiceBus.Core.MessageReceiver.html">MessageReceiver</a> for advanced set of functionality.</p>
+</div>
+  <h5 id="Microsoft_Azure_ServiceBus_ISubscriptionClient_examples"><strong>Examples</strong></h5>
+  <p>Create a new SubscriptionClient</p>
+<pre><code>ISubscriptionClient subscriptionClient = new SubscriptionClient(
+    namespaceConnectionString,
+    topicName,
+    subscriptionName,
+    ReceiveMode.PeekLock,
+    RetryExponential);</code></pre>
+<p>Register a message handler which will be invoked every time a message is received.</p>
+<pre><code>subscriptionClient.RegisterMessageHandler(
+       async (message, token) =>
+       {
+           // Process the message
+           Console.WriteLine($&quot;Received message: SequenceNumber:{message.SystemProperties.SequenceNumber} Body:{Encoding.UTF8.GetString(message.Body)}&quot;);
+
+           // Complete the message so that it is not received again.
+           // This can be done only if the subscriptionClient is opened in ReceiveMode.PeekLock mode.
+           await subscriptionClient.CompleteAsync(message.SystemProperties.LockToken);
+       },
+       async (exceptionEvent) =>
+       {
+           // Process the exception
+           Console.WriteLine(&quot;Exception = &quot; + exceptionEvent.Exception);
+           return Task.CompletedTask;
+       });</code></pre>
+
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_ISubscriptionClient_SubscriptionName.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.ISubscriptionClient.SubscriptionName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/ISubscriptionClient.cs/#L57">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_ISubscriptionClient_SubscriptionName_" data-uid="Microsoft.Azure.ServiceBus.ISubscriptionClient.SubscriptionName*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_ISubscriptionClient_SubscriptionName" data-uid="Microsoft.Azure.ServiceBus.ISubscriptionClient.SubscriptionName">SubscriptionName</h4>
+  <div class="markdown level1 summary"><p>Gets the name of subscription.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string SubscriptionName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_ISubscriptionClient_TopicPath.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.ISubscriptionClient.TopicPath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/ISubscriptionClient.cs/#L52">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_ISubscriptionClient_TopicPath_" data-uid="Microsoft.Azure.ServiceBus.ISubscriptionClient.TopicPath*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_ISubscriptionClient_TopicPath" data-uid="Microsoft.Azure.ServiceBus.ISubscriptionClient.TopicPath">TopicPath</h4>
+  <div class="markdown level1 summary"><p>Gets the path of the topic, for this subscription.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string TopicPath { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_ISubscriptionClient_AddRuleAsync_Microsoft_Azure_ServiceBus_RuleDescription_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.ISubscriptionClient.AddRuleAsync(Microsoft.Azure.ServiceBus.RuleDescription)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/ISubscriptionClient.cs/#L83">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_ISubscriptionClient_AddRuleAsync_" data-uid="Microsoft.Azure.ServiceBus.ISubscriptionClient.AddRuleAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_ISubscriptionClient_AddRuleAsync_Microsoft_Azure_ServiceBus_RuleDescription_" data-uid="Microsoft.Azure.ServiceBus.ISubscriptionClient.AddRuleAsync(Microsoft.Azure.ServiceBus.RuleDescription)">AddRuleAsync(RuleDescription)</h4>
+  <div class="markdown level1 summary"><p>Adds a rule to the current subscription to filter the messages reaching from topic to the subscription.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task AddRuleAsync(RuleDescription description)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.RuleDescription.html">RuleDescription</a></td>
+        <td><span class="parametername">description</span></td>
+        <td><p>The rule description that provides the rule to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>A task instance that represents the asynchronous add rule operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_ISubscriptionClient_AddRuleAsync_Microsoft_Azure_ServiceBus_RuleDescription__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>You can add rules to the subscription that will decide filter which messages from the topic should reach the subscription.
+A default <a class="xref" href="Microsoft.Azure.ServiceBus.TrueFilter.html">TrueFilter</a> rule named <a class="xref" href="Microsoft.Azure.ServiceBus.RuleDescription.html#Microsoft_Azure_ServiceBus_RuleDescription_DefaultRuleName">DefaultRuleName</a> is always added while creation of the Subscription.
+You can add multiple rules with distinct names to the same subscription.
+Multiple filters combine with each other using logical OR condition. i.e., If any filter succeeds, the message is passed on to the subscription.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_ISubscriptionClient_AddRuleAsync_System_String_Microsoft_Azure_ServiceBus_Filter_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.ISubscriptionClient.AddRuleAsync(System.String%2CMicrosoft.Azure.ServiceBus.Filter)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/ISubscriptionClient.cs/#L70">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_ISubscriptionClient_AddRuleAsync_" data-uid="Microsoft.Azure.ServiceBus.ISubscriptionClient.AddRuleAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_ISubscriptionClient_AddRuleAsync_System_String_Microsoft_Azure_ServiceBus_Filter_" data-uid="Microsoft.Azure.ServiceBus.ISubscriptionClient.AddRuleAsync(System.String,Microsoft.Azure.ServiceBus.Filter)">AddRuleAsync(String, Filter)</h4>
+  <div class="markdown level1 summary"><p>Adds a rule to the current subscription to filter the messages reaching from topic to the subscription.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task AddRuleAsync(string ruleName, Filter filter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">ruleName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.Filter.html">Filter</a></td>
+        <td><span class="parametername">filter</span></td>
+        <td><p>The filter expression against which messages will be matched.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>A task instance that represents the asynchronous add rule operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_ISubscriptionClient_AddRuleAsync_System_String_Microsoft_Azure_ServiceBus_Filter__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>You can add rules to the subscription that will decide filter which messages from the topic should reach the subscription.
+A default <a class="xref" href="Microsoft.Azure.ServiceBus.TrueFilter.html">TrueFilter</a> rule named <a class="xref" href="Microsoft.Azure.ServiceBus.RuleDescription.html#Microsoft_Azure_ServiceBus_RuleDescription_DefaultRuleName">DefaultRuleName</a> is always added while creation of the Subscription.
+You can add multiple rules with distinct names to the same subscription.
+Multiple filters combine with each other using logical OR condition. i.e., If any filter succeeds, the message is passed on to the subscription.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_ISubscriptionClient_GetRulesAsync.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.ISubscriptionClient.GetRulesAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/ISubscriptionClient.cs/#L94">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_ISubscriptionClient_GetRulesAsync_" data-uid="Microsoft.Azure.ServiceBus.ISubscriptionClient.GetRulesAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_ISubscriptionClient_GetRulesAsync" data-uid="Microsoft.Azure.ServiceBus.ISubscriptionClient.GetRulesAsync">GetRulesAsync()</h4>
+  <div class="markdown level1 summary"><p>Get all rules associated with the subscription.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;RuleDescription&gt;&gt; GetRulesAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.RuleDescription.html">RuleDescription</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_ISubscriptionClient_RegisterSessionHandler_Func_Microsoft_Azure_ServiceBus_IMessageSession_Microsoft_Azure_ServiceBus_Message_CancellationToken_Task__Func_Microsoft_Azure_ServiceBus_ExceptionReceivedEventArgs_Task__.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.ISubscriptionClient.RegisterSessionHandler(Func%7BMicrosoft.Azure.ServiceBus.IMessageSession%2CMicrosoft.Azure.ServiceBus.Message%2CCancellationToken%2CTask%7D%2CFunc%7BMicrosoft.Azure.ServiceBus.ExceptionReceivedEventArgs%2CTask%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/ISubscriptionClient.cs/#L106">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_ISubscriptionClient_RegisterSessionHandler_" data-uid="Microsoft.Azure.ServiceBus.ISubscriptionClient.RegisterSessionHandler*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_ISubscriptionClient_RegisterSessionHandler_Func_Microsoft_Azure_ServiceBus_IMessageSession_Microsoft_Azure_ServiceBus_Message_CancellationToken_Task__Func_Microsoft_Azure_ServiceBus_ExceptionReceivedEventArgs_Task__" data-uid="Microsoft.Azure.ServiceBus.ISubscriptionClient.RegisterSessionHandler(Func{Microsoft.Azure.ServiceBus.IMessageSession,Microsoft.Azure.ServiceBus.Message,CancellationToken,Task},Func{Microsoft.Azure.ServiceBus.ExceptionReceivedEventArgs,Task})">RegisterSessionHandler(Func&lt;IMessageSession, Message, CancellationToken, Task&gt;, Func&lt;ExceptionReceivedEventArgs, Task&gt;)</h4>
+  <div class="markdown level1 summary"><p>Receive session messages continuously from the subscription. Registers a message handler and begins a new thread to receive session-messages.
+This handler(<see cref="!:Func&lt;T1,T2,T3,TResult>"></see>) is awaited on every time a new message is received by the subscription client.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RegisterSessionHandler(Func&lt;IMessageSession, Message, CancellationToken, Task&gt; handler, Func&lt;ExceptionReceivedEventArgs, Task&gt; exceptionReceivedHandler)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.IMessageSession.html">IMessageSession</a>, <a class="xref" href="Microsoft.Azure.ServiceBus.Message.html">Message</a>, <span class="xref">CancellationToken</span>, <span class="xref">Task</span>&gt;</td>
+        <td><span class="parametername">handler</span></td>
+        <td><p>A <see cref="!:Func&lt;IMessageSession, Message, CancellationToken, Task>"></see> that processes messages.
+<a class="xref" href="Microsoft.Azure.ServiceBus.IMessageSession.html">IMessageSession</a> contains the session information, and must be used to perform Complete/Abandon/Deadletter or other such operations on the <a class="xref" href="Microsoft.Azure.ServiceBus.Message.html">Message</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.ExceptionReceivedEventArgs.html">ExceptionReceivedEventArgs</a>, <span class="xref">Task</span>&gt;</td>
+        <td><span class="parametername">exceptionReceivedHandler</span></td>
+        <td><p>A <see cref="!:Func&lt;T1, TResult>"></see> that is invoked during exceptions.
+<a class="xref" href="Microsoft.Azure.ServiceBus.ExceptionReceivedEventArgs.html">ExceptionReceivedEventArgs</a> contains contextual information regarding the exception.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_ISubscriptionClient_RegisterSessionHandler_Func_Microsoft_Azure_ServiceBus_IMessageSession_Microsoft_Azure_ServiceBus_Message_CancellationToken_Task__Func_Microsoft_Azure_ServiceBus_ExceptionReceivedEventArgs_Task___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Enable prefetch to speed up the receive rate.
+Use <a class="xref" href="Microsoft.Azure.ServiceBus.ISubscriptionClient.html#Microsoft_Azure_ServiceBus_ISubscriptionClient_RegisterSessionHandler_Func_Microsoft_Azure_ServiceBus_IMessageSession_Microsoft_Azure_ServiceBus_Message_CancellationToken_Task__Microsoft_Azure_ServiceBus_SessionHandlerOptions_">RegisterSessionHandler(Func&lt;IMessageSession, Message, CancellationToken, Task&gt;, SessionHandlerOptions)</a> to configure the settings of the pump.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_ISubscriptionClient_RegisterSessionHandler_Func_Microsoft_Azure_ServiceBus_IMessageSession_Microsoft_Azure_ServiceBus_Message_CancellationToken_Task__Microsoft_Azure_ServiceBus_SessionHandlerOptions_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.ISubscriptionClient.RegisterSessionHandler(Func%7BMicrosoft.Azure.ServiceBus.IMessageSession%2CMicrosoft.Azure.ServiceBus.Message%2CCancellationToken%2CTask%7D%2CMicrosoft.Azure.ServiceBus.SessionHandlerOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/ISubscriptionClient.cs/#L116">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_ISubscriptionClient_RegisterSessionHandler_" data-uid="Microsoft.Azure.ServiceBus.ISubscriptionClient.RegisterSessionHandler*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_ISubscriptionClient_RegisterSessionHandler_Func_Microsoft_Azure_ServiceBus_IMessageSession_Microsoft_Azure_ServiceBus_Message_CancellationToken_Task__Microsoft_Azure_ServiceBus_SessionHandlerOptions_" data-uid="Microsoft.Azure.ServiceBus.ISubscriptionClient.RegisterSessionHandler(Func{Microsoft.Azure.ServiceBus.IMessageSession,Microsoft.Azure.ServiceBus.Message,CancellationToken,Task},Microsoft.Azure.ServiceBus.SessionHandlerOptions)">RegisterSessionHandler(Func&lt;IMessageSession, Message, CancellationToken, Task&gt;, SessionHandlerOptions)</h4>
+  <div class="markdown level1 summary"><p>Receive session messages continuously from the subscription. Registers a message handler and begins a new thread to receive session-messages.
+This handler(<see cref="!:Func&lt;IMessageSession, Message, CancellationToken, Task>"></see>) is awaited on every time a new message is received by the subscription client.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RegisterSessionHandler(Func&lt;IMessageSession, Message, CancellationToken, Task&gt; handler, SessionHandlerOptions sessionHandlerOptions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.IMessageSession.html">IMessageSession</a>, <a class="xref" href="Microsoft.Azure.ServiceBus.Message.html">Message</a>, <span class="xref">CancellationToken</span>, <span class="xref">Task</span>&gt;</td>
+        <td><span class="parametername">handler</span></td>
+        <td><p>A <see cref="!:Func&lt;IMessageSession, Message, CancellationToken, Task>"></see> that processes messages.
+<a class="xref" href="Microsoft.Azure.ServiceBus.IMessageSession.html">IMessageSession</a> contains the session information, and must be used to perform Complete/Abandon/Deadletter or other such operations on the <a class="xref" href="Microsoft.Azure.ServiceBus.Message.html">Message</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.SessionHandlerOptions.html">SessionHandlerOptions</a></td>
+        <td><span class="parametername">sessionHandlerOptions</span></td>
+        <td><p>Options used to configure the settings of the session pump.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_ISubscriptionClient_RegisterSessionHandler_Func_Microsoft_Azure_ServiceBus_IMessageSession_Microsoft_Azure_ServiceBus_Message_CancellationToken_Task__Microsoft_Azure_ServiceBus_SessionHandlerOptions__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Enable prefetch to speed up the receive rate.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_ISubscriptionClient_RemoveRuleAsync_System_String_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.ISubscriptionClient.RemoveRuleAsync(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/ISubscriptionClient.cs/#L89">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_ISubscriptionClient_RemoveRuleAsync_" data-uid="Microsoft.Azure.ServiceBus.ISubscriptionClient.RemoveRuleAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_ISubscriptionClient_RemoveRuleAsync_System_String_" data-uid="Microsoft.Azure.ServiceBus.ISubscriptionClient.RemoveRuleAsync(System.String)">RemoveRuleAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Removes the rule on the subscription identified by <code data-dev-comment-type="paramref" class="paramref">ruleName</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task RemoveRuleAsync(string ruleName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">ruleName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>A task instance that represents the asynchronous remove rule operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="../ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.AppConfigurationAzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AppConfigurationAzureClientBuilderExtensions_AddAppConfiguration__2___0_System_String___1_">AppConfigurationAzureClientBuilderExtensions.AddAppConfiguration&lt;TBuilder, TConfiguration&gt;(TBuilder, String, TConfiguration)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_ISubscriptionClient.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.ISubscriptionClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/ISubscriptionClient.cs/#L47" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,3155 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ManagementClient
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ManagementClient
+   ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient">
+  
+  
+  <h1 id="Microsoft_Azure_ServiceBus_Management_ManagementClient" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient" class="text-break">Class ManagementClient
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ManagementClient</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.Azure.ServiceBus.Management.html">Microsoft.Azure.ServiceBus.Management</a></h6>
+  <h6><strong>Assembly</strong>: Microsoft.Azure.ServiceBus.dll</h6>
+  <h5 id="Microsoft_Azure_ServiceBus_Management_ManagementClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ManagementClient : object</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_ManagementClient__ctor_Microsoft_Azure_ServiceBus_ServiceBusConnectionStringBuilder_Microsoft_Azure_ServiceBus_Primitives_ITokenProvider_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.ManagementClient.%23ctor(Microsoft.Azure.ServiceBus.ServiceBusConnectionStringBuilder%2CMicrosoft.Azure.ServiceBus.Primitives.ITokenProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/ManagementClient.cs/#L48">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_ManagementClient__ctor_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_ManagementClient__ctor_Microsoft_Azure_ServiceBus_ServiceBusConnectionStringBuilder_Microsoft_Azure_ServiceBus_Primitives_ITokenProvider_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.#ctor(Microsoft.Azure.ServiceBus.ServiceBusConnectionStringBuilder,Microsoft.Azure.ServiceBus.Primitives.ITokenProvider)">ManagementClient(ServiceBusConnectionStringBuilder, ITokenProvider)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="Microsoft.Azure.ServiceBus.Management.ManagementClient.html">ManagementClient</a> which can be used to perform management opertions on ServiceBus entities.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ManagementClient(ServiceBusConnectionStringBuilder connectionStringBuilder, ITokenProvider tokenProvider = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusConnectionStringBuilder.html">ServiceBusConnectionStringBuilder</a></td>
+        <td><span class="parametername">connectionStringBuilder</span></td>
+        <td><p><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusConnectionStringBuilder.html">ServiceBusConnectionStringBuilder</a> having endpoint information.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.Primitives.ITokenProvider.html">ITokenProvider</a></td>
+        <td><span class="parametername">tokenProvider</span></td>
+        <td><p>Token provider which will generate security tokens for authorization.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_ManagementClient__ctor_System_String_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.ManagementClient.%23ctor(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/ManagementClient.cs/#L28">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_ManagementClient__ctor_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_ManagementClient__ctor_System_String_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.#ctor(System.String)">ManagementClient(String)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="Microsoft.Azure.ServiceBus.Management.ManagementClient.html">ManagementClient</a> which can be used to perform management opertions on ServiceBus entities.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ManagementClient(string connectionString)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">connectionString</span></td>
+        <td><p>Namespace connection string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_ManagementClient__ctor_System_String_Microsoft_Azure_ServiceBus_Primitives_ITokenProvider_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.ManagementClient.%23ctor(System.String%2CMicrosoft.Azure.ServiceBus.Primitives.ITokenProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/ManagementClient.cs/#L38">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_ManagementClient__ctor_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_ManagementClient__ctor_System_String_Microsoft_Azure_ServiceBus_Primitives_ITokenProvider_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.#ctor(System.String,Microsoft.Azure.ServiceBus.Primitives.ITokenProvider)">ManagementClient(String, ITokenProvider)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="Microsoft.Azure.ServiceBus.Management.ManagementClient.html">ManagementClient</a> which can be used to perform management opertions on ServiceBus entities.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ManagementClient(string endpoint, ITokenProvider tokenProvider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">endpoint</span></td>
+        <td><p>Fully qualified domain name for Service Bus. Most likely, {yournamespace}.servicebus.windows.net</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.Primitives.ITokenProvider.html">ITokenProvider</a></td>
+        <td><span class="parametername">tokenProvider</span></td>
+        <td><p>Token provider which will generate security tokens for authorization.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_ManagementClient_CloneRequest_HttpRequestMessage_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.ManagementClient.CloneRequest(HttpRequestMessage)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/ManagementClient.cs/#L59">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_ManagementClient_CloneRequest_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.CloneRequest*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_ManagementClient_CloneRequest_HttpRequestMessage_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.CloneRequest(HttpRequestMessage)">CloneRequest(HttpRequestMessage)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static HttpRequestMessage CloneRequest(HttpRequestMessage req)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">HttpRequestMessage</span></td>
+        <td><span class="parametername">req</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">HttpRequestMessage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_ManagementClient_CloseAsync.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.ManagementClient.CloseAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/ManagementClient.cs/#L884">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_ManagementClient_CloseAsync_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.CloseAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_ManagementClient_CloseAsync" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.CloseAsync">CloseAsync()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task CloseAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_ManagementClient_CreateQueueAsync_Microsoft_Azure_ServiceBus_Management_QueueDescription_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.ManagementClient.CreateQueueAsync(Microsoft.Azure.ServiceBus.Management.QueueDescription%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/ManagementClient.cs/#L509">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_ManagementClient_CreateQueueAsync_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.CreateQueueAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_ManagementClient_CreateQueueAsync_Microsoft_Azure_ServiceBus_Management_QueueDescription_CancellationToken_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.CreateQueueAsync(Microsoft.Azure.ServiceBus.Management.QueueDescription,CancellationToken)">CreateQueueAsync(QueueDescription, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Creates a new queue in the service namespace with the given name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;QueueDescription&gt; CreateQueueAsync(QueueDescription queueDescription, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.Management.QueueDescription.html">QueueDescription</a></td>
+        <td><span class="parametername">queueDescription</span></td>
+        <td><p>A <a class="xref" href="Microsoft.Azure.ServiceBus.Management.QueueDescription.html">QueueDescription</a> object describing the attributes with which the new queue will be created.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.Management.QueueDescription.html">QueueDescription</a>&gt;</td>
+        <td><p>The <a class="xref" href="Microsoft.Azure.ServiceBus.Management.QueueDescription.html">QueueDescription</a> of the newly created queue.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_Management_ManagementClient_CreateQueueAsync_Microsoft_Azure_ServiceBus_Management_QueueDescription_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Throws if a queue already exists.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.Management.MessagingEntityAlreadyExistsException.html">MessagingEntityAlreadyExistsException</a></td>
+        <td><p>A queue with the same nameexists under the same service namespace.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusTimeoutException.html">ServiceBusTimeoutException</a></td>
+        <td><p>The operation times out.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.QuotaExceededException.html">QuotaExceededException</a></td>
+        <td><p>Either the specified size in the description is not supported or the maximum allowable quota has been reached. You must specify one of the supported size values, delete existing entities, or increase your quota size.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServerBusyException.html">ServerBusyException</a></td>
+        <td><p>The server is busy. You should wait before you retry the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusException.html">ServiceBusException</a></td>
+        <td><p>An internal error or unexpected exception occurs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_ManagementClient_CreateQueueAsync_System_String_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.ManagementClient.CreateQueueAsync(System.String%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/ManagementClient.cs/#L490">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_ManagementClient_CreateQueueAsync_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.CreateQueueAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_ManagementClient_CreateQueueAsync_System_String_CancellationToken_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.CreateQueueAsync(System.String,CancellationToken)">CreateQueueAsync(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Creates a new queue in the service namespace with the given name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;QueueDescription&gt; CreateQueueAsync(string queuePath, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">queuePath</span></td>
+        <td><p>The name of the queue relative to the service namespace base address.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.Management.QueueDescription.html">QueueDescription</a>&gt;</td>
+        <td><p>The <a class="xref" href="Microsoft.Azure.ServiceBus.Management.QueueDescription.html">QueueDescription</a> of the newly created queue.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_Management_ManagementClient_CreateQueueAsync_System_String_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Throws if a queue already exists. <a class="xref" href="Microsoft.Azure.ServiceBus.Management.QueueDescription.html">QueueDescription</a> for default values of queue properties.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.Management.MessagingEntityAlreadyExistsException.html">MessagingEntityAlreadyExistsException</a></td>
+        <td><p>An entity with the same name exists under the same service namespace.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusTimeoutException.html">ServiceBusTimeoutException</a></td>
+        <td><p>The operation times out. The timeout period is initialized through the <a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusConnection.html">ServiceBusConnection</a> class. You may need to increase the value of timeout to avoid this exception if the timeout value is relatively low.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.QuotaExceededException.html">QuotaExceededException</a></td>
+        <td><p>Either the specified size in the description is not supported or the maximum allowable quota has been reached. You must specify one of the supported size values, delete existing entities, or increase your quota size.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServerBusyException.html">ServerBusyException</a></td>
+        <td><p>The server is busy. You should wait before you retry the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusException.html">ServiceBusException</a></td>
+        <td><p>An internal error or unexpected exception occurs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_ManagementClient_CreateRuleAsync_System_String_System_String_Microsoft_Azure_ServiceBus_RuleDescription_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.ManagementClient.CreateRuleAsync(System.String%2CSystem.String%2CMicrosoft.Azure.ServiceBus.RuleDescription%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/ManagementClient.cs/#L659">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_ManagementClient_CreateRuleAsync_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.CreateRuleAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_ManagementClient_CreateRuleAsync_System_String_System_String_Microsoft_Azure_ServiceBus_RuleDescription_CancellationToken_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.CreateRuleAsync(System.String,System.String,Microsoft.Azure.ServiceBus.RuleDescription,CancellationToken)">CreateRuleAsync(String, String, RuleDescription, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Adds a new rule to the subscription under given topic.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;RuleDescription&gt; CreateRuleAsync(string topicPath, string subscriptionName, RuleDescription ruleDescription, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">topicPath</span></td>
+        <td><p>The topic path relative to the service namespace base address.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">subscriptionName</span></td>
+        <td><p>The name of the subscription.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.RuleDescription.html">RuleDescription</a></td>
+        <td><span class="parametername">ruleDescription</span></td>
+        <td><p>A <a class="xref" href="Microsoft.Azure.ServiceBus.RuleDescription.html">RuleDescription</a> object describing the attributes with which the messages are matched and acted upon.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.RuleDescription.html">RuleDescription</a>&gt;</td>
+        <td><p><a class="xref" href="Microsoft.Azure.ServiceBus.RuleDescription.html">RuleDescription</a> of the recently created rule.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.Management.MessagingEntityAlreadyExistsException.html">MessagingEntityAlreadyExistsException</a></td>
+        <td><p>A subscription with the same name exists under the same service namespace.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusTimeoutException.html">ServiceBusTimeoutException</a></td>
+        <td><p>The operation times out. The timeout period is initialized through the <a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusConnection.html">ServiceBusConnection</a> class. You may need to increase the value of timeout to avoid this exception if the timeout value is relatively low.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.QuotaExceededException.html">QuotaExceededException</a></td>
+        <td><p>Either the specified size in the description is not supported or the maximum allowable quota has been reached. You must specify one of the supported size values, delete existing entities, or increase your quota size.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServerBusyException.html">ServerBusyException</a></td>
+        <td><p>The server is busy. You should wait before you retry the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusException.html">ServiceBusException</a></td>
+        <td><p>An internal error or unexpected exception occurs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_ManagementClient_CreateSubscriptionAsync_Microsoft_Azure_ServiceBus_Management_SubscriptionDescription_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.ManagementClient.CreateSubscriptionAsync(Microsoft.Azure.ServiceBus.Management.SubscriptionDescription%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/ManagementClient.cs/#L607">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_ManagementClient_CreateSubscriptionAsync_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.CreateSubscriptionAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_ManagementClient_CreateSubscriptionAsync_Microsoft_Azure_ServiceBus_Management_SubscriptionDescription_CancellationToken_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.CreateSubscriptionAsync(Microsoft.Azure.ServiceBus.Management.SubscriptionDescription,CancellationToken)">CreateSubscriptionAsync(SubscriptionDescription, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Creates a new subscription within a topic in the service namespace with the given name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;SubscriptionDescription&gt; CreateSubscriptionAsync(SubscriptionDescription subscriptionDescription, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.Management.SubscriptionDescription.html">SubscriptionDescription</a></td>
+        <td><span class="parametername">subscriptionDescription</span></td>
+        <td><p>A <a class="xref" href="Microsoft.Azure.ServiceBus.Management.SubscriptionDescription.html">SubscriptionDescription</a> object describing the attributes with which the new subscription will be created.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.Management.SubscriptionDescription.html">SubscriptionDescription</a>&gt;</td>
+        <td><p>The <a class="xref" href="Microsoft.Azure.ServiceBus.Management.SubscriptionDescription.html">SubscriptionDescription</a> of the newly created subscription.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_Management_ManagementClient_CreateSubscriptionAsync_Microsoft_Azure_ServiceBus_Management_SubscriptionDescription_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Throws if a subscription already exists.
+Be default, A &quot;pass-through&quot; filter is created for this subscription, which means it will allow all messages to go to this subscription. The name of the filter is represented by <a class="xref" href="Microsoft.Azure.ServiceBus.RuleDescription.html#Microsoft_Azure_ServiceBus_RuleDescription_DefaultRuleName">DefaultRuleName</a>.
+<a class="xref" href="Microsoft.Azure.ServiceBus.Management.ManagementClient.html#Microsoft_Azure_ServiceBus_Management_ManagementClient_CreateSubscriptionAsync_Microsoft_Azure_ServiceBus_Management_SubscriptionDescription_Microsoft_Azure_ServiceBus_RuleDescription_CancellationToken_">CreateSubscriptionAsync(SubscriptionDescription, RuleDescription, CancellationToken)</a> for creating subscription with a different filter.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.Management.MessagingEntityAlreadyExistsException.html">MessagingEntityAlreadyExistsException</a></td>
+        <td><p>A subscription with the same name exists under the same service namespace.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusTimeoutException.html">ServiceBusTimeoutException</a></td>
+        <td><p>The operation times out. The timeout period is initialized through the <a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusConnection.html">ServiceBusConnection</a> class. You may need to increase the value of timeout to avoid this exception if the timeout value is relatively low.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.QuotaExceededException.html">QuotaExceededException</a></td>
+        <td><p>Either the specified size in the description is not supported or the maximum allowable quota has been reached. You must specify one of the supported size values, delete existing entities, or increase your quota size.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServerBusyException.html">ServerBusyException</a></td>
+        <td><p>The server is busy. You should wait before you retry the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusException.html">ServiceBusException</a></td>
+        <td><p>An internal error or unexpected exception occurs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_ManagementClient_CreateSubscriptionAsync_Microsoft_Azure_ServiceBus_Management_SubscriptionDescription_Microsoft_Azure_ServiceBus_RuleDescription_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.ManagementClient.CreateSubscriptionAsync(Microsoft.Azure.ServiceBus.Management.SubscriptionDescription%2CMicrosoft.Azure.ServiceBus.RuleDescription%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/ManagementClient.cs/#L628">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_ManagementClient_CreateSubscriptionAsync_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.CreateSubscriptionAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_ManagementClient_CreateSubscriptionAsync_Microsoft_Azure_ServiceBus_Management_SubscriptionDescription_Microsoft_Azure_ServiceBus_RuleDescription_CancellationToken_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.CreateSubscriptionAsync(Microsoft.Azure.ServiceBus.Management.SubscriptionDescription,Microsoft.Azure.ServiceBus.RuleDescription,CancellationToken)">CreateSubscriptionAsync(SubscriptionDescription, RuleDescription, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Creates a new subscription within a topic with the provided default rule.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;SubscriptionDescription&gt; CreateSubscriptionAsync(SubscriptionDescription subscriptionDescription, RuleDescription defaultRule, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.Management.SubscriptionDescription.html">SubscriptionDescription</a></td>
+        <td><span class="parametername">subscriptionDescription</span></td>
+        <td><p>A <a class="xref" href="Microsoft.Azure.ServiceBus.Management.SubscriptionDescription.html">SubscriptionDescription</a> object describing the attributes with which the new subscription will be created.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.RuleDescription.html">RuleDescription</a></td>
+        <td><span class="parametername">defaultRule</span></td>
+        <td><p>A <a class="xref" href="Microsoft.Azure.ServiceBus.RuleDescription.html">RuleDescription</a> object describing the default rule. If null, then pass-through filter with name <a class="xref" href="Microsoft.Azure.ServiceBus.RuleDescription.html#Microsoft_Azure_ServiceBus_RuleDescription_DefaultRuleName">DefaultRuleName</a> will be created.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.Management.SubscriptionDescription.html">SubscriptionDescription</a>&gt;</td>
+        <td><p>The <a class="xref" href="Microsoft.Azure.ServiceBus.Management.SubscriptionDescription.html">SubscriptionDescription</a> of the newly created subscription.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_Management_ManagementClient_CreateSubscriptionAsync_Microsoft_Azure_ServiceBus_Management_SubscriptionDescription_Microsoft_Azure_ServiceBus_RuleDescription_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Throws if a subscription already exists.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.Management.MessagingEntityAlreadyExistsException.html">MessagingEntityAlreadyExistsException</a></td>
+        <td><p>A subscription with the same name exists under the same service namespace.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusTimeoutException.html">ServiceBusTimeoutException</a></td>
+        <td><p>The operation times out. The timeout period is initialized through the <a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusConnection.html">ServiceBusConnection</a> class. You may need to increase the value of timeout to avoid this exception if the timeout value is relatively low.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.QuotaExceededException.html">QuotaExceededException</a></td>
+        <td><p>Either the specified size in the description is not supported or the maximum allowable quota has been reached. You must specify one of the supported size values, delete existing entities, or increase your quota size.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServerBusyException.html">ServerBusyException</a></td>
+        <td><p>The server is busy. You should wait before you retry the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusException.html">ServiceBusException</a></td>
+        <td><p>An internal error or unexpected exception occurs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_ManagementClient_CreateSubscriptionAsync_System_String_System_String_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.ManagementClient.CreateSubscriptionAsync(System.String%2CSystem.String%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/ManagementClient.cs/#L586">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_ManagementClient_CreateSubscriptionAsync_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.CreateSubscriptionAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_ManagementClient_CreateSubscriptionAsync_System_String_System_String_CancellationToken_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.CreateSubscriptionAsync(System.String,System.String,CancellationToken)">CreateSubscriptionAsync(String, String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Creates a new subscription within a topic in the service namespace with the given name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;SubscriptionDescription&gt; CreateSubscriptionAsync(string topicPath, string subscriptionName, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">topicPath</span></td>
+        <td><p>The path of the topic relative to the service namespace base address.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">subscriptionName</span></td>
+        <td><p>The name of the subscription.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.Management.SubscriptionDescription.html">SubscriptionDescription</a>&gt;</td>
+        <td><p>The <a class="xref" href="Microsoft.Azure.ServiceBus.Management.SubscriptionDescription.html">SubscriptionDescription</a> of the newly created subscription.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_Management_ManagementClient_CreateSubscriptionAsync_System_String_System_String_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Throws if a subscription already exists. <a class="xref" href="Microsoft.Azure.ServiceBus.Management.SubscriptionDescription.html">SubscriptionDescription</a> for default values of subscription properties.
+Be default, A &quot;pass-through&quot; filter is created for this subscription, which means it will allow all messages to go to this subscription. The name of the filter is represented by <a class="xref" href="Microsoft.Azure.ServiceBus.RuleDescription.html#Microsoft_Azure_ServiceBus_RuleDescription_DefaultRuleName">DefaultRuleName</a>.
+<a class="xref" href="Microsoft.Azure.ServiceBus.Management.ManagementClient.html#Microsoft_Azure_ServiceBus_Management_ManagementClient_CreateSubscriptionAsync_Microsoft_Azure_ServiceBus_Management_SubscriptionDescription_Microsoft_Azure_ServiceBus_RuleDescription_CancellationToken_">CreateSubscriptionAsync(SubscriptionDescription, RuleDescription, CancellationToken)</a> for creating subscription with a different filter.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.Management.MessagingEntityAlreadyExistsException.html">MessagingEntityAlreadyExistsException</a></td>
+        <td><p>A subscription with the same name exists under the same service namespace.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusTimeoutException.html">ServiceBusTimeoutException</a></td>
+        <td><p>The operation times out. The timeout period is initialized through the <a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusConnection.html">ServiceBusConnection</a> class. You may need to increase the value of timeout to avoid this exception if the timeout value is relatively low.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.QuotaExceededException.html">QuotaExceededException</a></td>
+        <td><p>Either the specified size in the description is not supported or the maximum allowable quota has been reached. You must specify one of the supported size values, delete existing entities, or increase your quota size.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServerBusyException.html">ServerBusyException</a></td>
+        <td><p>The server is busy. You should wait before you retry the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusException.html">ServiceBusException</a></td>
+        <td><p>An internal error or unexpected exception occurs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_ManagementClient_CreateTopicAsync_Microsoft_Azure_ServiceBus_Management_TopicDescription_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.ManagementClient.CreateTopicAsync(Microsoft.Azure.ServiceBus.Management.TopicDescription%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/ManagementClient.cs/#L558">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_ManagementClient_CreateTopicAsync_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.CreateTopicAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_ManagementClient_CreateTopicAsync_Microsoft_Azure_ServiceBus_Management_TopicDescription_CancellationToken_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.CreateTopicAsync(Microsoft.Azure.ServiceBus.Management.TopicDescription,CancellationToken)">CreateTopicAsync(TopicDescription, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Creates a new topic in the service namespace with the given name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;TopicDescription&gt; CreateTopicAsync(TopicDescription topicDescription, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.Management.TopicDescription.html">TopicDescription</a></td>
+        <td><span class="parametername">topicDescription</span></td>
+        <td><p>A <a class="xref" href="Microsoft.Azure.ServiceBus.Management.TopicDescription.html">TopicDescription</a> object describing the attributes with which the new topic will be created.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.Management.TopicDescription.html">TopicDescription</a>&gt;</td>
+        <td><p>The <a class="xref" href="Microsoft.Azure.ServiceBus.Management.TopicDescription.html">TopicDescription</a> of the newly created topic.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_Management_ManagementClient_CreateTopicAsync_Microsoft_Azure_ServiceBus_Management_TopicDescription_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Throws if a topic already exists. <a class="xref" href="Microsoft.Azure.ServiceBus.Management.TopicDescription.html">TopicDescription</a> for default values of topic properties.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.Management.MessagingEntityAlreadyExistsException.html">MessagingEntityAlreadyExistsException</a></td>
+        <td><p>A topic with the same name exists under the same service namespace.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusTimeoutException.html">ServiceBusTimeoutException</a></td>
+        <td><p>The operation times out. The timeout period is initialized through the <a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusConnection.html">ServiceBusConnection</a> class. You may need to increase the value of timeout to avoid this exception if the timeout value is relatively low.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.QuotaExceededException.html">QuotaExceededException</a></td>
+        <td><p>Either the specified size in the description is not supported or the maximum allowable quota has been reached. You must specify one of the supported size values, delete existing entities, or increase your quota size.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServerBusyException.html">ServerBusyException</a></td>
+        <td><p>The server is busy. You should wait before you retry the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusException.html">ServiceBusException</a></td>
+        <td><p>An internal error or unexpected exception occurs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_ManagementClient_CreateTopicAsync_System_String_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.ManagementClient.CreateTopicAsync(System.String%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/ManagementClient.cs/#L539">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_ManagementClient_CreateTopicAsync_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.CreateTopicAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_ManagementClient_CreateTopicAsync_System_String_CancellationToken_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.CreateTopicAsync(System.String,CancellationToken)">CreateTopicAsync(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Creates a new topic in the service namespace with the given name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;TopicDescription&gt; CreateTopicAsync(string topicPath, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">topicPath</span></td>
+        <td><p>The name of the topic relative to the service namespace base address.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.Management.TopicDescription.html">TopicDescription</a>&gt;</td>
+        <td><p>The <a class="xref" href="Microsoft.Azure.ServiceBus.Management.TopicDescription.html">TopicDescription</a> of the newly created topic.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_Management_ManagementClient_CreateTopicAsync_System_String_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Throws if a topic already exists. <a class="xref" href="Microsoft.Azure.ServiceBus.Management.TopicDescription.html">TopicDescription</a> for default values of topic properties.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.Management.MessagingEntityAlreadyExistsException.html">MessagingEntityAlreadyExistsException</a></td>
+        <td><p>A topic with the same name exists under the same service namespace.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusTimeoutException.html">ServiceBusTimeoutException</a></td>
+        <td><p>The operation times out. The timeout period is initialized through the <a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusConnection.html">ServiceBusConnection</a> class. You may need to increase the value of timeout to avoid this exception if the timeout value is relatively low.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.QuotaExceededException.html">QuotaExceededException</a></td>
+        <td><p>Either the specified size in the description is not supported or the maximum allowable quota has been reached. You must specify one of the supported size values, delete existing entities, or increase your quota size.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServerBusyException.html">ServerBusyException</a></td>
+        <td><p>The server is busy. You should wait before you retry the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusException.html">ServiceBusException</a></td>
+        <td><p>An internal error or unexpected exception occurs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_ManagementClient_DeleteQueueAsync_System_String_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.ManagementClient.DeleteQueueAsync(System.String%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/ManagementClient.cs/#L105">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_ManagementClient_DeleteQueueAsync_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.DeleteQueueAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_ManagementClient_DeleteQueueAsync_System_String_CancellationToken_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.DeleteQueueAsync(System.String,CancellationToken)">DeleteQueueAsync(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Deletes the queue described by the path relative to the service namespace base address.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task DeleteQueueAsync(string queuePath, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">queuePath</span></td>
+        <td><p>The name of the queue relative to the service namespace base address.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusTimeoutException.html">ServiceBusTimeoutException</a></td>
+        <td><p>The operation times out. The timeout period is initialized through the <a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusConnection.html">ServiceBusConnection</a> class. You may need to increase the value of timeout to avoid this exception if the timeout value is relatively low.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.MessagingEntityNotFoundException.html">MessagingEntityNotFoundException</a></td>
+        <td><p>Queue with this name does not exist.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServerBusyException.html">ServerBusyException</a></td>
+        <td><p>The server is busy. You should wait before you retry the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusException.html">ServiceBusException</a></td>
+        <td><p>An internal error or an unexpected exception occured.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_ManagementClient_DeleteRuleAsync_System_String_System_String_System_String_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.ManagementClient.DeleteRuleAsync(System.String%2CSystem.String%2CSystem.String%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/ManagementClient.cs/#L164">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_ManagementClient_DeleteRuleAsync_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.DeleteRuleAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_ManagementClient_DeleteRuleAsync_System_String_System_String_System_String_CancellationToken_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.DeleteRuleAsync(System.String,System.String,System.String,CancellationToken)">DeleteRuleAsync(String, String, String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Deletes the rule described by <code data-dev-comment-type="paramref" class="paramref">ruleName</code> from <code data-dev-comment-type="paramref" class="paramref">subscriptionName</code> under <code data-dev-comment-type="paramref" class="paramref">topicPath</code>./&gt;</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task DeleteRuleAsync(string topicPath, string subscriptionName, string ruleName, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">topicPath</span></td>
+        <td><p>The name of the topic relative to the service namespace base address.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">subscriptionName</span></td>
+        <td><p>The name of the subscription to delete.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">ruleName</span></td>
+        <td><p>The name of the rule to delete.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusTimeoutException.html">ServiceBusTimeoutException</a></td>
+        <td><p>The operation times out. The timeout period is initialized through the <a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusConnection.html">ServiceBusConnection</a> class. You may need to increase the value of timeout to avoid this exception if the timeout value is relatively low.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.MessagingEntityNotFoundException.html">MessagingEntityNotFoundException</a></td>
+        <td><p>Rule with this name does not exist.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServerBusyException.html">ServerBusyException</a></td>
+        <td><p>The server is busy. You should wait before you retry the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusException.html">ServiceBusException</a></td>
+        <td><p>An internal error or an unexpected exception occured.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_ManagementClient_DeleteSubscriptionAsync_System_String_System_String_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.ManagementClient.DeleteSubscriptionAsync(System.String%2CSystem.String%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/ManagementClient.cs/#L142">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_ManagementClient_DeleteSubscriptionAsync_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.DeleteSubscriptionAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_ManagementClient_DeleteSubscriptionAsync_System_String_System_String_CancellationToken_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.DeleteSubscriptionAsync(System.String,System.String,CancellationToken)">DeleteSubscriptionAsync(String, String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Deletes the subscription with the specified topic and subscription name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task DeleteSubscriptionAsync(string topicPath, string subscriptionName, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">topicPath</span></td>
+        <td><p>The name of the topic relative to the service namespace base address.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">subscriptionName</span></td>
+        <td><p>The name of the subscription to delete.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusTimeoutException.html">ServiceBusTimeoutException</a></td>
+        <td><p>The operation times out. The timeout period is initialized through the <a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusConnection.html">ServiceBusConnection</a> class. You may need to increase the value of timeout to avoid this exception if the timeout value is relatively low.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.MessagingEntityNotFoundException.html">MessagingEntityNotFoundException</a></td>
+        <td><p>Subscription with this name does not exist.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServerBusyException.html">ServerBusyException</a></td>
+        <td><p>The server is busy. You should wait before you retry the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusException.html">ServiceBusException</a></td>
+        <td><p>An internal error or an unexpected exception occured.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_ManagementClient_DeleteTopicAsync_System_String_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.ManagementClient.DeleteTopicAsync(System.String%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/ManagementClient.cs/#L123">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_ManagementClient_DeleteTopicAsync_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.DeleteTopicAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_ManagementClient_DeleteTopicAsync_System_String_CancellationToken_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.DeleteTopicAsync(System.String,CancellationToken)">DeleteTopicAsync(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Deletes the topic described by the name relative to the service namespace base address.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task DeleteTopicAsync(string topicPath, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">topicPath</span></td>
+        <td><p>The name of the topic relative to the service namespace base address.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusTimeoutException.html">ServiceBusTimeoutException</a></td>
+        <td><p>The operation times out. The timeout period is initialized through the <a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusConnection.html">ServiceBusConnection</a> class. You may need to increase the value of timeout to avoid this exception if the timeout value is relatively low.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.MessagingEntityNotFoundException.html">MessagingEntityNotFoundException</a></td>
+        <td><p>Topic with this name does not exist.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServerBusyException.html">ServerBusyException</a></td>
+        <td><p>The server is busy. You should wait before you retry the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusException.html">ServiceBusException</a></td>
+        <td><p>An internal error or an unexpected exception occured.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_ManagementClient_GetNamespaceInfoAsync_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.ManagementClient.GetNamespaceInfoAsync(CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/ManagementClient.cs/#L85">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_ManagementClient_GetNamespaceInfoAsync_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.GetNamespaceInfoAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_ManagementClient_GetNamespaceInfoAsync_CancellationToken_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.GetNamespaceInfoAsync(CancellationToken)">GetNamespaceInfoAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets information related to the currently used namespace.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;NamespaceInfo&gt; GetNamespaceInfoAsync(CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.Management.NamespaceInfo.html">NamespaceInfo</a>&gt;</td>
+        <td><p><a class="xref" href="Microsoft.Azure.ServiceBus.Management.NamespaceInfo.html">NamespaceInfo</a> containing namespace information.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_Management_ManagementClient_GetNamespaceInfoAsync_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Works with any claim (Send/Listen/Manage).</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_ManagementClient_GetQueueAsync_System_String_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.ManagementClient.GetQueueAsync(System.String%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/ManagementClient.cs/#L190">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_ManagementClient_GetQueueAsync_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.GetQueueAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_ManagementClient_GetQueueAsync_System_String_CancellationToken_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.GetQueueAsync(System.String,CancellationToken)">GetQueueAsync(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Retrieves a queue from the service namespace.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;QueueDescription&gt; GetQueueAsync(string queuePath, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">queuePath</span></td>
+        <td><p>The path of the queue relative to service bus namespace.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.Management.QueueDescription.html">QueueDescription</a>&gt;</td>
+        <td><p><a class="xref" href="Microsoft.Azure.ServiceBus.Management.QueueDescription.html">QueueDescription</a> containing information about the queue.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusTimeoutException.html">ServiceBusTimeoutException</a></td>
+        <td><p>The operation times out. The timeout period is initialized through the <a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusConnection.html">ServiceBusConnection</a> class. You may need to increase the value of timeout to avoid this exception if the timeout value is relatively low.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.MessagingEntityNotFoundException.html">MessagingEntityNotFoundException</a></td>
+        <td><p>Queue with this name does not exist.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServerBusyException.html">ServerBusyException</a></td>
+        <td><p>The server is busy. You should wait before you retry the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusException.html">ServiceBusException</a></td>
+        <td><p>An internal error or an unexpected exception occured.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_ManagementClient_GetQueueRuntimeInfoAsync_System_String_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.ManagementClient.GetQueueRuntimeInfoAsync(System.String%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/ManagementClient.cs/#L289">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_ManagementClient_GetQueueRuntimeInfoAsync_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.GetQueueRuntimeInfoAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_ManagementClient_GetQueueRuntimeInfoAsync_System_String_CancellationToken_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.GetQueueRuntimeInfoAsync(System.String,CancellationToken)">GetQueueRuntimeInfoAsync(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Retrieves the runtime information of a queue.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;QueueRuntimeInfo&gt; GetQueueRuntimeInfoAsync(string queuePath, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">queuePath</span></td>
+        <td><p>The path of the queue relative to service bus namespace.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.Management.QueueRuntimeInfo.html">QueueRuntimeInfo</a>&gt;</td>
+        <td><p><a class="xref" href="Microsoft.Azure.ServiceBus.Management.QueueRuntimeInfo.html">QueueRuntimeInfo</a> containing runtime information about the queue.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusTimeoutException.html">ServiceBusTimeoutException</a></td>
+        <td><p>The operation times out. The timeout period is initialized through the <a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusConnection.html">ServiceBusConnection</a> class. You may need to increase the value of timeout to avoid this exception if the timeout value is relatively low.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.MessagingEntityNotFoundException.html">MessagingEntityNotFoundException</a></td>
+        <td><p>Queue with this name does not exist.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServerBusyException.html">ServerBusyException</a></td>
+        <td><p>The server is busy. You should wait before you retry the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusException.html">ServiceBusException</a></td>
+        <td><p>An internal error or an unexpected exception occured.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_ManagementClient_GetQueuesAsync_System_Int32_System_Int32_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.ManagementClient.GetQueuesAsync(System.Int32%2CSystem.Int32%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/ManagementClient.cs/#L361">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_ManagementClient_GetQueuesAsync_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.GetQueuesAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_ManagementClient_GetQueuesAsync_System_Int32_System_Int32_CancellationToken_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.GetQueuesAsync(System.Int32,System.Int32,CancellationToken)">GetQueuesAsync(Int32, Int32, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Retrieves the list of queues present in the namespace.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;IList&lt;QueueDescription&gt;&gt; GetQueuesAsync(int count = 100, int skip = 0, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>The number of queues to fetch. Defaults to 100. Maximum value allowed is 100.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">skip</span></td>
+        <td><p>The number of queues to skip. Defaults to 0. Cannot be negative.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IList</span>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.Management.QueueDescription.html">QueueDescription</a>&gt;&gt;</td>
+        <td><p><see cref="!:IList&lt;QueueDescription>"></see> containing list of queues.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_Management_ManagementClient_GetQueuesAsync_System_Int32_System_Int32_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>You can simulate pages of list of entities by manipulating <code data-dev-comment-type="paramref" class="paramref">count</code> and <code data-dev-comment-type="paramref" class="paramref">skip</code>.
+skip(0)+count(100) gives first 100 entities. skip(100)+count(100) gives the next 100 entities.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusTimeoutException.html">ServiceBusTimeoutException</a></td>
+        <td><p>The operation times out. The timeout period is initialized through the <a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusConnection.html">ServiceBusConnection</a> class. You may need to increase the value of timeout to avoid this exception if the timeout value is relatively low.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServerBusyException.html">ServerBusyException</a></td>
+        <td><p>The server is busy. You should wait before you retry the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusException.html">ServiceBusException</a></td>
+        <td><p>An internal error or an unexpected exception occured.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_ManagementClient_GetRuleAsync_System_String_System_String_System_String_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.ManagementClient.GetRuleAsync(System.String%2CSystem.String%2CSystem.String%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/ManagementClient.cs/#L262">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_ManagementClient_GetRuleAsync_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.GetRuleAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_ManagementClient_GetRuleAsync_System_String_System_String_System_String_CancellationToken_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.GetRuleAsync(System.String,System.String,System.String,CancellationToken)">GetRuleAsync(String, String, String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Retrieves a rule from the service namespace.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;RuleDescription&gt; GetRuleAsync(string topicPath, string subscriptionName, string ruleName, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">topicPath</span></td>
+        <td><p>The path of the topic relative to service bus namespace.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">subscriptionName</span></td>
+        <td><p>The subscription name the rule belongs to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">ruleName</span></td>
+        <td><p>The name of the rule to retrieve.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.RuleDescription.html">RuleDescription</a>&gt;</td>
+        <td><p><a class="xref" href="Microsoft.Azure.ServiceBus.RuleDescription.html">RuleDescription</a> containing information about the rule.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_Management_ManagementClient_GetRuleAsync_System_String_System_String_System_String_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Note - Only following data types are deserialized in Filters and Action parameters - string,int,long,bool,double,DateTime.
+Other data types would return its string value.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusTimeoutException.html">ServiceBusTimeoutException</a></td>
+        <td><p>The operation times out. The timeout period is initialized through the <a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusConnection.html">ServiceBusConnection</a> class. You may need to increase the value of timeout to avoid this exception if the timeout value is relatively low.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.MessagingEntityNotFoundException.html">MessagingEntityNotFoundException</a></td>
+        <td><p>Topic/Subscription/Rule with this name does not exist.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServerBusyException.html">ServerBusyException</a></td>
+        <td><p>The server is busy. You should wait before you retry the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusException.html">ServiceBusException</a></td>
+        <td><p>An internal error or an unexpected exception occured.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_ManagementClient_GetRulesAsync_System_String_System_String_System_Int32_System_Int32_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.ManagementClient.GetRulesAsync(System.String%2CSystem.String%2CSystem.Int32%2CSystem.Int32%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/ManagementClient.cs/#L454">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_ManagementClient_GetRulesAsync_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.GetRulesAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_ManagementClient_GetRulesAsync_System_String_System_String_System_Int32_System_Int32_CancellationToken_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.GetRulesAsync(System.String,System.String,System.Int32,System.Int32,CancellationToken)">GetRulesAsync(String, String, Int32, Int32, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Retrieves the list of rules for a given subscription in a topic.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;IList&lt;RuleDescription&gt;&gt; GetRulesAsync(string topicPath, string subscriptionName, int count = 100, int skip = 0, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">topicPath</span></td>
+        <td><p>The topic path.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">subscriptionName</span></td>
+        <td><p>The subscription for which all the rules need to be retrieved.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>The number of rules to fetch. Defaults to 100. Maximum value allowed is 100.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">skip</span></td>
+        <td><p>The number of rules to skip. Defaults to 0. Cannot be negative.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IList</span>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.RuleDescription.html">RuleDescription</a>&gt;&gt;</td>
+        <td><p><see cref="!:IList&lt;RuleDescription>"></see> containing list of rules.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_Management_ManagementClient_GetRulesAsync_System_String_System_String_System_Int32_System_Int32_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>You can simulate pages of list of entities by manipulating <code data-dev-comment-type="paramref" class="paramref">count</code> and <code data-dev-comment-type="paramref" class="paramref">skip</code>.
+skip(0)+count(100) gives first 100 entities. skip(100)+count(100) gives the next 100 entities.
+Note - Only following data types are deserialized in Filters and Action parameters - string,int,long,bool,double,DateTime.
+Other data types would return its string value.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusTimeoutException.html">ServiceBusTimeoutException</a></td>
+        <td><p>The operation times out. The timeout period is initialized through the <a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusConnection.html">ServiceBusConnection</a> class. You may need to increase the value of timeout to avoid this exception if the timeout value is relatively low.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServerBusyException.html">ServerBusyException</a></td>
+        <td><p>The server is busy. You should wait before you retry the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusException.html">ServiceBusException</a></td>
+        <td><p>An internal error or an unexpected exception occured.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_ManagementClient_GetSubscriptionAsync_System_String_System_String_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.ManagementClient.GetSubscriptionAsync(System.String%2CSystem.String%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/ManagementClient.cs/#L235">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_ManagementClient_GetSubscriptionAsync_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.GetSubscriptionAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_ManagementClient_GetSubscriptionAsync_System_String_System_String_CancellationToken_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.GetSubscriptionAsync(System.String,System.String,CancellationToken)">GetSubscriptionAsync(String, String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Retrieves a subscription from the service namespace.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;SubscriptionDescription&gt; GetSubscriptionAsync(string topicPath, string subscriptionName, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">topicPath</span></td>
+        <td><p>The path of the topic relative to service bus namespace.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">subscriptionName</span></td>
+        <td><p>The subscription name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.Management.SubscriptionDescription.html">SubscriptionDescription</a>&gt;</td>
+        <td><p><a class="xref" href="Microsoft.Azure.ServiceBus.Management.SubscriptionDescription.html">SubscriptionDescription</a> containing information about the subscription.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusTimeoutException.html">ServiceBusTimeoutException</a></td>
+        <td><p>The operation times out. The timeout period is initialized through the <a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusConnection.html">ServiceBusConnection</a> class. You may need to increase the value of timeout to avoid this exception if the timeout value is relatively low.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.MessagingEntityNotFoundException.html">MessagingEntityNotFoundException</a></td>
+        <td><p>Topic or Subscription with this name does not exist.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServerBusyException.html">ServerBusyException</a></td>
+        <td><p>The server is busy. You should wait before you retry the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusException.html">ServiceBusException</a></td>
+        <td><p>An internal error or an unexpected exception occured.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_ManagementClient_GetSubscriptionRuntimeInfoAsync_System_String_System_String_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.ManagementClient.GetSubscriptionRuntimeInfoAsync(System.String%2CSystem.String%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/ManagementClient.cs/#L334">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_ManagementClient_GetSubscriptionRuntimeInfoAsync_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.GetSubscriptionRuntimeInfoAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_ManagementClient_GetSubscriptionRuntimeInfoAsync_System_String_System_String_CancellationToken_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.GetSubscriptionRuntimeInfoAsync(System.String,System.String,CancellationToken)">GetSubscriptionRuntimeInfoAsync(String, String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Retrieves the runtime information of a subscription.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;SubscriptionRuntimeInfo&gt; GetSubscriptionRuntimeInfoAsync(string topicPath, string subscriptionName, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">topicPath</span></td>
+        <td><p>The path of the topic relative to service bus namespace.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">subscriptionName</span></td>
+        <td><p>The subscription name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.Management.SubscriptionRuntimeInfo.html">SubscriptionRuntimeInfo</a>&gt;</td>
+        <td><p><a class="xref" href="Microsoft.Azure.ServiceBus.Management.SubscriptionRuntimeInfo.html">SubscriptionRuntimeInfo</a> containing runtime information about the subscription.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusTimeoutException.html">ServiceBusTimeoutException</a></td>
+        <td><p>The operation times out. The timeout period is initialized through the <a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusConnection.html">ServiceBusConnection</a> class. You may need to increase the value of timeout to avoid this exception if the timeout value is relatively low.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.MessagingEntityNotFoundException.html">MessagingEntityNotFoundException</a></td>
+        <td><p>Topic or Subscription with this name does not exist.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServerBusyException.html">ServerBusyException</a></td>
+        <td><p>The server is busy. You should wait before you retry the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusException.html">ServiceBusException</a></td>
+        <td><p>An internal error or an unexpected exception occured.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_ManagementClient_GetSubscriptionsAsync_System_String_System_Int32_System_Int32_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.ManagementClient.GetSubscriptionsAsync(System.String%2CSystem.Int32%2CSystem.Int32%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/ManagementClient.cs/#L420">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_ManagementClient_GetSubscriptionsAsync_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.GetSubscriptionsAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_ManagementClient_GetSubscriptionsAsync_System_String_System_Int32_System_Int32_CancellationToken_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.GetSubscriptionsAsync(System.String,System.Int32,System.Int32,CancellationToken)">GetSubscriptionsAsync(String, Int32, Int32, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Retrieves the list of subscriptions present in the topic.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;IList&lt;SubscriptionDescription&gt;&gt; GetSubscriptionsAsync(string topicPath, int count = 100, int skip = 0, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">topicPath</span></td>
+        <td><p>The topic path under which all the subscriptions need to be retrieved.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>The number of subscriptions to fetch. Defaults to 100. Maximum value allowed is 100.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">skip</span></td>
+        <td><p>The number of subscriptions to skip. Defaults to 0. Cannot be negative.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IList</span>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.Management.SubscriptionDescription.html">SubscriptionDescription</a>&gt;&gt;</td>
+        <td><p><see cref="!:IList&lt;SubscriptionDescription>"></see> containing list of subscriptions.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_Management_ManagementClient_GetSubscriptionsAsync_System_String_System_Int32_System_Int32_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>You can simulate pages of list of entities by manipulating <code data-dev-comment-type="paramref" class="paramref">count</code> and <code data-dev-comment-type="paramref" class="paramref">skip</code>.
+skip(0)+count(100) gives first 100 entities. skip(100)+count(100) gives the next 100 entities.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusTimeoutException.html">ServiceBusTimeoutException</a></td>
+        <td><p>The operation times out. The timeout period is initialized through the <a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusConnection.html">ServiceBusConnection</a> class. You may need to increase the value of timeout to avoid this exception if the timeout value is relatively low.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServerBusyException.html">ServerBusyException</a></td>
+        <td><p>The server is busy. You should wait before you retry the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusException.html">ServiceBusException</a></td>
+        <td><p>An internal error or an unexpected exception occured.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_ManagementClient_GetTopicAsync_System_String_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.ManagementClient.GetTopicAsync(System.String%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/ManagementClient.cs/#L212">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_ManagementClient_GetTopicAsync_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.GetTopicAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_ManagementClient_GetTopicAsync_System_String_CancellationToken_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.GetTopicAsync(System.String,CancellationToken)">GetTopicAsync(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Retrieves a topic from the service namespace.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;TopicDescription&gt; GetTopicAsync(string topicPath, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">topicPath</span></td>
+        <td><p>The path of the topic relative to service bus namespace.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.Management.TopicDescription.html">TopicDescription</a>&gt;</td>
+        <td><p><a class="xref" href="Microsoft.Azure.ServiceBus.Management.TopicDescription.html">TopicDescription</a> containing information about the topic.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusTimeoutException.html">ServiceBusTimeoutException</a></td>
+        <td><p>The operation times out. The timeout period is initialized through the <a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusConnection.html">ServiceBusConnection</a> class. You may need to increase the value of timeout to avoid this exception if the timeout value is relatively low.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.MessagingEntityNotFoundException.html">MessagingEntityNotFoundException</a></td>
+        <td><p>Topic with this name does not exist.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServerBusyException.html">ServerBusyException</a></td>
+        <td><p>The server is busy. You should wait before you retry the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusException.html">ServiceBusException</a></td>
+        <td><p>An internal error or an unexpected exception occured.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_ManagementClient_GetTopicRuntimeInfoAsync_System_String_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.ManagementClient.GetTopicRuntimeInfoAsync(System.String%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/ManagementClient.cs/#L311">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_ManagementClient_GetTopicRuntimeInfoAsync_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.GetTopicRuntimeInfoAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_ManagementClient_GetTopicRuntimeInfoAsync_System_String_CancellationToken_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.GetTopicRuntimeInfoAsync(System.String,CancellationToken)">GetTopicRuntimeInfoAsync(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Retrieves the runtime information of a topic.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;TopicRuntimeInfo&gt; GetTopicRuntimeInfoAsync(string topicPath, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">topicPath</span></td>
+        <td><p>The path of the topic relative to service bus namespace.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.Management.TopicRuntimeInfo.html">TopicRuntimeInfo</a>&gt;</td>
+        <td><p><a class="xref" href="Microsoft.Azure.ServiceBus.Management.TopicRuntimeInfo.html">TopicRuntimeInfo</a> containing runtime information about the topic.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusTimeoutException.html">ServiceBusTimeoutException</a></td>
+        <td><p>The operation times out. The timeout period is initialized through the <a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusConnection.html">ServiceBusConnection</a> class. You may need to increase the value of timeout to avoid this exception if the timeout value is relatively low.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.MessagingEntityNotFoundException.html">MessagingEntityNotFoundException</a></td>
+        <td><p>Topic with this name does not exist.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServerBusyException.html">ServerBusyException</a></td>
+        <td><p>The server is busy. You should wait before you retry the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusException.html">ServiceBusException</a></td>
+        <td><p>An internal error or an unexpected exception occured.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_ManagementClient_GetTopicsAsync_System_Int32_System_Int32_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.ManagementClient.GetTopicsAsync(System.Int32%2CSystem.Int32%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/ManagementClient.cs/#L390">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_ManagementClient_GetTopicsAsync_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.GetTopicsAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_ManagementClient_GetTopicsAsync_System_Int32_System_Int32_CancellationToken_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.GetTopicsAsync(System.Int32,System.Int32,CancellationToken)">GetTopicsAsync(Int32, Int32, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Retrieves the list of topics present in the namespace.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;IList&lt;TopicDescription&gt;&gt; GetTopicsAsync(int count = 100, int skip = 0, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>The number of topics to fetch. Defaults to 100. Maximum value allowed is 100.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">skip</span></td>
+        <td><p>The number of topics to skip. Defaults to 0. Cannot be negative.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IList</span>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.Management.TopicDescription.html">TopicDescription</a>&gt;&gt;</td>
+        <td><p><see cref="!:IList&lt;TopicDescription>"></see> containing list of topics.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_ServiceBus_Management_ManagementClient_GetTopicsAsync_System_Int32_System_Int32_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>You can simulate pages of list of entities by manipulating <code data-dev-comment-type="paramref" class="paramref">count</code> and <code data-dev-comment-type="paramref" class="paramref">skip</code>.
+skip(0)+count(100) gives first 100 entities. skip(100)+count(100) gives the next 100 entities.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusTimeoutException.html">ServiceBusTimeoutException</a></td>
+        <td><p>The operation times out. The timeout period is initialized through the <a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusConnection.html">ServiceBusConnection</a> class. You may need to increase the value of timeout to avoid this exception if the timeout value is relatively low.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServerBusyException.html">ServerBusyException</a></td>
+        <td><p>The server is busy. You should wait before you retry the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusException.html">ServiceBusException</a></td>
+        <td><p>An internal error or an unexpected exception occured.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_ManagementClient_QueueExistsAsync_System_String_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.ManagementClient.QueueExistsAsync(System.String%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/ManagementClient.cs/#L809">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_ManagementClient_QueueExistsAsync_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.QueueExistsAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_ManagementClient_QueueExistsAsync_System_String_CancellationToken_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.QueueExistsAsync(System.String,CancellationToken)">QueueExistsAsync(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Checks whether a given queue exists or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;bool&gt; QueueExistsAsync(string queuePath, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">queuePath</span></td>
+        <td><p>Path of the queue entity to check.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>True if queue exists, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusTimeoutException.html">ServiceBusTimeoutException</a></td>
+        <td><p>The operation times out.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServerBusyException.html">ServerBusyException</a></td>
+        <td><p>The server is busy. You should wait before you retry the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusException.html">ServiceBusException</a></td>
+        <td><p>An internal error or unexpected exception occurs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_ManagementClient_SubscriptionExistsAsync_System_String_System_String_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.ManagementClient.SubscriptionExistsAsync(System.String%2CSystem.String%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/ManagementClient.cs/#L866">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_ManagementClient_SubscriptionExistsAsync_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.SubscriptionExistsAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_ManagementClient_SubscriptionExistsAsync_System_String_System_String_CancellationToken_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.SubscriptionExistsAsync(System.String,System.String,CancellationToken)">SubscriptionExistsAsync(String, String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Checks whether a given subscription exists or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;bool&gt; SubscriptionExistsAsync(string topicPath, string subscriptionName, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">topicPath</span></td>
+        <td><p>Path of the topic.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">subscriptionName</span></td>
+        <td><p>Name of the subscription to check.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>True if subscription exists, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusTimeoutException.html">ServiceBusTimeoutException</a></td>
+        <td><p>The operation times out.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServerBusyException.html">ServerBusyException</a></td>
+        <td><p>The server is busy. You should wait before you retry the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusException.html">ServiceBusException</a></td>
+        <td><p>An internal error or unexpected exception occurs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_ManagementClient_TopicExistsAsync_System_String_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.ManagementClient.TopicExistsAsync(System.String%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/ManagementClient.cs/#L837">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_ManagementClient_TopicExistsAsync_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.TopicExistsAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_ManagementClient_TopicExistsAsync_System_String_CancellationToken_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.TopicExistsAsync(System.String,CancellationToken)">TopicExistsAsync(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Checks whether a given topic exists or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;bool&gt; TopicExistsAsync(string topicPath, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">topicPath</span></td>
+        <td><p>Path of the topic entity to check.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>True if topic exists, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusTimeoutException.html">ServiceBusTimeoutException</a></td>
+        <td><p>The operation times out.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServerBusyException.html">ServerBusyException</a></td>
+        <td><p>The server is busy. You should wait before you retry the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusException.html">ServiceBusException</a></td>
+        <td><p>An internal error or unexpected exception occurs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_ManagementClient_UpdateQueueAsync_Microsoft_Azure_ServiceBus_Management_QueueDescription_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.ManagementClient.UpdateQueueAsync(Microsoft.Azure.ServiceBus.Management.QueueDescription%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/ManagementClient.cs/#L694">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_ManagementClient_UpdateQueueAsync_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.UpdateQueueAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_ManagementClient_UpdateQueueAsync_Microsoft_Azure_ServiceBus_Management_QueueDescription_CancellationToken_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.UpdateQueueAsync(Microsoft.Azure.ServiceBus.Management.QueueDescription,CancellationToken)">UpdateQueueAsync(QueueDescription, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Updates an existing queue.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;QueueDescription&gt; UpdateQueueAsync(QueueDescription queueDescription, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.Management.QueueDescription.html">QueueDescription</a></td>
+        <td><span class="parametername">queueDescription</span></td>
+        <td><p>A <a class="xref" href="Microsoft.Azure.ServiceBus.Management.QueueDescription.html">QueueDescription</a> object describing the attributes with which the queue will be updated.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.Management.QueueDescription.html">QueueDescription</a>&gt;</td>
+        <td><p>The <a class="xref" href="Microsoft.Azure.ServiceBus.Management.QueueDescription.html">QueueDescription</a> of the updated queue.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.MessagingEntityNotFoundException.html">MessagingEntityNotFoundException</a></td>
+        <td><p>Described queue was not found.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusTimeoutException.html">ServiceBusTimeoutException</a></td>
+        <td><p>The operation times out.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.QuotaExceededException.html">QuotaExceededException</a></td>
+        <td><p>Either the specified size in the description is not supported or the maximum allowable quota has been reached. You must specify one of the supported size values, delete existing entities, or increase your quota size.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServerBusyException.html">ServerBusyException</a></td>
+        <td><p>The server is busy. You should wait before you retry the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusException.html">ServiceBusException</a></td>
+        <td><p>An internal error or unexpected exception occurs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_ManagementClient_UpdateRuleAsync_System_String_System_String_Microsoft_Azure_ServiceBus_RuleDescription_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.ManagementClient.UpdateRuleAsync(System.String%2CSystem.String%2CMicrosoft.Azure.ServiceBus.RuleDescription%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/ManagementClient.cs/#L778">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_ManagementClient_UpdateRuleAsync_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.UpdateRuleAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_ManagementClient_UpdateRuleAsync_System_String_System_String_Microsoft_Azure_ServiceBus_RuleDescription_CancellationToken_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.UpdateRuleAsync(System.String,System.String,Microsoft.Azure.ServiceBus.RuleDescription,CancellationToken)">UpdateRuleAsync(String, String, RuleDescription, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Updates an existing rule for a topic-subscription.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;RuleDescription&gt; UpdateRuleAsync(string topicPath, string subscriptionName, RuleDescription ruleDescription, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">topicPath</span></td>
+        <td><p>Path of the topic.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">subscriptionName</span></td>
+        <td><p>Name of the subscription.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.RuleDescription.html">RuleDescription</a></td>
+        <td><span class="parametername">ruleDescription</span></td>
+        <td><p>A <a class="xref" href="Microsoft.Azure.ServiceBus.RuleDescription.html">RuleDescription</a> object describing the attributes with which the rule will be updated.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.RuleDescription.html">RuleDescription</a>&gt;</td>
+        <td><p>The <a class="xref" href="Microsoft.Azure.ServiceBus.RuleDescription.html">RuleDescription</a> of the updated rule.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.MessagingEntityNotFoundException.html">MessagingEntityNotFoundException</a></td>
+        <td><p>Described topic/subscription/rule was not found.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusTimeoutException.html">ServiceBusTimeoutException</a></td>
+        <td><p>The operation times out.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.QuotaExceededException.html">QuotaExceededException</a></td>
+        <td><p>Either the specified size in the description is not supported or the maximum allowable quota has been reached. You must specify one of the supported size values, delete existing entities, or increase your quota size.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServerBusyException.html">ServerBusyException</a></td>
+        <td><p>The server is busy. You should wait before you retry the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusException.html">ServiceBusException</a></td>
+        <td><p>An internal error or unexpected exception occurs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_ManagementClient_UpdateSubscriptionAsync_Microsoft_Azure_ServiceBus_Management_SubscriptionDescription_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.ManagementClient.UpdateSubscriptionAsync(Microsoft.Azure.ServiceBus.Management.SubscriptionDescription%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/ManagementClient.cs/#L748">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_ManagementClient_UpdateSubscriptionAsync_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.UpdateSubscriptionAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_ManagementClient_UpdateSubscriptionAsync_Microsoft_Azure_ServiceBus_Management_SubscriptionDescription_CancellationToken_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.UpdateSubscriptionAsync(Microsoft.Azure.ServiceBus.Management.SubscriptionDescription,CancellationToken)">UpdateSubscriptionAsync(SubscriptionDescription, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Updates an existing subscription under a topic.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;SubscriptionDescription&gt; UpdateSubscriptionAsync(SubscriptionDescription subscriptionDescription, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.Management.SubscriptionDescription.html">SubscriptionDescription</a></td>
+        <td><span class="parametername">subscriptionDescription</span></td>
+        <td><p>A <a class="xref" href="Microsoft.Azure.ServiceBus.Management.SubscriptionDescription.html">SubscriptionDescription</a> object describing the attributes with which the subscription will be updated.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.Management.SubscriptionDescription.html">SubscriptionDescription</a>&gt;</td>
+        <td><p>The <a class="xref" href="Microsoft.Azure.ServiceBus.Management.SubscriptionDescription.html">SubscriptionDescription</a> of the updated subscription.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.MessagingEntityNotFoundException.html">MessagingEntityNotFoundException</a></td>
+        <td><p>Described subscription was not found.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusTimeoutException.html">ServiceBusTimeoutException</a></td>
+        <td><p>The operation times out.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.QuotaExceededException.html">QuotaExceededException</a></td>
+        <td><p>Either the specified size in the description is not supported or the maximum allowable quota has been reached. You must specify one of the supported size values, delete existing entities, or increase your quota size.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServerBusyException.html">ServerBusyException</a></td>
+        <td><p>The server is busy. You should wait before you retry the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusException.html">ServiceBusException</a></td>
+        <td><p>An internal error or unexpected exception occurs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_ManagementClient_UpdateTopicAsync_Microsoft_Azure_ServiceBus_Management_TopicDescription_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.ManagementClient.UpdateTopicAsync(Microsoft.Azure.ServiceBus.Management.TopicDescription%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/ManagementClient.cs/#L725">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_ServiceBus_Management_ManagementClient_UpdateTopicAsync_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.UpdateTopicAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Management_ManagementClient_UpdateTopicAsync_Microsoft_Azure_ServiceBus_Management_TopicDescription_CancellationToken_" data-uid="Microsoft.Azure.ServiceBus.Management.ManagementClient.UpdateTopicAsync(Microsoft.Azure.ServiceBus.Management.TopicDescription,CancellationToken)">UpdateTopicAsync(TopicDescription, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Updates an existing topic.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;TopicDescription&gt; UpdateTopicAsync(TopicDescription topicDescription, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.Management.TopicDescription.html">TopicDescription</a></td>
+        <td><span class="parametername">topicDescription</span></td>
+        <td><p>A <a class="xref" href="Microsoft.Azure.ServiceBus.Management.TopicDescription.html">TopicDescription</a> object describing the attributes with which the topic will be updated.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.Management.TopicDescription.html">TopicDescription</a>&gt;</td>
+        <td><p>The <a class="xref" href="Microsoft.Azure.ServiceBus.Management.TopicDescription.html">TopicDescription</a> of the updated topic.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.MessagingEntityNotFoundException.html">MessagingEntityNotFoundException</a></td>
+        <td><p>Described topic was not found.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusTimeoutException.html">ServiceBusTimeoutException</a></td>
+        <td><p>The operation times out.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.QuotaExceededException.html">QuotaExceededException</a></td>
+        <td><p>Either the specified size in the description is not supported or the maximum allowable quota has been reached. You must specify one of the supported size values, delete existing entities, or increase your quota size.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServerBusyException.html">ServerBusyException</a></td>
+        <td><p>The server is busy. You should wait before you retry the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusException.html">ServiceBusException</a></td>
+        <td><p>An internal error or unexpected exception occurs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="../ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.AppConfigurationAzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AppConfigurationAzureClientBuilderExtensions_AddAppConfiguration__2___0_System_String___1_">AppConfigurationAzureClientBuilderExtensions.AddAppConfiguration&lt;TBuilder, TConfiguration&gt;(TBuilder, String, TConfiguration)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/GenerateDocsForGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Management_ManagementClient.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Management.ManagementClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Management/ManagementClient.cs/#L16" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

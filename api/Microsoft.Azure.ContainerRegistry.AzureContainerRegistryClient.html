@@ -1,0 +1,1942 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AzureContainerRegistryClient
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AzureContainerRegistryClient
+   ">
+    <meta name="generator" content="docfx 2.43.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient">
+  
+  
+  <h1 id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient" class="text-break">Class AzureContainerRegistryClient
+  </h1>
+  <div class="markdown level0 summary"><p>V2 API definition for the Azure Container Registry runtime</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">AzureContainerRegistryClient</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Microsoft.Azure.ContainerRegistry.IAzureContainerRegistryClient.html">IAzureContainerRegistryClient</a></div>
+    <div><span class="xref">System.IDisposable</span></div>
+    <div><span class="xref">IAzureClient</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.Azure.ContainerRegistry.html">Microsoft.Azure.ContainerRegistry</a></h6>
+  <h6><strong>Assembly</strong>: Microsoft.Azure.ContainerRegistry.dll</h6>
+  <h5 id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AzureContainerRegistryClient : ServiceClient&lt;AzureContainerRegistryClient&gt;, IAzureContainerRegistryClient, System.IDisposable, IAzureClient</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient__ctor_" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient__ctor_DelegatingHandler___" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.#ctor(DelegatingHandler[])">AzureContainerRegistryClient(DelegatingHandler[])</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the AzureContainerRegistryClient class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected AzureContainerRegistryClient(params DelegatingHandler[] handlers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DelegatingHandler</span>[]</td>
+        <td><span class="parametername">handlers</span></td>
+        <td><p>Optional. The delegating handlers to add to the http client pipeline.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient__ctor_" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient__ctor_HttpClient_System_Boolean_" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.#ctor(HttpClient,System.Boolean)">AzureContainerRegistryClient(HttpClient, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the AzureContainerRegistryClient class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected AzureContainerRegistryClient(HttpClient httpClient, bool disposeHttpClient)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">HttpClient</span></td>
+        <td><span class="parametername">httpClient</span></td>
+        <td><p>HttpClient to be used</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">disposeHttpClient</span></td>
+        <td><p>True: will dispose the provided httpClient on calling AzureContainerRegistryClient.Dispose(). False: will not dispose provided httpClient</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient__ctor_" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient__ctor_HttpClientHandler_DelegatingHandler___" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.#ctor(HttpClientHandler,DelegatingHandler[])">AzureContainerRegistryClient(HttpClientHandler, DelegatingHandler[])</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the AzureContainerRegistryClient class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected AzureContainerRegistryClient(HttpClientHandler rootHandler, params DelegatingHandler[] handlers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">HttpClientHandler</span></td>
+        <td><span class="parametername">rootHandler</span></td>
+        <td><p>Optional. The http client handler used to handle http transport.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DelegatingHandler</span>[]</td>
+        <td><span class="parametername">handlers</span></td>
+        <td><p>Optional. The delegating handlers to add to the http client pipeline.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient__ctor_" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient__ctor_ServiceClientCredentials_DelegatingHandler___" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.#ctor(ServiceClientCredentials,DelegatingHandler[])">AzureContainerRegistryClient(ServiceClientCredentials, DelegatingHandler[])</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the AzureContainerRegistryClient class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AzureContainerRegistryClient(ServiceClientCredentials credentials, params DelegatingHandler[] handlers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ServiceClientCredentials</span></td>
+        <td><span class="parametername">credentials</span></td>
+        <td><p>Required. Credentials needed for the client to connect to Azure.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DelegatingHandler</span>[]</td>
+        <td><span class="parametername">handlers</span></td>
+        <td><p>Optional. The delegating handlers to add to the http client pipeline.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient__ctor_" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient__ctor_ServiceClientCredentials_HttpClient_System_Boolean_" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.#ctor(ServiceClientCredentials,HttpClient,System.Boolean)">AzureContainerRegistryClient(ServiceClientCredentials, HttpClient, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the AzureContainerRegistryClient class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AzureContainerRegistryClient(ServiceClientCredentials credentials, HttpClient httpClient, bool disposeHttpClient)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ServiceClientCredentials</span></td>
+        <td><span class="parametername">credentials</span></td>
+        <td><p>Required. Credentials needed for the client to connect to Azure.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">HttpClient</span></td>
+        <td><span class="parametername">httpClient</span></td>
+        <td><p>HttpClient to be used</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">disposeHttpClient</span></td>
+        <td><p>True: will dispose the provided httpClient on calling AzureContainerRegistryClient.Dispose(). False: will not dispose provided httpClient</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient__ctor_" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient__ctor_ServiceClientCredentials_HttpClientHandler_DelegatingHandler___" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.#ctor(ServiceClientCredentials,HttpClientHandler,DelegatingHandler[])">AzureContainerRegistryClient(ServiceClientCredentials, HttpClientHandler, DelegatingHandler[])</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the AzureContainerRegistryClient class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AzureContainerRegistryClient(ServiceClientCredentials credentials, HttpClientHandler rootHandler, params DelegatingHandler[] handlers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ServiceClientCredentials</span></td>
+        <td><span class="parametername">credentials</span></td>
+        <td><p>Required. Credentials needed for the client to connect to Azure.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">HttpClientHandler</span></td>
+        <td><span class="parametername">rootHandler</span></td>
+        <td><p>Optional. The http client handler used to handle http transport.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DelegatingHandler</span>[]</td>
+        <td><span class="parametername">handlers</span></td>
+        <td><p>Optional. The delegating handlers to add to the http client pipeline.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient__ctor_" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient__ctor_System_Uri_DelegatingHandler___" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.#ctor(System.Uri,DelegatingHandler[])">AzureContainerRegistryClient(System.Uri, DelegatingHandler[])</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the AzureContainerRegistryClient class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected AzureContainerRegistryClient(System.Uri baseUri, params DelegatingHandler[] handlers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">baseUri</span></td>
+        <td><p>Optional. The base URI of the service.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DelegatingHandler</span>[]</td>
+        <td><span class="parametername">handlers</span></td>
+        <td><p>Optional. The delegating handlers to add to the http client pipeline.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient__ctor_" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient__ctor_System_Uri_HttpClientHandler_DelegatingHandler___" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.#ctor(System.Uri,HttpClientHandler,DelegatingHandler[])">AzureContainerRegistryClient(System.Uri, HttpClientHandler, DelegatingHandler[])</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the AzureContainerRegistryClient class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected AzureContainerRegistryClient(System.Uri baseUri, HttpClientHandler rootHandler, params DelegatingHandler[] handlers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">baseUri</span></td>
+        <td><p>Optional. The base URI of the service.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">HttpClientHandler</span></td>
+        <td><span class="parametername">rootHandler</span></td>
+        <td><p>Optional. The http client handler used to handle http transport.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DelegatingHandler</span>[]</td>
+        <td><span class="parametername">handlers</span></td>
+        <td><p>Optional. The delegating handlers to add to the http client pipeline.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient__ctor_" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient__ctor_System_Uri_ServiceClientCredentials_DelegatingHandler___" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.#ctor(System.Uri,ServiceClientCredentials,DelegatingHandler[])">AzureContainerRegistryClient(System.Uri, ServiceClientCredentials, DelegatingHandler[])</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the AzureContainerRegistryClient class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AzureContainerRegistryClient(System.Uri baseUri, ServiceClientCredentials credentials, params DelegatingHandler[] handlers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">baseUri</span></td>
+        <td><p>Optional. The base URI of the service.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">ServiceClientCredentials</span></td>
+        <td><span class="parametername">credentials</span></td>
+        <td><p>Required. Credentials needed for the client to connect to Azure.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DelegatingHandler</span>[]</td>
+        <td><span class="parametername">handlers</span></td>
+        <td><p>Optional. The delegating handlers to add to the http client pipeline.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient__ctor_" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient__ctor_System_Uri_ServiceClientCredentials_HttpClientHandler_DelegatingHandler___" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.#ctor(System.Uri,ServiceClientCredentials,HttpClientHandler,DelegatingHandler[])">AzureContainerRegistryClient(System.Uri, ServiceClientCredentials, HttpClientHandler, DelegatingHandler[])</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the AzureContainerRegistryClient class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AzureContainerRegistryClient(System.Uri baseUri, ServiceClientCredentials credentials, HttpClientHandler rootHandler, params DelegatingHandler[] handlers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">baseUri</span></td>
+        <td><p>Optional. The base URI of the service.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">ServiceClientCredentials</span></td>
+        <td><span class="parametername">credentials</span></td>
+        <td><p>Required. Credentials needed for the client to connect to Azure.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">HttpClientHandler</span></td>
+        <td><span class="parametername">rootHandler</span></td>
+        <td><p>Optional. The http client handler used to handle http transport.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DelegatingHandler</span>[]</td>
+        <td><span class="parametername">handlers</span></td>
+        <td><p>Optional. The delegating handlers to add to the http client pipeline.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient_AcceptLanguage_" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.AcceptLanguage*"></a>
+  <h4 id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient_AcceptLanguage" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.AcceptLanguage">AcceptLanguage</h4>
+  <div class="markdown level1 summary"><p>The preferred language for the response.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string AcceptLanguage { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient_BaseUri_" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.BaseUri*"></a>
+  <h4 id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient_BaseUri" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.BaseUri">BaseUri</h4>
+  <div class="markdown level1 summary"><p>The base URI of the service.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Uri BaseUri { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient_Credentials_" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.Credentials*"></a>
+  <h4 id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient_Credentials" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.Credentials">Credentials</h4>
+  <div class="markdown level1 summary"><p>Credentials needed for the client to connect to Azure.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ServiceClientCredentials Credentials { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ServiceClientCredentials</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient_DeserializationSettings_" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.DeserializationSettings*"></a>
+  <h4 id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient_DeserializationSettings" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.DeserializationSettings">DeserializationSettings</h4>
+  <div class="markdown level1 summary"><p>Gets or sets json deserialization settings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonSerializerSettings DeserializationSettings { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">JsonSerializerSettings</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient_GenerateClientRequestId_" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.GenerateClientRequestId*"></a>
+  <h4 id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient_GenerateClientRequestId" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.GenerateClientRequestId">GenerateClientRequestId</h4>
+  <div class="markdown level1 summary"><p>Whether a unique x-ms-client-request-id should be generated. When set to
+true a unique x-ms-client-request-id value is generated and included in
+each request. Default is true.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? GenerateClientRequestId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient_LongRunningOperationRetryTimeout_" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.LongRunningOperationRetryTimeout*"></a>
+  <h4 id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient_LongRunningOperationRetryTimeout" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.LongRunningOperationRetryTimeout">LongRunningOperationRetryTimeout</h4>
+  <div class="markdown level1 summary"><p>The retry timeout in seconds for Long Running Operations. Default value is
+30.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? LongRunningOperationRetryTimeout { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient_SerializationSettings_" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.SerializationSettings*"></a>
+  <h4 id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient_SerializationSettings" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.SerializationSettings">SerializationSettings</h4>
+  <div class="markdown level1 summary"><p>Gets or sets json serialization settings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonSerializerSettings SerializationSettings { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">JsonSerializerSettings</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient_DeleteAcrRepositoryWithHttpMessagesAsync_" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.DeleteAcrRepositoryWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient_DeleteAcrRepositoryWithHttpMessagesAsync_System_String_Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.DeleteAcrRepositoryWithHttpMessagesAsync(System.String,Dictionary{System.String,List{System.String}},CancellationToken)">DeleteAcrRepositoryWithHttpMessagesAsync(String, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Delete a respository</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;AzureOperationResponse&lt;DeletedRepository&gt;&gt; DeleteAcrRepositoryWithHttpMessagesAsync(string name, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of the image (including the namespace)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>Headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">AzureOperationResponse</span>&lt;<a class="xref" href="Microsoft.Azure.ContainerRegistry.Models.DeletedRepository.html">DeletedRepository</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ContainerRegistry.Models.AcrErrorsException.html">AcrErrorsException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient_DeleteAcrTagWithHttpMessagesAsync_" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.DeleteAcrTagWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient_DeleteAcrTagWithHttpMessagesAsync_System_String_System_String_Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.DeleteAcrTagWithHttpMessagesAsync(System.String,System.String,Dictionary{System.String,List{System.String}},CancellationToken)">DeleteAcrTagWithHttpMessagesAsync(String, String, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Delete tag</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;AzureOperationResponse&gt; DeleteAcrTagWithHttpMessagesAsync(string name, string reference, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of the image (including the namespace)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">reference</span></td>
+        <td><p>A tag name of the image</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>Headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ContainerRegistry.Models.AcrErrorsException.html">AcrErrorsException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient_GetAcrManifestAttributesWithHttpMessagesAsync_" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.GetAcrManifestAttributesWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient_GetAcrManifestAttributesWithHttpMessagesAsync_System_String_System_String_Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.GetAcrManifestAttributesWithHttpMessagesAsync(System.String,System.String,Dictionary{System.String,List{System.String}},CancellationToken)">GetAcrManifestAttributesWithHttpMessagesAsync(String, String, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get manifest attributes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;AzureOperationResponse&lt;AcrManifestAttributes&gt;&gt; GetAcrManifestAttributesWithHttpMessagesAsync(string name, string reference, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of the image (including the namespace)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">reference</span></td>
+        <td><p>A digest pointing to a specific image</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>Headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">AzureOperationResponse</span>&lt;<a class="xref" href="Microsoft.Azure.ContainerRegistry.Models.AcrManifestAttributes.html">AcrManifestAttributes</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ContainerRegistry.Models.AcrErrorsException.html">AcrErrorsException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient_GetAcrManifestsWithHttpMessagesAsync_" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.GetAcrManifestsWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient_GetAcrManifestsWithHttpMessagesAsync_System_String_System_String_System_String_System_String_Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.GetAcrManifestsWithHttpMessagesAsync(System.String,System.String,System.String,System.String,Dictionary{System.String,List{System.String}},CancellationToken)">GetAcrManifestsWithHttpMessagesAsync(String, String, String, String, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>List manifests of a repository</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;AzureOperationResponse&lt;AcrManifests&gt;&gt; GetAcrManifestsWithHttpMessagesAsync(string name, string last = null, string n = null, string orderby = null, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of the image (including the namespace)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">last</span></td>
+        <td><p>query parameter for the last item in previou query</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">n</span></td>
+        <td><p>query parameter for max number of items</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">orderby</span></td>
+        <td><p>orderby query parameter</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>Headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">AzureOperationResponse</span>&lt;<a class="xref" href="Microsoft.Azure.ContainerRegistry.Models.AcrManifests.html">AcrManifests</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ContainerRegistry.Models.AcrErrorsException.html">AcrErrorsException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient_GetAcrRepositoriesWithHttpMessagesAsync_" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.GetAcrRepositoriesWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient_GetAcrRepositoriesWithHttpMessagesAsync_System_String_System_String_Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.GetAcrRepositoriesWithHttpMessagesAsync(System.String,System.String,Dictionary{System.String,List{System.String}},CancellationToken)">GetAcrRepositoriesWithHttpMessagesAsync(String, String, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>List respositories</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;AzureOperationResponse&lt;Repositories&gt;&gt; GetAcrRepositoriesWithHttpMessagesAsync(string last = null, string n = null, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">last</span></td>
+        <td><p>query parameter for the last item in previou query</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">n</span></td>
+        <td><p>query parameter for max number of items</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>Headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">AzureOperationResponse</span>&lt;<a class="xref" href="Microsoft.Azure.ContainerRegistry.Models.Repositories.html">Repositories</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ContainerRegistry.Models.AcrErrorsException.html">AcrErrorsException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient_GetAcrRepositoryAttributesWithHttpMessagesAsync_" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.GetAcrRepositoryAttributesWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient_GetAcrRepositoryAttributesWithHttpMessagesAsync_System_String_Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.GetAcrRepositoryAttributesWithHttpMessagesAsync(System.String,Dictionary{System.String,List{System.String}},CancellationToken)">GetAcrRepositoryAttributesWithHttpMessagesAsync(String, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get respository attributes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;AzureOperationResponse&lt;RepositoryAttributes&gt;&gt; GetAcrRepositoryAttributesWithHttpMessagesAsync(string name, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of the image (including the namespace)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>Headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">AzureOperationResponse</span>&lt;<a class="xref" href="Microsoft.Azure.ContainerRegistry.Models.RepositoryAttributes.html">RepositoryAttributes</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ContainerRegistry.Models.AcrErrorsException.html">AcrErrorsException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient_GetAcrTagAttributesWithHttpMessagesAsync_" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.GetAcrTagAttributesWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient_GetAcrTagAttributesWithHttpMessagesAsync_System_String_System_String_Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.GetAcrTagAttributesWithHttpMessagesAsync(System.String,System.String,Dictionary{System.String,List{System.String}},CancellationToken)">GetAcrTagAttributesWithHttpMessagesAsync(String, String, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get manifest attributes by tag</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;AzureOperationResponse&lt;AcrTagAttributes&gt;&gt; GetAcrTagAttributesWithHttpMessagesAsync(string name, string reference, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of the image (including the namespace)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">reference</span></td>
+        <td><p>A tag name of the image</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>Headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">AzureOperationResponse</span>&lt;<a class="xref" href="Microsoft.Azure.ContainerRegistry.Models.AcrTagAttributes.html">AcrTagAttributes</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ContainerRegistry.Models.AcrErrorsException.html">AcrErrorsException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient_GetAcrTagsWithHttpMessagesAsync_" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.GetAcrTagsWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient_GetAcrTagsWithHttpMessagesAsync_System_String_System_String_System_String_System_String_System_String_Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.GetAcrTagsWithHttpMessagesAsync(System.String,System.String,System.String,System.String,System.String,Dictionary{System.String,List{System.String}},CancellationToken)">GetAcrTagsWithHttpMessagesAsync(String, String, String, String, String, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>List tags of a repository</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;AzureOperationResponse&lt;AcrRepositoryTags&gt;&gt; GetAcrTagsWithHttpMessagesAsync(string name, string last = null, string n = null, string orderby = null, string digest = null, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of the image (including the namespace)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">last</span></td>
+        <td><p>query parameter for the last item in previou query</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">n</span></td>
+        <td><p>query parameter for max number of items</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">orderby</span></td>
+        <td><p>orderby query parameter</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">digest</span></td>
+        <td><p>filter by digest</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>Headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">AzureOperationResponse</span>&lt;<a class="xref" href="Microsoft.Azure.ContainerRegistry.Models.AcrRepositoryTags.html">AcrRepositoryTags</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ContainerRegistry.Models.AcrErrorsException.html">AcrErrorsException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient_GetDockerRegistryV2SupportWithHttpMessagesAsync_" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.GetDockerRegistryV2SupportWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient_GetDockerRegistryV2SupportWithHttpMessagesAsync_Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.GetDockerRegistryV2SupportWithHttpMessagesAsync(Dictionary{System.String,List{System.String}},CancellationToken)">GetDockerRegistryV2SupportWithHttpMessagesAsync(Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Tells whether this Docker Registry instance supports Docker Registry HTTP
+API v2</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;AzureOperationResponse&gt; GetDockerRegistryV2SupportWithHttpMessagesAsync(Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>Headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ContainerRegistry.Models.AcrErrorsException.html">AcrErrorsException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient_GetManifestWithHttpMessagesAsync_" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.GetManifestWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient_GetManifestWithHttpMessagesAsync_System_String_System_String_Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.GetManifestWithHttpMessagesAsync(System.String,System.String,Dictionary{System.String,List{System.String}},CancellationToken)">GetManifestWithHttpMessagesAsync(String, String, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Pulls the image manifest file associated with the specified name and
+reference. Reference may be a tag or a digest</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;AzureOperationResponse&lt;Manifest&gt;&gt; GetManifestWithHttpMessagesAsync(string name, string reference, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of the image (including the namespace)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">reference</span></td>
+        <td><p>A tag or a digest, pointing to a specific image</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>Headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">AzureOperationResponse</span>&lt;<a class="xref" href="Microsoft.Azure.ContainerRegistry.Models.Manifest.html">Manifest</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ContainerRegistry.Models.AcrErrorsException.html">AcrErrorsException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient_GetRepositoriesWithHttpMessagesAsync_" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.GetRepositoriesWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient_GetRepositoriesWithHttpMessagesAsync_System_String_System_String_Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.GetRepositoriesWithHttpMessagesAsync(System.String,System.String,Dictionary{System.String,List{System.String}},CancellationToken)">GetRepositoriesWithHttpMessagesAsync(String, String, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>List respositories</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;AzureOperationResponse&lt;Repositories&gt;&gt; GetRepositoriesWithHttpMessagesAsync(string last = null, string n = null, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">last</span></td>
+        <td><p>query parameter for the last item in previou query</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">n</span></td>
+        <td><p>query parameter for max number of items</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>Headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">AzureOperationResponse</span>&lt;<a class="xref" href="Microsoft.Azure.ContainerRegistry.Models.Repositories.html">Repositories</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ContainerRegistry.Models.AcrErrorsException.html">AcrErrorsException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient_GetTagListWithHttpMessagesAsync_" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.GetTagListWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient_GetTagListWithHttpMessagesAsync_System_String_Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.GetTagListWithHttpMessagesAsync(System.String,Dictionary{System.String,List{System.String}},CancellationToken)">GetTagListWithHttpMessagesAsync(String, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Fetch the tags under the repository identified by 'name'</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;AzureOperationResponse&lt;RepositoryTags&gt;&gt; GetTagListWithHttpMessagesAsync(string name, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of the image (including the namespace)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>Headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">AzureOperationResponse</span>&lt;<a class="xref" href="Microsoft.Azure.ContainerRegistry.Models.RepositoryTags.html">RepositoryTags</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ContainerRegistry.Models.AcrErrorsException.html">AcrErrorsException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient_UpdateAcrManifestAttributesWithHttpMessagesAsync_" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.UpdateAcrManifestAttributesWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient_UpdateAcrManifestAttributesWithHttpMessagesAsync_System_String_System_String_Microsoft_Azure_ContainerRegistry_Models_ChangeableAttributes_Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.UpdateAcrManifestAttributesWithHttpMessagesAsync(System.String,System.String,Microsoft.Azure.ContainerRegistry.Models.ChangeableAttributes,Dictionary{System.String,List{System.String}},CancellationToken)">UpdateAcrManifestAttributesWithHttpMessagesAsync(String, String, ChangeableAttributes, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Update attributes of a manifest</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;AzureOperationResponse&gt; UpdateAcrManifestAttributesWithHttpMessagesAsync(string name, string reference, ChangeableAttributes value = null, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of the image (including the namespace)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">reference</span></td>
+        <td><p>A tag or a digest, pointing to a specific image</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ContainerRegistry.Models.ChangeableAttributes.html">ChangeableAttributes</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Changeable attribute value</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>Headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ContainerRegistry.Models.AcrErrorsException.html">AcrErrorsException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient_UpdateAcrRepositoryAttributesWithHttpMessagesAsync_" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.UpdateAcrRepositoryAttributesWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient_UpdateAcrRepositoryAttributesWithHttpMessagesAsync_System_String_Microsoft_Azure_ContainerRegistry_Models_ChangeableAttributes_Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.UpdateAcrRepositoryAttributesWithHttpMessagesAsync(System.String,Microsoft.Azure.ContainerRegistry.Models.ChangeableAttributes,Dictionary{System.String,List{System.String}},CancellationToken)">UpdateAcrRepositoryAttributesWithHttpMessagesAsync(String, ChangeableAttributes, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Update attributes of a repository</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;AzureOperationResponse&gt; UpdateAcrRepositoryAttributesWithHttpMessagesAsync(string name, ChangeableAttributes value = null, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of the image (including the namespace)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ContainerRegistry.Models.ChangeableAttributes.html">ChangeableAttributes</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Repository attribute value</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>Headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ContainerRegistry.Models.AcrErrorsException.html">AcrErrorsException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient_UpdateAcrTagAttributesWithHttpMessagesAsync_" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.UpdateAcrTagAttributesWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClient_UpdateAcrTagAttributesWithHttpMessagesAsync_System_String_System_String_Microsoft_Azure_ContainerRegistry_Models_ChangeableAttributes_Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClient.UpdateAcrTagAttributesWithHttpMessagesAsync(System.String,System.String,Microsoft.Azure.ContainerRegistry.Models.ChangeableAttributes,Dictionary{System.String,List{System.String}},CancellationToken)">UpdateAcrTagAttributesWithHttpMessagesAsync(String, String, ChangeableAttributes, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Update tag attributes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;AzureOperationResponse&gt; UpdateAcrTagAttributesWithHttpMessagesAsync(string name, string reference, ChangeableAttributes value = null, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of the image (including the namespace)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">reference</span></td>
+        <td><p>A tag name of the image</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ContainerRegistry.Models.ChangeableAttributes.html">ChangeableAttributes</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Changeable attribute value</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>Headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ContainerRegistry.Models.AcrErrorsException.html">AcrErrorsException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ContainerRegistry.IAzureContainerRegistryClient.html">IAzureContainerRegistryClient</a>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <div>
+      <span class="xref">IAzureClient</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClientExtensions.html#Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClientExtensions_GetDockerRegistryV2SupportAsync_Microsoft_Azure_ContainerRegistry_IAzureContainerRegistryClient_CancellationToken_">AzureContainerRegistryClientExtensions.GetDockerRegistryV2SupportAsync(IAzureContainerRegistryClient, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClientExtensions.html#Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClientExtensions_GetTagListAsync_Microsoft_Azure_ContainerRegistry_IAzureContainerRegistryClient_System_String_CancellationToken_">AzureContainerRegistryClientExtensions.GetTagListAsync(IAzureContainerRegistryClient, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClientExtensions.html#Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClientExtensions_GetManifestAsync_Microsoft_Azure_ContainerRegistry_IAzureContainerRegistryClient_System_String_System_String_CancellationToken_">AzureContainerRegistryClientExtensions.GetManifestAsync(IAzureContainerRegistryClient, String, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClientExtensions.html#Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClientExtensions_GetRepositoriesAsync_Microsoft_Azure_ContainerRegistry_IAzureContainerRegistryClient_System_String_System_String_CancellationToken_">AzureContainerRegistryClientExtensions.GetRepositoriesAsync(IAzureContainerRegistryClient, String, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClientExtensions.html#Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClientExtensions_GetAcrRepositoriesAsync_Microsoft_Azure_ContainerRegistry_IAzureContainerRegistryClient_System_String_System_String_CancellationToken_">AzureContainerRegistryClientExtensions.GetAcrRepositoriesAsync(IAzureContainerRegistryClient, String, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClientExtensions.html#Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClientExtensions_GetAcrRepositoryAttributesAsync_Microsoft_Azure_ContainerRegistry_IAzureContainerRegistryClient_System_String_CancellationToken_">AzureContainerRegistryClientExtensions.GetAcrRepositoryAttributesAsync(IAzureContainerRegistryClient, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClientExtensions.html#Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClientExtensions_DeleteAcrRepositoryAsync_Microsoft_Azure_ContainerRegistry_IAzureContainerRegistryClient_System_String_CancellationToken_">AzureContainerRegistryClientExtensions.DeleteAcrRepositoryAsync(IAzureContainerRegistryClient, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClientExtensions.html#Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClientExtensions_UpdateAcrRepositoryAttributesAsync_Microsoft_Azure_ContainerRegistry_IAzureContainerRegistryClient_System_String_Microsoft_Azure_ContainerRegistry_Models_ChangeableAttributes_CancellationToken_">AzureContainerRegistryClientExtensions.UpdateAcrRepositoryAttributesAsync(IAzureContainerRegistryClient, String, ChangeableAttributes, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClientExtensions.html#Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClientExtensions_GetAcrTagsAsync_Microsoft_Azure_ContainerRegistry_IAzureContainerRegistryClient_System_String_System_String_System_String_System_String_System_String_CancellationToken_">AzureContainerRegistryClientExtensions.GetAcrTagsAsync(IAzureContainerRegistryClient, String, String, String, String, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClientExtensions.html#Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClientExtensions_GetAcrTagAttributesAsync_Microsoft_Azure_ContainerRegistry_IAzureContainerRegistryClient_System_String_System_String_CancellationToken_">AzureContainerRegistryClientExtensions.GetAcrTagAttributesAsync(IAzureContainerRegistryClient, String, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClientExtensions.html#Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClientExtensions_UpdateAcrTagAttributesAsync_Microsoft_Azure_ContainerRegistry_IAzureContainerRegistryClient_System_String_System_String_Microsoft_Azure_ContainerRegistry_Models_ChangeableAttributes_CancellationToken_">AzureContainerRegistryClientExtensions.UpdateAcrTagAttributesAsync(IAzureContainerRegistryClient, String, String, ChangeableAttributes, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClientExtensions.html#Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClientExtensions_DeleteAcrTagAsync_Microsoft_Azure_ContainerRegistry_IAzureContainerRegistryClient_System_String_System_String_CancellationToken_">AzureContainerRegistryClientExtensions.DeleteAcrTagAsync(IAzureContainerRegistryClient, String, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClientExtensions.html#Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClientExtensions_GetAcrManifestsAsync_Microsoft_Azure_ContainerRegistry_IAzureContainerRegistryClient_System_String_System_String_System_String_System_String_CancellationToken_">AzureContainerRegistryClientExtensions.GetAcrManifestsAsync(IAzureContainerRegistryClient, String, String, String, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClientExtensions.html#Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClientExtensions_GetAcrManifestAttributesAsync_Microsoft_Azure_ContainerRegistry_IAzureContainerRegistryClient_System_String_System_String_CancellationToken_">AzureContainerRegistryClientExtensions.GetAcrManifestAttributesAsync(IAzureContainerRegistryClient, String, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ContainerRegistry.AzureContainerRegistryClientExtensions.html#Microsoft_Azure_ContainerRegistry_AzureContainerRegistryClientExtensions_UpdateAcrManifestAttributesAsync_Microsoft_Azure_ContainerRegistry_IAzureContainerRegistryClient_System_String_System_String_Microsoft_Azure_ContainerRegistry_Models_ChangeableAttributes_CancellationToken_">AzureContainerRegistryClientExtensions.UpdateAcrManifestAttributesAsync(IAzureContainerRegistryClient, String, String, ChangeableAttributes, CancellationToken)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
