@@ -77,20 +77,52 @@
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
+      <h4><a class="xref" href="Azure.Identity.AuthenticationFailedException.html">AuthenticationFailedException</a></h4>
+      <section><p>An exception class raised for errors in authenticating client reqeusts.</p>
+</section>
       <h4><a class="xref" href="Azure.Identity.ChainedTokenCredential.html">ChainedTokenCredential</a></h4>
-      <section></section>
+      <section><p>Provides a <see cref="!:TokenCredential"></see> implementation which chains multiple <see cref="!:TokenCredential"></see> implementations to be tried in order
+until one of the getToken methods returns a non-default <see cref="!:AccessToken"></see>.</p>
+</section>
       <h4><a class="xref" href="Azure.Identity.ClientCertificateCredential.html">ClientCertificateCredential</a></h4>
-      <section></section>
+      <section><p>Enables authentication of a service principal in to Azure Active Directory using a X509 certificate that is assigned to it's App Registration. More information
+on how to configure certificate authentication can be found here:
+<a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-certificate-credentials#register-your-certificate-with-azure-ad">https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-certificate-credentials#register-your-certificate-with-azure-ad</a></p>
+</section>
       <h4><a class="xref" href="Azure.Identity.ClientSecretCredential.html">ClientSecretCredential</a></h4>
-      <section></section>
+      <section><p>Enables authentication to Azure Active Directory using a client secret that was generated for an App Registration.  More information on how
+to configure a client secret can be found here:
+<a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-credentials-to-your-web-application">https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-credentials-to-your-web-application</a></p>
+</section>
       <h4><a class="xref" href="Azure.Identity.DefaultAzureCredential.html">DefaultAzureCredential</a></h4>
-      <section></section>
+      <section><p>Provides a default <a class="xref" href="Azure.Identity.ChainedTokenCredential.html">ChainedTokenCredential</a> configuration for applications that will be deployed to Azure.  The following credential
+types will be tried, in order:</p>
+<ul>
+<li><a class="xref" href="Azure.Identity.EnvironmentCredential.html">EnvironmentCredential</a></li>
+<li><a class="xref" href="Azure.Identity.ManagedIdentityCredential.html">ManagedIdentityCredential</a>
+Consult the documentation of these credential types for more information on how they attempt authentication.</li>
+</ul>
+</section>
       <h4><a class="xref" href="Azure.Identity.EnvironmentCredential.html">EnvironmentCredential</a></h4>
-      <section></section>
+      <section><p>Enables authentication to Azure Active Directory using client secret
+details configured in the following environment variables:</p>
+<ul>
+<li>AZURE_TENANT_ID: The Azure Active Directory tenant(directory) ID.</li>
+<li>AZURE_CLIENT_ID: The client(application) ID of an App Registration in the tenant.</li>
+<li>AZURE_CLIENT_SECRET: A client secret that was generated for the App Registration.
+This credential ultimately uses a <a class="xref" href="Azure.Identity.ClientSecretCredential.html">ClientSecretCredential</a> to
+perform the authentication using these details. Please consult the
+documentation of that class for more details.</li>
+</ul>
+</section>
       <h4><a class="xref" href="Azure.Identity.IdentityClientOptions.html">IdentityClientOptions</a></h4>
-      <section></section>
+      <section><p>Options to configure requests made to Azure Identity Services</p>
+</section>
       <h4><a class="xref" href="Azure.Identity.ManagedIdentityCredential.html">ManagedIdentityCredential</a></h4>
-      <section></section>
+      <section><p>Attempts authentication using a managed identity that has been assigned to the deployment environment.This authentication type works in Azure VMs,
+App Service and Azure Functions applications, as well as inside of Azure Cloud Shell. More information about configuring managed identities can be found here:
+<a href="https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview">https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview</a></p>
+</section>
 </article>
           </div>
           

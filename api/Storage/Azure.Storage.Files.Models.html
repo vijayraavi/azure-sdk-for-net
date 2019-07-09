@@ -83,20 +83,11 @@
       <h4><a class="xref" href="Azure.Storage.Files.Models.CorsRule.html">CorsRule</a></h4>
       <section><p>CORS is an HTTP feature that enables a web application running under one domain to access resources in another domain. Web browsers implement a security restriction known as same-origin policy that prevents a web page from calling APIs in a different domain; CORS provides a secure way to allow one domain (the origin domain) to call APIs in another domain.</p>
 </section>
-      <h4><a class="xref" href="Azure.Storage.Files.Models.DirectoryItem.html">DirectoryItem</a></h4>
-      <section><p>A listed directory item.</p>
-</section>
-      <h4><a class="xref" href="Azure.Storage.Files.Models.FileItem.html">FileItem</a></h4>
-      <section><p>A listed file item.</p>
-</section>
-      <h4><a class="xref" href="Azure.Storage.Files.Models.FileProperty.html">FileProperty</a></h4>
-      <section><p>File properties.</p>
-</section>
-      <h4><a class="xref" href="Azure.Storage.Files.Models.FilesAndDirectoriesSegment.html">FilesAndDirectoriesSegment</a></h4>
-      <section><p>An enumeration of directories and files.</p>
-</section>
       <h4><a class="xref" href="Azure.Storage.Files.Models.FileServiceProperties.html">FileServiceProperties</a></h4>
       <section><p>Storage service properties.</p>
+</section>
+      <h4><a class="xref" href="Azure.Storage.Files.Models.FilesModelFactory.html">FilesModelFactory</a></h4>
+      <section><p>FilesModelFactory provides utilities for mocking.</p>
 </section>
       <h4><a class="xref" href="Azure.Storage.Files.Models.Metrics.html">Metrics</a></h4>
       <section><p>Storage Analytics metrics for file service.</p>
@@ -121,9 +112,6 @@
 </section>
       <h4><a class="xref" href="Azure.Storage.Files.Models.ShareSnapshotInfo.html">ShareSnapshotInfo</a></h4>
       <section><p>ShareSnapshotInfo</p>
-</section>
-      <h4><a class="xref" href="Azure.Storage.Files.Models.SharesSegment.html">SharesSegment</a></h4>
-      <section><p>An enumeration of shares.</p>
 </section>
       <h4><a class="xref" href="Azure.Storage.Files.Models.ShareStatistics.html">ShareStatistics</a></h4>
       <section><p>Stats for the share.</p>
@@ -152,6 +140,10 @@
       <h4><a class="xref" href="Azure.Storage.Files.Models.StorageFileInfo.html">StorageFileInfo</a></h4>
       <section><p>StorageFileInfo</p>
 </section>
+      <h4><a class="xref" href="Azure.Storage.Files.Models.StorageFileItem.html">StorageFileItem</a></h4>
+      <section><p>Describes a file or directory returned by
+<a class="xref" href="Azure.Storage.Files.DirectoryClient.html#Azure_Storage_Files_DirectoryClient_GetFilesAndDirectoriesAsync_System_Nullable_Azure_Storage_Files_Models_GetFilesAndDirectoriesOptions__CancellationToken_">GetFilesAndDirectoriesAsync(Nullable&lt;GetFilesAndDirectoriesOptions&gt;, CancellationToken)</a>.</p>
+</section>
       <h4><a class="xref" href="Azure.Storage.Files.Models.StorageFileProperties.html">StorageFileProperties</a></h4>
       <section><p>StorageFileProperties</p>
 </section>
@@ -164,13 +156,26 @@
       <h4><a class="xref" href="Azure.Storage.Files.Models.StorageHandle.html">StorageHandle</a></h4>
       <section><p>A listed Azure Storage handle item.</p>
 </section>
-      <h4><a class="xref" href="Azure.Storage.Files.Models.StorageHandlesSegment.html">StorageHandlesSegment</a></h4>
-      <section><p>An enumeration of handles.</p>
-</section>
     <h3 id="structs">Structs
   </h3>
-      <h4><a class="xref" href="Azure.Storage.Files.Models.StorageErrorCode.html">StorageErrorCode</a></h4>
+      <h4><a class="xref" href="Azure.Storage.Files.Models.FileErrorCode.html">FileErrorCode</a></h4>
       <section><p>Error codes returned by the service</p>
+</section>
+      <h4><a class="xref" href="Azure.Storage.Files.Models.FileHttpHeaders.html">FileHttpHeaders</a></h4>
+      <section><p>Standard HTTP properties supported by the files.
+These properties are represented as standard HTTP headers use standard
+names, as specified in the Header Field Definitions section 14 of the
+HTTP/1.1 protocol specification.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/setting-and-retrieving-properties-and-metadata-for-blob-resources">https://docs.microsoft.com/en-us/rest/api/storageservices/setting-and-retrieving-properties-and-metadata-for-blob-resources</a>.</p>
+</section>
+      <h4><a class="xref" href="Azure.Storage.Files.Models.GetFilesAndDirectoriesOptions.html">GetFilesAndDirectoriesOptions</a></h4>
+      <section><p>Specifies options for listing files and directories with the
+<a class="xref" href="Azure.Storage.Files.DirectoryClient.html#Azure_Storage_Files_DirectoryClient_GetFilesAndDirectoriesAsync_System_Nullable_Azure_Storage_Files_Models_GetFilesAndDirectoriesOptions__CancellationToken_">GetFilesAndDirectoriesAsync(Nullable&lt;GetFilesAndDirectoriesOptions&gt;, CancellationToken)</a>
+operation.</p>
+</section>
+      <h4><a class="xref" href="Azure.Storage.Files.Models.GetSharesOptions.html">GetSharesOptions</a></h4>
+      <section><p>Specifies options for listing shares with the
+<a class="xref" href="Azure.Storage.Files.FileServiceClient.html#Azure_Storage_Files_FileServiceClient_GetSharesAsync_System_Nullable_Azure_Storage_Files_Models_GetSharesOptions__CancellationToken_">GetSharesAsync(Nullable&lt;GetSharesOptions&gt;, CancellationToken)</a> operation.</p>
 </section>
     <h3 id="enums">Enums
   </h3>

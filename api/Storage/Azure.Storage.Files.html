@@ -83,7 +83,7 @@
       <h4><a class="xref" href="Azure.Storage.Files.FileClient.html">FileClient</a></h4>
       <section><p>The <a class="xref" href="Azure.Storage.Files.FileClient.html">FileClient</a> allows you to manipulate Azure Storage files.</p>
 </section>
-      <h4><a class="xref" href="Azure.Storage.Files.FileConnectionOptions.html">FileConnectionOptions</a></h4>
+      <h4><a class="xref" href="Azure.Storage.Files.FileClientOptions.html">FileClientOptions</a></h4>
       <section><p>Provides the client configuration options for connecting to Azure File
 Storage.</p>
 </section>
@@ -92,63 +92,16 @@ Storage.</p>
 Storage service resources and shares. The storage account provides
 the top-level namespace for the File service.</p>
 </section>
-      <h4><a class="xref" href="Azure.Storage.Files.SasQueryParameters.html">SasQueryParameters</a></h4>
-      <section></section>
       <h4><a class="xref" href="Azure.Storage.Files.ShareClient.html">ShareClient</a></h4>
       <section><p>The <a class="xref" href="Azure.Storage.Files.ShareClient.html">ShareClient</a> allows you to manipulate Azure
 Storage shares and their directories and files.</p>
 </section>
-    <h3 id="structs">Structs
+    <h3 id="enums">Enums
   </h3>
-      <h4><a class="xref" href="Azure.Storage.Files.AccountSasPermissions.html">AccountSasPermissions</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Azure.Storage.Files.AccountSasResourceTypes.html">AccountSasResourceTypes</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Azure.Storage.Files.AccountSasServices.html">AccountSasServices</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Azure.Storage.Files.AccountSasSignatureValues.html">AccountSasSignatureValues</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Azure.Storage.Files.FileAccountSasPermissions.html">FileAccountSasPermissions</a></h4>
-      <section><p><a class="xref" href="Azure.Storage.Files.FileAccountSasPermissions.html">FileAccountSasPermissions</a> supports reading and writing
-permissions string for a storage account's access policy.  Use
-<a class="xref" href="Azure.Storage.Files.FileAccountSasPermissions.html#Azure_Storage_Files_FileAccountSasPermissions_ToString">ToString()</a> to generate a permissions string.</p>
-</section>
-      <h4><a class="xref" href="Azure.Storage.Files.FileHttpHeaders.html">FileHttpHeaders</a></h4>
-      <section><p>Standard HTTP properties supported by the files.
-These properties are represented as standard HTTP headers use standard
-names, as specified in the Header Field Definitions section 14 of the
-HTTP/1.1 protocol specification.</p>
-<p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/setting-and-retrieving-properties-and-metadata-for-blob-resources">https://docs.microsoft.com/en-us/rest/api/storageservices/setting-and-retrieving-properties-and-metadata-for-blob-resources</a>.</p>
-</section>
-      <h4><a class="xref" href="Azure.Storage.Files.FilesAndDirectoriesSegmentOptions.html">FilesAndDirectoriesSegmentOptions</a></h4>
-      <section><p>Specifies options for listing files and directories with the
-<a class="xref" href="Azure.Storage.Files.DirectoryClient.html#Azure_Storage_Files_DirectoryClient_ListFilesAndDirectoriesSegmentAsync_System_String_System_String_System_Nullable_Azure_Storage_Files_FilesAndDirectoriesSegmentOptions__CancellationToken_">ListFilesAndDirectoriesSegmentAsync(String, String, Nullable&lt;FilesAndDirectoriesSegmentOptions&gt;, CancellationToken)</a>
-operation.</p>
-</section>
-      <h4><a class="xref" href="Azure.Storage.Files.FileSasBuilder.html">FileSasBuilder</a></h4>
-      <section><p><a class="xref" href="Azure.Storage.Files.FileSasBuilder.html">FileSasBuilder</a> is used to generate a Shared Access
-Signature (SAS) for an Azure Storage share, directory, or file.
-For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/constructing-a-service-sas">https://docs.microsoft.com/en-us/rest/api/storageservices/constructing-a-service-sas</a>.</p>
-</section>
-      <h4><a class="xref" href="Azure.Storage.Files.FileSasPermissions.html">FileSasPermissions</a></h4>
-      <section><p><a class="xref" href="Azure.Storage.Files.FileSasPermissions.html">FileSasPermissions</a> supports reading and writing
-permissions string for a file's access policy.  Use <a class="xref" href="Azure.Storage.Files.FileSasPermissions.html#Azure_Storage_Files_FileSasPermissions_ToString">ToString()</a>
-to generate a permissions string you can provide to
-<a class="xref" href="Azure.Storage.Files.FileSasBuilder.html#Azure_Storage_Files_FileSasBuilder_Permissions">Permissions</a>.</p>
-</section>
-      <h4><a class="xref" href="Azure.Storage.Files.HttpRange.html">HttpRange</a></h4>
-      <section><p>Defines a range of bytes within an HTTP resource, starting at an offset and
-ending at offset+count-1 inclusively.</p>
-</section>
-      <h4><a class="xref" href="Azure.Storage.Files.ShareSasPermissions.html">ShareSasPermissions</a></h4>
-      <section><p><a class="xref" href="Azure.Storage.Files.ShareSasPermissions.html">ShareSasPermissions</a> supports reading and writing
-permissions string for a share's access policy.  Use <a class="xref" href="Azure.Storage.Files.ShareSasPermissions.html#Azure_Storage_Files_ShareSasPermissions_ToString">ToString()</a>
-to generate a permissions string you can provide to
-<a class="xref" href="Azure.Storage.Files.FileSasBuilder.html#Azure_Storage_Files_FileSasBuilder_Permissions">Permissions</a>.</p>
-</section>
-      <h4><a class="xref" href="Azure.Storage.Files.SharesSegmentOptions.html">SharesSegmentOptions</a></h4>
-      <section><p>Specifies options for listing shares with the
-<a class="xref" href="Azure.Storage.Files.FileServiceClient.html#Azure_Storage_Files_FileServiceClient_ListSharesSegmentAsync_System_String_System_Nullable_Azure_Storage_Files_SharesSegmentOptions__CancellationToken_">ListSharesSegmentAsync(String, Nullable&lt;SharesSegmentOptions&gt;, CancellationToken)</a> operation.</p>
+      <h4><a class="xref" href="Azure.Storage.Files.FileClientOptions.ServiceVersion.html">FileClientOptions.ServiceVersion</a></h4>
+      <section><p>The versions of Azure File Storage supported by this client
+library.  For more, see
+<a href="https://docs.microsoft.com/en-us/rest/api/storageservices/versioning-for-the-azure-storage-services">https://docs.microsoft.com/en-us/rest/api/storageservices/versioning-for-the-azure-storage-services</a>.</p>
 </section>
 </article>
           </div>

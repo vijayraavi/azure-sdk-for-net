@@ -67,7 +67,7 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h2 id="contributing">Contributing</h2>
+<h1 id="contributing">Contributing</h1>
 
 <table>
 <thead>
@@ -79,7 +79,7 @@
 <tbody>
 <tr>
 <td>Management Libraries</td>
-<td><a href="https://travis-ci.org/Azure/azure-sdk-for-net"><img src="https://travis-ci.org/Azure/azure-sdk-for-net.svg?branch=master" alt="Build Status"></a></td>
+<td><a href="https://dev.azure.com/azure-sdk/public/_build/latest?definitionId=529&amp;branchName=master"><img src="https://dev.azure.com/azure-sdk/public/_apis/build/status/net/net%20-%20mgmt%20-%20ci?branchName=master" alt="Build Status"></a></td>
 </tr>
 <tr>
 <td>Client Libraries</td>
@@ -87,66 +87,109 @@
 </tr>
 </tbody>
 </table>
-<h3 id="prerequisites">Prerequisites:</h3>
-<p>Install VS 2017 (Professional or higher) and make sure you have the latest updates (<a href="https://www.visualstudio.com/">https://www.visualstudio.com/</a>).</p>
-<h3 id="to-build">To build:</h3>
-<p>=======</p>
-<h4 id="if-you-are-building-from-vs-add-a-nuget-feed-source-that-points-to--root-toolslocalnugetfeed-directory">If you are building from VS, add a nuget feed source that points to &lt; root &gt;\tools\LocalNugetFeed directory</h4>
+<h1 id="prerequisites">Prerequisites:</h1>
+<p>Install VS 2019 (Professional or higher) and make sure you have the latest updates (<a href="https://www.visualstudio.com/">https://www.visualstudio.com/</a>).</p>
+<p><strong>Client Libraries</strong> are sdks used to interact with azure resources at application run time while <strong>Management Libraries</strong> are those used to manage (create/modify/delete) Azure resources.
+<br><br></p>
+<h1 id="management-libraries">Management Libraries</h1>
+<h2 id="to-build">TO BUILD:</h2>
 <ol>
-<li>Open any solution, eg &quot;Compute\Microsoft.Azure.Management.Compute.sln&quot;</li>
-<li>Build solution from VS</li>
+<li>Open any solution, eg &quot;SDKs\Compute\Microsoft.Azure.Management.Compute.sln&quot;</li>
+<li>Build solution from Visual Studio</li>
 </ol>
-<h4 id="full-build-from-command-line">Full Build from command line</h4>
+<h3 id="single-service-from-command-line">Single Service from Command Line</h3>
 <ol>
-<li>Open VS 2017 developer command prompt</li>
-<li>Navigate to repository root directory</li>
-<li>Invoke <strong>msbuild</strong> build.proj /t:Build
-will Build</li>
+<li>Open VS 2019 command Prompt</li>
+<li>From the root directory</li>
+<li>Invoke <code>msbuild eng\mgmt.proj /p:scope=Compute</code></li>
 </ol>
-<h5 id="build-without-any-scope-will-build-all-management-sdks"><em>Build</em> without any scope will build all management SDK's.</h5>
-<h4 id="build-single-sdk">Build single SDK</h4>
-<p><code>msbuild build.proj /t:CreateNugetPackage /p:scope=Compute</code></p>
-<h3 id="to-run-tests">To run tests:</h3>
-<p>Using Visual Studio:</p>
-<ul>
-<li>Build project in VS</li>
-<li>&quot;Test Explorer&quot; window will get populated with tests. Right click on a test that you wish to Run/Debug.</li>
-</ul>
-<p>Using the command line:
-msbuild .\build.proj /t:Runtests /p:Scope=Compute
-in the above example RunTests will build and run tests for Compute only
-or you can use command line CLI
-dotnet test Compute\Microsoft.Azure.Management.Compute\tests\Microsoft.Azure.Management.Tests.csproj</p>
-<h4 id="create-single-nuget-package">Create single nuget package</h4>
+<blockquote>
+<p><em>Build</em> without any scope will build all management SDK's.</p>
+</blockquote>
+<h3 id="create-single-nuget-package">Create single nuget package</h3>
 <p>In order to build one package and run it's test
-<code>msbuild build.proj /t:CreateNugetPackage /p:scope=Compute</code>
+<code>msbuild eng\mgmt.proj /t:CreateNugetPackage /p:scope=Compute</code>
 Nuget package will be created in root directory under \artifacts\packages\Debug (default configuration is Debug)</p>
+<h2 id="to-test">TO TEST:</h2>
+<h3 id="using-visual-studio">Using Visual Studio:</h3>
+<ol>
+<li>Build project in Visual Studio.</li>
+<li><strong>Test Explorer</strong> window will get populated with tests. Select test and <code>Run</code> or <code>Debug</code></li>
+</ol>
+<h3 id="using-the-command-line">Using the command line:</h3>
+<p>Run e.g. <code>msbuild eng\mgmt.proj /t:&quot;Runtests&quot; /p:Scope=Compute</code>
+In the above example <em>RunTests</em> will build and run tests for Compute only or you can use command line CLI
+<code>dotnet test Compute\Microsoft.Azure.Management.Compute\tests\Microsoft.Azure.Management.Tests.csproj</code></p>
 <h3 id="non-windows-command-line-build">Non-Windows command line build</h3>
-<p>Now you can use the same command on non-windows as above
-for e.g. on Ubuntu you can do something like below:
-<code>dotnet msbuild build.proj /t:Build /p:scope=Compute</code>
-<code>dotnet msbuild build.proj /t:RunTests /p:scope=Compute</code>
-<code>dotnet msbuild build.proj /t:CreateNugetPackage /p:scope=Compute</code></p>
+<p>Now you can use the same command on non-windows as above for e.g. on Ubuntu you can do something like below:</p>
+<ul>
+<li><code>dotnet msbuild eng\mgmt.proj /t:Build /p:scope=Compute</code></li>
+<li><code>dotnet msbuild eng\mgmt.proj /t:RunTests /p:scope=Compute</code></li>
+<li><code>dotnet msbuild eng\mgmt.proj /t:CreateNugetPackage /p:scope=Compute</code></li>
+<li><code>dotnet msbuild build.proj /t:Util /p:UtilityName=InstallPsModules</code></li>
+</ul>
 <h3 id="update-build-tools">Update build tools</h3>
-<p>Build tools are now downloaded as part of a nuget package under root\restoredPackages\microsoft.internal.netsdkbuild.mgmt.tools
-If for any reason there is an update to the build tools, you will then need to first delete directory root\restoredPackages\microsoft.internal.netsdkbuild.mgmt.tools and reexecute your build command. This will simply get the latest version of build tools.</p>
-<h2 id="to-on-board-new-libraries">To on-board new libraries</h2>
+<p>Build tools are now downloaded as part of a nuget package under <code>root\restoredPackages\microsoft.internal.netsdkbuild.mgmt.tools</code>
+If for any reason there is an update to the build tools, you will then need to first delete directory <code>root\restoredPackages\microsoft.internal.netsdkbuild.mgmt.tools</code> and re-execute your build command. This will simply get the latest version of build tools.</p>
+<h1 id="client-libraries">Client Libraries</h1>
+<h2 id="to-build-1">TO BUILD:</h2>
+<h3 id="single-service-from-command-line-1">Single Service from Command Line</h3>
+<ol>
+<li>Open VS 2019 Command Prompt</li>
+<li>Navigate to service directory e.g. <em>&quot;sdk\eventhub&quot;</em></li>
+<li>Invoke <code>dotnet build</code></li>
+<li>or Build the <strong>service.proj</strong> in the repo root, passing the directory name of the specific service as a property. e.g. <code>dotnet build eng\service.proj /p:ServiceDirectory=eventhub</code></li>
+</ol>
+<h3 id="single-service-from-visual-studio">Single Service from Visual Studio</h3>
+<ol>
+<li>Open any data-plane solution e.g. <em>&quot;sdk\eventhub\Microsoft.Azure.EventHubs.sln&quot;</em></li>
+<li>Build solution from Visual Studio</li>
+</ol>
+<h3 id="all-client-services-from-command-line">All Client Services from Command Line</h3>
+<ol>
+<li>Open VS 2019 Command Prompt</li>
+<li>Navigate to repository root directory</li>
+<li>Invoke <code>dotnet build eng\service.proj</code></li>
+</ol>
+<h2 id="to-test-1">TO TEST:</h2>
+<h3 id="single-service-from-command-line-2">Single Service from Command Line</h3>
+<ol>
+<li>Open VS 2019 Command Prompt</li>
+<li>Navigate to service directory e.g. <em>&quot;sdk\eventhub&quot;</em></li>
+<li>Invoke <code>dotnet test --filter TestCategory!=Live</code> <em>(Skips live tests)</em></li>
+<li>or run test against <strong>service.proj</strong> in the repo root, passing the directory name of the specific service as a property. e.g. <code>dotnet test eng\service.proj /p:ServiceDirectory=eventhub --filter TestCategory!=Live</code></li>
+</ol>
+<h3 id="single-service-from-visual-studio-1">Single Service from Visual Studio</h3>
+<ol>
+<li>Build.</li>
+<li>Test Explorer window will get populated with tests. Select test and <code>Run</code> or <code>Debug</code></li>
+</ol>
+<h3 id="all-client-services-from-command-line-1">All Client Services from Command Line</h3>
+<ol>
+<li>Open VS 2019 Command Propmpt</li>
+<li>Navigate to repository root directory</li>
+<li>Invoke <code>dotnet test eng\service.proj --filter TestCategory!=Live</code>
+<br><br></li>
+</ol>
+<h1 id="on-boarding-new-libraries">On-boarding New Libraries</h1>
 <h3 id="project-structure">Project Structure</h3>
-<p>In &quot;sdk&lt; Service Name &gt;&quot;, you will find projects for services that have already been implemented</p>
+<p>In <code>sdk\&lt; Service Name &gt;</code>, you will find projects for services that have already been implemented</p>
+<ol>
+<li>Client library projects needs to use the $(RequiredTargetFrameworks) <em>(defined in eng/Directory.Build.Data.props)</em> property in its TargetFramework while management library projects should use $(SdkTargetFx) <em>(defined in AzSdk.reference.props)</em></li>
+<li>Projects of related packages are grouped together in a folder following the structure specified in <a href="https://github.com/Azure/azure-sdk/blob/master/docs/engineering-system/repo-structure.md">Repo Structure</a>
 <ul>
-<li>The easiest way is to model your test/sdk project using existing test/sdk project
-<ul>
-<li>Make a copy of existing csproj and change the meta data relevant to your SDK</li>
-<li>This ensures the SDK that will be generated will be consistent (including consistent target frameworks)</li>
+<li>Client library packages are in a folder name like <strong><em>Microsoft.Azure.&lt; ServiceName &gt;</em></strong></li>
+<li>Management library packages are in a folder named like <strong><em>Microsoft.Azure.Management.&lt; Resource Provider Name &gt;</em></strong></li>
 </ul>
 </li>
-<li>Each service contains a project for their generated/customized code
+<li>Each shipping package contains a project for their <strong>generated</strong> and /or <strong>Customization</strong> code
 <ul>
-<li>The folder 'Generated' contains the generated code</li>
-<li>The folder 'Customizations' contains additions to the generated code - this can include additions to the generated partial classes, or additional classes that augment the SDK or</li>
+<li>The folder <strong>'Generated'</strong> contains the generated code</li>
+<li>The folder <strong>'Customizations'</strong> contains additions to the generated code - this can include additions to the generated partial classes, or additional classes that augment the SDK or call the generated code</li>
+<li>The file <strong>generate.cmd</strong>, used to generate library code for the given package, can also be found in this project</li>
 </ul>
 </li>
-</ul>
+</ol>
 <h3 id="standard-process">Standard Process</h3>
 <ol>
 <li>Create fork of <a href="https://github.com/azure/azure-rest-api-specs">Azure REST API Specs</a></li>
@@ -157,38 +200,69 @@ If for any reason there is an update to the build tools, you will then need to f
 see the <a href="https://github.com/Azure/autorest">AutoRest repository</a></li>
 <li>Create a branch in your fork of Azure SDK for .NET and add your newly generated code to your project. If you don't have a project in the SDK yet, look at some of the existing projects and build one like the others.</li>
 <li><strong>MANDATORY</strong>: Add or update tests for the newly generated code.</li>
-<li>Once added to the Azure SDK for .NET, build your local package using command
-e.g.
-<code>msbuild build.proj /t:CreateNugetPackage /p:scope=Compute</code></li>
+<li>Once added to the Azure SDK for .NET, build your local package using <a href="#client-libraries">client</a> or <a href="#management-libraries">management</a> library instructions shown in the above sections.</li>
 <li>A Pull request of your Azure SDK for .NET changes against <strong>master</strong> branch of the <a href="https://github.com/azure/azure-sdk-for-net">Azure SDK for .NET</a></li>
-<li>Both the pull requests will be reviewed and merged by the Azure SDK team</li>
+<li>The pull requests will be reviewed and merged by the Azure SDK team</li>
 </ol>
 <h3 id="new-resource-provider">New Resource Provider</h3>
 <ol>
 <li>If you have never created an SDK for your service before, you will need the following things to get your SDK in the repo</li>
 <li>Follow the standard process described above.</li>
-<li>Directory names helps in using basic heuristics in finding projects as well it's associated test projects during CI process.</li>
-<li>Create a new directory (name of your service e.g. Compute, Storage etc)</li>
-<li>For e.g. for management plane SDKs the following directory structure</li>
+<li>Project names helps in using basic heuristics in finding projects as well it's associated test projects during CI process.</li>
+<li>Create a new directory using the name of your service as specified in <a href="https://github.com/Azure/azure-rest-api-specs/tree/master/specification">azure-rest-api-specs/specification</a> Repo</li>
+<li>Follow the the directory structure below</li>
 </ol>
-<ul>
-<li><code>&lt;RPName&gt;\&lt;packageName&gt;\src\Microsoft.Azure.Management.&lt;RPName&gt;\Microsoft.Azure.Management.&lt;RPName&gt;.csproj</code></li>
-<li><code>&lt;RPName&gt;\&lt;packageName&gt;\tests\Microsoft.Azure.Management.&lt;RPName&gt;.Tests.csproj</code></li>
-</ul>
+<pre><code>sdk\&lt;service name&gt;\&lt;package name&gt;\README.md
+sdk\&lt;service name&gt;\&lt;package name&gt;\*src*
+sdk\&lt;service name&gt;\&lt;package name&gt;\*tests*
+sdk\&lt;service name&gt;\&lt;package name&gt;\*samples*
+</code></pre>
+<p>e.g.</p>
+<pre><code>sdk\eventgrid\Microsoft.Azure.EventGrid\src\Microsoft.Azure.EventGrid.csproj
+sdk\eventgrid\Microsoft.Azure.EventGrid\tests\Microsoft.Azure.EventGrid.Tests.csproj
+sdk\eventgrid\Microsoft.Azure.Management.EventGrid\src\Microsoft.Azure.Management.EventGrid.csproj
+sdk\eventgrid\Microsoft.Azure.Management.EventGrid\tests\Microsoft.Azure.Management.EventGrid.Tests.csproj
+</code></pre>
+<blockquote>
+<p>*Ensure that your service name is the same as it is specified in the <a href="https://github.com/Azure/azure-rest-api-specs/tree/master/specification">azure-rest-api-specs/specification</a> Repo, that your csproj files starts with <strong>Microsoft.Azure*</strong>
+, that test files end with <strong>.Tests</strong> and that management plane project files contain <strong>.Management.</strong></p>
+</blockquote>
 <ol start="7">
-<li>Copy .csproj from any other .csproj and update the following information in the new .csproj</li>
+<li><p>Copy .csproj from any other .csproj and update the following information in the new .csproj</p>
+<table>
+<thead>
+<tr>
+<th>Project Properties</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AssemblyTitle</td>
+</tr>
+<tr>
+<td>Description</td>
+</tr>
+<tr>
+<td>VersionPrefix</td>
+</tr>
+<tr>
+<td>PackageTags</td>
+</tr>
+<tr>
+<td>PackageReleaseNotes</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
 </ol>
-<ul>
-<li>PackageId</li>
-<li>Description</li>
-<li>AssemblyTitle</li>
-<li>AssemblyName</li>
-<li>Version</li>
-<li>PackageTags</li>
-<li>PackageReleaseNotes (this is important because this information is displayed on <a href="http://www.nuget.org">www.nuget.org</a> when your nuget package is published</li>
-</ul>
+<blockquote>
+<p>PackageReleaseNotes are important because this information is displayed on <a href="http://www.nuget.org">www.nuget.org</a> when your nuget package is published</p>
+</blockquote>
 <ol start="8">
-<li>Copy existing generate.ps1 file from another dirctory and update the <code>ResourceProvider</code> name that is applicable to your SDK. Resource provider refers to the relative path of your REST spec directory in Azure-Rest-Api-Specs repository
+<li>Copy existing generate.ps1 file from another service and update the <code>ResourceProvider</code> name that is applicable to your SDK. Resource provider refers to the relative path of your REST spec directory in Azure-Rest-Api-Specs repository
 During SDK generation, this path helps to locate the REST API spec from the <code>https://github.com/Azure/azure-rest-api-specs</code></li>
 </ol>
 <h3 id="code-review-process">Code Review Process</h3>
@@ -224,8 +298,8 @@ During SDK generation, this path helps to locate the REST API spec from the <cod
 <li>After the pull request is submitted:
 <ul>
 <li>Our SLA is 48 hours. When your PR is submitted someone on our team will be auto assigned the PR for review. No need to email us</li>
-<li>MS internal folks, please reach out to us via our slack channel or</li>
-<li>Send an email to the Azure DevEx .Net team (azdevxdotnet@microsoft.com) alias.
+<li>MS internal folks, please reach out to us via our Teams channel or</li>
+<li>Send an email to the Azure Developer Platform team <a href="mailto:adpteam@microsoft.com">adpteam@microsoft.com</a> alias.
 <ul>
 <li>Include all interested parties from your team as well.</li>
 <li>In the message, make sure to acknowledge that the legal signoff process is complete.</li>
@@ -243,12 +317,6 @@ During SDK generation, this path helps to locate the REST API spec from the <cod
 </ul>
 </li>
 <li>If the request does not meet any of the requirements, the pull request will not be merged, and the necessary fixes for acceptance will be communicated back to the partner team.</li>
-</ul>
-<h3 id="adding-tests">Adding Tests</h3>
-<p>Regarding the test project, one thing that's important is to name the test project by adding a &quot;.Tests&quot; suffix to the folder name for the folder containing your project. For example, the test project for &quot;Compute\Management.Compute&quot; should be named 'Compute.Tests'</p>
-<ul>
-<li>This is for improving CI performance so to find exactly one copy of your test assembly.</li>
-<li>Also, due to test dependencies, the test project should build both .NET 4.5.2 and NETStandard 1.4. For example, check out &quot;src\SDKs\Resource\Resource.tests&quot;</li>
 </ul>
 <h3 id="client-library-tested-oss-and-net-versions">Client Library Tested OSs and .NET Versions</h3>
 <table>
@@ -270,13 +338,12 @@ During SDK generation, this path helps to locate the REST API spec from the <cod
 </tbody>
 </table>
 <h3 id="issues-with-generated-code">Issues with Generated Code</h3>
-<p>Much of the SDK code is generated from metadata specs about the REST APIs. Do not submit PRs that modify generated code. Instead,</p>
+<p>Much of the management plane SDK code is generated from metadata specs about the REST APIs. Do not submit PRs that modify generated code. Instead,</p>
 <ul>
 <li>File an issue describing the problem,</li>
 <li>Refer to the the <a href="https://github.com/azure/autorest">AutoRest project</a> to view and modify the generator, or</li>
 <li>Add additional methods, properties, and overloads to the SDK by adding classes in the 'Customizations' folder of a project</li>
 </ul>
-<p><img src="https://azure-sdk-impressions.azurewebsites.net/api/impressions/azure-sdk-for-net%2FREADME.png" alt="Impressions"></p>
 </article>
           </div>
           
@@ -285,7 +352,7 @@ During SDK generation, this path helps to locate the REST API spec from the <cod
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/GenerateDocsForGitHub/docfx_project/articles/CONTRIBUTING.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/docfx_project/articles/CONTRIBUTING.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

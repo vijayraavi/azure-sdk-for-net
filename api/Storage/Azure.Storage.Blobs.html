@@ -77,7 +77,11 @@
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
-      <h4><a class="xref" href="Azure.Storage.Blobs.BlobConnectionOptions.html">BlobConnectionOptions</a></h4>
+      <h4><a class="xref" href="Azure.Storage.Blobs.BlobClient.html">BlobClient</a></h4>
+      <section><p>The <a class="xref" href="Azure.Storage.Blobs.BlobClient.html">BlobClient</a> allows you to manipulate Azure Storage
+blobs.</p>
+</section>
+      <h4><a class="xref" href="Azure.Storage.Blobs.BlobClientOptions.html">BlobClientOptions</a></h4>
       <section><p>Provides the client configuration options for connecting to Azure Blob
 Storage.</p>
 </section>
@@ -85,130 +89,17 @@ Storage.</p>
       <section><p>The <a class="xref" href="Azure.Storage.Blobs.BlobContainerClient.html">BlobContainerClient</a> allows you to manipulate Azure
 Storage containers and their blobs.</p>
 </section>
-      <h4><a class="xref" href="Azure.Storage.Blobs.BlobExtensions.html">BlobExtensions</a></h4>
-      <section><p>BlobRestClient response extensions</p>
-</section>
       <h4><a class="xref" href="Azure.Storage.Blobs.BlobServiceClient.html">BlobServiceClient</a></h4>
       <section><p>The <a class="xref" href="Azure.Storage.Blobs.BlobServiceClient.html">BlobServiceClient</a> allows you to manipulate Azure
 Storage service resources and containers. The storage account provides
 the top-level namespace for the Blob service.</p>
 </section>
-      <h4><a class="xref" href="Azure.Storage.Blobs.BlockBlobClient.html">BlockBlobClient</a></h4>
-      <section><p>The <a class="xref" href="Azure.Storage.Blobs.BlockBlobClient.html">BlockBlobClient</a> allows you to manipulate Azure
-Storage block blobs.</p>
-<p>Block blobs let you upload large blobs efficiently.  Block blobs are
-comprised of blocks, each of which is identified by a block ID. You
-create or modify a block blob by writing a set of blocks and
-committing them by their block IDs. Each block can be a different
-size, up to a maximum of 100 MB (4 MB for requests using REST versions
-before 2016-05-31), and a block blob can include up to 50,000 blocks.
-The maximum size of a block blob is therefore slightly more than 4.75
-TB (100 MB X 50,000 blocks).  If you are writing a block blob that is
-no more than 256 MB in size, you can upload it in its entirety with a
-single write operation; see <a class="xref" href="Azure.Storage.Blobs.BlockBlobClient.html#Azure_Storage_Blobs_BlockBlobClient_UploadAsync_Stream_System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_BlobAccessConditions__IProgress_Azure_Storage_Common_StorageProgress__CancellationToken_">UploadAsync(Stream, Nullable&lt;BlobHttpHeaders&gt;, System.Collections.Generic.IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</a>.</p>
-<p>When you upload a block to a blob in your storage account, it is
-associated with the specified block blob, but it does not become part
-of the blob until you commit a list of blocks that includes the new
-block's ID. New blocks remain in an uncommitted state until they are
-specifically committed or discarded. Writing a block does not update
-the last modified time of an existing blob.</p>
-<p>Block blobs include features that help you manage large files over
-networks.  With a block blob, you can upload multiple blocks in
-parallel to decrease upload time.  Each block can include an MD5 hash
-to verify the transfer, so you can track upload progress and re-send
-blocks as needed.You can upload blocks in any order, and determine
-their sequence in the final block list commitment step. You can also
-upload a new block to replace an existing uncommitted block of the
-same block ID.  You have one week to commit blocks to a blob before
-they are discarded.  All uncommitted blocks are also discarded when a
-block list commitment operation occurs but does not include them.</p>
-<p>You can modify an existing block blob by inserting, replacing, or
-deleting existing blocks. After uploading the block or blocks that
-have changed, you can commit a new version of the blob by committing
-the new blocks with the existing blocks you want to keep using a
-single commit operation. To insert the same range of bytes in two
-different locations of the committed blob, you can commit the same
-block in two places within the same commit operation.For any commit
-operation, if any block is not found, the entire commitment operation
-fails with an error, and the blob is not modified. Any block commitment
-overwrites the blob’s existing properties and metadata, and discards
-all uncommitted blocks.</p>
-<p>Block IDs are strings of equal length within a blob. Block client code
-usually uses base-64 encoding to normalize strings into equal lengths.
-When using base-64 encoding, the pre-encoded string must be 64 bytes
-or less.  Block ID values can be duplicated in different blobs.  A
-blob can have up to 100,000 uncommitted blocks, but their total size
-cannot exceed 200,000 MB.</p>
-<p>If you write a block for a blob that does not exist, a new block blob
-is created, with a length of zero bytes.  This blob will appear in
-blob lists that include uncommitted blobs.  If you don’t commit any
-block to this blob, it and its uncommitted blocks will be discarded
-one week after the last successful block upload. All uncommitted
-blocks are also discarded when a new blob of the same name is created
-using a single step(rather than the two-step block upload-then-commit
-process).</p>
-</section>
-      <h4><a class="xref" href="Azure.Storage.Blobs.SasQueryParameters.html">SasQueryParameters</a></h4>
-      <section></section>
-    <h3 id="structs">Structs
+    <h3 id="enums">Enums
   </h3>
-      <h4><a class="xref" href="Azure.Storage.Blobs.AccountSasPermissions.html">AccountSasPermissions</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Azure.Storage.Blobs.AccountSasResourceTypes.html">AccountSasResourceTypes</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Azure.Storage.Blobs.AccountSasServices.html">AccountSasServices</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Azure.Storage.Blobs.AccountSasSignatureValues.html">AccountSasSignatureValues</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Azure.Storage.Blobs.AppendBlobAccessConditions.html">AppendBlobAccessConditions</a></h4>
-      <section><p>Specifies append blob specific access conditions.</p>
-</section>
-      <h4><a class="xref" href="Azure.Storage.Blobs.BlobAccessConditions.html">BlobAccessConditions</a></h4>
-      <section><p>Specifies blob specific access conditions.</p>
-</section>
-      <h4><a class="xref" href="Azure.Storage.Blobs.BlobAccountSasPermissions.html">BlobAccountSasPermissions</a></h4>
-      <section><p><a class="xref" href="Azure.Storage.Blobs.BlobAccountSasPermissions.html">BlobAccountSasPermissions</a> supports reading and writing
-permissions string for a storage account's access policy.  Use
-<a class="xref" href="Azure.Storage.Blobs.BlobAccountSasPermissions.html#Azure_Storage_Blobs_BlobAccountSasPermissions_ToString">ToString()</a> to generate a permissions string.</p>
-</section>
-      <h4><a class="xref" href="Azure.Storage.Blobs.BlobSasBuilder.html">BlobSasBuilder</a></h4>
-      <section><p><a class="xref" href="Azure.Storage.Blobs.BlobSasBuilder.html">BlobSasBuilder</a> is used to generate a Shared Access
-Signature (SAS) for an Azure Storage container or blob.
-For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/constructing-a-service-sas">https://docs.microsoft.com/en-us/rest/api/storageservices/constructing-a-service-sas</a>.</p>
-</section>
-      <h4><a class="xref" href="Azure.Storage.Blobs.BlobSasPermissions.html">BlobSasPermissions</a></h4>
-      <section><p><a class="xref" href="Azure.Storage.Blobs.BlobSasPermissions.html">BlobSasPermissions</a> supports reading and writing
-permissions string for a blob's access policy.  Use <a class="xref" href="Azure.Storage.Blobs.BlobSasPermissions.html#Azure_Storage_Blobs_BlobSasPermissions_ToString">ToString()</a>
-to generate a permissions string you can provide to
-<a class="xref" href="Azure.Storage.Blobs.BlobSasBuilder.html#Azure_Storage_Blobs_BlobSasBuilder_Permissions">Permissions</a>.</p>
-</section>
-      <h4><a class="xref" href="Azure.Storage.Blobs.ContainerAccessConditions.html">ContainerAccessConditions</a></h4>
-      <section><p>Specifies blob container specific access conditions.</p>
-</section>
-      <h4><a class="xref" href="Azure.Storage.Blobs.ContainerSasPermissions.html">ContainerSasPermissions</a></h4>
-      <section><p><a class="xref" href="Azure.Storage.Blobs.ContainerSasPermissions.html">ContainerSasPermissions</a> supports reading and writing
-permissions string for a containers's access policy.  Use <a class="xref" href="Azure.Storage.Blobs.ContainerSasPermissions.html#Azure_Storage_Blobs_ContainerSasPermissions_ToString">ToString()</a>
-to generate a permissions string you can provide to
-<a class="xref" href="Azure.Storage.Blobs.BlobSasBuilder.html#Azure_Storage_Blobs_BlobSasBuilder_Permissions">Permissions</a>.</p>
-</section>
-      <h4><a class="xref" href="Azure.Storage.Blobs.HttpAccessConditions.html">HttpAccessConditions</a></h4>
-      <section><p>Specifies standard HTTP access conditions.</p>
-</section>
-      <h4><a class="xref" href="Azure.Storage.Blobs.HttpRange.html">HttpRange</a></h4>
-      <section><p>Defines a range of bytes within an HTTP resource, starting at an offset and
-ending at offset+count-1 inclusively.</p>
-</section>
-      <h4><a class="xref" href="Azure.Storage.Blobs.LeaseAccessConditions.html">LeaseAccessConditions</a></h4>
-      <section><p>Specifies blob lease access conditions for a container or blob.</p>
-</section>
-      <h4><a class="xref" href="Azure.Storage.Blobs.PageBlobAccessConditions.html">PageBlobAccessConditions</a></h4>
-      <section><p>Specifies page blob specific access conditions.</p>
-</section>
-      <h4><a class="xref" href="Azure.Storage.Blobs.SnapshotSasPermissions.html">SnapshotSasPermissions</a></h4>
-      <section><p><a class="xref" href="Azure.Storage.Blobs.SnapshotSasPermissions.html">SnapshotSasPermissions</a> supports reading and writing
-permissions string for a blob snapshot's access policy.  Use
-<a class="xref" href="Azure.Storage.Blobs.SnapshotSasPermissions.html#Azure_Storage_Blobs_SnapshotSasPermissions_ToString">ToString()</a> to generate a permissions string you can
-provide to <a class="xref" href="Azure.Storage.Blobs.BlobSasBuilder.html#Azure_Storage_Blobs_BlobSasBuilder_Permissions">Permissions</a>.</p>
+      <h4><a class="xref" href="Azure.Storage.Blobs.BlobClientOptions.ServiceVersion.html">BlobClientOptions.ServiceVersion</a></h4>
+      <section><p>The versions of Azure Blob Storage supported by this client
+library.  For more, see
+<a href="https://docs.microsoft.com/en-us/rest/api/storageservices/versioning-for-the-azure-storage-services">https://docs.microsoft.com/en-us/rest/api/storageservices/versioning-for-the-azure-storage-services</a>.</p>
 </section>
 </article>
           </div>
