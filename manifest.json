@@ -34852,12 +34852,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "api/index.md",
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "WY6URSDfRmMRvhk2uHV1Cw=="
+          "hash": "i+4vyb/dDlXJPp3CASJ88A=="
         }
       },
       "is_incremental": false,
@@ -35385,7 +35388,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "s7bED5+J3ncry6eS1DrakA=="
+          "hash": "YdObKEFT7D15i2VGMk8rsA=="
         }
       },
       "is_incremental": false,
